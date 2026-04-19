@@ -113,9 +113,10 @@ export async function fetchQuestions(flaggedOnly = false): Promise<QuestionRow[]
       .order('id', { ascending: true })
       .range(from, from + PAGE_SIZE - 1);
 
+    // TEST: filtre yok — kaç soru geldiğini görmek için
     const { data, error } = flaggedOnly
       ? await q.eq('quality_flag', 'kavramsal_kopya')
-      : await q.or('quality_flag.is.null,and(quality_flag.neq.kavramsal_kopya,quality_flag.neq.auto_deleted)');
+      : await q;
 
     if (error) throw new Error(error.message);
     if (!data || data.length === 0) return [];
