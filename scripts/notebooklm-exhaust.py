@@ -46,9 +46,65 @@ if LIB_PATH not in sys.path:
 
 try:
     from notebooklm import NotebookLMClient
+    from notebooklm.auth import fetch_tokens, load_auth_from_storage
+    from notebooklm.paths import get_storage_path
 except ImportError:
     print("HATA: NotebookLM kütüphanesi bulunamadı!")
     sys.exit(1)
+
+
+def _auto_refresh_cookies() -> bool:
+    """Playwright persistent profili ile sessizce cookie tazeler. True = başarı."""
+    try:
+        from playwright.sync_api import sync_playwright, Error as PlaywrightError
+        browser_profile = Path.home() / ".notebooklm" / "profiles" / "default" / "browser_profile"
+        storage_path = get_storage_path()
+        if not browser_profile.exists():
+            print("   Playwright profili bulunamadı — 'notebooklm login' komutunu çalıştır.")
+            return False
+        import asyncio as _aio
+        if sys.platform == "win32":
+            _aio.set_event_loop_policy(_aio.DefaultEventLoopPolicy())
+        with sync_playwright() as p:
+            ctx = p.chromium.launch_persistent_context(
+                user_data_dir=str(browser_profile),
+                headless=True,
+                args=["--disable-blink-features=AutomationControlled", "--password-store=basic", "--no-sandbox"],
+                ignore_default_args=["--enable-automation"],
+            )
+            try:
+                page = ctx.pages[0] if ctx.pages else ctx.new_page()
+                try:
+                    page.goto("https://notebooklm.google.com/", timeout=30000, wait_until="networkidle")
+                except PlaywrightError:
+                    page.goto("https://notebooklm.google.com/", timeout=30000, wait_until="commit")
+                if "accounts.google.com" in page.url or "signin" in page.url.lower():
+                    print("   Google login sayfasına yönlendirildi — 'notebooklm login' gerekli.")
+                    return False
+                storage_path.parent.mkdir(parents=True, exist_ok=True)
+                ctx.storage_state(path=str(storage_path))
+                return True
+            finally:
+                ctx.close()
+    except Exception as e:
+        print(f"   Cookie yenileme hatası: {e}")
+        return False
+
+
+async def ensure_auth(client) -> bool:
+    """Auth geçerliyse True döner. Bozuksa cookie yeniler, tekrar dener."""
+    try:
+        cookies = load_auth_from_storage(get_storage_path())
+        await fetch_tokens(cookies)
+        return True
+    except Exception:
+        print("🔄 Auth süresi dolmuş — Chrome'dan taze cookie alınıyor...")
+        if _auto_refresh_cookies():
+            await client.refresh_auth()
+            print("✅ Oturum yenilendi.")
+            return True
+        print("❌ Cookie yenilenemedi. Tarayıcıda Google'a giriş yapıldığından emin ol.")
+        return False
 
 if sys.platform == "win32":
     try: sys.stdout.reconfigure(encoding='utf-8')
@@ -198,12 +254,16 @@ async def cleanup_notebook(client, notebook_id):
 #  ANA İŞLEM: TEK ÜNİTE EXHAUSTIVE v3
 # ═══════════════════════════════════════════════
 
-async def process_unit_exhaustive(client, lesson, unit_name, file_path, dry_run=False):
+async def process_unit_exhaustive(client, lesson, unit_name, file_path, dry_run=False, uncovered_only=False):
     """Tek bir üniteyi Çapa=Soru modunda işler."""
     print(f"\n{'='*60}")
     print(f"🔬 EXHAUSTIVE v3: {unit_name}")
     print(f"📂 Kaynak: {file_path}")
     print(f"{'='*60}")
+
+    # Her ünite başında auth kontrol et
+    if not await ensure_auth(client):
+        raise FatalError(f"Auth yenilenemedi, {unit_name} atlandı.")
 
     source = None
     total_produced = 0
@@ -225,27 +285,50 @@ async def process_unit_exhaustive(client, lesson, unit_name, file_path, dry_run=
             print(f"   ✅ Kaynak hazır: {source.id}")
 
             # ─── FAZ 0: Kavram Çapalama ───
-            print(f"\n   📌 FAZ 0: Kavram Çapalama")
-            anchor_conv_id = str(uuid.uuid4())
-            anchor_res = await asyncio.wait_for(
-                client.chat.ask(NOTEBOOK_ID, PROMPT_ANCHOR, conversation_id=anchor_conv_id),
-                timeout=600
-            )
-            anchors, total_concepts = parse_anchor_response(anchor_res.answer)
-            print(f"   📌 Çapalama tamamlandı: {total_concepts} kavram (parse: {len(anchors)})")
+            if uncovered_only:
+                print(f"\n   📌 FAZ 0 ATLANDI: Kapsanmayan kavramlar log dosyasından yükleniyor...")
+                uncovered_file = os.path.join(LOG_DIR, f"uncovered_{unit_name}.txt")
+                if not os.path.exists(uncovered_file):
+                    print(f"   ⚠️ Kapsanmayan kavram dosyası yok ({uncovered_file}). Ünite atlanıyor.")
+                    return True
+                
+                with open(uncovered_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                
+                anchors = []
+                for line in content.split('\n'):
+                    line = line.strip()
+                    if re.match(r'^\d+\.\s+', line):
+                        anchors.append(re.sub(r'^\d+\.\s+', '', line))
+                
+                if not anchors:
+                    print("   ℹ️ Bu ünitede kapsanmayan kavram yok.")
+                    return True
+                
+                total_concepts = len(anchors)
+                print(f"   📌 {total_concepts} hedef kavram dosyadan yüklendi.")
+            else:
+                print(f"\n   📌 FAZ 0: Kavram Çapalama")
+                anchor_conv_id = str(uuid.uuid4())
+                anchor_res = await asyncio.wait_for(
+                    client.chat.ask(NOTEBOOK_ID, PROMPT_ANCHOR, conversation_id=anchor_conv_id),
+                    timeout=600
+                )
+                anchors, total_concepts = parse_anchor_response(anchor_res.answer)
+                print(f"   📌 Çapalama tamamlandı: {total_concepts} kavram (parse: {len(anchors)})")
 
-            if not anchors:
-                print(f"   ⚠️ Çapalama başarısız — ünite atlanıyor.")
-                return False
+                if not anchors:
+                    print(f"   ⚠️ Çapalama başarısız — ünite atlanıyor.")
+                    return False
 
-            # Çapa logunu kaydet
-            try:
-                with open(os.path.join(LOG_DIR, f"anchor_{unit_name}.txt"), 'w', encoding='utf-8') as f:
-                    f.write(f"Toplam: {total_concepts}\nParse: {len(anchors)}\n\n")
-                    for i, a in enumerate(anchors, 1):
-                        f.write(f"{i}. {a}\n")
-            except:
-                pass
+                # Çapa logunu kaydet
+                try:
+                    with open(os.path.join(LOG_DIR, f"anchor_{unit_name}.txt"), 'w', encoding='utf-8') as f:
+                        f.write(f"Toplam: {total_concepts}\nParse: {len(anchors)}\n\n")
+                        for i, a in enumerate(anchors, 1):
+                            f.write(f"{i}. {a}\n")
+                except:
+                    pass
 
             # ─── FAZ 1: Mevcut DB ile çapa kontrolü ───
             session_qs = get_questions_for_unit(lesson, unit_name)
@@ -488,6 +571,7 @@ async def main():
     parser.add_argument("--lesson", default=None, help="Ders adı")
     parser.add_argument("--unit", default=None, help="Ünite adı")
     parser.add_argument("--dry-run", action="store_true", help="Supabase'e yazmadan test")
+    parser.add_argument("--uncovered-only", action="store_true", help="Faz 0'ı atlar, loglardan uncovered dosyasını yükleyip işler")
     args = parser.parse_args()
 
     print("\n" + "=" * 60)
@@ -507,13 +591,13 @@ async def main():
             lesson = args.lesson or "Bilinmeyen"
             unit_name = args.unit if args.unit else file_path.stem
             try:
-                await process_unit_exhaustive(client, lesson, unit_name, file_path, args.dry_run)
-                # Üretim bittiğinde otomatik Audit (Toplu Temizlik) başlatılır
-                if not args.dry_run:
-                    print(f"\n   🚀 Ünite bitti: {unit_name} için otomatik kalite denetimi (Audit) başlatılıyor...")
-                    await run_audit(lesson, mode="flag", dry_run=False, interactive=False)
+                await process_unit_exhaustive(client, lesson, unit_name, file_path, args.dry_run, getattr(args, 'uncovered_only', False))
+                # if not args.dry_run:
+                #     print(f"\n   🚀 Ünite bitti: {unit_name} için otomatik kalite denetimi (Audit) başlatılıyor...")
+                #     await run_audit(lesson, mode="flag", dry_run=False, interactive=False)
             except FatalError as fe:
                 print(f"\n🚫 FATAL: {fe}")
+                sys.exit(1)
             return
 
         queues = _load_queues_from_env()
@@ -539,14 +623,13 @@ async def main():
                 unit_name = file_path.stem
                 print(f"\n[{i}/{len(files)}]", end=" ")
                 try:
-                    await process_unit_exhaustive(client, lesson, unit_name, file_path, args.dry_run)
-                    # Kuyruk modunda her üniteden sonra toplu temizlik (tüm ders taraması)
-                    if not args.dry_run:
-                        print(f"\n   🚀 Ünite bitti: {unit_name} için otomatik kalite denetimi (Audit) başlatılıyor...")
-                        await run_audit(lesson, mode="flag", dry_run=False, interactive=False)
+                    await process_unit_exhaustive(client, lesson, unit_name, file_path, args.dry_run, getattr(args, 'uncovered_only', False))
+                    # if not args.dry_run:
+                    #     print(f"\n   🚀 Ünite bitti: {unit_name} için otomatik kalite denetimi (Audit) başlatılıyor...")
+                    #     await run_audit(lesson, mode="flag", dry_run=False, interactive=False)
                 except FatalError as fe:
                     print(f"\n🚫 FATAL: {fe}")
-                    return
+                    sys.exit(1)
 
                 if i < len(files):
                     await asyncio.sleep(COOLDOWN_BETWEEN_UNITS)

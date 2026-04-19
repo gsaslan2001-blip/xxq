@@ -1,14 +1,11 @@
 import { useState, useCallback, useRef } from 'react';
 import {
   fetchQuestions,
-  fetchQuestionMetadata,
-  fetchQuestionsByUnit,
-  rowToQuestion,
   deleteQuestion as deleteQuestionRemote,
   toggleFavoriteInCloud,
   updateQuestion as updateQuestionRemote,
   flagQuestion as flagQuestionRemote,
-  type QuestionMetadata,
+  rowToQuestion,
 } from '../lib/supabase';
 import { syncStatsDown } from '../lib/stats';
 import type { Question } from '../data';
@@ -17,15 +14,12 @@ export type LoadingState = 'idle' | 'loading' | 'loaded' | 'error';
 
 export type UseQuestionsResult = {
   questions: Question[];
-  metadata: QuestionMetadata[];
   setQuestions: React.Dispatch<React.SetStateAction<Question[]>>;
   /** @deprecated `loadStatus === 'loading'` kullan */
   loading: boolean;
   loadStatus: LoadingState;
   loadError: string;
   reload: (forceSync?: boolean, flaggedOnly?: boolean) => Promise<void>;
-  loadMetadata: () => Promise<void>;
-  loadUnitQuestions: (lesson: string, unit: string) => Promise<void>;
   updateQuestion: (edited: Question) => Promise<void>;
   deleteQuestion: (id: string) => Promise<void>;
   toggleFavorite: (id: string, newStatus: boolean) => Promise<void>;
@@ -38,42 +32,9 @@ export type UseQuestionsResult = {
  */
 export function useQuestions(): UseQuestionsResult {
   const [questions, setQuestions] = useState<Question[]>([]);
-  const [metadata, setMetadata] = useState<QuestionMetadata[]>([]);
   const [loadStatus, setLoadStatus] = useState<LoadingState>('idle');
   const [loadError, setLoadError] = useState('');
   const isFirstLoad = useRef(true);
-
-  // Performans Krizi Çözümü 1: Sadece ders/ünite listesini (metadata) yükler
-  const loadMetadata = useCallback(async () => {
-    setLoadStatus('loading');
-    setLoadError('');
-    try {
-      const meta = await fetchQuestionMetadata();
-      setMetadata(meta);
-      setLoadStatus('loaded');
-      if (isFirstLoad.current) {
-        syncStatsDown().catch(() => { });
-        isFirstLoad.current = false;
-      }
-    } catch (e: unknown) {
-      setLoadError(e instanceof Error ? e.message : String(e));
-      setLoadStatus('error');
-    }
-  }, []);
-
-  // Performans Krizi Çözümü 2: Seçili ünitenin metinlerini lazy olarak çeker
-  const loadUnitQuestions = useCallback(async (lesson: string, unit: string) => {
-    setLoadStatus('loading');
-    setLoadError('');
-    try {
-      const rows = await fetchQuestionsByUnit(lesson, unit);
-      setQuestions(rows.map(rowToQuestion));
-      setLoadStatus('loaded');
-    } catch (e: unknown) {
-      setLoadError(e instanceof Error ? e.message : String(e));
-      setLoadStatus('error');
-    }
-  }, []);
 
   const reload = useCallback(async (forceSync = false, flaggedOnly = false) => {
     setLoadStatus('loading');
@@ -157,14 +118,11 @@ export function useQuestions(): UseQuestionsResult {
 
   return {
     questions,
-    metadata,
     setQuestions,
     loading: loadStatus === 'loading',
     loadStatus,
     loadError,
     reload,
-    loadMetadata,
-    loadUnitQuestions,
     updateQuestion,
     deleteQuestion,
     toggleFavorite,

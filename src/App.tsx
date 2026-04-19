@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { importQuestions, deleteQuestionsInLesson, deleteQuestionsInUnit, deleteAllQuestions, renameLesson, renameUnit, fetchQuestionsByUnit, rowToQuestion, type QuestionMetadata } from './lib/supabase';
+import { importQuestions, deleteQuestionsInLesson, deleteQuestionsInUnit, deleteAllQuestions, renameLesson, renameUnit } from './lib/supabase';
 import { useQuestions } from './hooks/useQuestions';
 import { useResumableSession } from './hooks/useResumableSession';
 import { useAuth } from './hooks/useAuth';
@@ -57,19 +57,15 @@ export default function App() {
   const [selectedUnit, setSelectedUnit] = useState('');
   const [examUnits, setExamUnits] = useState<{ lesson: string; unit: string }[]>([]);
   const [examQuestions, setExamQuestions] = useState<Question[]>([]);
-  // BUG-006: Ünite modunda shuffle edilmiş soru listesi (unseen önce)
   const [unitQuestions, setUnitQuestions] = useState<Question[]>([]);
   const [isFavoritesExam, setIsFavoritesExam] = useState(false);
   const [examLoading, setExamLoading] = useState(false);
   const [quizStats, setQuizStats] = useState<QuizStatsType>({ correct: 0, incorrect: 0, blank: 0, total: 0, details: [] });
   const {
     questions,
-    metadata,
     setQuestions,
     loading,
     loadError,
-    loadMetadata,
-    loadUnitQuestions,
     reload: loadQuestions,
     updateQuestion: updateQuestionInHook,
     deleteQuestion: deleteQuestionInHook,
@@ -82,7 +78,6 @@ export default function App() {
     clearResumableSession,
     saveResumableSession,
   } = useResumableSession();
-  // Faz 3: DUS Simülasyon — window global yerine React state (önceki değer taşıma sorununu önler)
   const [simTotalSeconds, setSimTotalSeconds] = useState<number | null>(null);
   const [simResult, setSimResult] = useState<{ details: SimAnswerDetail[]; totalSeconds: number; usedSeconds: number } | null>(null);
   const [editingQuestion, setEditingQuestion] = useState<Question | null>(null);
@@ -91,21 +86,16 @@ export default function App() {
   const [showSettings, setShowSettings] = useState(false);
   const [showAuth, setShowAuth] = useState(false);
 
-  // ── Auth: Google/Email giriş + çok cihaz merge ──────────────────────────
   const { user, signOut } = useAuth();
 
-  // ── Realtime: Başka cihazdan gelen FSRS güncellemelerini yakala ──────────
   useRealtimeStats({
     userId: user?.id ?? null,
     deviceId: getDeviceId(),
     onStatUpdate: useCallback((questionId: string) => {
-      // Realtime güncelleme geldi — bir sonraki manuel sync'te cloud'dan çekilecek.
-      // Anlık bir şey göstermek gerekmiyorsa sadece log yeterli.
       console.log('[Realtime] Başka cihazdan stat güncellendi:', questionId);
     }, []),
   });
 
-  /* User Settings */
   const [settings, setSettings] = useState<UserSettings>(() => {
     try {
       const saved = localStorage.getItem('dus_settings');
@@ -120,14 +110,10 @@ export default function App() {
     document.documentElement.className = settings.theme;
   }, [settings]);
 
-  // Faz 2: SM-2 → FSRS-5 one-time migrasyonu (açılışta, veri çekilmeden önce)
-  // Rapor §5.2: Mevcut SM-2 state backup'lanır, rollback mekanizması korunur.
-  // Startup: Sadece metadata yükle (Hızlı açılış)
   useEffect(() => {
-    loadMetadata();
-  }, [loadMetadata]);
+    loadQuestions();
+  }, [loadQuestions]);
 
-  // Faz 2: SM-2 → FSRS-5 migrasyone (açılışta)
   useEffect(() => {
     try {
       const result = migrateAllStatsToFSRSIfNeeded();
@@ -140,7 +126,6 @@ export default function App() {
   }, []);
 
   const handleToggleFavorite = async (id: string) => {
-    // BUG-001: examQuestions'tan önce questions'a bak, her iki array'de is_favorite tutarlı olmalı
     const q = questions.find(x => x.id === id) || examQuestions.find(x => x.id === id);
     if (!q) return;
     const newStatus = !q.is_favorite;
@@ -148,7 +133,6 @@ export default function App() {
       await toggleFavoriteInHook(id, newStatus);
       setExamQuestions(prev => {
         const updated = prev.map(x => x.id === id ? { ...x, is_favorite: newStatus } : x);
-        // BUG-001: Favoriler modunda unfavorite edilince soruyu aktif session'dan kaldır
         if (!newStatus && isFavoritesExam) return updated.filter(x => x.id !== id);
         return updated;
       });
@@ -212,7 +196,6 @@ export default function App() {
   const handleSaveEdit = async (edited: Question) => {
     try {
       await updateQuestionInHook(edited);
-      // BUG-003: Exam modunda düzenlenen soru examQuestions'ta da güncellenmeli
       setExamQuestions(prev => prev.map(q => q.id === edited.id ? edited : q));
       setUnitQuestions(prev => prev.map(q => q.id === edited.id ? edited : q));
       setEditingQuestion(null);
@@ -240,16 +223,7 @@ export default function App() {
     }
   };
 
-  const handleSimulationClick = async () => {
-    // Her zaman tüm soruları yükle (lazy-loaded tek ünite yerine tam banka)
-    if (questions.length < metadata.length) {
-      try {
-        await loadQuestions();
-      } catch (e) {
-        alert('Sorular yüklenemedi: ' + errMsg(e));
-        return;
-      }
-    }
+  const handleSimulationClick = () => {
     setAppState('simulation-setup');
   };
 
@@ -263,27 +237,21 @@ export default function App() {
     }
   };
 
-  const availableLessons = Array.from(new Set(metadata.map((q) => q.lesson)));
-  const unitsForLesson = Array.from(new Set(metadata.filter((q) => q.lesson === selectedLesson).map((q) => q.unit)));
+  const availableLessons = Array.from(new Set(questions.map((q) => q.lesson)));
+  const unitsForLesson = Array.from(new Set(questions.filter((q) => q.lesson === selectedLesson).map((q) => q.unit)));
 
   const handleLessonSelect = (lesson: string) => { setSelectedLesson(lesson); setAppState('select-unit'); };
   const handleUnitSelect = async (unit: string) => {
     setSelectedUnit(unit);
-    try {
-      // Performans Çözümü: Soru detaylarını şimdi çek (Lazy Load)
-      await loadUnitQuestions(selectedLesson, unit);
-      setAppState('quiz');
-    } catch (e) {
-      alert("Ünite yüklenemedi: " + errMsg(e));
-    }
+    const allStats = loadAllStats();
+    const unitQs = questions.filter(q => q.unit === unit && q.lesson === selectedLesson);
+    const unseen = fisherYates(unitQs.filter(q => !allStats[q.id] || allStats[q.id].attempts === 0));
+    const seen   = fisherYates(unitQs.filter(q => allStats[q.id] && allStats[q.id].attempts > 0));
+    setUnitQuestions([...unseen, ...seen]);
+    setMode('quiz');
+    setAppState('quiz');
   };
 
-  // useEffect ile unitQuestions'ı questions değişince güncelle (loadUnitQuestions bittiğinde)
-  useEffect(() => {
-    if (appState === 'quiz' && selectedUnit && questions.length > 0) {
-      setUnitQuestions(buildUnitQueue(questions, selectedLesson, selectedUnit, loadAllStats()));
-    }
-  }, [questions, appState, selectedUnit, selectedLesson]);
   const handleComplete = (answers: AnswerDetail[]) => {
     const correct = answers.filter(a => a.state === 'correct').length;
     const incorrect = answers.filter(a => a.state === 'incorrect').length;
@@ -429,7 +397,7 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
   const handleGoBack = useCallback(() => {
     switch (appState) {
       case 'quiz':
-        setUnitQuestions([]); // Önceki üniteden kalan soru havuzunu temizle
+        setUnitQuestions([]);
         setAppState(mode === 'exam' ? 'select-lesson' : 'select-unit');
         break;
       case 'select-unit':
@@ -455,7 +423,6 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
     }
   }, [appState, mode, isFavoritesExam]);
 
-  // Mobil geri tuşu desteği (History API)
   useEffect(() => {
     if (appState !== 'select-lesson') {
       window.history.pushState({ appState }, '');
@@ -482,16 +449,11 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
     URL.revokeObjectURL(url);
   };
 
-  const handleStartExam = async (amount: number) => {
+  const handleStartExam = (amount: number) => {
     setExamLoading(true);
     try {
-      // Seçili üniteler için soru içeriklerini paralel çek (metadata-tabanlı seçimden sonra)
-      const unitRows = await Promise.all(
-        examUnits.map(({ lesson, unit }) => fetchQuestionsByUnit(lesson, unit))
-      );
-      const allQs = unitRows.flat().map(rowToQuestion);
       const pool = buildExamPool(
-        allQs,
+        questions,
         examUnits,
         loadAllStats(),
         amount,
@@ -502,13 +464,12 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
       setAppState('quiz');
       clearResumableSession().catch(() => { });
     } catch (e) {
-      alert('Sorular yüklenemedi: ' + errMsg(e));
+      alert('Sınav havuzu oluşturulamadı: ' + errMsg(e));
     } finally {
       setExamLoading(false);
     }
   };
 
-  // BUG-006: Ünite modunda unitQuestions (shuffled+unseen-first), exam modunda examQuestions
   const activeQuestions = mode === 'exam'
     ? examQuestions
     : (unitQuestions.length > 0 ? unitQuestions : questions.filter(q => q.unit === selectedUnit && q.lesson === selectedLesson));
@@ -517,7 +478,6 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
 
   return (
     <div className={`h-screen ${theme.bg} ${theme.text} selection:bg-indigo-500/20 font-sans overflow-hidden flex flex-col`}>
-      {/* ── HEADER ─────────────────────────────────────── */}
       <header className={`${theme.headerBg} backdrop-blur-2xl border-b ${theme.border} z-50 shrink-0`}>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
           <div className="flex items-center gap-2.5 cursor-pointer group" onClick={handleGoBack}>
@@ -549,7 +509,6 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
             >
               <Settings size={18} />
             </button>
-            {/* Auth butonu */}
             <button
               onClick={() => setShowAuth(true)}
               className={`p-2 rounded-xl transition-all ${user ? 'text-indigo-400 hover:bg-indigo-500/10' : `${theme.subtext} hover:bg-white/[0.06]`}`}
@@ -574,7 +533,6 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
         </div>
       </header>
 
-      {/* ── MAIN CONTENT ───────────────────────────────── */}
       <main className="flex-1 overflow-y-auto w-full max-w-[1400px] mx-auto px-4 sm:px-6">
         <div className="min-h-full py-5 flex flex-col">
           {appState === 'import' ? (
@@ -598,7 +556,7 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
               <button onClick={() => loadQuestions()} className="btn btn-secondary btn-sm mt-2">Tekrar Dene</button>
             </div>
           ) : appState === 'analytics' ? (
-            <AnalyticsDashboard questions={questions} metadata={metadata} theme={theme} />
+            <AnalyticsDashboard questions={questions} theme={theme} />
           ) : appState === 'error-analysis' ? (
             <ErrorAnalyticsView questions={questions} stats={loadAllStats()} theme={theme} />
           ) : appState === 'simulation-setup' ? (
@@ -626,7 +584,7 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
             <LessonSelection
               lessons={availableLessons}
               onSelect={handleLessonSelect}
-              totalQuestions={metadata.length}
+              totalQuestions={questions.length}
               onDelete={handleDeleteLesson}
               onRename={handleRenameLesson}
               onDenemeClick={() => setAppState('select-deneme')}
@@ -639,7 +597,7 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
               } : null}
               onResumeClick={handleResumeSession}
               onResumeClear={handleClearSession}
-              favoritesCount={metadata.filter(q => q.quality_flag === 'favorite').length || questions.filter(q => q.is_favorite).length}
+              favoritesCount={questions.filter(q => q.is_favorite).length}
               weakCount={getWeakQuestionIds().length}
               onWeakClick={handleWeakQuestionsClick}
               dueCount={getDueForReviewIds().length}
@@ -659,16 +617,16 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
           ) : appState === 'source-books' ? (
             <SourceBooksView questions={questions} onBack={() => setAppState('select-lesson')} theme={theme} />
           ) : appState === 'select-deneme' ? (
-            <DenemeSelection metadata={metadata} onNext={(units) => { setExamUnits(units); setIsFavoritesExam(false); setAppState('select-deneme-amount'); }} onCancel={() => setAppState('select-lesson')} isFavoritesMode={false} theme={theme} />
+            <DenemeSelection questions={questions} onNext={(units) => { setExamUnits(units); setIsFavoritesExam(false); setAppState('select-deneme-amount'); }} onCancel={() => setAppState('select-lesson')} isFavoritesMode={false} theme={theme} />
           ) : appState === 'select-favorites' ? (
-            <DenemeSelection metadata={metadata} onNext={(units) => { setExamUnits(units); setIsFavoritesExam(true); setAppState('select-deneme-amount'); }} onCancel={() => setAppState('select-lesson')} isFavoritesMode={true} theme={theme} />
+            <DenemeSelection questions={questions.filter(q => q.is_favorite)} onNext={(units) => { setExamUnits(units); setIsFavoritesExam(true); setAppState('select-deneme-amount'); }} onCancel={() => setAppState('select-lesson')} isFavoritesMode={true} theme={theme} />
           ) : appState === 'select-deneme-amount' ? (
-            <DenemeAmountSelection selectedUnits={examUnits} metadata={metadata} loading={examLoading} onStart={handleStartExam} onCancel={() => setAppState('select-deneme')} theme={theme} />
+            <DenemeAmountSelection selectedUnits={examUnits} questions={isFavoritesExam ? questions.filter(q => q.is_favorite) : questions} loading={examLoading} onStart={handleStartExam} onCancel={() => setAppState('select-deneme')} theme={theme} />
           ) : appState === 'select-unit' ? (
             <UnitSelection 
               lesson={selectedLesson} 
               units={unitsForLesson} 
-              metadata={metadata} // Pass metadata instead of full questions
+              questions={questions}
               onSelect={handleUnitSelect} 
               onDelete={handleDeleteUnit} 
               onRename={handleRenameUnit} 
@@ -710,7 +668,6 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
               dueCount={getDueForReviewIds().length}
               onStartReview={handleDueReviewClick}
               onStartWeakUnit={(lesson, unit) => {
-                // FIX: handleUnitSelect mantığı — unseen önce, her grup Fisher-Yates shuffle
                 setSelectedLesson(lesson);
                 setSelectedUnit(unit);
                 setUnitQuestions(buildUnitQueue(questions, lesson, unit, loadAllStats()));
@@ -752,13 +709,9 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
   );
 }
 
-/* ═══════════════════════════════════════════════════════════
-   LESSON SELECTION — Bento Grid Home Page
-   ═══════════════════════════════════════════════════════════ */
 function LessonSelection({ lessons, onSelect, totalQuestions, onDelete, onRename, onDenemeClick, onFavoritesClick, hasResume, resumeInfo, onResumeClick, onResumeClear, favoritesCount, weakCount, onWeakClick, dueCount, onDueClick, onSyncStats, syncStatus, onSimulationClick, onDailyPlanClick, onSmartStudyClick, theme }: { lessons: string[]; onSelect: (l: string) => void; totalQuestions: number; onDelete: (l: string, e: React.MouseEvent) => void; onRename: (l: string, e: React.MouseEvent) => void; onDenemeClick: () => void; onFavoritesClick: () => void; hasResume: boolean; resumeInfo: { answeredCount: number; totalCount: number; remaining: number } | null; onResumeClick: () => void; onResumeClear: () => void; favoritesCount: number; weakCount: number; onWeakClick: () => void; dueCount: number; onDueClick: () => void; onSyncStats: () => void; syncStatus: string; onSimulationClick: () => void; onDailyPlanClick: () => void; onSmartStudyClick: () => void; theme: Theme }) {
   return (
     <div className="anim-slide-up w-full">
-      {/* Hero */}
       <div className="mb-8">
         <h2 className="text-3xl sm:text-4xl font-black tracking-tight mb-1">
           Hoş Geldin<span className="gradient-text">.</span>
@@ -768,7 +721,6 @@ function LessonSelection({ lessons, onSelect, totalQuestions, onDelete, onRename
         </p>
       </div>
 
-      {/* Resume Banner */}
       {hasResume && resumeInfo && (
         <div className={`mb-6 p-4 ${theme.cardGlass} rounded-2xl flex items-center justify-between gap-4 anim-fade-in border-l-2 border-indigo-400`}>
           <div className="flex items-center gap-3">
@@ -789,10 +741,8 @@ function LessonSelection({ lessons, onSelect, totalQuestions, onDelete, onRename
         </div>
       )}
 
-      {/* Quick Action Bento Grid */}
       {totalQuestions > 0 && (
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-8 stagger-children">
-          {/* FSRS Due Review */}
           {dueCount > 0 && (
             <button onClick={onDueClick} className={`stagger-item ${theme.cardGlass} rounded-2xl p-4 text-left card-hover group border-l-2 border-violet-400/50`}>
               <div className="w-8 h-8 rounded-xl bg-violet-500/15 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
@@ -804,7 +754,6 @@ function LessonSelection({ lessons, onSelect, totalQuestions, onDelete, onRename
             </button>
           )}
 
-          {/* Weak Questions */}
           {weakCount > 0 && (
             <button onClick={onWeakClick} className={`stagger-item ${theme.cardGlass} rounded-2xl p-4 text-left card-hover group border-l-2 border-red-400/50`}>
               <div className="w-8 h-8 rounded-xl bg-red-500/15 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
@@ -816,7 +765,6 @@ function LessonSelection({ lessons, onSelect, totalQuestions, onDelete, onRename
             </button>
           )}
 
-          {/* Favorites */}
           <button onClick={onFavoritesClick} className={`stagger-item ${theme.cardGlass} rounded-2xl p-4 text-left card-hover group border-l-2 border-amber-400/50`}>
             <div className="w-8 h-8 rounded-xl bg-amber-500/15 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
               <Star size={16} className="text-amber-400" />
@@ -826,7 +774,6 @@ function LessonSelection({ lessons, onSelect, totalQuestions, onDelete, onRename
             <div className={`${theme.subtext} text-[10px] mt-1`}>İşaretlenen sorular</div>
           </button>
 
-          {/* Deneme Modu */}
           <button onClick={onDenemeClick} className={`stagger-item ${theme.cardGlass} rounded-2xl p-4 text-left card-hover group border-l-2 border-sky-400/50`}>
             <div className="w-8 h-8 rounded-xl bg-sky-500/15 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
               <Play size={16} className="text-sky-400" />
@@ -835,7 +782,6 @@ function LessonSelection({ lessons, onSelect, totalQuestions, onDelete, onRename
             <div className={`${theme.subtext} text-[10px] mt-1`}>Ünite seç, soru çöz</div>
           </button>
 
-          {/* DUS Simülasyon */}
           <button onClick={onSimulationClick} className={`stagger-item ${theme.cardGlass} rounded-2xl p-4 text-left card-hover group border-l-2 border-rose-400/50`}>
             <div className="w-8 h-8 rounded-xl bg-rose-500/15 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
               <Target size={16} className="text-rose-400" />
@@ -844,7 +790,6 @@ function LessonSelection({ lessons, onSelect, totalQuestions, onDelete, onRename
             <div className={`${theme.subtext} text-[10px] mt-1`}>Gerçek sınav formatı</div>
           </button>
 
-          {/* Günlük Plan */}
           <button onClick={onDailyPlanClick} className={`stagger-item ${theme.cardGlass} rounded-2xl p-4 text-left card-hover group border-l-2 border-orange-400/50`}>
             <div className="w-8 h-8 rounded-xl bg-orange-500/15 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
               <Calendar size={16} className="text-orange-400" />
@@ -853,7 +798,6 @@ function LessonSelection({ lessons, onSelect, totalQuestions, onDelete, onRename
             <div className={`${theme.subtext} text-[10px] mt-1`}>Bugünün takvimi</div>
           </button>
 
-          {/* Akıllı Çalışma */}
           <button onClick={onSmartStudyClick} className={`stagger-item ${theme.cardGlass} rounded-2xl p-4 text-left card-hover group border-l-2 border-emerald-400/50`}>
             <div className="w-8 h-8 rounded-xl bg-emerald-500/15 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
               <Brain size={16} className="text-emerald-400" />
@@ -862,7 +806,6 @@ function LessonSelection({ lessons, onSelect, totalQuestions, onDelete, onRename
             <div className={`${theme.subtext} text-[10px] mt-1`}>FSRS + Zayıf + Yeni</div>
           </button>
 
-          {/* Sync */}
           <button
             onClick={onSyncStats}
             disabled={syncStatus === 'syncing'}
@@ -882,7 +825,6 @@ function LessonSelection({ lessons, onSelect, totalQuestions, onDelete, onRename
         </div>
       )}
 
-      {/* Lesson Cards */}
       {lessons.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-24 gap-5 text-center">
           <div className={`w-16 h-16 rounded-2xl ${theme.cardGlass} flex items-center justify-center`}>
@@ -923,20 +865,17 @@ function LessonSelection({ lessons, onSelect, totalQuestions, onDelete, onRename
   );
 }
 
-/* ═══════════════════════════════════════════════════════════
-   UNIT SELECTION
-   ═══════════════════════════════════════════════════════════ */
-function UnitSelection({ lesson, units, metadata, onSelect, onDelete, onRename, onExportPDF, theme }: { lesson: string; units: string[]; metadata: any[]; onSelect: (u: string) => void; onDelete: (u: string, e: React.MouseEvent) => void; onRename: (u: string, e: React.MouseEvent) => void; onExportPDF: (selection: any[], title: string) => void; theme: Theme }) {
+function UnitSelection({ lesson, units, questions, onSelect, onDelete, onRename, onExportPDF, theme }: { lesson: string; units: string[]; questions: Question[]; onSelect: (u: string) => void; onDelete: (u: string, e: React.MouseEvent) => void; onRename: (u: string, e: React.MouseEvent) => void; onExportPDF: (selection: any[], title: string) => void; theme: Theme }) {
   const [search, setSearch] = useState('');
   const [sortBy, setSortBy] = useState<'name' | 'progress' | 'count'>('name');
 
   const unitData = units.map(unit => {
-    const unitMeta = metadata.filter(q => q.lesson === lesson && q.unit === unit);
-    const progress = getUnitProgress(unitMeta.map(q => q.id));
+    const unitQs = questions.filter(q => q.lesson === lesson && q.unit === unit);
+    const progress = getUnitProgress(unitQs.map(q => q.id));
     const pct = progress.total > 0 ? Math.round((progress.solved / progress.total) * 100) : 0;
     const acc = progress.solved > 0 ? progress.correct / progress.solved : 0;
     const barColor = acc >= 0.7 ? 'bg-emerald-400' : acc >= 0.3 ? 'bg-amber-400' : pct > 0 ? 'bg-red-400' : 'bg-white/10';
-    return { unit, unitMeta, progress, pct, barColor };
+    return { unit, unitQs, progress, pct, barColor };
   });
 
   const filtered = unitData
@@ -944,7 +883,7 @@ function UnitSelection({ lesson, units, metadata, onSelect, onDelete, onRename, 
     .sort((a, b) => {
       if (sortBy === 'name') return a.unit.localeCompare(b.unit, 'tr');
       if (sortBy === 'progress') return b.pct - a.pct;
-      if (sortBy === 'count') return b.unitMeta.length - a.unitMeta.length;
+      if (sortBy === 'count') return b.unitQs.length - a.unitQs.length;
       return 0;
     });
 
@@ -960,12 +899,11 @@ function UnitSelection({ lesson, units, metadata, onSelect, onDelete, onRename, 
             <p className={`${theme.subtext} text-xs font-medium`}>{units.length} ünite</p>
           </div>
         </div>
-        <button onClick={() => onExportPDF(metadata.filter(q => q.lesson === lesson), `${lesson} Soruları`)} className="btn btn-ghost btn-sm">
+        <button onClick={() => onExportPDF(questions.filter(q => q.lesson === lesson), `${lesson} Soruları`)} className="btn btn-ghost btn-sm">
           <FileText size={14} /> PDF
         </button>
       </div>
 
-      {/* Arama + Sıralama */}
       <div className="flex items-center gap-2.5 mb-4">
         <input
           type="text"
@@ -991,12 +929,12 @@ function UnitSelection({ lesson, units, metadata, onSelect, onDelete, onRename, 
         {filtered.length === 0 && (
           <p className={`${theme.subtext} text-sm text-center py-8`}>"{search}" için sonuç bulunamadı.</p>
         )}
-        {filtered.map(({ unit, unitMeta, pct, barColor }) => (
+        {filtered.map(({ unit, unitQs, pct, barColor }) => (
           <div key={unit} onClick={() => onSelect(unit)} className={`stagger-item cursor-pointer w-full flex items-center justify-between p-4 ${theme.card} ${theme.cardHover} rounded-2xl transition-all text-left group card-hover`}>
             <div className="overflow-hidden pr-4 flex-1">
               <span className="text-sm font-bold group-hover:translate-x-0.5 transition-transform block truncate">{unit}</span>
               <div className="flex items-center gap-3 mt-1.5 w-full">
-                <span className={`${theme.subtext} text-[10px] font-bold shrink-0`}>{unitMeta.length} soru</span>
+                <span className={`${theme.subtext} text-[10px] font-bold shrink-0`}>{unitQs.length} soru</span>
                 <div className="flex-1 h-1 bg-white/[0.04] rounded-full overflow-hidden">
                   <div className={`h-full rounded-full transition-all duration-1000 ${barColor}`} style={{ width: `${pct}%` }} />
                 </div>
@@ -1018,11 +956,8 @@ function UnitSelection({ lesson, units, metadata, onSelect, onDelete, onRename, 
   );
 }
 
-/* ═══════════════════════════════════════════════════════════
-   DENEME & AMOUNT SELECTIONS
-   ═══════════════════════════════════════════════════════════ */
-function DenemeSelection({ metadata, onNext, onCancel, isFavoritesMode, theme }: {
-  metadata: QuestionMetadata[];
+function DenemeSelection({ questions, onNext, onCancel, isFavoritesMode, theme }: {
+  questions: Question[];
   onNext: (units: { lesson: string; unit: string }[]) => void;
   onCancel: () => void;
   isFavoritesMode: boolean;
@@ -1031,8 +966,7 @@ function DenemeSelection({ metadata, onNext, onCancel, isFavoritesMode, theme }:
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [search, setSearch] = useState('');
 
-  // metadata'dan ders → ünite ağacı (her zaman tam liste)
-  const grouped = metadata.reduce((acc, q) => {
+  const grouped = questions.reduce((acc, q) => {
     if (!acc[q.lesson]) acc[q.lesson] = new Set<string>();
     acc[q.lesson].add(q.unit);
     return acc;
@@ -1065,7 +999,7 @@ function DenemeSelection({ metadata, onNext, onCancel, isFavoritesMode, theme }:
 
   const totalSelected = Array.from(selected).reduce((sum, key) => {
     const [lesson, unit] = key.split('|-|');
-    return sum + metadata.filter(q => q.lesson === lesson && q.unit === unit).length;
+    return sum + questions.filter(q => q.lesson === lesson && q.unit === unit).length;
   }, 0);
 
   return (
@@ -1078,7 +1012,6 @@ function DenemeSelection({ metadata, onNext, onCancel, isFavoritesMode, theme }:
         <button onClick={onCancel} className="btn btn-ghost btn-sm">İptal</button>
       </div>
 
-      {/* Arama + Tümünü Seç/Temizle */}
       <div className="flex items-center gap-2 mb-3 shrink-0">
         <input
           type="text" value={search} onChange={e => setSearch(e.target.value)}
@@ -1097,7 +1030,7 @@ function DenemeSelection({ metadata, onNext, onCancel, isFavoritesMode, theme }:
           const units = Array.from(unitsSet).sort((a, b) => a.localeCompare(b, 'tr'));
           const allS = units.every(u => selected.has(`${lesson}|-|${u}`));
           const someS = units.some(u => selected.has(`${lesson}|-|${u}`));
-          const lessonCount = metadata.filter(q => q.lesson === lesson).length;
+          const lessonCount = questions.filter(q => q.lesson === lesson).length;
           return (
             <div key={lesson} className={`${theme.card} rounded-2xl overflow-hidden`}>
               <div className="p-3.5 flex items-center gap-3 cursor-pointer hover:bg-white/[0.03] transition-all" onClick={() => toggleLesson(lesson, units)}>
@@ -1110,7 +1043,7 @@ function DenemeSelection({ metadata, onNext, onCancel, isFavoritesMode, theme }:
               <div className={`border-t ${theme.divider} bg-black/10 px-1.5 pb-1.5`}>
                 {units.map(unit => {
                   const s = selected.has(`${lesson}|-|${unit}`);
-                  const unitCount = metadata.filter(q => q.lesson === lesson && q.unit === unit).length;
+                  const unitCount = questions.filter(q => q.lesson === lesson && q.unit === unit).length;
                   return (
                     <div key={unit} onClick={() => toggleUnit(lesson, unit)}
                       className={`p-2.5 pl-9 flex items-center gap-3 cursor-pointer hover:bg-white/[0.03] rounded-xl transition-all ${s ? 'bg-emerald-500/5' : ''}`}>
@@ -1144,9 +1077,6 @@ function DenemeSelection({ metadata, onNext, onCancel, isFavoritesMode, theme }:
   );
 }
 
-/* ═══════════════════════════════════════════════════════════
-   SIMULATION SETUP
-   ═══════════════════════════════════════════════════════════ */
 function SimulationSetup({ questions, onStart, onCancel, theme }: {
   questions: Question[];
   onStart: (questions: Question[], totalSeconds: number) => void;
@@ -1214,15 +1144,15 @@ function SimulationSetup({ questions, onStart, onCancel, theme }: {
   );
 }
 
-function DenemeAmountSelection({ selectedUnits, metadata, loading, onStart, onCancel, theme }: {
+function DenemeAmountSelection({ selectedUnits, questions, loading, onStart, onCancel, theme }: {
   selectedUnits: { lesson: string; unit: string }[];
-  metadata: QuestionMetadata[];
+  questions: Question[];
   loading: boolean;
   onStart: (a: number) => void;
   onCancel: () => void;
   theme: Theme;
 }) {
-  const max = metadata.filter(q => selectedUnits.some(su => su.lesson === q.lesson && su.unit === q.unit)).length;
+  const max = questions.filter(q => selectedUnits.some(su => su.lesson === q.lesson && su.unit === q.unit)).length;
   const [amount, setAmount] = useState(Math.min(20, max));
   useEffect(() => setAmount(prev => Math.min(prev, max)), [max]);
 
@@ -1256,19 +1186,19 @@ function DenemeAmountSelection({ selectedUnits, metadata, loading, onStart, onCa
 /* ═══════════════════════════════════════════════════════════
    RESULT VIEW & ANALYTICS DASHBOARD
    ═══════════════════════════════════════════════════════════ */
-function AnalyticsDashboard({ questions, metadata, theme }: { questions: Question[]; metadata: QuestionMetadata[]; theme: Theme }) {
+function AnalyticsDashboard({ questions, theme }: { questions: Question[]; theme: Theme }) {
   const stats = loadStreak();
   const activity = getRecentActivity(14);
   const maxActivity = Math.max(...activity.map(a => a.count), 1);
 
-  // Kapsama için metadata kullan (her zaman tam soru sayısı)
-  const allUnitStats = Array.from(new Set(metadata.map(q => q.lesson))).map(lesson => {
-    const lessonMeta = metadata.filter(q => q.lesson === lesson);
-    const lessonProgress = getUnitProgress(lessonMeta.map(q => q.id));
+  // Kapsama için questions kullan
+  const allUnitStats = Array.from(new Set(questions.map(q => q.lesson))).map(lesson => {
+    const lessonQs = questions.filter(q => q.lesson === lesson);
+    const lessonProgress = getUnitProgress(lessonQs.map(q => q.id));
     return { lesson, ...lessonProgress };
   }).sort((a, b) => (b.totalCorrects / Math.max(1, b.totalAttempts)) - (a.totalCorrects / Math.max(1, a.totalAttempts)));
 
-  const totalPossible = metadata.length;
+  const totalPossible = questions.length;
   const totalSolved = allUnitStats.reduce((a, b) => a + b.solved, 0);
   const totalAttempts = allUnitStats.reduce((a, b) => a + b.totalAttempts, 0);
   const totalCorrects = allUnitStats.reduce((a, b) => a + b.totalCorrects, 0);

@@ -84,23 +84,28 @@ async def fetch_missing(
     session: aiohttp.ClientSession,
     lesson: str | None = None,
     limit_total: int | None = None,
+    force: bool = False,
 ) -> list[dict]:
     """
     COLUMN_NAME IS NULL olan satırları çeker.
-    Eğer boyut uyumsuzluğu da kapsanmak istenirse bu fonksiyon
-    genişletilebilir; şimdilik NULL kontrolü yeterli.
+    force=True ise NULL kontrolü yapmadan tümünü çeker.
     """
-    print(f"Embedding'siz sorular ({COLUMN_NAME} IS NULL) aranıyor...")
+    if force:
+        print(f"🔄 TÜM veritabanı taranıyor (Force mode)...")
+    else:
+        print(f"🔍 Embedding'siz sorular ({COLUMN_NAME} IS NULL) aranıyor...")
+    
     all_rows: list[dict] = []
     page = 1000
     offset = 0
 
     while True:
-        params = (
-            f"select=id,question,explanation"
-            f"&{COLUMN_NAME}=is.null"
-            f"&limit={page}&offset={offset}"
-        )
+        select_clause = "select=id,question,explanation"
+        params = f"{select_clause}&limit={page}&offset={offset}"
+        
+        if not force:
+            params += f"&{COLUMN_NAME}=is.null"
+        
         if lesson:
             import urllib.parse
             params += f"&lesson=eq.{urllib.parse.quote(lesson)}"
@@ -184,7 +189,7 @@ async def _patch_one(
         return True
 
     url     = f"{SUPABASE_URL}/rest/v1/questions?id=eq.{qid}"
-    payload = {COLUMN_NAME: emb}               # kolon adı sabitten geliyor
+    payload = {COLUMN_NAME: str(emb)}               # pgvector PATCH için string cast gerekebilir
 
     async with sem:
         for attempt in range(1, MAX_PATCH_RETRY + 1):
@@ -239,6 +244,7 @@ async def backfill(
     lesson: str | None = None,
     limit_total: int | None = None,
     dry_run: bool = False,
+    force: bool = False,
 ) -> None:
     if not _oa_client:
         print("❌ OpenAI API Key eksik veya openai kütüphanesi yüklü değil!")
@@ -251,10 +257,10 @@ async def backfill(
     t_start    = time.time()
 
     print(f"\n{'='*60}")
-    print(f"  DUSBANKASI Backfill v2")
+    print(f"  DUSBANKASI Backfill v2.1 (Force Support)")
     print(f"  Model  : {EMBED_MODEL} ({TARGET_DIM}-dim)")
     print(f"  Kolon  : {COLUMN_NAME}")
-    print(f"  Mod    : {'DRY-RUN' if dry_run else 'GERÇEK YAZMA'}")
+    print(f"  Mod    : {'DRY-RUN' if dry_run else ('FORCE ALL' if force else 'PATCH GAPS')}")
     if lesson:
         print(f"  Ders   : {lesson}")
     if limit_total:
@@ -262,7 +268,7 @@ async def backfill(
     print(f"{'='*60}\n")
 
     async with aiohttp.ClientSession() as session:
-        rows = await fetch_missing(session, lesson=lesson, limit_total=limit_total)
+        rows = await fetch_missing(session, lesson=lesson, limit_total=limit_total, force=force)
         if not rows:
             print("İşlem tamam — güncellenecek soru yok.")
             return
@@ -356,12 +362,14 @@ def main() -> None:
     parser.add_argument("--lesson",  type=str,  default=None,  help="Sadece bu dersi işle")
     parser.add_argument("--limit",   type=int,  default=None,  help="Maksimum soru sayısı")
     parser.add_argument("--dry-run", action="store_true",       help="DB'ye yazmadan test et")
+    parser.add_argument("--force",   action="store_true",       help="Hali hazırda embedding olanları da yeniden vektörle")
     args = parser.parse_args()
 
     asyncio.run(backfill(
         lesson=args.lesson,
         limit_total=args.limit,
         dry_run=args.dry_run,
+        force=args.force,
     ))
 
 

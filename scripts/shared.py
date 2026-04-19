@@ -172,10 +172,15 @@ def extract_json(text):
 # ═══════════════════════════════════════════════
 
 def save_checkpoint(questions, lesson_name, unit_name, tag="pending"):
-    """Supabase yazımı öncesi soruları metadata ile birlikte yerel dosyaya yazar."""
-    safe_name = re.sub(r'[^\w\s-]', '', f"{lesson_name}_{unit_name}_{tag}")
+    """Supabase yazımı öncesi soruları metadata ile birlikte yerel dosyaya yazar.
+    
+    FIX: Dosya adına zaman damgası eklenerek farklı batch'lerin birbirinin
+    üzerine yazması engellendi.
+    """
+    safe_name = re.sub(r'[^\w\s-]', '', f"{lesson_name}_{unit_name}")
     safe_name = safe_name.replace(" ", "_")
-    filepath = os.path.join(RECOVERY_DIR, f"{safe_name}.json")
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    filepath = os.path.join(RECOVERY_DIR, f"{safe_name}_{ts}_{tag}.json")
     envelope = {
         "lesson": lesson_name,
         "unit": unit_name,
@@ -284,8 +289,20 @@ def get_questions_for_unit(lesson_name, unit_name):
     )
 
 
+# Büyük payload'larda (özellikle embedding vektörleri dahilken) Supabase HTTP 500
+# hatası veriyor. Chunk boyutu 10 olarak sabitlendi.
+_SUPABASE_WRITE_CHUNK = 10
+
+
 def _write_to_supabase(questions, lesson_name, unit_name):
-    """Saf HTTP yazma — checkpoint yönetimi yapmaz. Başarılıysa True döner."""
+    """Saf HTTP yazma — checkpoint yönetimi yapmaz. Başarılıysa True döner.
+    
+    FIX: Büyük batch'lerde oluşan HTTP 500 hatasını engellemek için
+    sorular _SUPABASE_WRITE_CHUNK'lık (10) gruplara bölünerek yazılır.
+    lesson ve unit değerleri her zaman parametre üzerinden gelir;
+    AI modelinin q["lesson"] / q["unit"] alanları IGNORED — bu sayede
+    modelin serbest ürettiği lesson/unit string'leri DB'ye asla yazmaz.
+    """
     url = f"{SUPABASE_URL}/rest/v1/questions"
     headers = {
         "apikey": SUPABASE_KEY,
@@ -294,11 +311,11 @@ def _write_to_supabase(questions, lesson_name, unit_name):
         "Prefer": "return=minimal"
     }
 
-    rows = []
-    semantic_texts = []
-    for q in questions:
-        semantic_texts.append(f"{q.get('question', '')} {q.get('explanation', '')}")
-    
+    # ── Embedding al (tüm batch için tek istekte) ──
+    semantic_texts = [
+        f"{q.get('question', '')} {q.get('explanation', '')}"
+        for q in questions
+    ]
     embeddings = []
     if openai_client and semantic_texts:
         try:
@@ -310,11 +327,14 @@ def _write_to_supabase(questions, lesson_name, unit_name):
         except Exception as e:
             print(f"   ⚠️ OpenAI Embedding hatası (sorular embeddingsiz eklenecek): {e}")
 
+    # ── Row'ları oluştur ──
+    rows = []
     for i, q in enumerate(questions):
         opts = q.get("options", {})
         row = {
-            "lesson": lesson_name,
-            "unit": unit_name,
+            # lesson/unit DAIMA parametre üzerinden gelir — AI çıktısı ignore edilir
+            "lesson": lesson_name.strip(),
+            "unit": unit_name.strip(),
             "question": q.get("question", ""),
             "option_a": opts.get("A", ""),
             "option_b": opts.get("B", ""),
@@ -326,18 +346,27 @@ def _write_to_supabase(questions, lesson_name, unit_name):
         }
         if embeddings and i < len(embeddings):
             row["embedding"] = embeddings[i]
-            
         rows.append(row)
 
-    payload = json.dumps(rows, ensure_ascii=False).encode("utf-8")
-    req = urllib.request.Request(url, data=payload, headers=headers, method="POST")
-    try:
-        urllib.request.urlopen(req)
-        print(f"   ✅ {len(rows)} soru Supabase'e yazıldı → [{unit_name}]")
-        return True
-    except Exception as e:
-        print(f"   ❌ Supabase Hatası: {e}")
-        return False
+    # ── Chunked yazma (HTTP 500 engelleyici) ──
+    import time as _time
+    total_written = 0
+    for chunk_start in range(0, len(rows), _SUPABASE_WRITE_CHUNK):
+        chunk = rows[chunk_start:chunk_start + _SUPABASE_WRITE_CHUNK]
+        payload = json.dumps(chunk, ensure_ascii=False).encode("utf-8")
+        req = urllib.request.Request(url, data=payload, headers=headers, method="POST")
+        try:
+            urllib.request.urlopen(req)
+            total_written += len(chunk)
+        except Exception as e:
+            print(f"   ❌ Supabase Chunk Hatası ({chunk_start}-{chunk_start+len(chunk)}): {e}")
+            return False
+        # Supabase rate-limit'e karşı kısa bekleme
+        if chunk_start + _SUPABASE_WRITE_CHUNK < len(rows):
+            _time.sleep(0.5)
+
+    print(f"   ✅ {total_written} soru Supabase'e yazıldı → [{unit_name}]")
+    return True
 
 
 # ═══════════════════════════════════════════════
