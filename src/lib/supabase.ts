@@ -49,7 +49,7 @@ export type QuestionMetadata = {
 
 const SELECT_COLS = 'id,lesson,unit,question,option_a,option_b,option_c,option_d,option_e,correct_answer,explanation,created_at,is_favorite,flagged,flag_reason,quality_flag';
 const METADATA_COLS = 'id,lesson,unit,quality_flag';
-const PAGE_SIZE  = 2000;
+const PAGE_SIZE = 1000;
 
 /**
  * Üretim ve performans krizi sonrası: Sadece metadata (ders/ünite listesi) yükler.
@@ -82,62 +82,52 @@ export async function fetchQuestionMetadata(): Promise<QuestionMetadata[]> {
 
 /**
  * Seçili ünitenin tüm detaylarını çeker (Lazy Load)
+ * NOT: Supabase default'u 1000 satır — büyük üniteler için pagination zorunlu.
  */
 export async function fetchQuestionsByUnit(lesson: string, unit: string): Promise<QuestionRow[]> {
-  const { data, error } = await supabase
-    .from('questions')
-    .select(SELECT_COLS)
-    .match({ lesson, unit })
-    .or('quality_flag.is.null,quality_flag.not.in.(kavramsal_kopya,auto_deleted)');
-
-  if (error) throw error;
-  return (data || []) as QuestionRow[];
-}
-
-function buildQuery(flaggedOnly: boolean, from: number) {
-  let q = supabase
-    .from('questions')
-    .select(SELECT_COLS)
-    .order('created_at', { ascending: true })
-    .range(from, from + PAGE_SIZE - 1);
-  return flaggedOnly
-    ? q.eq('quality_flag', 'kavramsal_kopya')
-    : q.or('quality_flag.is.null,quality_flag.not.in.(kavramsal_kopya,auto_deleted)');
+  const all: QuestionRow[] = [];
+  let from = 0;
+  const limit = 1000;
+  while (true) {
+    const { data, error } = await supabase
+      .from('questions')
+      .select(SELECT_COLS)
+      .match({ lesson, unit })
+      .or('quality_flag.is.null,quality_flag.not.in.(kavramsal_kopya,auto_deleted)')
+      .order('id', { ascending: true })
+      .range(from, from + limit - 1);
+    if (error) throw error;
+    if (!data || data.length === 0) break;
+    all.push(...(data as QuestionRow[]));
+    if (data.length < limit) break;
+    from += limit;
+  }
+  return all;
 }
 
 export async function fetchQuestions(flaggedOnly = false): Promise<QuestionRow[]> {
-  // 1. Sayfa: ilk veriyi al (Stabil sıralama ile)
-  const { data: first, error: e1, count } = await supabase
-    .from('questions')
-    .select(SELECT_COLS, { count: 'exact' })
-    .order('id', { ascending: true })
-    .range(0, PAGE_SIZE - 1)
-    .or(flaggedOnly
-      ? 'quality_flag.eq.kavramsal_kopya'
-      : 'quality_flag.is.null,quality_flag.not.in.(kavramsal_kopya,auto_deleted)');
+  async function fetchPage(from: number): Promise<QuestionRow[]> {
+    let q = supabase
+      .from('questions')
+      .select(SELECT_COLS)
+      .order('id', { ascending: true })
+      .range(from, from + PAGE_SIZE - 1);
 
-  if (e1) throw new Error(e1.message);
-  if (!first || first.length === 0) return [];
+    const { data, error } = flaggedOnly
+      ? await q.eq('quality_flag', 'kavramsal_kopya')
+      : await q.or('quality_flag.is.null,quality_flag.not.in.(kavramsal_kopya,auto_deleted)');
 
-  // Count yanlış olsa bile fetching loop'u terminal şarta kadar devam etmeli.
-  // Ancak mevcut fetchQuestions mimarisi paralel çalıştığı için total'a güveniyor.
-  // Bunu da stabilize ediyoruz.
-  const total = count ?? first.length;
-  if (total <= PAGE_SIZE) return first as QuestionRow[];
+    if (error) throw new Error(error.message);
+    if (!data || data.length === 0) return [];
 
-  // Kalan sayfaları paralel çek
-  const offsets: number[] = [];
-  for (let off = PAGE_SIZE; off < total; off += PAGE_SIZE) offsets.push(off);
+    if (data.length === PAGE_SIZE) {
+      const next = await fetchPage(from + PAGE_SIZE);
+      return [...(data as QuestionRow[]), ...next];
+    }
+    return data as QuestionRow[];
+  }
 
-  const pages = await Promise.all(
-    offsets.map(async (off) => {
-      const { data, error } = await buildQuery(flaggedOnly, off);
-      if (error) throw new Error(error.message);
-      return (data ?? []) as QuestionRow[];
-    })
-  );
-
-  return [first as unknown as QuestionRow[], ...pages].flat();
+  return fetchPage(0);
 }
 
 export async function importQuestions(questions: ImportQuestion[]): Promise<number> {
