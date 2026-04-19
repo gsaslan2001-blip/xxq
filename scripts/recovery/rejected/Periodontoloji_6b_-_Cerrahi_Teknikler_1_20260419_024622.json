@@ -1,0 +1,24 @@
+{
+  "lesson": "Periodontoloji",
+  "unit": "6.b - Cerrahi Teknikler 1",
+  "rejected_at": "2026-04-19T02:46:22.630657",
+  "items": [
+    {
+      "question": {
+        "lesson": "Periodontoloji",
+        "unit": "Periodontal Rejeneratif Cerrahi ve Greftler",
+        "question": "Kırk beş yaşındaki erkek hastaya, derin intraosseöz defektin tedavisi için kendi kanından santrifüj edilerek hazırlanan L-PRF (Lökosit ve Trombositten Zengin Fibrin) uygulanmıştır. Pıhtılaşma kaskadı ve yara iyileşmesi sürecinde makrofaj, fibroblast ve endotel hücrelerini bölgeye çekerek süreci başlatan temel trombosit kaynaklı (platelet derived) büyüme faktörü aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Amelogenin",
+          "B": "İnsülin benzeri büyüme faktörü-1 (IGF-1)",
+          "C": "Epidermal büyüme faktörü (EGF)",
+          "D": "Trombosit kaynaklı büyüme faktörü (PDGF)",
+          "E": "Vasküler endotelyal büyüme faktörü (VEGF)"
+        },
+        "correctAnswer": "D",
+        "explanation": "PDGF (Trombosit Kaynaklı Büyüme Faktörü), L-PRF'nin trombosit granüllerinden salınan ve makrofaj, fibroblast ile endotel hücrelerini yara bölgesine kemotaktik olarak çeken anahtar sitokindir. Bu migrasyon ve aktivasyon döngüsü, yara iyileşmesinin proliferatif fazını doğrudan başlatır."
+      },
+      "reason": "bilgi_sizintisi:overlap_0.80"
+    }
+  ]
+}

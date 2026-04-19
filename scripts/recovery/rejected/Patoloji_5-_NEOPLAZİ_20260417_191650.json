@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "5- NEOPLAZİ",
+  "rejected_at": "2026-04-17T19:16:50.732416",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Tümör Biyolojisi",
+        "question": "Tümör dokusunun 1-2 mm çapı aştıktan sonra büyümeye devam edebilmesi için anjiyogenik dengeyi kendi lehine çevirmesi gerekir. Aşağıdakilerden hangisi ECM yıkımı sonucunda salınan ve anjiyogenezi durduran endojen inhibitörlerden biri **değildir**?",
+        "options": {
+          "A": "Anjiyostatin",
+          "B": "Endostatin",
+          "C": "Vasküler Endotelyal Büyüme Faktörü (VEGF)",
+          "D": "Vaskülostatin",
+          "E": "Trombospondin-1"
+        },
+        "correctAnswer": "C",
+        "explanation": "Vasküler Endotelyal Büyüme Faktörü (VEGF), anjiyogenezi durduran değil, başlatan ve stimüle eden en güçlü aktivatördür. Plazminojen yıkımından anjiyostatin, kollajen yıkımından endostatin, transtiretin yıkımından vaskülostatin ve p53 uyarısıyla sentezlenen Trombospondin-1 anjiyogenezin endojen inhibitörleri olarak dengeyi kurar. Tümör bu dengeyi VEGF lehine bozarak kanlanır."
+      },
+      "reason": "uzunluk_biasi:correct=41ch_avg_other=12ch"
+    }
+  ]
+}

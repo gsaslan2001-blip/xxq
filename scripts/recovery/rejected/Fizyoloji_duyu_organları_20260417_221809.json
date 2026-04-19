@@ -1,0 +1,75 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "duyu organları",
+  "rejected_at": "2026-04-17T22:18:09.253037",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Sinir Sistemi ve Duyu Organları",
+        "question": "Işık uyarısının retina reseptörlerinde oluşturduğu elektrofizyolojik yanıtla ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Koni ve basil hücrelerinde istirahat potansiyeli -40 mV civarındadır",
+          "B": "Işık uyarısı reseptör membranında hiperpolarizasyon yaratır",
+          "C": "İç segmentteki Na+-K+ ATPaz pompası ışık varlığında da çalışmaya devam eder",
+          "D": "Karanlık ortamda reseptörün dış segmentindeki sodyum kanalları tamamen kapalıdır",
+          "E": "Hiperpolarizasyon durumu sinaptik transmitter salınımını azaltır"
+        },
+        "correctAnswer": "D",
+        "explanation": "Karanlıkta fotoreseptörlerin dış segmentindeki cGMP bağımlı sodyum kanalları açıktır ('karanlık akımı' - dark current); bu nedenle hücre depolarize (-40 mV) kalır ve sürekli transmitter salgılar. Işık, bu kanalları kapatıp hücreyi hiperpolarize ederek transmitter salınımını durdurur, bu da bir sonraki nörondaki inhibisyonu kaldırıp eksitasyon yaratır. D şıkkındaki 'karanlıkta kanalların kapalı olması' mantıksal olarak tam tersi bir kavram yanılgısıdır."
+      },
+      "reason": "kisa_stem:12kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Sinir Sistemi ve Duyu Organları",
+        "question": "Koku duyusunun hücresel ve moleküler mekanizmaları ile ilgili aşağıda verilen ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Koku reseptör hücreleri, histolojik olarak bipolar nöron yapısındadır",
+          "B": "Koku nöronları yetişkinlikte de bölünüp çoğalma yeteneğine sahip nadir sinir hücreleridir",
+          "C": "Koku molekülü mukus tabakasında çözündükten sonra uyarımı başlatır",
+          "D": "Doğadaki her bir koku molekülü için spesifik, tek tip bir reseptör hücresi bulunur",
+          "E": "Eşik değere ulaşan sinyaller N. olfactorius ile koku bulbusuna taşınır"
+        },
+        "correctAnswer": "D",
+        "explanation": "Koku sisteminde 'kokulara özel reseptör hücresi yoktur'. Bipolar koku nöronları birden fazla koku molekülüne yanıt verebilir ve algılanan spesifik koku, aktive olan reseptör popülasyonlarının beyindeki kombinatoryal şifrelenmesiyle (pattern recognition) belirlenir. Bu hücrelerin mitozla bölünebilen nadir nöronlardan olması da klinik yenilenme açısından kritiktir."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Sinir Sistemi ve Duyu Organları",
+        "question": "Besinlerin asidik içeriğinin algılanmasını sağlayan 'ekşi' tat duyusunun kemotransdüksiyon mekanizması aşağıdakilerden hangisine dayanır?",
+        "options": {
+          "A": "Mekanik kapılı iyon kanallarının hidrojenle açılması",
+          "B": "H+ iyonlarının ENaC ve HCN kanallarından hücreye girerek K+ kanallarını kapatması",
+          "C": "Gustducin proteini aracılığıyla IP3 artışının tetiklenmesi",
+          "D": "Monosodyum glutamatın metabotropik reseptörleri uyarması",
+          "E": "G proteini aktivasyonuna ihtiyaç duymadan doğrudan T1R3 reseptörüne bağlanılması"
+        },
+        "correctAnswer": "B",
+        "explanation": "Ekşi tat duyusu ortama salınan H+ (hidrojen) iyonları tarafından oluşturulur. Bu iyonlar ENaC (amilorid duyarlı epitelyal Na+ kanalı) ve HCN (hiperpolarizasyonla aktive olan siklik nükleotid kapılı kanal) kanalları aracılığıyla hücre içine girer ve potasyum (K+) sızıntı kanallarını bloke ederek depolarizasyona yol açar. Gustducin tatlı ve acı yollarında çalışır."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Sinir Sistemi ve Duyu Organları",
+        "question": "Retinadaki reseptör hücrelerinin (fotoreseptörler) dağılımı ve fonksiyonel özellikleri ile ilgili aşağıdakilerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Fovea sentralis, görmenin netlik kazandığı ve konilerin en yoğun olduğu alandır",
+          "B": "Konilerin ışığa yanıt verebilmesi için yüksek ışık şiddetine ihtiyaç vardır",
+          "C": "Basiller fovea dışı periferik retinada daha yoğun olarak konumlanmıştır",
+          "D": "Basil reseptörleri renkli vizyondan ve gün ışığında net görmeden sorumludur",
+          "E": "Rodopsin yapısındaki sorunlar (örn. A vitamini eksikliği) öncelikle gece görmeyi bozar"
+        },
+        "correctAnswer": "D",
+        "explanation": "Basiller (Rods) sadece ışık varlığı/yokluğu (siyah-beyaz) bilgisini düşük ışık şiddetinde (skotopik görme/gece) işlerler; renkli ve net vizyondan kesinlikle sorumlu DEĞİLLERDİR. Gündüz (fotopik) ve renkli görmeden tamamen koni hücreleri (Retinal + opsin tipleri) sorumludur. Koni ve basilin fonksiyonlarının karıştırılması klasik bir distraktör tekniğidir."
+      },
+      "reason": "kisa_stem:13kelime"
+    }
+  ]
+}

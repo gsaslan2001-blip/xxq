@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "Vezikülobüllöz hastalıklar",
+  "rejected_at": "2026-04-17T19:38:19.660046",
+  "items": [
+    {
+      "question": {
+        "lesson": "Pedodonti",
+        "unit": "Sistemik Hastalıklar",
+        "question": "Aşağıdakilerden hangisi konjenital sifiliz enfeksiyonunda izlenen Hutchinson triyadının bileşenlerinden biri **değildir**?",
+        "options": {
+          "A": "Üst daimi kesicilerde insizal çentiklenme",
+          "B": "Altıncı kraniyal sinir tutulumuna bağlı strabismus",
+          "C": "Birinci daimi büyük azı dişlerinde dut biçimli deformasyon",
+          "D": "Kornea stromasında interstisyel keratit",
+          "E": "Nervus vestibulocochlearis destrüksiyonuna bağlı sağırlık"
+        },
+        "correctAnswer": "B",
+        "explanation": "Hutchinson triyadının nörolojik bileşeni 8. kraniyal sinir (Nervus vestibulocochlearis) tutulumuna bağlı sensörinöral sağırlıktır. Altıncı sinir (N. abducens) tutulumu ve strabismus bu triadda yer almaz (DUS komitelerinin favori çeldiricisidir). Diğer bileşenler; kama biçimli kesiciler/dut molarlar (dental anomali) ve interstisyel keratittir (oküler anomali)."
+      },
+      "reason": "kisa_stem:11kelime"
+    }
+  ]
+}

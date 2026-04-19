@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "4- İMMÜN SİSTEM HASTALIKLARI",
+  "rejected_at": "2026-04-17T18:57:36.833384",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "İmmün Sistem Hastalıkları",
+        "question": "Sjögren sendromunun klinik ve patolojik özellikleri göz önüne alındığında, aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "En sık eşlik eden otoimmün hastalık romatoid artrittir.",
+          "B": "Tükürük bezlerinde lenfositik ve plazma hücre infiltrasyonu görülür.",
+          "C": "SS-A (Ro) ve SS-B (La) otoantikorları sıklıkla pozitiftir.",
+          "D": "Doku hasarı duktal epitelyal antijenlere reaksiyon gösteren CD4+ T hücrelerce oluşturulur.",
+          "E": "Hastalarda T hücreli lenfoma gelişme riski belirgin şekilde artmıştır."
+        },
+        "correctAnswer": "E",
+        "explanation": "Sjögren sendromunda sistemik B hücre hiperaktivitesi ve poliklonal B hücre proliferasyonu mevcut olup, bu durum hastaları Non-Hodgkin B hücreli lenfoma (marjinal zon) açısından 40 kat yüksek riske sokar; T hücreli lenfoma riski artmaz. Doku hasarını CD4+ T hücreler başlatsa da maligniteye dönüşen komponent her zaman hiperaktif B hücreleridir."
+      },
+      "reason": "kisa_stem:13kelime"
+    }
+  ]
+}

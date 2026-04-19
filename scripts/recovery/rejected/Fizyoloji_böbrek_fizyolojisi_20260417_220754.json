@@ -1,0 +1,24 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "böbrek fizyolojisi",
+  "rejected_at": "2026-04-17T22:07:54.275319",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Böbrek Fizyolojisi",
+        "question": "Renal plazma akımını (RPA) hesaplamak isteyen bir araştırmacı, glomerüllerden filtre edildikten sonra tübüllere geçen miktarının yanı sıra, plazmada kalan kısmının da tübüllerden sekrete edilerek böbreklerden tek geçişte %90 oranında uzaklaştırıldığı bir maddeyi kullanmak zorundadır. Bu amaçla kullanılması gereken altın standart madde aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "İnülin",
+          "B": "Kreatinin",
+          "C": "Üre",
+          "D": "Para-aminohippurik asit (PAH)",
+          "E": "Glikoz"
+        },
+        "correctAnswer": "D",
+        "explanation": "Para-aminohippurik asit (PAH), hem glomerüllerden filtre edildiği hem de peritübüler kapillerlerden tübül lümenine aktif olarak sekrete edildiği için tek geçişte plazmadan neredeyse tamamen (%90) temizlenir ve bu nedenle renal plazma akımının (RPA) ölçümünde kullanılır. İnülin sadece filtre edilir, ne sekrete ne de reabsorbe edilir; bu yüzden sadece GFR ölçümü için altın standarttır. Böbrek hemodinamiği hesaplamalarında bu iki markerın işlev farkı temel ölçme parametresidir."
+      },
+      "reason": "uzunluk_biasi:correct=29ch_avg_other=6ch"
+    }
+  ]
+}

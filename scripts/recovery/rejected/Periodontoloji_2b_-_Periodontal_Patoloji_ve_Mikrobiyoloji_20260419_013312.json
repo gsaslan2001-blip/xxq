@@ -1,0 +1,24 @@
+{
+  "lesson": "Periodontoloji",
+  "unit": "2.b - Periodontal Patoloji ve Mikrobiyoloji",
+  "rejected_at": "2026-04-19T01:33:13.000881",
+  "items": [
+    {
+      "question": {
+        "lesson": "Periodontoloji",
+        "unit": "Periodontal Mikrobiyoloji",
+        "question": "Bakteriyel kolonizasyonda belirleyici olan oksidasyon-redüksiyon (Eh) potansiyeli dikkate alındığında, Porphyromonas gingivalis gibi zorunlu anaeropların subgingival alanda kolonize olabilmeleri için mikroçevrenin elektriksel durumunun nasıl olması beklenir?",
+        "options": {
+          "A": "Pozitif Eh potansiyeli",
+          "B": "Nötr Eh potansiyeli",
+          "C": "Yüksek oksijen basıncı ile dengelenmiş pozitif Eh",
+          "D": "Negatif Eh potansiyeli",
+          "E": "Oksitlenmiş redoks durumu"
+        },
+        "correctAnswer": "D",
+        "explanation": "Zorunlu anaeroplar yalnızca oksijenin bulunmadığı ve elektron alma kapasitesinin düşük olduğu indirgenmiş (negatif Eh) ortamlarda üreyebilirler. Pozitif Eh oksitlenmiş ortamları ve aerop kolonizasyonu temsil ederken, subgingival plakta aerobik ve fakültatif bakterilerin oksijeni tüketmesi sonucu Eh negatife düşer ve ortam anaeroplar için uygun hale gelir."
+      },
+      "reason": "bilgi_sizintisi:overlap_0.67"
+    }
+  ]
+}

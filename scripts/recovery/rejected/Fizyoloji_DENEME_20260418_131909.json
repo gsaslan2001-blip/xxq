@@ -1,0 +1,24 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "DENEME",
+  "rejected_at": "2026-04-18T13:19:09.138994",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kardiyovasküler Sistem",
+        "question": "Doku kan akımının lokal düzenlenmesinde görev alan aşağıdaki vazoaktif moleküllerden hangisinin arteriyol düz kasları üzerinde kasıcı (vazokonstriktör) bir etki oluşturması **beklenmez**?",
+        "options": {
+          "A": "Nöropeptid Y",
+          "B": "Tromboksan A2",
+          "C": "Endotelin-1",
+          "D": "Anjiyotensin II",
+          "E": "Kalsitonin geniyle ilişkili peptid"
+        },
+        "correctAnswer": "E",
+        "explanation": "Kalsitonin geniyle ilişkili peptid (CGRP) güçlü bir vazodilatatör (gevşetici) etkiye sahip peptiddir ve lokal akımı artırır. Nöropeptid Y ise tıpkı endotelin-1, tromboksan A2 ve anjiyotensin II gibi arteriyoller üzerinde vazokonstriksiyon yaratarak damar çapını daraltan güçlü faktörlerdendir. Sempatik sinir uçlarından salınan Nöropeptid Y'nin periferik damar direnci üzerindeki belirgin kasıcı etkisi, mikrosirkülasyon hemostazı için kritik önem taşır."
+      },
+      "reason": "uzunluk_biasi:correct=34ch_avg_other=13ch"
+    }
+  ]
+}

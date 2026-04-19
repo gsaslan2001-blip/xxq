@@ -1,0 +1,24 @@
+{
+  "lesson": "Periodontoloji",
+  "unit": "6.b - Cerrahi Teknikler 1",
+  "rejected_at": "2026-04-19T02:37:18.806572",
+  "items": [
+    {
+      "question": {
+        "lesson": "Periodontoloji",
+        "unit": "Periodontal Cerrahi Tedavi Yöntemleri",
+        "question": "Aşağıdaki insizyon tiplerinden hangisi, gingiva yüzeyinden alveolar kemik kretine doğru yapılan bir 'internal bevel insizyon' çeşidi **değildir**?",
+        "options": {
+          "A": "Sulkuler insizyon",
+          "B": "Krestal insizyon",
+          "C": "Submarjinal insizyon",
+          "D": "Eksternal bevel insizyon",
+          "E": "Modifiye Widman başlangıç insizyonu"
+        },
+        "correctAnswer": "D",
+        "explanation": "Eksternal bevel insizyon, dişeti yüzeyinin apikalinden koronal yöne doğru (cebe doğru) yapılan ve gingivektomide kullanılan dışa eğimli bir kesidir. Sulkuler, krestal ve submarjinal insizyonların tümü, gingiva yüzeyinden kemik kretine (apikal yöne) doğru yapılan internal bevel (içe eğimli) insizyon varyasyonlarıdır."
+      },
+      "reason": "bilgi_sizintisi:overlap_0.67"
+    }
+  ]
+}

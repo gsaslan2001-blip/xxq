@@ -1,0 +1,58 @@
+{
+  "lesson": "Patoloji",
+  "unit": "03-Pulpa Hastaliklari",
+  "rejected_at": "2026-04-17T16:16:17.080273",
+  "items": [
+    {
+      "question": {
+        "lesson": "Periodontoloji",
+        "unit": "Periodontal Hastalıklar",
+        "question": "Aşağıdaki farmakolojik ajanlardan hangisinin kullanımına bağlı olarak hastada gingival hiperplazi gelişimi **beklenmez**?",
+        "options": {
+          "A": "Karbamazepin",
+          "B": "Amlodipin",
+          "C": "Siklosporin",
+          "D": "Amoksisilin",
+          "E": "Eritromisin"
+        },
+        "correctAnswer": "D",
+        "explanation": "Gingival hiperplazi temel olarak antikonvülzanlar, kalsiyum kanal blokerleri (Amlodipin vb.), Siklosporin, Eritromisin ve oral kontraseptifler tarafından tetiklenir. En yaygın kullanılan antibiyotiklerden biri olan Amoksisilin bu yan etki spektrumunda yer almaz. Eritromisin ise makrolid grubundan bir antibiyotik olmasına rağmen hücresel kalsiyum metabolizmasına etkisiyle bu tabloya nadiren yol açabilen spesifik bir istisnadır."
+      },
+      "reason": "kisa_stem:12kelime"
+    },
+    {
+      "question": {
+        "lesson": "Periodontoloji",
+        "unit": "Periodontal Hastalıklar",
+        "question": "Gingival fibromatoz tablosu ile ilgili olarak aşağıda verilen özelliklerden hangisinin görülmesi **beklenmez**?",
+        "options": {
+          "A": "Klinikte neoplastik olmayan doku büyümesi şeklinde belirmesi",
+          "B": "Histolojik incelemede aşırı kollajenize fibröz bağ dokusu artışı",
+          "C": "Sporadik veya ailesel geçiş potansiyeline sahip olması",
+          "D": "Temel tedavisinin cerrahi eksizyon ile şekillendirme olması",
+          "E": "Lezyon zemininde lenfosit ve nötrofil ağırlıklı yoğun inflamasyon izlenmesi"
+        },
+        "correctAnswer": "E",
+        "explanation": "Gingival fibromatoz, tamamen kollajenize fibröz doku artışına bağlı gelişen hiperplastik bir tablodur ve doğası gereği inflamatuar bir süreç değildir; bu nedenle lezyon içinde inflamasyon hücreleri (lenfosit/nötrofil) izlenmez. En güçlü çeldirici olan neoplastik sanılması, klinik büyüme paterni nedeniyledir ancak tümör hücresi barındırmaz. Lezyonun yavaş, bağ dokusu kaynaklı ve antijensiz yapısı inflamatuar yanıt oluşumunu engeller."
+      },
+      "reason": "kisa_stem:12kelime"
+    },
+    {
+      "question": {
+        "lesson": "Endodonti",
+        "unit": "Pulpa Hastalıkları",
+        "question": "Kronik pulpit tablosunun patogenezi ve seyri ile ilgili aşağıda verilen ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Süregelen inflamasyon sonrası odontoblastların yerini kollajen içeren skar dokusu alır.",
+          "B": "Lezyon bölgesinde her zaman nötrofillerin mononükleer hücrelerden sayıca fazla olması beklenir.",
+          "C": "Tedavisi edilmediğinde inflamasyonun ilerlemesi sonucunda pulpanın ölümü (nekroz) kaçınılmazdır.",
+          "D": "Endodontik tedavi ve pulpanın ekstirpasyonu bu tabloda tercih edilen standart yaklaşımdır.",
+          "E": "Travmanın uzun süreli devam etmesi veya akut tablonun düzelememesi sonucu gelişir."
+        },
+        "correctAnswer": "B",
+        "explanation": "Kronik pulpit tablosuna geçişin hücresel belirteci, akut fazın yöneticisi olan nötrofillerin sahayı terk edip yerlerini makrofaj ve lenfosit gibi mononükleer inflamatuar hücrelere bırakmasıdır; nötrofil dominansı kronik değil akut pürülan evrenin özelliğidir. En güçlü çeldirici olan skar dokusu gelişimi doğrudur; odontoblastlar ölür ve onarım çabası kollajenoz fibrozisle sonuçlanır. Hastalığın geri dönülmez (irreverzibil) olması kök kanal tedavisini mutlak kılar."
+      },
+      "reason": "kisa_stem:13kelime"
+    }
+  ]
+}

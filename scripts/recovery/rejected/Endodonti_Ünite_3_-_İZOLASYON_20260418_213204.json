@@ -1,0 +1,24 @@
+{
+  "lesson": "Endodonti",
+  "unit": "Ünite 3 - İZOLASYON",
+  "rejected_at": "2026-04-18T21:32:04.128460",
+  "items": [
+    {
+      "question": {
+        "lesson": "Endodonti",
+        "unit": "İzolasyon ve Kanal Projeksiyonu",
+        "question": "Kırk beş yaşında erkek hasta, sağ alt birinci büyük azı dişindeki derin subgingival çürük şikayetiyle başvurmuştur. Klinik muayenede dişte hiç klinik kuron kalmadığı ve lastik örtü (rubber-dam) klempinin tutunabileceği mekanik alan bulunmadığı saptanmıştır. Hastanın genel sağlık durumu iyidir ve tedaviye hemen başlanması planlanmaktadır. Bu dişte izolasyon uygulamasını kolaylaştırmak amacıyla yapılabilecek en uygun cerrahi müdahale aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Cerrahi kuron yükseltme",
+          "B": "Apikal rezeksiyon",
+          "C": "Gingivektomi",
+          "D": "Ortodontik ekstrüzyon",
+          "E": "Kanal projeksiyon yöntemi"
+        },
+        "correctAnswer": "A",
+        "explanation": "Cerrahi kuron yükseltme, alveolar kemik ve diş eti seviyesini apikale taşıyarak klempin tutunabileceği sağlıklı diş dokusunu açığa çıkaran cerrahi bir işlemdir. Gingivektomi sadece yumuşak dokuyu ilgilendirirken, kuron yükseltme kemik rezeksiyonunu da içererek kalıcı izolasyon sınırı sağlar. Ortodontik ekstrüzyon ve kanal projeksiyonu bu endikasyonda kullanılabilse de soruda cerrahi yöntem sorulmuştur."
+      },
+      "reason": "bilgi_sizintisi:overlap_0.67"
+    }
+  ]
+}

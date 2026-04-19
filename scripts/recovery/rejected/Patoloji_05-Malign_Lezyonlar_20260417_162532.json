@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "05-Malign Lezyonlar",
+  "rejected_at": "2026-04-17T16:25:32.806697",
+  "items": [
+    {
+      "question": {
+        "lesson": "Ağız, Diş ve Çene Patolojisi",
+        "unit": "Oral Bölgenin Malign ve Kistik Lezyonları",
+        "question": "Ağız mukozasının verrüköz karsinomu ile ilgili olarak aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Skuamöz hücreli karsinomun iyi diferansiye bir alt tipidir.",
+          "B": "Genellikle 60 yaş üstü erkek hastalarda ortaya çıkar.",
+          "C": "Uzak dokulara ve lenf nodlarına metastaz potansiyeli çok yüksektir.",
+          "D": "En sık alveolar mukoza ve yanak mukozasında yerleşir.",
+          "E": "Histopatolojisinde düzensiz parmaksı çıkıntılar gösteren ekzofitik tümör yapısı izlenir."
+        },
+        "correctAnswer": "C",
+        "explanation": "Verrüköz karsinom, skuamöz hücreli karsinomun iyi diferansiye bir varyantıdır ve klasik SCC'ye göre hücresel atipisi daha az, metastaz potansiyeli belirgin şekilde daha düşüktür. Ekzofitik, parmaksı çıkıntılar oluşturan bu yavaş büyüyen tümör özellikle tütün emen ileri yaş erkeklerde yanak ve alveolar mukozada izlenir. Tedavisi öncelikli olarak cerrahidir."
+      },
+      "reason": "kisa_stem:11kelime"
+    }
+  ]
+}

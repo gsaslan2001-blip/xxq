@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "1- HÜCRESEL ADAPTASYONLAR HÜCRE HASARI ve ÖLÜMÜ",
+  "rejected_at": "2026-04-17T17:19:07.280642",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Hücresel Adaptasyonlar, Hasar ve Ölüm",
+        "question": "Ölüm reseptörü yolağı (ekstrinsik apoptoz) ile ilgili aşağıdaki mekanizmalardan hangisi **yanlıştır**?",
+        "options": {
+          "A": "FAS ve TNF tip 1 hücre yüzeyindeki ana ölüm reseptörleridir",
+          "B": "FAS ligandı reseptöre bağlandığında hücre içi ölüm alanları olan FADD aktive olur",
+          "C": "Sitotoksik T lenfositleri FAS ligandı sunarak hedef hücrede apoptoz başlatabilir",
+          "D": "Kaspaz-9 ekstrinsik yolakta sinyali hücre içine aktaran ilk başlatıcı enzimdir",
+          "E": "Aktive olan başlatıcı enzimler kaspaz-3 ve kaspaz-6 gibi infazcı enzimleri uyarır"
+        },
+        "correctAnswer": "D",
+        "explanation": "Kaspaz-9 ölüm reseptörü yolağında (ekstrinsik) değil, mitokondriyal yolakta (intrinsik) apoptozom kompleksi tarafından uyarılan spesifik başlatıcı kaspazdır. Ekstrinsik yolağın başlatıcı enzimleri ise kaspaz-8 ve kaspaz-10'dur. Başlatıcı kaspazlar farklı olsa da her iki yolak da kaspaz-3 ve kaspaz-6 gibi ortak cellat enzimlerde birleşerek hücre iskeletini yıkar."
+      },
+      "reason": "kisa_stem:11kelime"
+    }
+  ]
+}

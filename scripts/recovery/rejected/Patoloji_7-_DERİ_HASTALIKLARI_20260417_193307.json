@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "7- DERİ HASTALIKLARI",
+  "rejected_at": "2026-04-17T19:33:07.796278",
+  "items": [
+    {
+      "question": {
+        "lesson": "Dermatoloji ve Ağız Patolojisi",
+        "unit": "Deri Hastalıkları ve Mukokutanöz Lezyonlar",
+        "question": "Nörofibromatozis varyantları ve ilişkili protein fonksiyonları düşünüldüğünde, aşağıdakilerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Nörofibromatozis tip I, otozomal dominant geçiş gösterir.",
+          "B": "Nörofibromatozis tip II mutasyonları bilateral akustik nöromlara zemin hazırlar.",
+          "C": "Tip I sendromunda kodlanan protein nörofibromindir.",
+          "D": "Tip II sendromunda kodlanan merlin proteini hücre iskeleti sinyalini düzenler.",
+          "E": "NF2 geni (merlin) RAS hücre sinyali kaskadını negatif yönde baskılar."
+        },
+        "correctAnswer": "E",
+        "explanation": "RAS sinyal yolağını negatif olarak düzenleyen tümör baskılayıcı gen NF1'dir ve nörofibromin proteinini kodlar; NF2 geni ise merlin isimli, sadece hücre iskeleti (sitoiskelet) sinyallerini birleştiren proteinden sorumludur. Her ikisi de otozomal dominant nörokütanöz sendromlar olmakla birlikte RAS-MAPK kaskadındaki bu temel farklılık iki genotipin ayırıcı tanısında genetik ve moleküler olarak son derece esastır."
+      },
+      "reason": "kisa_stem:10kelime"
+    }
+  ]
+}

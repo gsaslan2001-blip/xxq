@@ -1,0 +1,24 @@
+{
+  "lesson": "Periodontoloji",
+  "unit": "2.b - Periodontal Patoloji ve Mikrobiyoloji",
+  "rejected_at": "2026-04-19T01:35:48.650333",
+  "items": [
+    {
+      "question": {
+        "lesson": "Periodontoloji",
+        "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+        "question": "Aşağıdaki herpes virüs tiplerinden hangisi, oral florada baskın bulunarak orolabial rekürrent lezyonlar oluşturmaktan ziyade esas olarak genital bölge ülserleri ve yenidoğan enfeksiyonlarına yol açmasıyla karakterizedir?",
+        "options": {
+          "A": "Herpes simplex virüs-1",
+          "B": "Herpes simplex virüs-2",
+          "C": "Epstein-Barr virüs",
+          "D": "Human cytomegalovirüs",
+          "E": "Varicella-zoster virüs"
+        },
+        "correctAnswer": "B",
+        "explanation": "Herpes simplex virüs-1 (HSV-1) ağırlıklı olarak herpetik gingivostomatit, orolabial lezyonlar ve herpetik dolama tablosu oluştururken; Herpes simplex virüs-2 (HSV-2) esas olarak belden aşağı lezyonlara, genital herpes enfeksiyonlarına ve doğum kanalından geçiş sırasında bulaşan ciddi yenidoğan enfeksiyonlarına neden olmaktadır."
+      },
+      "reason": "bilgi_sizintisi:overlap_0.67"
+    }
+  ]
+}

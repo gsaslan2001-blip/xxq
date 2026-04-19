@@ -1,0 +1,41 @@
+{
+  "lesson": "Patoloji",
+  "unit": "Vezikülobüllöz hastalıklar",
+  "rejected_at": "2026-04-17T19:39:00.816015",
+  "items": [
+    {
+      "question": {
+        "lesson": "Oral Patoloji",
+        "unit": "Vezikülobüllöz ve Enfeksiyöz Hastalıklar",
+        "question": "Kızamık enfeksiyonunun karakteristik histopatolojik bulgusu olan Whartin-Finkeldey dev hücrelerinin patogenezi aşağıdakilerden hangisine dayanır?",
+        "options": {
+          "A": "Granülomatöz inflamasyon zemininde makrofajların birleşmesi",
+          "B": "Enfekte epitel hücrelerinin zarlarının virüs sitopatik etkisiyle kaynaşması (füzyon)",
+          "C": "CD8+ sitotoksik T hücrelerinin keratinositlerde apoptoz indüklemesi",
+          "D": "Epitel hücrelerinde litik döngünün akantolizis yaratması",
+          "E": "Akut inflamasyona yanıt veren fibroblastların anormal kollajen sentezi"
+        },
+        "correctAnswer": "B",
+        "explanation": "Kızamık virüsünün epitel hücrelerinde yarattığı majör sitopatik etki, enfekte hücre membranlarının birbirine kaynaşmasıdır (füzyon). Bu hücresel füzyon, sitoplazmik sınırları ortadan kaldırarak nükleusların Whartin-Finkeldey dev hücreleri içinde toplanmasına neden olur. Tüberküloz veya sifilizdeki Langhans dev hücreleri hücresel bağışıklık (makrofaj) kökenliyken, kızamıktaki dev hücreler doğrudan virüsün bu birleştirici etkisine sekonderdir."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Oral Patoloji",
+        "unit": "Vezikülobüllöz ve Enfeksiyöz Hastalıklar",
+        "question": "Çocukluk çağında epidemilerle seyredebilen Koksaki (Picornaviridae) virüs enfeksiyonlarının orofasiyal patofizyolojisinde gözlenen durumlardan biri **değildir**?",
+        "options": {
+          "A": "Feçes veya damlacık yoluyla inoküle olarak lenfoid dokularda sistemik viremi başlatması",
+          "B": "Epitelyotropik afinite sayesinde hedef mukozal hücrelerde litik döngüyü tetiklemesi",
+          "C": "Diş etlerinde patognomonik şiddetli marjinal eritem ve gingival kanama tablosu yapması",
+          "D": "Yumuşak damak ve tonsil üzerinde hızla rüptüre olarak sarı-gri tabanlı ülserlere dönüşen veziküller üretmesi",
+          "E": "Ekstremite tutulumu olan formunda sert damak anterior bölgesini hedef alması"
+        },
+        "correctAnswer": "C",
+        "explanation": "Koksaki virüsü Herpanjina ve El-Ayak-Ağız hastalığı gibi vezikülobüllöz formlar yaratır, ancak diş etinde patognomonik marjinal eritem ve gingival tutulum Koksaki enfeksiyonlarında gözlenmez. Diş eti iltihabıyla karakterize şiddetli vezikül tablosu Primer Herpetik Gingivostomatit'e (HSV-1) özgüdür. Koksaki virüs lezyonları anterior (sert damak/dil) veya posterior (yumuşak damak) lokalize olur, marjinal gingivayı şiddetle tutmaz."
+      },
+      "reason": "kisa_stem:14kelime"
+    }
+  ]
+}

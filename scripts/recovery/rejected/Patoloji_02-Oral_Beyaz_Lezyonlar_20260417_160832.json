@@ -1,0 +1,75 @@
+{
+  "lesson": "Patoloji",
+  "unit": "02-Oral Beyaz Lezyonlar",
+  "rejected_at": "2026-04-17T16:08:32.585276",
+  "items": [
+    {
+      "question": {
+        "lesson": "Ağız Diş ve Çene Patolojisi",
+        "unit": "Gelişimsel Anomaliler ve Sendromlar",
+        "question": "Gelişimsel bir anomali olan dens evaginatus ile ilgili olarak aşağıdakilerden hangisi doğrudur?",
+        "options": {
+          "A": "En sık maksiller lateral kesicilerde izlenir",
+          "B": "Genellikle tek taraflı yerleşim gösterir",
+          "C": "Lingual pitin kök içine doğru abartılı uzamasıdır",
+          "D": "Oklüzal yüzeyin merkezinde pulpa uzantısı içeren sivrileşme ile seyreder",
+          "E": "Pulpal doku barındırmadığı için travmatik kırıklarda pulpa nekrozu riski taşımaz"
+        },
+        "correctAnswer": "D",
+        "explanation": "Dens evaginatus, oklüzal yüzeyin merkezinde anormal bir tüberkül (sivrileşme) ile karakterizedir ve sıklıkla premolar dişleri bilateral olarak etkiler. Ekstra tüberkülün içine doğru pulpa uzantısı bulunduğu için travma veya oklüzal aşınma durumlarında direkt pulpa açılımı ve nekrozu riski çok yüksektir. Lingual pitin içeri girmesi dens invaginatustur."
+      },
+      "reason": "kisa_stem:12kelime"
+    },
+    {
+      "question": {
+        "lesson": "Ağız Diş ve Çene Patolojisi",
+        "unit": "Oral Kavitenin Beyaz Lezyonları",
+        "question": "Witkop hastalığı (Herediter Benign İntraepitelyal Diskeratozis) ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "options": {
+          "A": "Konjonktival lezyonlar yıllar içinde malign dejenerasyon gösterir",
+          "B": "Hayatın ilk yıllarında bukkal konjonktivit ve oral beyaz plaklarla karakterizedir",
+          "C": "Genetik aktarımı tamamen otozomal resesif patern izler",
+          "D": "Oral epitelde belirgin atrofi, incelme ve ülserasyonlarla seyreder",
+          "E": "Hastalık agresif seyirli olup oral mukoza grefti gerektirir"
+        },
+        "correctAnswer": "B",
+        "explanation": "Witkop hastalığı otozomal dominant kalıtılan, hayatın ilk yıllarında bukkal konjonktivit ve korneal limbusta plaklarla beraber oral beyaz lezyonlar ile karakterize bir sendromdur. Tedavi gerektirmeyen, kendini sınırlayan bir yapıdadır ve malignite potansiyeli yoktur. Mikroskobik olarak atrofi değil, hiperplazi, akantoz ve ödem görülür."
+      },
+      "reason": "kisa_stem:11kelime"
+    },
+    {
+      "question": {
+        "lesson": "Ağız Diş ve Çene Patolojisi",
+        "unit": "Gelişimsel Anomaliler ve Diş Dokusu Hastalıkları",
+        "question": "Amelogenezis imperfekta sınıflandırmasına göre Tip IVA fenotipinin morfolojik özelliği ve genetik geçişi aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Taurodontizm ile birlikte hipomatürasyon-hipoplastik tip, Otozomal dominant",
+          "B": "Mine agenezisi ile karakterize hipoplastik tip, Otozomal resesif",
+          "C": "Karla kaplı hipomatürasyon tipi, X'e bağlı kalıtım",
+          "D": "Dağınık pigmented hipomatürasyon tipi, Otozomal resesif",
+          "E": "Dağınık pürüzlü hipokalsifiye tip, Otozomal dominant"
+        },
+        "correctAnswer": "A",
+        "explanation": "Amelogenezis imperfekta Tip IVA (ve IVB), mikst tip mine defektlerinin (hipomatürasyon ve hipoplastik) birlikte görüldüğü ve morfolojik olarak genişlemiş pulpa odası (taurodontizm) ile karakterize olan spesifik otozomal dominant alt tiplerdir. Mine bozukluğu ile pulpa odası morfolojisi kusurunun entegre olduğu tek AI sınıfıdır."
+      },
+      "reason": "kisa_stem:14kelime"
+    },
+    {
+      "question": {
+        "lesson": "Ağız Diş ve Çene Patolojisi",
+        "unit": "Gelişimsel Anomaliler ve Diş Dokusu Hastalıkları",
+        "question": "Konkresens anomalisinin temel patomekanizması ve en sık izlendiği klinik durum aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "İki dişin dentin dokularının embriyolojik birleşmesidir",
+          "B": "En sık maksiller santral ve lateral kesici dişler bölgesinde görülür",
+          "C": "Sıklıkla molar bölgede aşırı sement yapımı nedeniyle komşu iki dişin birleşmesidir",
+          "D": "Tek bir diş tomurcuğunun ikiye bölünmesiyle meydana gelen anomalidir",
+          "E": "Mine organının kök boyunca uzanarak pulpayı strangüle etmesidir"
+        },
+        "correctAnswer": "C",
+        "explanation": "Konkresens (Concrescence), embriyolojik gelişim dönemi sonrasında, özellikle travma veya dar ark aralığı gibi nedenlerle oluşan aşırı sement birikiminin yan yana duran (genellikle molar) iki dişin köklerini birbirine sement seviyesinde bağlamasıdır. Füzyon durumunda dentin veya mine katılımı varken, konkresens sadece semental (kök dış yüzeyi) bir birleşmedir."
+      },
+      "reason": "kisa_stem:12kelime"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "lesson": "Patoloji",
+  "unit": "5- NEOPLAZİ",
+  "rejected_at": "2026-04-17T19:14:16.232044",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Neoplazi",
+        "question": "TP53 geninin regülasyonu ve DNA hasarına yanıt mekanizmaları dikkate alındığında, aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "ATM protein kinazı, MDM2 aktivitesini artırarak p53 yıkımını hızlandırır.",
+          "B": "p21 proteini siklin-CDK komplekslerini inhibe ederek Rb fosforilasyonunu engeller.",
+          "C": "P53 aktivasyonu, DNA tamirinde görev yapan GADD45 seviyesini artırır.",
+          "D": "BAX ve PUMA genleri, p53 aracılı apoptoz yolağında rol alan pro-apoptotik faktörlerdir.",
+          "E": "Sağlıklı hücrelerde p53, MDM2 ile ilişkili yıkımı nedeniyle çok kısa yarı ömürlüdür."
+        },
+        "correctAnswer": "A",
+        "explanation": "ATM (ataksi telenjektazide mutasyonlu) gibi sensör kinazlar, p53'te modifikasyon katalizleyerek p53'ün MDM2'den ayrılmasını sağlar; böylece p53'ün yarı ömrünü artırarak yıkımını engeller, hızlandırmaz. En güçlü çeldirici olan p21 seçeneği doğrudur, çünkü p53 bağımlı transkripsiyonla üretilen p21, G1 arrestinin temel mekanizmasıdır. P53'ün MDM2'den kurtulup stabilize olması DNA hasar yanıtının başlatıcı kilit adımıdır."
+      },
+      "reason": "kisa_stem:14kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Neoplazi",
+        "question": "Epstein-Barr Virüsü (EBV) ve onkogenez mekanizmaları ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "EBV, B hücrelerini enfekte etmek için yüzeylerindeki CD21 reseptörüne bağlanır.",
+          "B": "EBNA-2 proteini, konak hücrede siklin D ve src proto-onkogen ailesini aktive eder.",
+          "C": "Endemik olmayan Burkitt lenfoma vakalarının %80'i EBV negatiftir, ancak tümü MYC onkogeni taşır.",
+          "D": "EBV-ilişkili Burkitt lenfomada LMP-1 proteini aşırı miktarda eksprese edilerek BCL-2'yi aktive eder.",
+          "E": "İmmünsüprese kişilerde primer NK hücreli lenfomalar ve Hodgkin lenfoma alt tipleri ile ilişkilidir."
+        },
+        "correctAnswer": "D",
+        "explanation": "LMP-1 proteini normalde BCL-2'yi aktive ederek apoptozu engeller; ancak EBV-ilişkili Burkitt lenfoma vakalarında eksprese edilmez, bu onkogenezdeki temel bir istisnadır. Diğer tüm şıklar (CD21'e bağlanma, EBNA-2 aktivasyonu ve MYC mutasyonunun evrensel varlığı) doğrudur. LMP-1'in Burkitt lenfomadaki bu paradoksal yokluğu, tümörün hayatta kalmak için sadece MYC translokasyonuna mutlak bağımlı olduğunu gösterir."
+      },
+      "reason": "kisa_stem:12kelime"
+    }
+  ]
+}

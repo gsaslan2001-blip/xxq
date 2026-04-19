@@ -1,0 +1,126 @@
+{
+  "lesson": "Patoloji",
+  "unit": "7- DERİ HASTALIKLARI",
+  "rejected_at": "2026-04-17T19:29:56.718571",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Deri Hastalıkları",
+        "question": "Deri lezyonlarının makroskobik tanımlamaları ile ilgili aşağıdaki eşleştirmelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Vezikül: Genişliği 5 mm'den büyük olan sıvı dolu kabarık lezyon",
+          "B": "Makül: Çapı 5 mm veya daha küçük olan çembersel düz lezyon",
+          "C": "Plak: Genişliği 5 mm'den büyük olan yükselmiş yassı başlı lezyon",
+          "D": "Nodül: Genişliği 5 mm'den büyük olan kubbe şekilli yükselmiş lezyon",
+          "E": "Yama: Çapı 5 mm'den büyük olan renk değişikliği ile seyreden düz lezyon"
+        },
+        "correctAnswer": "A",
+        "explanation": "Sıvı dolu kabarık lezyonların sınıflandırılmasında kritik eşik 5 mm'dir; ≤5 mm genişliğinde ise vezikül, >5 mm genişliğinde ise bül adı verilir. A seçeneğinde bülün tanımı vezikül olarak verilmiş olup boyut eşiği hatalıdır. Nodül ve plak gibi diğer kabarıklıklarda da 5 mm sınırı temel ayrım noktasıdır."
+      },
+      "reason": "kisa_stem:10kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Deri Hastalıkları",
+        "question": "Aşağıdaki nevüs varyantlarından hangisinin malign melanoma dönüşme (kanserleşme) riski **yoktur**?",
+        "options": {
+          "A": "Displastik nevüs",
+          "B": "Dev konjenital nevüs",
+          "C": "Lentigo maligna",
+          "D": "Aktinik keratoz",
+          "E": "Spitz nevüs"
+        },
+        "correctAnswer": "E",
+        "explanation": "Spitz nevüs, mavi nevüs ve halo nevüs varyantlarının kanserleşme riski kesinlikle yoktur. Çocuklarda sık görülen Spitz nevüs pembe-mavi nodüler yapısıyla hemanjiomu taklit eder ancak benign karakterdedir. Dev konjenital nevüs ve displastik nevüs ise doğrudan malign melanom gelişimi için yüksek risk faktörleridir."
+      },
+      "reason": "kisa_stem:10kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Deri Hastalıkları",
+        "question": "Malign melanomda tümör biyopsisinin değerlendirilmesinde aşağıdaki histolojik özelliklerden hangisi iyi prognoz göstergelerinden biri **değildir**?",
+        "options": {
+          "A": "Tümör kalınlığının (Breslow) ince olması",
+          "B": "Mitoz sayısının <1/mm² olması",
+          "C": "Tümörü infiltre eden lenfositlerin (TIL) derecesinin fazla olması",
+          "D": "Tümör üzerindeki deride ülserasyon varlığı",
+          "E": "Lezyonun ekstremite yerleşimli olması"
+        },
+        "correctAnswer": "D",
+        "explanation": "Malign melanomda ülserasyonun varlığı, tümörün biyolojik olarak agresifleştiğini ve epidermisi destrükte edecek kadar hızlı büyüdüğünü gösteren kötü prognostik bir faktördür. Ülserasyon olmaması iyi prognoz işaretidir. Lenfosit infiltrasyonunun yüksek olması (immün yanıt) ve mitoz sayısının düşüklüğü ise olumlu gidişatı yansıtır."
+      },
+      "reason": "kisa_stem:14kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Deri Hastalıkları",
+        "question": "Lentigo ile ilgili aşağıdaki patolojik veya klinik özelliklerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Epidermiste nevüsler gibi yuvalanma (nest) oluştururlar.",
+          "B": "Melanosit sayısının artmasıyla karakterizedirler.",
+          "C": "Hiperplazi sadece stratum bazale tabakasıyla sınırlıdır.",
+          "D": "Klinik gidişatı iyi huyludur.",
+          "E": "Güneş maruziyeti lezyonun koyulaşmasına neden olmaz."
+        },
+        "correctAnswer": "A",
+        "explanation": "Lentigoda stratum bazalede melanosit hiperplazisi izlenir ancak nevüslerden farklı olarak hücresel yuvalanma (adalar) oluşturmazlar. Melanositler bazal membranda lineer dizilim gösterir. Ayrıca çillerden (frekel) farklı olarak güneşle koyulaşmazlar ve melanosit sayısı artmıştır (çilde melanin artar, hücre sayısı belirgin artmaz)."
+      },
+      "reason": "kisa_stem:10kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Deri Hastalıkları",
+        "question": "Aşağıdakilerden hangisi deride skuamöz hücreli karsinom (SCC) gelişimi için bilinen risk faktörlerinden biri **değildir**?",
+        "options": {
+          "A": "Eski yanık skarları (Marjolin ülseri)",
+          "B": "Kronik osteomyelit drenaj yolu",
+          "C": "Kseroderma pigmentozum hastalığı",
+          "D": "Mavi nevüs zemininde displazi varlığı",
+          "E": "İyonize radyasyon ve arsenik maruziyeti"
+        },
+        "correctAnswer": "D",
+        "explanation": "Mavi nevüs, dermal melanositlerden köken alan ve fibrozisle giden benign bir lezyondur; ne melanom ne de SCC için bir öncü lezyon veya risk faktörü değildir. Oysa yanık skarları (Marjolin), kronik drenaj yolları, UV hasar tamir defekti (Kseroderma pigmentozum) ve radyasyon doğrudan SCC zeminidir."
+      },
+      "reason": "kisa_stem:14kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Deri Hastalıkları",
+        "question": "Bazal hücreli karsinom (BCC) ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Derinin en sık izlenen kanser türüdür.",
+          "B": "Yavaş büyüme karakterine sahiptir ve metastazı nadirdir.",
+          "C": "İleri evrelerde doku harabiyeti yapan lezyonlarına Rodent ülser denir.",
+          "D": "Lezyon yüzeyinde telenjiektazik damarların görülmesi tipiktir.",
+          "E": "Tükürük bezi ve oral mukoza gibi kıl folikülü bulunmayan bölgelerde de sık gelişir."
+        },
+        "correctAnswer": "E",
+        "explanation": "Bazal hücreli karsinom, kıl folikülü aparatından kaynaklandığı için kıl folikülü bulunmayan alanlarda (örneğin oral mukozal membranlar, dudak kırmızı çizgisi hariç ağız içi) görülmez. Bu özellik onun klinik olarak ağız içi skuamöz karsinomlarından ayrılmasını sağlayan en majör farklılıklardandır."
+      },
+      "reason": "kisa_stem:10kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Deri Hastalıkları",
+        "question": "İktiyozisin X'e bağlı kalıtılan formu ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Keratinositlerde steroid sülfataz enzimi normal işlevdedir.",
+          "B": "Hücrelerde kolesterol sülfat birikimi patogenezden sorumludur.",
+          "C": "Elektron mikroskobisinde Odland cisimleri görülmesi tipiktir.",
+          "D": "Stratum korneum sepet örgü yapısını kaybederek kalınlaşır.",
+          "E": "Keratin yapımı veya deskuamasyon defekti nedeniyle balık pulu görünümü oluşur."
+        },
+        "correctAnswer": "A",
+        "explanation": "X'e bağlı iktiyozisin patogenezinin temelinde 'steroid sülfataz' enzim eksikliği yatar. Bu eksiklik kolesterol sülfatın yıkılamayıp stratum korneumda (Odland cisimleri içinde) birikmesine ve hücrelerin normal dökülme (deskuamasyon) sürecinin bozulmasına yol açar. Enzimin normal olduğu ifadesi yanlıştır."
+      },
+      "reason": "kisa_stem:11kelime"
+    }
+  ]
+}

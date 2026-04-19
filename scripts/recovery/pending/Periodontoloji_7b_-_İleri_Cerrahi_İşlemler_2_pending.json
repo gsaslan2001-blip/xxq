@@ -1,0 +1,426 @@
+{
+  "lesson": "Periodontoloji",
+  "unit": "7.b - İleri Cerrahi İşlemler 2",
+  "questions": [
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Dişeti büyümesi ile başvuran bir hastada eksizyonel biyopsi sonucu irritasyon fibromu teşhisi konulmuştur. Bu benign neoplazmın hücresel kökeni aşağıdakilerin hangisinde doğru verilmiştir?",
+      "options": {
+        "A": "Gingival bağ dokusu veya periodontal ligament",
+        "B": "Odontojenik epitel artıkları",
+        "C": "Alveolar kemik osteoblastları",
+        "D": "Çok katlı yassı epitelin stratum bazale tabakası",
+        "E": "Endotel hücreleri"
+      },
+      "correctAnswer": "A",
+      "explanation": "İrritasyon fibromu (travmatik fibrom), genellikle dişeti bağ dokusu veya periodontal ligamentten köken alan, yavaş büyüyen benign bir lezyondur. Epitelyal kaynaklı bir lezyon olan papillomdan farklı olarak tamamen bağ dokusu elemanlarından oluşur. Histolojik olarak kollajen lif demetleri ve fibroblastlardan zengin yapısı onu odontojenik epitel artıklarından ayırır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Dişetinde küresel şekilli, travmaya bağlı geliştiği düşünülen bir lezyonun histopatolojik incelemesinde yapısında mineralize doku alanları tespit edilmiştir. Bu bulgulara göre en olası tanı aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Dev hücreli fibrom",
+        "B": "Periferal ossifiye fibrom",
+        "C": "Pyojenik granüloma",
+        "D": "Periferik dev hücreli granüloma",
+        "E": "Fokal fibröz displazi"
+      },
+      "correctAnswer": "B",
+      "explanation": "İrritasyon fibromunun yapısında kalsifiye veya mineralize doku odakları bulunması, lezyonun spesifik olarak periferal ossifiye fibrom olarak adlandırılmasını sağlar. Dev hücreli fibromda mineralizasyon değil, çok çekirdekli fibroblastlar bulunurken; pyojenik granülomada belirgin anjiyogenez ön plandadır. Klinikte bu mineralize odakların varlığı lezyona sert bir kıvam verir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Dişetinde malign tümörler nadir görülmekle birlikte bağ dokusu kökenli maligniteler sarkom olarak adlandırılır. Buna göre, kaynak metinde belirtilen dişeti sarkoması tipleri arasında aşağıdakilerden hangisi **yer almaz**?",
+      "options": {
+        "A": "Fibrosarkom",
+        "B": "Lenfosarkom",
+        "C": "Osteosarkom",
+        "D": "Retikulum hücre sarkoması",
+        "E": "Kaposi sarkomu"
+      },
+      "correctAnswer": "C",
+      "explanation": "Dişetinde yumuşak dokudan görülebilen sarkom tipleri arasında fibrosarkom, lenfosarkom, retikulum hücre sarkoması ve AIDS hastalarında rapor edilen Kaposi sarkomu bildirilmiştir. Osteosarkom doğrudan çene kemiğinden köken alan bir malignitedir ve yumuşak doku kaynaklı primer dişeti sarkomları sınıflandırmasında yer almaz. Bu ayrım kemik tutulumunun primer mi yoksa sekonder invazyon mu olduğunu belirlemek için kritiktir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "35 yaşında erkek hasta, sert damak ve dişetinde ağrısız, morumsu-kırmızı renkli makülopapüler lezyonlar şikayetiyle başvurmuştur. Hastanın anamnezinden HIV pozitif olduğu ve immünsüpresyon geliştiği öğrenilmiştir. Bu hastada en olası tanı aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Squamous cell karsinoma",
+        "B": "Malign melanoma",
+        "C": "Pyojenik granüloma",
+        "D": "Kaposi sarkomu",
+        "E": "Santral dev hücreli granüloma"
+      },
+      "correctAnswer": "D",
+      "explanation": "Kaposi sarkomu, AIDS (HIV) hastalarında sıklıkla immün yetmezlik zemininde gelişen ve özellikle sert damak ile dişetinde sık rapor edilen, vasküler kökenli atipik bir sarkomdur. Pyojenik granüloma da morumsu-kırmızı olabilir ancak sistemik HIV enfeksiyonu zemininde damak/dişeti multisentrik tutulumu Kaposi sarkomuna işaret eder. Karsinomlar genellikle ülseröz dışa büyüme yaparken, melanoma erken dönemde çok koyu pigmentlidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Deneysel hayvan modellerinde yapılan çalışmalarda, bir statin türevi olan lovastatinin uygulanmasının spesifik bir ilaca bağlı dişeti büyümesinin başlangıcını hafifletebileceği öne sürülmüştür. Lovastatinin bu koruyucu modülasyonu aşağıdaki ajanlardan hangisinin yan etkisine karşı gösterilmiştir?",
+      "options": {
+        "A": "Nifedipin",
+        "B": "Siklosporin A",
+        "C": "Diltiazem",
+        "D": "Verapamil",
+        "E": "Fenitoin"
+      },
+      "correctAnswer": "E",
+      "explanation": "Farelerde yapılan güncel çalışmalarda lovastatinin, bir antikonvülsan olan fenitoinin indüklediği dişeti büyümesinin başlangıcını zayıflattığı gösterilmiştir. Kalsiyum kanal blokörleri (nifedipin) veya immünsüpresanlar (siklosporin) için bu etki belirtilmemiştir. Bu bulgu, fenitoinin moleküler fibroblast aktivasyon yolaklarına doğrudan müdahale edilebileceğini kanıtlamaktadır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "55 yaşında kadın hasta, şiddetli anterior marjinal dişeti büyümesi ve sondalamada kanama şikayetiyle başvurmuştur. Hastanın tıbbi anamnezinde hipertansiyon nedeniyle bir dihidropiridin türevi kalsiyum kanal blokörü kullandığı öğrenilmiştir. Bu hastanın kullandığı etken ilaç aşağıdakilerden hangisi olabilir?",
+      "options": {
+        "A": "Felodipin",
+        "B": "Diltiazem",
+        "C": "Verapamil",
+        "D": "Karbamazepin",
+        "E": "Siklosporin"
+      },
+      "correctAnswer": "A",
+      "explanation": "Felodipin, nifedipin ve amlodipin gibi ilaçlar kalsiyum kanal blokörlerinin 'dihidropiridin' alt grubuna aittir ve dişeti büyümesine yol açarlar. Diltiazem benzotiazepin türevi, verapamil ise fenilalkilamin türevidir. Konsültasyonlarda molekül sınıfının doğru tanımlanması, ilacın farklı bir gruptan daha güvenli bir ajanla değiştirilmesi için elzemdir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Kalsiyum kanal blokörlerine bağlı dişeti büyümesi gelişen bir hastada, ilacın farklı bir sınıfa ait ajanla değiştirilmesi planlanmıştır. Nifedipine kıyasla dişeti büyüme sıklığı daha az olan ve 'benzotiazepin' türevi olarak sınıflandırılan alternatif molekül aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Amlodipin",
+        "B": "Diltiazem",
+        "C": "Verapamil",
+        "D": "İsradipin",
+        "E": "Nitrendipin"
+      },
+      "correctAnswer": "B",
+      "explanation": "Diltiazem, benzotiazepin sınıfında yer alan bir kalsiyum kanal blokörüdür ve nifedipine kıyasla dişeti büyümesi yapma insidansı çok daha düşüktür. Verapamil de düşük insidanslıdır ancak kimyasal olarak fenilalkilamin türevidir. Amlodipin, isradipin ve nitrendipin ise dişeti büyümesi riski yüksek olan nifedipin ile aynı ailedeki dihidropiridin türevleridir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "İlaç kaynaklı dişeti büyümelerinde alternatif tedavi planlaması yapılırken etken ajanın farmakolojik sınıfı dikkate alınır. Kalsiyum kanal blokörleri arasında 'fenilalkilamin türevleri' grubunda yer alan ajan aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Nifedipin",
+        "B": "Nimodipin",
+        "C": "Verapamil",
+        "D": "Valproik asit",
+        "E": "Diltiazem"
+      },
+      "correctAnswer": "C",
+      "explanation": "Verapamil, fenilalkilamin türevi olan bir kalsiyum kanal blokörüdür. Nifedipin ve nimodipin dihidropiridin grubuna aittir; diltiazem ise benzotiazepin grubudur. Cerrahi öncesinde hekimle görüşülerek fenilalkilamin veya benzotiazepin gruplarına geçiş sağlanması rekürens riskini azaltır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "40 yaşında böbrek nakli yapılmış erkek hasta, generalize kanamalı dişeti büyümesi tablosu ile başvurmuştur. Hastanın doku reddini önlemek için siklosporin A kullandığı saptanmıştır. Hastanın tıp doktoru ile görüşülerek reçetesine eklenen ve dişeti büyümesinde hücresel bazda gerileme sağladığı bilinen sekonder ajan aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Amoksisilin",
+        "B": "Klindamisin",
+        "C": "Tetrasiklin",
+        "D": "Azitromisin",
+        "E": "Siprofloksasin"
+      },
+      "correctAnswer": "D",
+      "explanation": "Siklosporin A kullanan transplantasyon hastalarında azitromisin adlı makrolid grubundan antibiyotiğin kullanılması, gingival dokulardaki büyümelerde gerilemeye neden olmaktadır. Amoksisilin veya tetrasiklinin immünsüpresan büyümelerinde böyle spesifik bir fibroblast-modülatör etkinliği bulunmamaktadır. Bu etki sayesinde çoğu hastada agresif rezeksiyon cerrahisinden kaçınılabilir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Dişeti hastalıklarının cerrahi tedavisinde, cep duvarının eksizyonundan ziyade sadece fizyolojik formunu kaybetmiş dişetinin yeniden şekillendirilerek estetik kontur kazandırılması işlemi aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Osteoplasti",
+        "B": "Apikale kaydırılan flep",
+        "C": "Gingivektomi",
+        "D": "Yönlendirilmiş doku rejenerasyonu",
+        "E": "Gingivoplasti"
+      },
+      "correctAnswer": "E",
+      "explanation": "Gingivoplasti, patolojik cebin kesilip çıkarılması değil, hastalıktan veya fibröz büyümeden dolayı anatomik yapısını kaybetmiş dişetinin inceltilerek normal fizyolojik (bıçak sırtı) formuna dönüştürülmesidir. Gingivektomi cep derinliğini azaltmak için dokunun eksizyonudur. İkisi genellikle eş zamanlı uygulansa da tanımları ve cerrahi amaçları birbirinden tamamen farklıdır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "48 yaşında erkek hasta, alt çene anterior ve premolar bölgeyi (8 diş) kapsayan şiddetli fibrotik dişeti büyümesi nedeniyle başvurmuştur. Radyografide etkilenen bölgede horizontal kemik kaybı tespit edilmiştir. İlaç değişimi yapılmasına rağmen büyümenin devam ettiği bu vakada endike olan cerrahi yaklaşım aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Periodontal flep operasyonu",
+        "B": "Gingivektomi",
+        "C": "Frenektomi",
+        "D": "Lazer asiste gingivoplasti",
+        "E": "Kapalı küretaj"
+      },
+      "correctAnswer": "A",
+      "explanation": "6 dişten fazla dişi kapsayan büyük alanlı dişeti büyümelerinde ve yatkınlaştırıcı faktör olarak kemik defekti/ataşman kaybı varlığında kök yüzeyine ve kemiğe direkt erişim gerektirdiği için periodontal flep operasyonu uygulanır. Yalnızca yumuşak doku çıkarılmasını sağlayan gingivektomi, alttaki kemik defektine müdahale edemeyeceği ve yapışık dişetini tehlikeye atacağı için bu tabloda kontrendikedir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Antimikrobiyal fotodinamik terapide (aPDT), hedef bakteriler üzerinde sitotoksik etki oluşturmak amacıyla fotoaktif boya spesifik bir ışıkla aktive edilir. Bu inisiyal aktivasyonun ölümcül bir radikal şelalesine dönüşebilmesi için reaksiyon ortamında aşağıdakilerden hangisinin varlığı **zorunludur**?",
+      "options": {
+        "A": "Karbondioksit",
+        "B": "Oksijen",
+        "C": "Nitrojen",
+        "D": "Kalsiyum",
+        "E": "Hidrojen peroksit"
+      },
+      "correctAnswer": "B",
+      "explanation": "Fotodinamik terapinin temeli, ışık enerjisinin bir fotosensitizer tarafından emilip bu enerjinin çevre dokudaki serbest oksijene aktarılarak sitotoksik reaktif oksijen türlerinin (singlet oksijen) üretilmesine dayanır. Oksijen yokluğunda bu reaksiyon gerçekleşmez ve bakterisidal yanıt alınamaz. Hidrojen peroksit kimyasal beyazlatma ajanıdır, fotodinamik biyofilm yıkım sürecine katılmaz."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Periodontolojide kullanılan düşük enerji lazer protokollerinden biri olan LANAP (Laser-assisted new attachment procedure) tedavisinin temel klinik amacı aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Cep epitelinin apikale göçünün hızlandırılması",
+        "B": "Sadece subgingival diştaşlarının vaporizasyonu",
+        "C": "Kök yüzeyinde yeni periodontal ataşman oluşumunun uyarılması",
+        "D": "Kemiğin ablasyonu ile osteoplasti sağlanması",
+        "E": "Hiperplastik dokuda bağ dokusu miktarının azaltılması"
+      },
+      "correctAnswer": "C",
+      "explanation": "LANAP, kelime anlamı olarak 'lazer asiste yeni ataşman prosedürü' demektir ve cep içindeki hastalıklı epitelin lazerle buharlaştırılması sonrasında stabil bir kan pıhtısı yaratılarak kök yüzeyine yeniden bağ dokusu tutunmasını (ataşmanını) hedefler. Sadece taş temizlemek veya kemiği kesmek için değil, cerrahi olmayan ancak rejeneratif bir potansiyel yaratmak amacıyla kullanılan entegre bir protokoldür."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Diş hekimliğinde lazerler emisyon dalga boylarına göre farklı dokularda absorbsiyon özellikleri gösterir. Argon lazer kullanımı ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Görünür mavi/yeşil ışık spektrumunda (488-514 nm) yer alır.",
+        "B": "Diş beyazlatma işlemlerinde fotokimyasal aktivatör olarak kullanılabilir.",
+        "C": "Kompozit rezinlerin ileri ışık kürü için uygundur.",
+        "D": "Dentin ve alveolar kemik gibi sert dokuların kesimi için birincil endikasyona sahiptir.",
+        "E": "Su tarafından emilimi Er:YAG lazere kıyasla çok daha düşüktür."
+      },
+      "correctAnswer": "D",
+      "explanation": "Argon lazerler 488-514 nm dalga boyunda olup başlıca diş beyazlatma ve rezin kompozitlerin polimerizasyonunda (ileri ışık kürü) kullanılırlar. Su veya hidroksiapatit tarafından yüksek oranda absorbe edilmedikleri için dentin veya kemik gibi sert doku ablasyonunda (kesiminde) etkisizdirler. Sert doku kesimi ancak hidroksiapatitte yüksek absorbsiyonu olan Erbium (Er:YAG veya Er,Cr:YSGG) grubu lazerlerle mümkündür."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Oral mukozada aftöz ülser tedavisi, frenektomi, implant çevresi yumuşak doku şekillendirmesi (2. derece ekspoz) ve periodontal küretaj işlemlerinde yaygın olarak kullanılan ve 655-980 nm dalga boyuna sahip lazer sistemi aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Argon lazer",
+        "B": "Er:YAG lazer",
+        "C": "Nd:YAG lazer",
+        "D": "Karbonsioksit lazer",
+        "E": "Diode lazer"
+      },
+      "correctAnswer": "E",
+      "explanation": "Diode lazerler 655-980 nm aralığındaki dalga boyuyla çalışır ve özellikle melanin/hemoglobin tarafından iyi emildiği için yumuşak doku cerrahilerinde (gingivektomi, biyopsi, aft tedavisi) mükemmel hemostaz sağlayarak ideal bir seçenek oluştururlar. Nd:YAG 1064 nm, CO2 ise 10600 nm ile farklı absorbsiyon dinamiklerine sahiptir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Lazer doku etkileşiminde hücresel suyun ani buharlaşması temel ablasyon mekanizmasıdır. Periodontolojide gingivektomi ve ikinci derece implant ekspozu işlemlerinde sıklıkla kullanılan, 10600 nm dalga boyuna sahip lazer cihazı aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Karbonsioksit (CO2) lazer",
+        "B": "Er,Cr:YSGG lazer",
+        "C": "Diode lazer",
+        "D": "Nd:YAG lazer",
+        "E": "Argon lazer"
+      },
+      "correctAnswer": "A",
+      "explanation": "Karbonsioksit (CO2) lazer 10600 nm dalga boyu ile kızılötesi spektrumda bulunur ve hücre içi su tarafından kusursuz biçimde absorbe edilerek derin doku hasarına neden olmadan çok yüzeysel ve kanamasız bir yumuşak doku buharlaşması (vaporizasyonu) sağlar. Er,Cr:YSGG lazer 2780 nm dalga boyuna sahiptir ve sert dokuda da kullanılır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Dental implantların cerrahi olarak açığa çıkarılması (2. derece implant ekspozu) işleminde, titanyum yüzeyinde ısı artışına neden olmamak için lazer seçimi kritiktir. Kaynak metindeki sınıflandırmaya göre, aşağıdaki lazer tiplerinden hangisi 2. derece implant ekspozu için **kullanılmaz**?",
+      "options": {
+        "A": "Diode lazer",
+        "B": "Argon lazer",
+        "C": "Nd:YAG lazer",
+        "D": "Er:YAG lazer",
+        "E": "Karbonsioksit lazer"
+      },
+      "correctAnswer": "B",
+      "explanation": "Tabloya göre Diode, Nd:YAG, Er:YAG, Er,Cr:YSGG ve CO2 lazerler yumuşak dokuyu ablate edebilme yetenekleri sayesinde 2. derece implant ekspozu işlemleri için endikedir. Argon lazer (488-514 nm) ise sadece fotoaktivatör olarak (beyazlatma, kompozit kürleme) çalışır ve doku kesme (eksizyon/ekspoz) yeteneği bulunmadığı için implant üstü açmada kullanılmaz."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Dişeti büyümesi nedeniyle alınan eksizyonel biyopsi raporunda 'epulis' ön tanısı konulmuştur. Epulis ve dişeti benign tümörleri ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Epulis, histopatolojik bir terimden çok dişeti büyümelerini tanımlayan genel klinik bir başlıktır.",
+        "B": "Genellikle lokal irritasyona yanıt olarak gelişen benign hiperplastik reaksiyonlardır.",
+        "C": "Hızlı metastaz yapma eğilimindedirler ve altındaki alveolar kemiği mutlaka infiltre ederler.",
+        "D": "İrritasyon fibromu epulis şemsiyesi altında sınıflandırılabilecek en yaygın tiplerden biridir.",
+        "E": "Tedavileri genellikle total cerrahi eksizyon ve lokal etkenin uzaklaştırılmasına dayanır."
+      },
+      "correctAnswer": "C",
+      "explanation": "Epulis dişeti üzerindeki sınırlı, reaktif ve benign büyümeleri (ör. fibrom, pyojenik granülom) tanımlamak için kullanılan eski ve genel bir terimdir. Çevre dokulara infiltrasyon göstermezler, altındaki kemiği lokalize bir basınçla erezyona uğratsalar bile metastaz ve kanseröz infiltrasyon kesinlikle yapmazlar; metastaz ve malign infiltrasyon karsinom ve sarkomların klinik profilidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "İrritasyon fibromları hücresel yoğunluklarına göre sert ve yumuşak formlarda görülebilir. Yumuşak formda izlenen bir irritasyon fibromunun histolojik mimarisi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "options": {
+        "A": "Yoğun ve kalın kollajen demetleri ağırlıktadır, hücre sayısı çok azdır.",
+        "B": "Sadece epitel dokunun aşırı keratinize olmasıyla karakterizedir.",
+        "C": "Kan damarları tamamen atrofiye uğramıştır, doku avaskülerdir.",
+        "D": "Fibroblastların çok daha yoğun, kollajen lif demetlerinin daha seyrek olduğu bir yapıdadır.",
+        "E": "Yapısında daima kalsifiye olmuş kemik trabekülleri bulunur."
+      },
+      "correctAnswer": "D",
+      "explanation": "İrritasyon fibromunun yumuşak varyantlarında fibroblast proliferasyonu ön plandadır; yani bağ dokusu hücreden (fibroblast) zengin, kollajen liften fakirdir. Sert varyantında ise süreç olgunlaşmış ve hücre sayısı azalırken kollajen demet yığınları (nedbe benzeri) baskın hale gelmiştir. Kalsifiye yapılar bulunursa lezyon periferal ossifiye fibrom adını alır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Dişetinde hızlı büyüme gösteren, kanamalı ve komşu dişlerde mobiliteye neden olan kitle için alınan biyopside retikulum hücre sarkoması teşhis edilmiştir. Bu tümör grubunun (Sarkoma) dişetindeki klinik özellikleri için aşağıdakilerden hangisi **en az olasıdır**?",
+      "options": {
+        "A": "Dişeti üzerinde son derece ender rastlanan bir malignitedir.",
+        "B": "Epitelyal dokulardan ziyade bağ dokusu (mezenkimal) elemanlarından köken alırlar.",
+        "C": "Altındaki kemiğe agresif infiltrasyon gösterebilirler.",
+        "D": "İmmünyetmezlik virüsü (HIV) gibi durumlarda farklı tiplerinin ortaya çıkma riski artabilir.",
+        "E": "Mekanik plak kontrolü ve anti-inflamatuar tedaviyle tamamen gerileme eğilimi gösterirler."
+      },
+      "correctAnswer": "E",
+      "explanation": "Sarkomlar malign ve agresif tümörler olduklarından spontan olarak veya sadece mekanik diştaşı temizliği ile asla gerilemezler; bu tür tedavilere cevap vermeyen ülserasyon ve büyümeler mutlaka acil onkolojik biyopsi gerektirir. Plak kontrolü ile gerileyen kitleler pyojenik granülom veya hamilelik tümörü gibi enflamatuar reaktif lezyonlardır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "62 yaşında erkek hasta, nifedipin kullanımı nedeniyle ön dişleri tamamen kapatan şiddetli dişeti büyümesi yaşamaktadır. Cerrahi işlem öncesinde rekürrensi engellemek için tıp doktoruyla konsültasyon yapılmıştır. Hastanın anti-hipertansif kontrolünü bozmadan dişeti büyümesi riskini mimimize etmek amacıyla, etken molekülün aşağıdaki kalsiyum kanal blokörlerinden hangisine geçirilmesi en uygun olur?",
+      "options": {
+        "A": "Diltiazem",
+        "B": "Felodipin",
+        "C": "Amlodipin",
+        "D": "İsradipin",
+        "E": "Nimopidin"
+      },
+      "correctAnswer": "A",
+      "explanation": "Nifedipin gibi yüksek hiperplazi riskli dihidropiridin grubu kalsiyum kanal blokörleri kullanıldığında, bu riski azaltmak için farmakolojik olarak alternatif olan benzotiazepin türevi Diltiazem veya fenilalkilamin türevi Verapamil'e geçiş rasyonel bir yaklaşımdır. Felodipin, amlodipin, isradipin ve nimodipin ise aynı aileden olup yüksek dişeti büyümesi potansiyeli taşımaya devam ederler."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Otoimmün hastalığı nedeniyle yüksek doz siklosporin kullanan 15 yaşındaki çocuk hastada, bukkal bölge ağırlıklı inflamasyonlu dişeti büyümeleri mevcuttur. Hastanın tedavisinde, makrofaj aktivitesini modüle ederek siklosporine bağlı büyümenin medikal yolla gerilemesini desteklemek için tercih edilen ajan aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Sefaleksin",
+        "B": "Azitromisin",
+        "C": "Klorheksidin",
+        "D": "Metronidazol",
+        "E": "Doksisiklin"
+      },
+      "correctAnswer": "B",
+      "explanation": "Siklosporin kullanan hastalarda azitromisin spesifik olarak reçete edildiğinde gingival dokulardaki fibrotik ve inflamatuar büyümelerde belirgin bir gerilemeye neden olduğu gösterilmiştir. Metronidazol ve doksisiklin periodontitisin spesifik mikrobiyatasında etkilidir ancak immünsüpresif ilaca bağlı hücresel patolojiyi makrolidler (azitromisin) kadar modüle edemezler."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Lazer diş hekimliğinde uygulanan Antimikrobiyal fotodinamik terapide (aPDT), hedef dokuya topikal olarak uygulanan 'fotosensitizer' molekülünün görevi ve yapısı aşağıdakilerin hangisinde doğru açıklanmıştır?",
+      "options": {
+        "A": "Işık enerjisini yansıtarak komşu sağlıklı dokuların ısınmasını engelleyen bir jeldir.",
+        "B": "Sadece kalsifiye bakteri plağının inorganik bağlarını yıkan kimyasal bir asittir.",
+        "C": "Belirli bir dalga boyu ışığına maruz kaldığında reaktif oksijen üreten toksik olmayan boyadır (dye).",
+        "D": "Dişetini geçici olarak anesteziye sokan fotokimyasal bir sinir blokeridir.",
+        "E": "Tükürük akışını geçici olarak durduran antikolinerjik bir boyar maddedir."
+      },
+      "correctAnswer": "C",
+      "explanation": "Fotosensitizer, tek başına insana veya bakteriye zarar vermeyen toksik olmayan bir boyadır. Kendi absorbsiyon spektrumundaki belirli bir lazer ışığı ile uyarıldığında ortamdaki oksijene elektron aktarımı yaparak bakteri hücre zarlarını anında parçalayan ölümcül singlet oksijen türleri üretir. Ne asidik bir yıkım ne de anestezik/yansıtıcı bir görev yapar, fonksiyonu tamamen fotokimyasal enerji transferidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Periodontal lazer operasyonu sırasında hedef sahanın aşırı derecede ısınması istenmeyen termal hasarlara yol açar. Kemiğin uzun süreli hangi sıcaklık eşiğine maruz kalması durumunda osteosit hasarı başlar ve geri dönüşümsüz kemik rezorpsiyonu meydana gelir?",
+      "options": {
+        "A": "37 °C (98.6 °F)",
+        "B": "40 °C (104.0 °F)",
+        "C": "43.5 °C (110.3 °F)",
+        "D": "47 °C (116.6 °F)",
+        "E": "60 °C (140.0 °F)"
+      },
+      "correctAnswer": "D",
+      "explanation": "Alveolar kemik sıcaklığının ≥47 °C (116.6 °F) seviyelerine çıkması ve burada kalması osteoblastların ve osteositlerin enzimlerinin denatüre olmasına yol açarak hücresel hasara ve kemik erimesine (rezorpsiyonuna) neden olur. Isının >60 °C olması ise rezorpsiyon evresini atlayıp doğrudan doku nekrozuna sebebiyet verir. Bu nedenle lazer kullanımında sürekli soğutma ve doğru atım enerjisi şarttır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Lazerlerin diş hekimliğindeki endikasyonları, sahip oldukları dalga boylarının kromofor (su, hemoglobin, hidroksiapatit) emilim katsayılarına göre belirlenir. Yüksek su ve hidroksiapatit emilimleri sayesinde 'sert doku kesimi (dentin ve kemik ablasyonu)' yapabilen lazer cihazları aşağıdakilerin hangisinde birlikte verilmiştir?",
+      "options": {
+        "A": "Argon lazer ve Nd:YAG lazer",
+        "B": "Diode lazer ve CO2 lazer",
+        "C": "Argon lazer ve Diode lazer",
+        "D": "Nd:YAG lazer ve Er:YAG lazer",
+        "E": "Er:YAG lazer ve Er,Cr:YSGG lazer"
+      },
+      "correctAnswer": "E",
+      "explanation": "Diş hekimliğinde Erbium (Er) ailesine ait olan Er:YAG (2940 nm) ve Er,Cr:YSGG (2780 nm) lazerler, hücre içi su ve mine/denti hidroksiapatitinde en yüksek enerji emilimine sahip oldukları için sert dokularda termal travma bırakmadan ve freze ihtiyaç duymadan etkili kesim işlemi yapabilirler. Diğer seçeneklerdeki lazerlerin hidroksiapatitteki emilimleri son derece düşük olduğu için sert doku rezeksiyonunda kullanılamazlar."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Diş beyazlatma ve polimerizasyon sistemlerinde güvenle kullanılan Argon lazerlerle (488-514 nm) ilgili klinik bilgiler değerlendirildiğinde, aşağıdaki ifadelerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Hemoglobin ve melanda çok yüksek emilimi sayesinde mükemmel dentin kesimi yapar.",
+        "B": "Kompozit rezinlerde polimerizasyon oranını artırarak ileri ışık kürü sağlar.",
+        "C": "Dalga boyu görünür spektrumun mavi-yeşil bölgesi içindedir.",
+        "D": "Düşük enerjilerinde yara iyileşmesinde fotobiyomodülasyon etkisi gösterebilir.",
+        "E": "Kimyasal aktivasyon prensibi ile diş beyazlatmada endikedir."
+      },
+      "correctAnswer": "A",
+      "explanation": "Argon lazerler sert doku ablasyonu (dentin/mine kesimi) yapamazlar çünkü bu dalga boyu sert dokuda termomekanik patlama (ablasyon) yaratacak derecede hidroksiapatit veya su tarafından emilmez. Kök yüzeyi veya dentinde kesim sadece Erbiyum lazerleriyle (Er:YAG vb.) mümkündür. Argon lazerin asıl gücü ışığa duyarlı materyallerdeki reaksiyonu kimyasal olarak tetiklemesidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "İlaca bağlı dişeti büyümelerinin cerrahi tedavisinde gingivektomi ve periodontal flep operasyonu seçenekleri mevcuttur. Aşağıdaki hasta sunumlarından hangisi, gingivektominin tek başına yeterli olmayıp kesinlikle periodontal flep operasyonuna geçiş yapılmasını gerektiren **temel nedendir**?",
+      "options": {
+        "A": "Büyüyen dokunun interdental bölgeden marjinal dişetine doğru yayılmış olması",
+        "B": "Radyografik olarak hastada kemik defekti ve klinik ataşman kaybının bulunması",
+        "C": "Büyümenin hiperemik, kanamalı ve süngerimsi doku karakteristiği sergilemesi",
+        "D": "Sadece alt ön bölgedeki 4 dişi kaplayan küçük hacimli bir büyüme olması",
+        "E": "Hastanın mekanik plak kontrolünü sağlamada belirgin zorluk yaşaması"
+      },
+      "correctAnswer": "B",
+      "explanation": "Eğer dişeti büyümesine ataşman kaybı ve yatkınlaştırıcı bir kemik defekti (krater vb.) eşlik ediyorsa, sadece fazla dişetini kesmek iyileşme sağlamaz; hekimin defekte ulaşıp kemik şekillendirmesi (osteoplasti) yapabilmesi için mukoperiostal flep cerrahisi zorunludur. Kemik kaybı olmayan, küçük alanlı ve yeterli yapışık dişeti bulunan vakalarda gingivektomi primer tercihtir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Diode lazerler (655-980 nm) esnek optik fiberlerle iletilebilmeleri nedeniyle klinik pratikte yaygındır. Aşağıdaki işlemlerden hangisi Diode lazerlerin onaylanmış dental endikasyon alanlarından biri **değildir**?",
+      "options": {
+        "A": "Yumuşak doku biyopsisinin kanamasız eksizyonu",
+        "B": "Aftöz lezyonlarda fototermal ağrı modülasyonu",
+        "C": "Çürük temizliği ve kavite preparasyon işlemi",
+        "D": "Periodontal ceplerde enfekte epitelin küretajı",
+        "E": "Dişeti depigmentasyonu ve estetik beyazlatma"
+      },
+      "correctAnswer": "C",
+      "explanation": "Diode lazerler yumuşak dokudaki pigmentler (melanin) ve hemoglobin tarafından yüksek oranda emildikleri için yumuşak doku prosedürlerinde son derece etkilidirler ancak sert doku kesme (çürük temizleme, kavite açma) özellikleri kesinlikle yoktur. Sert doku rezeksiyonu klinik olarak yalnızca Erbium destekli lazerlerce uygulanabilir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Gingival fibromatozis ile travmatik irritasyon fibromu, başlangıç aşamasında fibrotik yapıları itibarıyla karıştırılabilir. Hastada tespit edilen büyümenin 'gingival fibromatozis' teşhisine yönlendirmesinde aşağıdaki faktörlerden hangisi diğerlerinden daha ayırıcıdır?",
+      "options": {
+        "A": "Lezyonun epitelyal bir hiperplaziden ziyade fibroblastik olması",
+        "B": "Lokal travma bölgesinde aniden tek başına filizlenmesi",
+        "C": "Spontan şiddetli kanamaya meyilli, yumuşak vasküler yapıda olması",
+        "D": "Belirli bir irrite edici etkene bağlı olmaksızın sıklıkla genetik altyapılı ve idiyopatik gelişmesi",
+        "E": "Gövdesinde kalsifikasyonlar barındırması ve kemiği dekalsifiye etmesi"
+      },
+      "correctAnswer": "D",
+      "explanation": "Gingival fibromatozis çok nadir görülen, genellikle kalıtsal olan (bazı genetik lokuslarla ilişkili) ve herhangi bir plak irritasyonu veya ilaç etkileşimi olmaksızın gelişen masif fibrotik büyümedir. İrritasyon fibromu ise adından da anlaşılacağı gibi minör bir travmaya/baskıya bağlı lokalize gelişir. Her ikisi de histolojik olarak fibroblastik proliferasyondur ancak etyolojileri ve kalıtsal geçiş özellikleri ile ayrılırlar."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Dişeti Büyümeleri ve Lazer Tedavileri",
+      "question": "Hipertansiyon tedavisi gören 58 yaşında erkek hastada alt çene ön bölgede generalize fibrotik dişeti büyümesi saptanmıştır. Hastanın kullandığı antihipertansif ajan dihidropiridin türevi bir kalsiyum kanal blokörüdür. Cerrahi rekürrensi engellemek için tıp doktoru, fenilalkilamin türevi olan alternatif bir ilaca geçiş önermiştir. Buna göre, hastanın kullandığı eski ilaç ve geçiş yapacağı yeni ilaç aşağıdakilerin hangisinde sırasıyla verilmiştir?",
+      "options": {
+        "A": "Verapamil - Diltiazem",
+        "B": "Diltiazem - Nifedipin",
+        "C": "Felodipin - Diltiazem",
+        "D": "Verapamil - Nifedipin",
+        "E": "Nifedipin - Verapamil"
+      },
+      "correctAnswer": "E",
+      "explanation": "Nifedipin (ve felodipin, amlodipin vb.), yüksek oranda dişeti büyümesi yapan 'dihidropiridin' türevi bir kalsiyum kanal blokörüdür. Hastanın tıp doktorunca 'fenilalkilamin' türevine geçirilmesi gerektiğinden, geçilecek yeni ilaç Verapamil olmalıdır. (Diltiazem benzotiazepin türevidir). Nifedipin'den Verapamil'e geçiş, anti-hipertansif etkiyi korurken hiperplazi riskini minimize etmenin farmakolojik bir yoludur."
+    }
+  ]
+}

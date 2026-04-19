@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "01-Makroglossi ve Giris",
+  "rejected_at": "2026-04-17T16:02:59.356573",
+  "items": [
+    {
+      "question": {
+        "lesson": "Oral Patoloji",
+        "unit": "Dil ve Mukoza Lezyonları",
+        "question": "Aşağıdakilerden hangisi makroglossi tablosuna neden olan konjenital ve herediter faktörler arasında **yer almaz**?",
+        "options": {
+          "A": "Beckwith-Wiedemann sendromu",
+          "B": "Multipl endokrin neoplazi tip 2B",
+          "C": "Duchenne muskuler distrofi",
+          "D": "Akromegali",
+          "E": "Kretenizm"
+        },
+        "correctAnswer": "D",
+        "explanation": "Akromegali, yetişkinlik döneminde büyüme hormonunun aşırı salgılanmasıyla ortaya çıkan edinsel (sonradan kazanılmış) bir makroglossi nedenidir. Kaynak metinde listelenen Beckwith-Wiedemann sendromu, multipl endokrin neoplazi tip 2B, Duchenne muskuler distrofi ve kretenizm konjenital/herediter kategoridedir. Sınav komisyonu, konjenital ve edinsel etyolojilerin kategorik ayrımını temel bir patoloji nosyonu olarak sıklıkla test eder."
+      },
+      "reason": "kisa_stem:13kelime"
+    }
+  ]
+}

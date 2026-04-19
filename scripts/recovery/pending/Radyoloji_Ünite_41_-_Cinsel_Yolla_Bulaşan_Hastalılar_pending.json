@@ -1,0 +1,426 @@
+{
+  "lesson": "Radyoloji",
+  "unit": "Ünite 41 - Cinsel Yolla Bulaşan Hastalılar",
+  "questions": [
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "HIV enfeksiyonunun progresyonunda kullanılan Walter Reed sınıflamasında, hastalığın klinik seyrini ve evrelemesini belirleyen temel parametre aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "B lenfositlerin antikor üretme kapasitesi",
+        "B": "Yardımcı T hücrelerinin fonksiyonel bütünlüğü",
+        "C": "Makrofajların fagositoz hızı ve aktivasyonu",
+        "D": "Viral RNA'nın plazmadaki kantitatif yükü",
+        "E": "Sitotoksik CD8+ T hücrelerinin proliferasyon oranı"
+      },
+      "correctAnswer": "B",
+      "explanation": "Walter Reed evreleme sistemi, HIV'in birincil hedefi olan yardımcı T hücrelerinin sayısına ve fonksiyonel bütünlüğüne dayanır. Viral yük veya CD8+ T hücreleri enfeksiyonun takibinde önemli olsa da, bu spesifik sınıflamanın temel dayanağı T helper hücrelerin in vivo işlevselliğidir. Hastalığın prognozu doğrudan bu hücrelerin oluşturduğu bağışıklık yanıtının çöküş hızıyla koreledir."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "HIV enfeksiyonunun sistemik ve hematolojik tutulumlarına dair aşağıdaki bulgulardan hangisi **yanlıştır**?",
+      "options": {
+        "A": "İnvaziv sitomegalovirus (CMV) enfeksiyonu sekonder olarak adrenal yetmezliğe yol açabilir.",
+        "B": "Hastalığın ilerleyen dönemlerinde kan tablosunda T4:T8 lenfosit oranında azalma gözlenir.",
+        "C": "Toksik epidermolizis (Lyell sendromu) cilt tutulumlarından biri olarak karşımıza çıkabilir.",
+        "D": "Hemofili A hastalarının yaklaşık %70'i transfüzyon kökenli HIV enfeksiyonu riski altındadır.",
+        "E": "Renal tutulumda şiddetli hematüri ile karakterize akut nefritik sendrom tablosu beklenir."
+      },
+      "correctAnswer": "E",
+      "explanation": "HIV'in renal bulguları arasında akut nefritik sendrom değil; nefrotik sendrom, hafif proteinüri ve üremi yer alır. İnvaziv CMV'nin adrenal bezi yıkıma uğratarak yetmezlik yapması ve T4:T8 oranının tersine dönmesi hastalığın karakteristik progresyon bulgularıdır. Kan ürünü alan Hemofili A hastalarındaki yüksek insidans viral geçişin tarihsel bir kanıtıdır."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Kırk iki yaşında HIV pozitif erkek hasta, son bir haftadır alt dudak ve çene ucunda uyuşukluk ile şiddetli diş ağrısı benzeri bir şikayetle kliniğe başvuruyor. Yapılan panoramik radyografide herhangi bir odontojenik patoloji saptanmıyor. Hastanın nörolojik muayenesinde saptanan bu durum, HIV enfeksiyonunun hangi spesifik komplikasyonu ile en uyumludur?",
+      "options": {
+        "A": "Fasiyal sinir paralizisi",
+        "B": "Periferal polinöropati",
+        "C": "Mental siniri içeren trigeminal nevralji",
+        "D": "AIDS ilişkili demans kompleksi",
+        "E": "Oksipital nevralji ve hiperestezi"
+      },
+      "correctAnswer": "C",
+      "explanation": "HIV hastalarında nörolojik bozukluklar kapsamında, spesifik olarak mental siniri tutan trigeminal nevralji gelişebilir ve bu durum sıklıkla çenede anestezi veya yansıyan diş ağrısı şeklinde prezente olur. Fasiyal paralizi veya demans da görülebilmesine rağmen, çene ucu anestezisi ve atipik odontojenik ağrı doğrudan mental sinir tutulumunu işaret eder. Bu nedenle klinisyenler açıklanamayan diş ağrılarında nöral invazyonu akılda tutmalıdır."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Aşağıdaki enfeksiyöz ajanlardan hangisinin neden olduğu üretrit, reaktif bir artrit tablosu olan Reiter sendromunun tetiklenmesinde birincil rol oynar?",
+      "options": {
+        "A": "Neisseria gonorrhoeae",
+        "B": "Chlamydia trachomatis",
+        "C": "Trichomonas vaginalis",
+        "D": "Treponema pallidum",
+        "E": "Human papillomavirus"
+      },
+      "correctAnswer": "B",
+      "explanation": "Klamidya üretriti, genetik yatkınlığı olan bireylerde immünolojik bir reaksiyon başlatarak Reiter sendromunu (reaktif artrit) tetikleyen en önemli cinsel yolla bulaşan patojendir. Gonokoklar da üretrit yapsa da Reiter sendromunun klasik klamidyal tetiklenme mekanizması farklıdır. Bu durum, lokal bir enfeksiyonun sistemik otoimmün benzeri bir yanıt yaratabildiğinin göstergesidir."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Yirmi dört yaşında kadın hasta, orogenital temas sonrası başlayan şiddetli yorgunluk, dudaklarında mavi-siyah renkli düzensiz lezyonlar ve göz kapaklarında şişme şikayetiyle başvuruyor. Fizik muayenede servikal lenfadenopati ve yumuşak damakta peteşiler izleniyor. Hastanın cilt biyopsisinde küçük damar vasküliti raporlanıyor. Bu hastada en olası tanı aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Primer herpetik gingivostomatit",
+        "B": "Sekonder sifiliz",
+        "C": "Enfeksiyöz mononükleozis",
+        "D": "Sitomegalovirus retiniti",
+        "E": "Kondiloma aküminatum"
+      },
+      "correctAnswer": "C",
+      "explanation": "Orogenital aktivite sonrası gelişen mavi-siyah dudak lezyonları, göz kapağı ödemi, erken dönem palatal peteşiler ve ciltte vaskülit/tromboz bulguları Ebstein-Barr virüsüne bağlı enfeksiyöz mononükleozisin spesifik sunumudur. Herpetik enfeksiyonlar vezikülo-ülseratif seyrederken, sifilizin sekonder dönemi müköz yamalar ve makülopapüler döküntü yapar ancak bu spesifik vaskülitik lezyon paternini oluşturmaz. Hastalığın sistemik immün yanıtı bu atipik mukokutanöz bulguları yaratır."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Konjenital sifilizde fetal gelişimi etkileyen patogenez göz önüne alındığında, enfekte anneden fetüse spiroket geçişi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "options": {
+        "A": "Spiroketler gebeliğin ilk haftasından itibaren plasentayı geçerek fetüsü enfekte eder.",
+        "B": "Hamileliğin ilk 16 haftası boyunca spiroketler plasenta bariyerini aşamadığı için fetüs korunur.",
+        "C": "Sadece doğumsal kanal geçişi sırasında (perinatal) kan teması ile bulaş gerçekleşir.",
+        "D": "Fetüsün bağışıklık sistemi ilk trimesterde spiroketleri fagosite ederek konjenital anomalileri önler.",
+        "E": "Üçüncü trimesterde artan amniyotik sıvı hacmi spiroketlerin geçişini tamamen bloke eder."
+      },
+      "correctAnswer": "B",
+      "explanation": "Treponema pallidum'un neden olduğu konjenital sifilizde, spiroketlerin plasenta bariyerini aşabilmesi fizyolojik olarak gebeliğin 16. haftasından sonra mümkün olur. Bu dönemden önce fetüs izoledir ve bu aralık, gebe kadının tedavi edilerek fetüsün enfekte olmasını engellemek için kritik bir terapötik pencere sunar. Doğum sırasında bulaş genital herpes için daha tipikken, sifiliz esasen transplasental geçer."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "HIV pozitif hastalarda hücresel bağışıklığın çökmesiyle birlikte fırsatçı neoplazmların sıklığında dramatik artış görülür. Kaposi sarkomu yönetimiyle ilgili tedavi seçenekleri arasında aşağıdakilerden hangisi **yer almaz**?",
+      "options": {
+        "A": "CO2 lazer ile cerrahi eksizyon",
+        "B": "Vinblastin ile sistemik kemoterapi",
+        "C": "10-15 gün boyunca düşük doz (150 cGy) radyoterapi",
+        "D": "Yüksek doz intravenöz asiklovir infüzyonu",
+        "E": "Tümör boyutunu küçültmek amaçlı palyatif lokal rezeksiyon"
+      },
+      "correctAnswer": "D",
+      "explanation": "Kaposi sarkomu vasküler bir tümördür ve tedavisinde CO2 lazer, vinblastin kemoterapisi ve 150 cGy düşük doz radyoterapi gibi onkolojik yaklaşımlar kullanılır. Asiklovir bir antiviral olup herpes virüslerine (HSV, VZV) karşı etkilidir; Kaposi sarkomunun geriletilmesinde primer bir tedavi modalitesi değildir. Hastalığın vasküler yapısı nedeniyle cerrahi sırasında aşırı kanama riski de akılda tutulmalıdır."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "On beş yaşında erkek hasta, her iki diz ekleminde ağrı ve ısı artışı olmaksızın gelişen yumuşak şişlik şikayetiyle ortopedi kliniğine başvuruyor. Hastanın anamnezinden doğumsal bir enfeksiyon öyküsü olduğu, fizik muayenede ise alın kemiklerinde çıkıntı (Olympian kaş) ve maksiller hipoplazi saptanıyor. Eklem sıvısı aspirasyonunun hangi hastalık için pozitif sonuç vermesi en olasıdır?",
+      "options": {
+        "A": "Gonokokal artrit",
+        "B": "Klamidyal reaktif artrit (Reiter)",
+        "C": "Konjenital sifiliz",
+        "D": "Tersiyer sifiliz",
+        "E": "Enfeksiyöz mononükleozis"
+      },
+      "correctAnswer": "C",
+      "explanation": "Puberte döneminde ağrısız, kemiği içermeyen ve eklemde yumuşak şişlikle seyreden sinovit tablosu 'Clutton eklemi' olarak adlandırılır ve konjenital sifilizin geç dönem komplikasyonudur. Olympian kaş (frontal periostit) ve kısa maksilla bulguları da konjenital geçişi doğrular. Tersiyer sifiliz yetişkinlikte gom ve nörovasküler yıkımla karakterizeyken, bu pubertal eklem bulgusu spesifik olarak doğumsal formla ilişkilidir."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Cinsel yolla bulaşan enfeksiyonların tanısında kullanılan test ortamları organizmanın canlılığını koruması açısından kritiktir. Herpes virüs örneklerinin oda sıcaklığında depolanmasına ve laboratuvara taşınmasına olanak tanıyan spesifik taşıma ortamı aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Sabouraud dekstroz agar",
+        "B": "Leibovitz-Emory ve Stuart taşıma ortamları",
+        "C": "MacConkey buyyonu",
+        "D": "Lowenstein-Jensen besiyeri",
+        "E": "Thayer-Martin agar"
+      },
+      "correctAnswer": "B",
+      "explanation": "Herpes simpleks virüsü (HSV) izolasyonu için alınan numunelerin taşınmasında canlılığın korunması esastır ve bunun için Leibovitz-Emory veya Stuart taşıma ortamları kullanılır. Thayer-Martin gonokoklar için, Lowenstein-Jensen tüberküloz için spesifikken, viral partiküllerin transportu hücre kültürüne uygun viabilite sağlayan bu özel solüsyonları gerektirir. Otonom oda sıcaklığı stabilitesi bu solüsyonların en büyük avantajıdır."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Yirmi sekiz yaşında hamile kadın hasta, idrar yaparken yanma, pürülan akıntı ve boğazında yama şeklinde eritem şikayetleriyle başvuruyor. Hastaya yapılan kültür sonucunda Neisseria gonorrhoeae izole ediliyor. Hastanın anamnezinden penisilin ve sefalosporin grubuna anafilaktik reaksiyon öyküsü olduğu öğreniliyor. Fetal toksisite de göz önüne alındığında, bu hastanın tedavisinde en uygun antibiyotik seçeneği aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Siprofloksasin",
+        "B": "Tetrasiklin",
+        "C": "Doksisiklin",
+        "D": "Spektinomisin",
+        "E": "Seftriakson"
+      },
+      "correctAnswer": "D",
+      "explanation": "Gonore tedavisinde ilk tercih genellikle seftriakson veya penisilin olsa da, alerji durumunda intramüsküler spektinomisin veya oral siprofloksasin kullanılır. Ancak hasta hamile olduğu için tetrasiklin türevleri (kemik/diş toksisitesi) ve florokinolonlar kontrendikedir; bu durumda hamilelerde güvenle kullanılabilecek alternatif ajan spektinomisindir. Bu klinik senaryo, antimikrobiyal tercihte hem alerji hem de teratojenite bariyerlerinin birlikte yönetilmesini gerektirir."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Fellatio sendromu ile ilgili aşağıdaki klinik ve patolojik özelliklerden hangisi **değildir**?",
+      "options": {
+        "A": "Yumuşak ve sert damak birleşiminde izlenen submukozal hemoraji ile karakterizedir.",
+        "B": "Lezyonlar tipik olarak ülseröz yapıdadır ve şiddetli ağrıya neden olur.",
+        "C": "Bölgesel veya jeneralize lenfadenopati bulgusu tabloya eşlik etmez.",
+        "D": "Uvula ve farenks duvarı genellikle bu travmatik süreçten etkilenmez.",
+        "E": "Herhangi bir spesifik tedavi gerektirmeden 7-10 gün içinde kendiliğinden iyileşir."
+      },
+      "correctAnswer": "B",
+      "explanation": "Fellatio sendromu, oral seks travmasına sekonder olarak yumuşak/sert damak birleşiminde gelişen peteşi ve ekimozlarla karakterizedir; ancak lezyonlar kesinlikle ağrısızdır ve ülsere olmazlar. Lenfadenopati yokluğu ve farenks duvarının sağlam kalması, bu durumu enfeksiyöz mononükleozis veya üst solunum yolu enfeksiyonlarından ayıran en önemli ayırıcı tanı kriterleridir. Negatif basınç kaynaklı minör kapiller rüptür fizyopatolojinin temelidir."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Aşağıdaki fırsatçı mantar enfeksiyonlarından hangisi HIV pozitif hastalarda oral ve sistemik tutulum yapabilen ajanlar arasında **yer almaz**?",
+      "options": {
+        "A": "Candida albicans",
+        "B": "Histoplasma capsulatum",
+        "C": "Cryptococcus neoformans",
+        "D": "Geotrichum candidum",
+        "E": "Trichomonas tenax"
+      },
+      "correctAnswer": "E",
+      "explanation": "HIV pozitif hastalarda kandidiyazis (%75 ile en sık) dışında Histoplasmosis, Cryptococcoses ve Geotrichosis gibi ciddi fungal enfeksiyonlar izlenir. Trichomonas tenax ise bir mantar değil, oral kaviteye spesifik yerleşen bir protozoondur. Fırsatçı enfeksiyonların etken sınıflandırması ayırıcı tanıda ve ampirik antimikrobiyal ajan seçiminde kritik öneme sahiptir."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Otuz beş yaşında erkek hasta, submandibular bölgede şiddetli şişlik, ısı artışı ve kronik pürülan sinüzit şikayetiyle başvuruyor. Anamnezinde uzun süredir kontrolsüz HIV enfeksiyonu olduğu öğreniliyor. Oral mikrobiyolojik kültüründe rutin odontojenik floradan farklı ajanlar izole ediliyor. Bu hastadaki submandibular selülit tablosuna neden olma ihtimali en yüksek fırsatçı bakteri grubu aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Treponema pallidum ve Neisseria gonorrhoeae",
+        "B": "Klebsiella pneumoniae ve Enterobacter cloacae",
+        "C": "Mycobacterium avium-intracellulare",
+        "D": "Actinomyces israelii",
+        "E": "Pneumocystis carinii"
+      },
+      "correctAnswer": "B",
+      "explanation": "HIV pozitif hastalarda immünsüpresyonun derinleşmesiyle birlikte gram negatif enterik basiller (Klebsiella, Enterobacter cloacae, E. coli) baş-boyun bölgesinde atipik enfeksiyonlara yol açarak kronik sinüzit ve submandibular selülit yapabilirler. Actinomyces ve Mycobacterium doku hasarı yapsa da tarif edilen akut/subakut enterik basil selüliti spesifik bir HIV komplikasyonudur. Pneumocystis carinii ise akciğer spesifik bir parazittir."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Viral enfeksiyonların tedavisinde doğrudan antiviral ajanların yanı sıra, immün modülasyon sağlayan yardımcı ilaçlar da kullanılmaktadır. Rekürrent herpes simpleks enfeksiyonlarında 'süpresör T hücrelerini inhibe ederek' hücresel bağışıklığı destekleyen ve L-lizin diyeti ile kombine edilen ajan aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Asiklovir",
+        "B": "Simetidin",
+        "C": "Metronidazol",
+        "D": "Vinblastin",
+        "E": "Kortikosteroid"
+      },
+      "correctAnswer": "B",
+      "explanation": "Asiklovir HSV replikasyonunu doğrudan bloke ederken; bir H2 reseptör antagonisti olan simetidin, süpresör T hücrelerini inhibe ederek hümoral ve hücresel immün yanıtın baskılanmasını önler ve viral klerense yardımcı olur. Bu mekanizma, düşük arjinin/yüksek lizin diyeti ile birleştirildiğinde rekürrent atakların frekansını azaltmada alternatif bir farmakolojik manipülasyondur. Steroidler ise tam tersine immün sistemi baskılayarak enfeksiyonu alevlendirebilir."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Sifiliz enfeksiyonunun evrelerine ait klinik semptomlarla ilgili aşağıdaki eşleştirmelerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Primer sifiliz - Sarı seröz akıntılı, zımba deliği şeklinde intraoral ülserasyon",
+        "B": "Sekonder sifiliz - Gri-beyaz psödomembranlı müköz yamalar",
+        "C": "Tersiyer sifiliz - Obliteratif endarteritis ve gommatöz infiltrasyon",
+        "D": "Konjenital sifiliz - Tibiada kalınlaşma ve anterior eğrilik (kılıç kaval kemiği)",
+        "E": "Nörosifiliz - Paralitik demans yerine öncelikle ağrısız şankr lezyonu ile başlangıç"
+      },
+      "correctAnswer": "E",
+      "explanation": "Nörosifiliz, tersiyer sifilizin bir uzantısıdır ve santral sinir sistemi tutulumuyla karakterizedir; bulguları arasında paralitik demans, tabes dorsalis ve ALS bulunur. Ağrısız şankr, mikroorganizmanın ilk giriş yerinde gelişen primer sifilizin tipik başlangıç lezyonudur, nörosifilizin değil. Hastalığın evreleri spiroketlerin invazyon derinliği ve oluşturdukları immünolojik hasar tipine göre kesin sınırlarla ayrılır."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Pediatrik dönem HIV enfeksiyonları, yetişkinlere göre farklı seyir ve komplikasyonlar gösterir. Aşağıdakilerden hangisi 1-4 yaş arası çocuklarda yetişkinlerden farklı olarak **daha sık** karşılaşılan ve morbiditeyi artıran durumlardan biri **değildir**?",
+      "options": {
+        "A": "Gelişmemiş hümoral bağışıklık nedeniyle tekrarlayan kapsüllü bakteri enfeksiyonları",
+        "B": "Tükürük bezlerinde yetişkinlere kıyasla daha belirgin ve sık genişleme",
+        "C": "Konjenital veya perinatal geçişli şiddetli toksoplazmozis",
+        "D": "Herpes simpleks veya sitomegalovirusa bağlı hayatı tehdit eden sistemik tutulum",
+        "E": "Primer beyin lenfoması insidansının yetişkinlere göre 20 kat daha fazla olması"
+      },
+      "correctAnswer": "E",
+      "explanation": "Primer beyin lenfoması yetişkin HIV enfeksiyonlarında en yaygın görülen neoplazmdır, pediatrik popülasyonun birincil ayırıcı özelliği değildir. Çocuklarda henüz gelişmemiş bağışıklık sistemi nedeniyle kapsüllü bakteri enfeksiyonları, tükürük bezi genişlemeleri ve perinatal enfeksiyonlar (toksoplazma, CMV) klinik tabloyu domine eder. Bu farklılık, hücresel hafızanın yokluğu ve timik inaktivite ile ilişkilidir."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Otuz iki yaşında kadın hasta, vulvar ağrı, idrar zorluğu ve şiddetli genital ülserasyonlar nedeniyle acil servise başvuruyor. Yapılan tetkiklerde yüksek antikor seviyeleri ile birlikte serebrospinal sıvıda lenfosit artışı (pleositoz) saptanıyor. Hastanın şiddetli sistemik semptomları göz önüne alındığında, başlatılması gereken en uygun antiviral tedavi protokolü aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "7-10 gün boyunca oral asiklovir 200 mg (günde 5 kez)",
+        "B": "5-7 gün boyunca intravenöz asiklovir 5 mg/kg",
+        "C": "Tek doz intramüsküler benzatin penisilin G",
+        "D": "14 gün boyunca oral metronidazol",
+        "E": "Oral asiklovir 400 mg (günde 3 kez) profilaktik doz"
+      },
+      "correctAnswer": "B",
+      "explanation": "Pleositoz, nöbet riski ve şiddetli sistemik tutulumla karakterize olan genital herpesin (HSV-II) ağır epizodlarında, santral sinir sistemi komplikasyonlarını (herpes ensefaliti) önlemek için yüksek doz İV asiklovir (5 mg/kg, 5-7 gün) endikedir. Oral asiklovir dozları daha hafif, komplike olmayan ilk evre veya rekürrent mukozal lezyonların poliklinik yönetiminde tercih edilir. Nörolojik invazyon şüphesi tedavi yolunu agresifleştirir."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Diş hekimliği pratiğinde HIV pozitif bir hastada periodontal yıkıma eşlik eden, diffüz yumuşak doku infiltrasyonu ve gingival kanama izlenmektedir. Boyun lenf nodlarında masif genişleme saptanan bu hastada, spesifik olarak HIV'in predispoze ettiği hangi neoplazmın ilk oral işareti akla gelmelidir?",
+      "options": {
+        "A": "Kaposi sarkomu",
+        "B": "Non-Hodgkin lenfoma",
+        "C": "Dilde skuamoz hücreli karsinom",
+        "D": "Fokal epitelyal hiperplazi",
+        "E": "Malign melanoma"
+      },
+      "correctAnswer": "B",
+      "explanation": "HIV pozitifliğinde normal popülasyona göre 4.2 kat daha fazla görülen Non-Hodgkin lenfomanın ilk belirtisi sıklıkla diş etlerinde nedeni açıklanamayan şişme, diffüz infiltrasyon ve boyun lenf nodlarında ani genişlemedir. Kaposi sarkomu daha çok vasküler, mor-kırmızı nodüler bir kitle olarak damak mukozasında başlarken, lenfoma gingival hiperplaziyi taklit ederek atipik periodontal hastalık gibi maskelenebilir. Erken teşhis için biyopsi elzemdir."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Aşağıdaki patolojik mekanizmalardan hangisi, konjenital sifilizli bir hastada izlenen 'bulldog çenesi' deformitesinin doğrudan nedenidir?",
+      "options": {
+        "A": "Mandibulanın kondiler bölgesindeki gommatöz yıkım nedeniyle ramus boyunun kısalması",
+        "B": "Maksillanın gelişimsel geriliği (kısa maksilla) sonucu mandibulanın rölatif prognatik görünmesi",
+        "C": "Frontal ve parietal kemiklerdeki lokalize periostitise bağlı kafatası tabanının öne itilmesi",
+        "D": "Masseter kasındaki sifilitik miyozite sekonder gelişen asimetrik kas hipertrofisi",
+        "E": "Sert damakta meydana gelen perforasyonun maksiller arktaki okluzal yüksekliği düşürmesi"
+      },
+      "correctAnswer": "B",
+      "explanation": "Konjenital sifilizde spiroketlerin kraniofasiyal büyüme merkezlerini etkilemesi sonucu maksilla kısa kalır ve yüksek palatal ark oluşur; bu durum anatomik olarak normal boyuttaki mandibulanın göreceli olarak önde (prognatik) görünmesine yol açarak 'bulldog çenesi' deformitesini yaratır. Frontal periostitis 'Olympian kaş' oluşturur ancak çene ilişkisini bozmaz. Tersiyer dönem gomu ise konjenital değil, yetişkin dönemin edinsel yıkıcı lezyonudur."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Kırk sekiz yaşında erkek hasta, dil yüzeyinde yaygın papiller atrofi ve düzensiz derin fissürler şikayetiyle başvuruyor. Anamnezinde yirmi yıl önce cinsel yolla bulaşan bir hastalık geçirdiği ve tedavisini yarım bıraktığı öğreniliyor. Hastanın mevcut glossit tablosuna neden olan temel vasküler patoloji aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Küçük damar trombozuna yol açan immün kompleks vasküliti",
+        "B": "İnvaziv sitomegalovirusa bağlı kapiller endotelyal sitoliz",
+        "C": "Diffüz gommatöz infiltrasyonu takiben gelişen obliteratif endarteritis",
+        "D": "HIV kaynaklı trombositopenik purpura ve mikrokanamalar",
+        "E": "Ebstein-Barr virüsünün tetiklediği otoimmün arteritis"
+      },
+      "correctAnswer": "C",
+      "explanation": "Tersiyer sifilizin karakteristik lezyonu olan gom, dokularda diffüz infiltrasyon yaratarak önce vaskülit başlatır, ardından damar lümenini tıkayan 'obliteratif endarteritis' tablosunu oluşturur. Dildeki papiller atrofi ve derin fissürlü glossit (sifilitik lökoplaki zemininde), dokunun bu spesifik iskemik nekrozu sonucunda gelişir. Diğer seçenekler EBV, CMV veya HIV patogenezine ait farklı damar mekanizmalarıdır."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Aşağıdaki klinik tablolardan hangisinde, Epstein-Barr virüsü (EBV) varlığını biyopsi yoluyla doğrulamak spesifik teşhis için zorunludur?",
+      "options": {
+        "A": "Kondiloma aküminatumda görülen karnabahar görünümlü nodüller",
+        "B": "Sifilizin sekonder evresindeki müköz yamalar",
+        "C": "Oral mukozada izlenen tek veya iki taraflı, asemptomatik kıllı lökoplaki",
+        "D": "İleri evre HIV hastalarındaki hızla yayılan kaposi sarkomu",
+        "E": "Trikomanas enfeksiyonunda izlenen çilek benzeri mukoza enflamasyonu"
+      },
+      "correctAnswer": "C",
+      "explanation": "Kıllı lökoplaki, dilin lateral kenarlarında yerleşen beyaz, filiform, iyi sınır vermeyen ve genellikle asemptomatik lezyonlardır; bu tablonun kesin tanısı, doku biyopsisinde epitelyal hücreler içinde Epstein-Barr virüsünün (EBV) demonstrasyonu ile konur. Kaposi sarkomunda etken HHV-8, kondilomada HPV, trikomonasta parazittir. EBV'nin immünsüpresif zeminde mukozal epitelde yarattığı bu litik enfeksiyon, hastalığın ilerleyişinde önemli bir marker'dır."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Yirmi beş yaşında kadın hasta, ağız köşesinden yanak mukozasına uzanan düz sivri uçlu kabarıntılar ve yumuşak, pembe renkli nodüler proliferasyonlar şikayetiyle başvuruyor. Lezyonların birleşerek karnabahar görünümü aldığı izleniyor. Bu klinik tabloyla uyumlu lezyonun etkeni olan virüsün en muhtemel serotipleri aşağıdakilerden hangisinde birlikte verilmiştir?",
+      "options": {
+        "A": "HSV tip 1 ve tip 2",
+        "B": "HPV tip 6 ve tip 11",
+        "C": "HPV tip 16 ve tip 18",
+        "D": "Human Herpes Virus tip 8 (HHV-8)",
+        "E": "Sitomegalovirus (CMV)"
+      },
+      "correctAnswer": "B",
+      "explanation": "Oral kavitede ve anogenital bölgede izlenen, karnabahar görünümlü papillomatöz/nodüler kitlelerle karakterize kondiloma aküminatum (genital siğiller), Human Papillomavirus (HPV) tip 6 ve 11 enfeksiyonuna bağlı olarak gelişir. HPV 16 ve 18 daha çok malignite (servikal/oral SCC) riski taşırken, 6 ve 11 benign ekzofitik lezyonlardan sorumludur. Lezyonların nemli ve kıvrımlı yüzeyleri sevmesi klinik tanıda ipucudur."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Primer sifiliz şankrının oral mukozadaki görünümü ve ayırıcı tanısıyla ilgili olarak aşağıdaki ifadelerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Dudaklar oral kavitede lezyonun en yaygın izlendiği lokalizasyondur.",
+        "B": "Lezyonlar tipik olarak ağrısız, tek, yüzeyden kabarık ve hassas olmayan nodüler ülserlerdir.",
+        "C": "Palatal lezyon varlığında eritem, ödem ve yumuşak damakta çoklu peteşiler gözlenebilir.",
+        "D": "Tzanck testi pozitifliği, şankrı herpetik lezyonlardan ayırmada kullanılan temel diagnostik bulgudur.",
+        "E": "Sarı, seröz akıntı ile zımba deliği şeklindeki intraoral ülserasyonlar primer evre için yüksek derecede şüphelidir."
+      },
+      "correctAnswer": "D",
+      "explanation": "Tzanck testi pozitifliği sifiliz için değil, HSV enfeksiyonları (çok çekirdekli dev hücreler) için karakteristiktir; bu nedenle sifiliz şankrını uçuklardan ayırmada Tzanck testinin 'negatif' olması beklenir veya karanlık alan mikroskopisi / seroloji kullanılır. Şankrın ağrısız ve sert olması, dudak/palatal bölge tercihleri ve zımba deliği formasyonu primer sifilizin klasik doku reaksiyonlarıdır."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Otuz beş yaşında HIV ve Sifiliz ko-enfeksiyonu bulunan erkek hastanın tedavi planlaması yapılmaktadır. Bu hasta grubunda sadece sifiliz olan bireylere kıyasla farmakolojik yönetimde izlenmesi gereken temel farklılık aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Tedavide öncelikle tetrasiklin türevlerinin kullanılması zorunluluğu",
+        "B": "Kardiyovasküler hasarı önlemek için tedaviye kortikosteroid eklenmesi",
+        "C": "Antibiyotik direnci nedeniyle sadece intravenöz seftriaksona yanıt alınabilmesi",
+        "D": "Daha yüksek penisilin dozlarına veya daha uzun süreli tedavi protokolüne ihtiyaç duyulması",
+        "E": "Spiroket replikasyonunu durdurmak için lokal CO2 lazer eksizyonu uygulanması"
+      },
+      "correctAnswer": "D",
+      "explanation": "HIV seropozitifliği, hümoral ve hücresel bağışıklığı zayıflattığı için treponemal klerensi güçleştirir. Bu nedenle HIV ve Sifiliz ko-enfeksiyonu olan bireylerde standart tedaviler başarısız olabilir; daha yüksek penisilin dozları veya daha uzun tedavi süreleri uygulanması zorunludur. Ko-enfeksiyon durumunda hastalık hızla nörosifiliz gibi ileri evrelere progrese olma eğilimindedir."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Gonokokal farenjitin klinik seyrinde, tanıyı zorlaştıran ve sıklıkla yanlış yönlendirmeye sebep olan fizik muayene bulgusu aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Sadece tek taraflı tonsiller hipertrofi yapması",
+        "B": "Ülseröz nekrotizan gingivitis ile birebir aynı kemik yıkımını başlatması",
+        "C": "Boğazda diffüz eritem ve ödem yaratarak sıradan streptokokal enfeksiyonu taklit etmesi",
+        "D": "Oral kavitede çilek görünümlü mukozal lezyonlara sebep olması",
+        "E": "Tükrük bezi kanallarında tıkanıklık ve bilateral şişlik yaratması"
+      },
+      "correctAnswer": "C",
+      "explanation": "Oral gonore teşhisi oldukça zordur çünkü farenks tutulumu sıklıkla boğazda diffüz eritem ve ödem yaratarak rutin bir streptokokal (bakteriyel) veya viral tonsillit görünümü verir. Çilek mukoza trikomonasta görülürken, tek taraflı tonsil asimetrisi malignite veya apse bulgusudur. Bu klinik siliklik nedeniyle şüpheli anamnezde (orogenital temas) kesin tanı kültür ve floresan antikor testleriyle konmalıdır."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "HIV enfeksiyonunda sıklıkla kullanılan serolojik ve genetik testlerle ilgili aşağıda verilen bilgilerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "En sık kullanılan başlangıç serolojik testi enzyme immunoassay (EIA) yöntemidir.",
+        "B": "Akut viral sendromun görüldüğü erken evrede ELISA testi yanlış negatif sonuçlar verebilir.",
+        "C": "ELISA testinin pozitif çıkması durumunda tanı Western blot assay ile doğrulanmalıdır.",
+        "D": "Tanı genellikle virüse maruziyetten sadece 24 saat sonra kanda antikor saptanmasına dayanır.",
+        "E": "Polimeraz zincir reaksiyonu (PCR) ile DNA amplifikasyonu antijen temelli ileri tanı yöntemlerindendir."
+      },
+      "correctAnswer": "D",
+      "explanation": "HIV tanısı, virüse maruz kaldıktan sadece 24 saat sonra değil, yaklaşık 3 ay sonra immün sistemin oluşturduğu antikorların (serokonversiyon penceresi) test edilmesiyle konur. Erken dönemde antikor titresi yetersiz olduğundan ELISA yanlış negatiflik verebilir ve doğrulama için her zaman spesifik proteinleri tarayan Western blot gerekir. Geleceğin teşhisleri ise virüsün bizzat DNA'sını saptayan PCR tabanlı yöntemlere dayanır."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "HIV hastalarında enfeksiyon kontrol protokolleri uygulanırken, diş hekiminin bilmesi gereken dezenfeksiyon direnci ve bulaş riskleriyle ilgili hangi ifade **doğrudur**?",
+      "options": {
+        "A": "HIV virüsü çevresel şartlara oldukça dayanıklıdır ve yüzeylerde haftalarca canlı kalabilir.",
+        "B": "Sadece kan yoluyla bulaşır, insan ısırığı veya tükürükle bulaşması imkansızdır.",
+        "C": "Çoğu hastane dezenfektanı virüsü öldürür ve virüs kültür ortamı dışında uzun süre canlı kalamaz.",
+        "D": "Hepatit B için uygulanan enfeksiyon kontrol yöntemleri HIV için yetersiz kalır, ek gaz sterilizasyon şarttır.",
+        "E": "Aerosol oluşturan ultrasonik aletlerin kullanımı HIV pozitif bireylerde özellikle tavsiye edilir."
+      },
+      "correctAnswer": "C",
+      "explanation": "HIV oldukça narin bir virüstür; kültür ortamı dışında çevresel şartlarda hızla inaktive olur ve standart hastane dezenfektanları virüsü öldürmek için yeterlidir. Hepatit B için geçerli olan standart evrensel bariyer önlemleri HIV için de tam koruma sağlar. Ancak insan ısırığı ile geçebildiği kanıtlanmıştır ve aerosol üreten ultrasonik aletlerin kullanımı kontaminasyon riskini artırdığı için sınırlandırılmalıdır."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Onaltı yaşında kız hasta, üst çene anterior dişlerinde şekil bozukluğu şikayetiyle başvuruyor. Muayenede santral kesicilerin kısa, fıçı şeklinde ve aralarında geniş boşluklar bulunduğu izleniyor. İleri tetkiklerde intertisyal keratit saptanan hastada, odyolojik muayenede hangi kranial sinirin tutulumuna bağlı sağırlık tablosu beklenir?",
+      "options": {
+        "A": "Trigeminal sinir (V. Kranial)",
+        "B": "Fasiyal sinir (VII. Kranial)",
+        "C": "Vestibülokoklear sinir (VIII. Kranial)",
+        "D": "Glossofaringeal sinir (IX. Kranial)",
+        "E": "Hipoglossal sinir (XII. Kranial)"
+      },
+      "correctAnswer": "C",
+      "explanation": "Konjenital sifilizde görülen ve patognomonik olan 'Hutchinson Triadı'; Hutchinson dişleri (fıçı şeklinde kesiciler/mulberry molarlar), gözde intertisyal keratit ve 8. kranial sinir (Vestibülokoklear) tutulumuna bağlı gelişen sensörinöral sağırlıktan oluşur. Bu sendrom, spiroketlerin spesifik organ sistemlerinin embriyolojik gelişim basamaklarını hedef alarak oluşturduğu klasik kalıcı hasardır."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Aşağıdaki dermatolojik veya müköz membran hastalıklarından hangisi primer olarak HIV enfeksiyonunun dermatolojik belirtilerinden/komplikasyonlarından biri **değildir**?",
+      "options": {
+        "A": "Eroziv liken planus",
+        "B": "Jeneralize prurigo ve kuru cilt",
+        "C": "Psöriazis ve seboreik dermatit alevlenmesi",
+        "D": "Molluscum contagiosum",
+        "E": "Sarı tırnak sendromu"
+      },
+      "correctAnswer": "A",
+      "explanation": "HIV'in spesifik dermatolojik bulguları arasında yaygın kaşıntı, prurigo, kserozis, molluscum contagiosum, uyuz direnci, sarı tırnak sendromu, Lyell sendromu ve psöriazis alevlenmesi sayılır. Eroziv liken planus T hücre aracılı otoimmün bir hastalık olmakla birlikte, HIV'in spesifik veya artan sıklıkla beklenen direkt bir dermatolojik belirteci olarak kaynakta geçmemektedir. Deri immünitesinin çöküşü viral ve fungal enfestasyonlara zemin hazırlar."
+    },
+    {
+      "lesson": "Oral Patoloji ve Diagnoz",
+      "unit": "Cinsel Yolla Bulaşan Hastalıklar",
+      "question": "Sifiliz lezyonları oral kavitede travma veya diğer hastalıklarla karışabilir. Yumuşak damakta eritem, ödem ve peteşi ile karakterize primer sifiliz palatal lezyonunu, histolojik veya mikrobiyolojik tanı öncesi akut 'Fellatio sendromundan' ayıran en kritik klinik özellik aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Fellatio sendromunun şiddetli ağrı ve yanma hissi yaratması",
+        "B": "Primer sifilizde zımba deliği tarzı ülserasyon ve seröz akıntı görülmesi",
+        "C": "Primer sifilizin uvula ve arka farenks duvarını içine alarak yayılması",
+        "D": "Fellatio sendromunda belirgin ve hassas servikal lenfadenopati gelişmesi",
+        "E": "Sifiliz lezyonunun 7-10 gün içerisinde kendiliğinden skar bırakmadan iyileşmesi"
+      },
+      "correctAnswer": "B",
+      "explanation": "Fellatio sendromu ağrısız, submukozal hemoraji (peteşi/ekimoz) tarzında, ülsere olmayan travmatik bir lezyondur ve lenfadenopati izlenmez. Buna karşın primer sifilizde lezyon ilerleyerek zımba deliği tarzında sığ intraoral ülserasyonlara dönüşür, yüzeyden seröz akıntı verir ve hassas olmayan bölgesel lenfadenopatiye neden olur. Doku bütünlüğünün (ülserasyon) bozulup bozulmaması iki tanıyı ayırmada birincil gözlemdir."
+    }
+  ]
+}

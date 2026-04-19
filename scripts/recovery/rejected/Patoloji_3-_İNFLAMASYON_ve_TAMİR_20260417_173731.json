@@ -1,0 +1,41 @@
+{
+  "lesson": "Patoloji",
+  "unit": "3- İNFLAMASYON ve TAMİR",
+  "rejected_at": "2026-04-17T17:37:31.024766",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "İnflamasyon ve Doku Tamiri",
+        "question": "Dolaşımdaki lökositlerin (nötrofil, monosit, lenfosit) endotel yüzeyindeki E-selektin ve P-selektin moleküllerine zayıf bağlar kurarak 'yuvarlanma (rolling)' hareketini başlatmasını sağlayan lökosit yüzey ligandı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Sialil-Lewis X-modifiye glikoprotein",
+          "B": "ICAM-1 (CD54)",
+          "C": "MAdCAM-1",
+          "D": "VLA-4 (CD49aCD29)",
+          "E": "LFA-1 (CD11a/18)"
+        },
+        "correctAnswer": "A",
+        "explanation": "Lökositlerin yüzeyindeki Sialil-Lewis X glikoproteini, endoteldeki E-selektin ve P-selektinlere bağlanarak inflamasyonun erken fazı olan yuvarlanma hareketini gerçekleştirir. ICAM-1 ve VCAM-1 ise yuvarlanma bittikten sonra integrinler (LFA-1, MAC-1, VLA-4) aracılığıyla kurulan stabil adezyon aşamasının endotelyal reseptörleridir. Yuvarlanma aşamasının zayıf bağ karakteri tamamen selektin-karbonhidrat etkileşimine dayanır."
+      },
+      "reason": "uzunluk_biasi:correct=36ch_avg_other=14ch"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "İnflamasyon ve Doku Tamiri",
+        "question": "Lökositlerin inflamasyon bölgesine göçü sırasında endotel hücreleri arasından geçerek dokuya ulaşmasını (transmigrasyon/diapedez) sağlayan ve endotel ile lökositler arasında homotipik (aynı moleküllerin karşılıklı etkileşimi) bağlar kuran immünglobulin süperailesi üyesi molekül aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "CD31 (PECAM-1)",
+          "B": "ICAM-1",
+          "C": "VLA-4",
+          "D": "MAC-1",
+          "E": "VCAM-1"
+        },
+        "correctAnswer": "A",
+        "explanation": "CD31 (PECAM-1), lökosit transmigrasyonu sırasında hem lökositte hem de endotelde eksprese edilip iki hücre arasında homotipik etkileşim kurarak lökositin damar duvarını geçmesine izin veren spesifik moleküldür. ICAM-1 ve VCAM-1 ise endotel tarafında bulunur ve lökositteki farklı moleküllerle (LFA-1, VLA-4 vb.) heterotipik bağlar kurarak adezyonu sağlarlar; transmigrasyonu değil."
+      },
+      "reason": "uzunluk_biasi:correct=14ch_avg_other=6ch"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "DENEME",
+  "rejected_at": "2026-04-18T13:21:44.219312",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kalp ve Dolaşım Fizyolojisi",
+        "question": "68 yaşında erkek hasta, akut dekompanse kalp yetmezliği tanısıyla koroner yoğun bakıma yatırılmıştır. Hastanın artan hipervolemisine yanıt olarak ventrikül endokardındaki gerim reseptörlerinin uyarılmasıyla sentezlenen ve cGMP'yi artırarak vazodilatasyon ve natriürez yapan hormon aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Aldosteron",
+          "B": "Anjiyotensin II",
+          "C": "Vazopressin",
+          "D": "Endotelin-1",
+          "E": "Beyin natriüretik peptid (BNP)"
+        },
+        "correctAnswer": "E",
+        "explanation": "BNP, beyin dokusundan izole edilmiş olsa da insan fizyolojisinde başlıca ventrikül miyokardından salınır. Artmış volüm yükü ve gerilim karşısında BNP sentezlenir; böbreklerde sodyum atılımını (natriürez) ve damarlarda vazodilatasyonu sağlayarak RAA sistemine antagonist çalışır ve kan basıncını düşürür."
+      },
+      "reason": "uzunluk_biasi:correct=30ch_avg_other=12ch"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "9.Ünit Oral Patoloji (1)",
+  "rejected_at": "2026-04-16T22:57:39.596986",
+  "items": [
+    {
+      "question": {
+        "lesson": "Oral Patoloji",
+        "unit": "Dil ve Mukoza Lezyonları",
+        "question": "Konjenital veya edinsel makroglossi etiyolojisine yol açan aşağıdaki genetik ve metabolik durumlardan hangisi **yanlıştır**?",
+        "options": {
+          "A": "Beckwith-Wiedemann sendromunda doku büyüme regülasyon genlerinde defekt vardır",
+          "B": "Kretenizmde su tutulumu yüksek glikozaminoglikanlar bağ dokusunda birikir",
+          "C": "Nörofibromatozis Tip I'de pleksiform nörofibromlar dil dokusunu infiltre eder",
+          "D": "Multipl Endokrin Neoplazi Tip 2A'da mukozal nöroma hiperplazisi izlenir",
+          "E": "Duchenne Muskuler Distrofi'de ilerleyici kas yıkımı yerini yağlı dokuya bırakır"
+        },
+        "correctAnswer": "D",
+        "explanation": "Multipl Endokrin Neoplazi (MEN) spektrumunda dilde makroglossi yapan mukozal nöroma hiperplazisi sadece MEN Tip 2B'ye özgü bir bulgudur, MEN Tip 1 veya 2A'da bu patoloji izlenmez. Diğer seçeneklerdeki genetik/metabolik mekanizmalar gerçek veya göreceli makroglossi nedeni olarak tamamen doğrudur. DUS terminolojisinde sendrom tiplendirmesi sık kullanılan bir tuzaktır."
+      },
+      "reason": "kisa_stem:14kelime"
+    }
+  ]
+}

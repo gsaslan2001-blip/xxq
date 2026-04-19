@@ -1,0 +1,24 @@
+{
+  "lesson": "Radyoloji",
+  "unit": "KIBT",
+  "rejected_at": "2026-04-18T19:57:27.222842",
+  "items": [
+    {
+      "question": {
+        "lesson": "Ağız, Diş ve Çene Radyolojisi",
+        "unit": "Konik Işınlı Bilgisayarlı Tomografi",
+        "question": "Nazal kavitenin lateral duvarında, inferior nasal concha'nın hemen superiorunda yer alan ve KIBT koronal kesitlerinde ethmoidal sinüs havalı hücrelerinin inferomedial komşuluğunda izlenen anatomik yapı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Vomer",
+          "B": "Middle nasal concha",
+          "C": "Frontal bone",
+          "D": "Palate",
+          "E": "Squamous part of temporal bone"
+        },
+        "correctAnswer": "B",
+        "explanation": "Middle nasal concha, superior ve inferior konkalar arasında yer alan ve ethmoid kemiğin inferior çıkıntısını oluşturan anatomik yapıdır. KIBT koronal kesitlerinde ethmoidal sinüsün hemen altında, nazal kaviteye uzanan kemiksi yapı olarak görülür. Palate oral ve nazal kaviteyi ayıran horizontal taban yapısıdır."
+      },
+      "reason": "bilgi_sizintisi:overlap_0.67"
+    }
+  ]
+}

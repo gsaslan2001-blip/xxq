@@ -1,0 +1,426 @@
+{
+  "lesson": "Periodontoloji",
+  "unit": "3.a - Gingival Hastalıklar",
+  "questions": [
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Kırk beş yaşında kadın hasta, yanak mukozasında iki taraflı yerleşim gösteren, ağrısız, ağ şeklinde beyaz çizgilenmeler şikayetiyle başvuruyor. Hastanın klinik muayenesinde saptanan bu karakteristik bulgunun, aşağıdaki mukokutanöz hastalıkların hangisinin teşhisinde temel kaynak olması en olasıdır?",
+      "options": {
+        "A": "Pemfigus vulgaris",
+        "B": "Müköz membran pemfigoidi",
+        "C": "Oral liken planüs",
+        "D": "Lupus eritematozus",
+        "E": "Eritema multiforme"
+      },
+      "correctAnswer": "C",
+      "explanation": "Oral liken planüsün (OLP) en karakteristik klinik görüntüsü ve teşhis kaynağı, genellikle bilateral yerleşim gösteren beyaz Wickham çizgileridir. Pemfigus ve pemfigoid vezikülobüllöz karakterde olup bül rüptürü sonrası erozyonlarla seyrederken, OLP'deki retiküler form semptomsuz keratotik bir ağ yapısı sergiler. Bu spesifik beyaz papül/çizgi konfigürasyonu OLP için patognomoniktir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Oral liken planus olgularında en sık karşılaşılan, Wickham çizgileri olarak adlandırılan beyaz papüler ve ağsı lezyonlar, hastalığın ağırlıklı olarak hangi klinik formunda izlenmektedir?",
+      "options": {
+        "A": "Retiküler",
+        "B": "Eroziv",
+        "C": "Atrofik",
+        "D": "Büllöz",
+        "E": "Ülseratif"
+      },
+      "correctAnswer": "A",
+      "explanation": "Wickham çizgileri, oral liken planusun keratotik bir formu olan retiküler tipinde en belirgin şekilde izlenir. Eroziv, atrofik ve ülseratif tiplerde epitel bütünlüğü bozulduğu için daha çok eritem ve ağrılı ülserasyonlar ön plandadır. Retiküler form genelde asemptomatiktir ve dental muayenede tesadüfen saptanır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Oral liken planus lezyonlarından alınan biyopsi örneklerinin direkt immünofloresan incelemesinde, bazal membran bölgesinde gözlenen ve hastalık için tipik olan birikim aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Lineer formda IgG",
+        "B": "Shaggy konfigürasyonlu fibrinojen",
+        "C": "Granüler formda IgA",
+        "D": "Bant şeklinde T-lenfosit",
+        "E": "Tzanck hücresi opsonizasyonu"
+      },
+      "correctAnswer": "B",
+      "explanation": "Liken planusun immünofloresan incelemesinde bazal membranda 'shaggy' (kabarık/pürüzlü) konfigürasyona sahip fibrinojen birikimi diagnostiktir. Lineer IgG birikimi pemfigoidde, bant şeklinde T-lenfosit infiltrasyonu ise immünofloresan incelemede değil rutin histopatolojik H&E boyamasında izlenen bir bulgudur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Pemfigus hastalığının alt tipleri incelendiğinde, epitel dokusundaki ayrılmanın (akantolizis) stratum spinosum yerine daha yüzeyel bir tabaka olan stratum corneum düzeyinde gerçekleştiği, nispeten daha hafif seyirli form aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Pemfigus vulgaris",
+        "B": "Pemfigus vegetans",
+        "C": "Pemfigus eritematozus",
+        "D": "Pemfigus foliaceus",
+        "E": "Paraneoplastik pemfigus"
+      },
+      "correctAnswer": "D",
+      "explanation": "Pemfigus foliaceusta otoantikorlar sadece cildin üst tabakalarındaki desmoglein-1'e saldırdığı için ayrılma en üstteki stratum corneum tabakasında olur ve hastalık daha hafif seyreder. Pemfigus vulgariste ise ayrılma daha derindeki stratum spinosum tabakasında gerçekleşerek intraepitelyal ağır lezyonlar yaratır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Pemfigus hastalığı ve alt tiplerinin klinik ve histopatolojik özellikleriyle ilgili olarak aşağıdakilerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Vezikülobüllöz hastalıklar içinde en ciddi olanı pemfigus vulgaristir.",
+        "B": "Pemfigus vegetans hastalığın bilinen alt tiplerinden biridir.",
+        "C": "Pemfigus vulgariste epitel üzerine uygulanan sürtünme basıncı ile ayrılma oluşur (Nikolsky pozitif).",
+        "D": "Ağızda en çok klinik bulgu veren pemfigus tipi pemfigus vulgaristir.",
+        "E": "Pemfigus foliaceusta otoimmün yıkıma bağlı bül oluşumu subepitelyal düzeyde gerçekleşir."
+      },
+      "correctAnswer": "E",
+      "explanation": "Tüm pemfigus tiplerinde bül oluşumu intraepitelyaldir; Pemfigus foliaceusta bu ayrılma spesifik olarak epitelin en üst tabakası olan stratum corneumda gerçekleşir. Subepitelyal ayrılma (epitelin bağ dokusundan bazal membran düzeyinde tamamen kalkması) pemfigoid grubunun (sikatrisyel ve büllöz pemfigoid) karakteristik özelliğidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Pemfigus vulgaris patogenezinde, hücreler arası bağlantıdan sorumlu desmozomal kaderin proteinlerine karşı Tip 2 aşırı duyarlılık reaksiyonu gelişir. Bu hastalıkta özellikle **ağız içi** lezyonların ortaya çıkmasından sorumlu olan ana otoantikor hedefi aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Desmoglein 1",
+        "B": "BP1 antijeni",
+        "C": "Desmoglein 3",
+        "D": "Hemidesmozom",
+        "E": "BP2 antijeni"
+      },
+      "correctAnswer": "C",
+      "explanation": "Pemfigus vulgariste ağız mukozasındaki hücre ayrışmasından sorumlu ana kaderin proteini desmoglein 3'tür. BP1 ve BP2 antijenleri büllöz pemfigoidde bazal membran hedefiyken, desmoglein 1 derideki lezyonların primer hedefidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Pemfigus vulgaris tablosunda mukoza lezyonlarına ek olarak deride de yaygın büller izlenmektedir. Bu tablonun deri komponentini oluşturan ve keratinositler arası tutunmayı engelleyen otoantikorlar primer olarak hangi molekülü hedefler?",
+      "options": {
+        "A": "Desmoglein 1",
+        "B": "Lamina lucida komponentleri",
+        "C": "Desmoglein 3",
+        "D": "Tip VII Kollajen",
+        "E": "Dokü transglutaminaz"
+      },
+      "correctAnswer": "A",
+      "explanation": "Pemfigus vulgariste deri bulgularının gelişiminden sorumlu ana antijenik hedef desmoglein 1'dir. Ağızda desmoglein 3 hedef alınırken, antikorların her iki proteine de reaksiyon göstermesi mukokutanöz yaygın yıkım tablosunu oluşturur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Eritema multiformenin patogenezi ile ilişkili olup, klinik olarak çok daha şiddetli ve yaygın mukokutanöz epitel nekrozu ile karakterize olan iki hastalık formu aşağıdakilerin hangisinde birlikte verilmiştir?",
+      "options": {
+        "A": "Pemfigus vulgaris - Büllöz pemfigoid",
+        "B": "Stevens Johnson sendromu - Toksik epidermal nekroz",
+        "C": "Lineer IgA hastalığı - Dermatitis herpetiformis",
+        "D": "Sikatrisyel pemfigoid - Lupus eritematozus",
+        "E": "Oral liken planus - Kronik ülseratif stomatit"
+      },
+      "correctAnswer": "B",
+      "explanation": "Stevens Johnson sendromu ve toksik epidermal nekroz (TEN), eritema multiformenin (EM) en şiddetli ve hayati tehlike yaratan formlarıdır. Genellikle ilaç reaksiyonları (sülfonamid, NSAİ vb.) ile tetiklenirler ve damar duvarlarında lökositoklastik hasar sonucu masif iskemik nekrozlara yol açarlar."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Yirmi beş yaşında erkek hasta, dudaklarında kalın sarımsı fibrinöz kabuklanmalar ve ağız içinde geniş ülserlerle kliniğe başvuruyor. Deri muayenesinde kollarında eritematöz bir alan içinde beyaz halka ile çevrili santral bül içeren 'zambak (hedef)' benzeri lezyonlar izleniyor. Bu klinik tabloya yol açan en olası tanı aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Sistemik lupus eritematozus",
+        "B": "Büllöz pemfigoid",
+        "C": "Dermatitis herpetiformis",
+        "D": "Eritema multiforme",
+        "E": "Pemfigus foliaceus"
+      },
+      "correctAnswer": "D",
+      "explanation": "Hedef derisi veya zambak görünümlü deri lezyonları ile dudaklarda yaygın hemorajik/fibrinöz kabuklanma eritema multiformenin (EM) en karakteristik klinik belirtisidir. Diğer vezikülobüllöz hastalıklarda (pemfigus/pemfigoid) bu spesifik konsantrik halkalı zambak görünümü izlenmez."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Sistemik lupus eritematozus (SLE) hastalarının serolojik değerlendirmesinde, vakaların %50'sinden fazlasında DNA antikorlarına eşlik ederek klinik teşhisi destekleyen spesifik antikor aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Antinötrofil sitoplazmik antikor (ANCA)",
+        "B": "Anti-Saccharomyces cerevisiae (ASCA)",
+        "C": "Anti-doku transglutaminaz",
+        "D": "Anti-desmozom",
+        "E": "ENA (Extractable nuclear antigen)"
+      },
+      "correctAnswer": "E",
+      "explanation": "SLE hastalarında antinükleer antikor (ANA) %95 oranında bulunurken, spesifik olarak DNA ve ENA (Extractable nuclear antigen) antikorları vakaların yarısından fazlasında saptanarak tanıyı güçlendirir. Anti-doku transglutaminaz dermatitis herpetiformiste, anti-desmozom ise pemfigusta saptanır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Lineer IgA hastalığı (LAD) ile ilgili klinik özellikler değerlendirildiğinde aşağıdakilerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Klinik insidansı erkeklerde kadınlara oranla belirgin düzeyde daha yüksektir.",
+        "B": "Anjiyotensin dönüştürücü enzim (ACE) inhibitörleri kullanımı hastalığı tetikleyebilir.",
+        "C": "Oral lezyonları klinik olarak deskuamatif gingivitis tablosu oluşturabilir.",
+        "D": "Hastalık ağrılı oral ülserasyonlar veya veziküller ile seyredebilir.",
+        "E": "Oral lezyonlar, kutanöz bulgular ortaya çıkmadan yıllar önce tek belirti olarak izlenebilir."
+      },
+      "correctAnswer": "A",
+      "explanation": "Lineer IgA dermatozu (LAD), erkekleri değil ağırlıklı olarak kadınları daha çok tutan nadir bir mukokutanöz bozukluktur. Hastalığın diğer tüm seçeneklerde belirtilen ilaç etkileşimi ve deskuamatif klinik seyri kaynak metinle birebir uyumludur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Kadın hastalarda daha sık izlenen ve bazen ilaçlara bağlı tetiklenebilen Lineer IgA hastalığının (LAD) mikroskobik incelemesinde elde edilen histopatolojik doku bulguları, spesifik olarak aşağıdaki oral lezyonların hangisine büyük benzerlik gösterir?",
+      "options": {
+        "A": "Pemfigus vegetans",
+        "B": "Retiküler liken planus",
+        "C": "Eroziv liken planus",
+        "D": "Kronik ülseratif stomatit",
+        "E": "Dermatitis herpetiformis"
+      },
+      "correctAnswer": "C",
+      "explanation": "LAD'ın mikroskobik doku özellikleri, histopatolojik olarak eroziv liken planusta gözlenen bulgularla büyük ölçüde örtüşür. Retiküler formda epitel bütünlüğü korunduğu için veziküler/eroziv süreçlere benzemezken, eroziv OLP ve LAD mikroskobik olarak ayırt edilmesi zor konfigürasyonlar yaratır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Hastaların kullandıkları ilaçların lokal veya sistemik uygulamalarına bağlı olarak ağız mukozasında eritem, ülserasyon ve genel mukozit tablosu ile seyreden spesifik alerjik aşırı duyarlılık reaksiyonlarına ne ad verilir?",
+      "options": {
+        "A": "Pemfigoid medikamentoza",
+        "B": "Stomatitis medikamentoza",
+        "C": "Aktinik keilitis",
+        "D": "Kandidiyal lökoplaki",
+        "E": "Kronik ülseratif stomatit"
+      },
+      "correctAnswer": "B",
+      "explanation": "İlaç kaynaklı gelişen oral mukoza hipersensitiviteleri (eritem, ülserasyon, mukozit) genel olarak 'stomatitis medikamentoza' terimiyle ifade edilir. Bu tablo ilacın kesilmesiyle geriler, düzelmezse topikal steroid veya takrolimus kullanılır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Klinik muayenede yapışık dişetinde yaygın eritem tablosu saptanan bir hastanın anamnezinde, yoğun pirofosfat ve aromasını baskılamak için tarçın içeren diş macunu kullanımı belirlenmiştir. Alerjik etyolojiye dayanan bu tablonun spesifik adı aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Deskuamatif gingivitis",
+        "B": "Streptokokal gingivostomatit",
+        "C": "Lösemik dişeti büyümesi",
+        "D": "Plazma hücreli gingivitis",
+        "E": "Puberte gingivitisi"
+      },
+      "correctAnswer": "D",
+      "explanation": "Tarçın aromaları ve pirofosfat içeren diş macunlarının reaksiyonu, yapışık dişetinde eritemli, klinik olarak spesifik bir histolojik doku infiltrasyonuna neden olan 'plazma hücreli gingivitis'e yol açar. Bu ajanların kullanımı kesildiğinde dişeti normal mercan pembesi rengine döner."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Otuz beş yaşında kadın hasta, 15 gün önce alt posterior dişlerine uygulanan amalgam restorasyonlar sonrası komşu yanak mukozasında kırmızı/beyaz renkte, yer yer ülsere lezyonlar şikayetiyle başvurmuştur. Civa alerjisine bağlı dental restoratif materyal hipersensitivitesi tanısı alan bu hastadaki lezyonların, klinikte en çok hangi hastalıklarla karıştırılması olasıdır?",
+      "options": {
+        "A": "Sikatrisyel pemfigoid ve Büllöz pemfigoid",
+        "B": "Eritema multiforme ve Stevens Johnson Sendromu",
+        "C": "Dermatitis herpetiformis ve Çölyak",
+        "D": "Pemfigus vulgaris ve Pemfigus foliaceus",
+        "E": "Oral liken planus ve Lökoplaki"
+      },
+      "correctAnswer": "E",
+      "explanation": "Civa, nikel veya akrilik gibi dental restoratif materyallere bağlı gelişen temas alerjileri mukozada kırmızı, beyaz ve ülsere formlar yaratır. Bu 'likenoid reaksiyon' adı da verilen tablo klinik görüntü olarak en çok oral liken planüs ve lökoplakiye benzer."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Travmatik Dişeti Hastalıkları",
+      "question": "Oral mukozada karşılaşılan kimyasal yaralanmalar değerlendirildiğinde, hekim kontrolü dışında uzun süreli veya yoğun kullanılması durumunda spesifik olarak mukozal deskuamasyon (soyulma) tablosu yarattığı bilinen topikal ajan aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Klorheksidin",
+        "B": "Kortikosteroid pomad",
+        "C": "Asiklovir",
+        "D": "Pirofosfat",
+        "E": "Sodyum florür"
+      },
+      "correctAnswer": "A",
+      "explanation": "Klorheksidin bazlı gargaralar antiseptik amaçla yaygın kullanılsa da, yoğun ve uygunsuz kullanımı toksik etki yaratarak mukozal deskuamasyona (yüzeyel soyulmaya) sebep olur. Bu durum asetilsalisilik asit yanığı gibi bir kimyasal yaralanma formudur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Travmatik Dişeti Hastalıkları",
+      "question": "Yirmi iki yaşında erkek hasta, kliniğe sağ alt çenesindeki şiddetli bir ağrı ve ilgili dişin vestibül mukozasında beyaz, yüzeyi kolay soyulan, ağrılı bir nekroz alanıyla başvuruyor. Hastanın anamnezinden ağrısını hafifletmek amacıyla evde bir analjezik tableti doğrudan dişeti üzerine yerleştirdiği anlaşılıyor. Bu spesifik kimyasal yanık tablosunun etkeni aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Paraformaldehit",
+        "B": "Kokain",
+        "C": "Asetilsalisilik asit",
+        "D": "Sodyum hipoklorit",
+        "E": "Klorheksidin"
+      },
+      "correctAnswer": "C",
+      "explanation": "Ağrıyan dişin üzerine topikal olarak ağrı kesici (aspirin) yerleştirilmesi diş hekimliğinde çok sık karşılaşılan 'asetilsalisilik asit yanığı' tablosudur. Asidik yapısı nedeniyle epitelde kimyasal koagülasyon nekrozu oluşturarak beyaz, kolay soyulan ağrılı bir doku yanıtı oluşturur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Travmatik Dişeti Hastalıkları",
+      "question": "Ağız mukozasında gelişen kimyasal yaralanmalarla ilgili olarak aşağıdakilerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Toksik özellik gösteren çeşitli maddelerin mukoza ile yüzeyel teması sonucu oluşurlar.",
+        "B": "Etiyolojilerinde sadece diş hekimliği klinik uygulamalarında kullanılan pat ve solüsyonlar bulunur.",
+        "C": "Kokain kullanımı dişetinde kimyasal yanık ve soyulmalara neden olabilir.",
+        "D": "Diş macunlarının içerisindeki güçlü deterjanlar kimyasal irritan olarak mukozayı soyabilir.",
+        "E": "Lezyonlar geri dönebilir niteliktedir ve etken maddenin uzaklaştırılmasıyla doku iyileşir."
+      },
+      "correctAnswer": "B",
+      "explanation": "Kimyasal yaralanmalar sadece klinik ortamında (örn. paraformaldehit sızıntısı) değil; hastanın bizzat kullandığı kokain, klorheksidin, asetilsalisilik asit ve diş macunu deterjanları gibi evsel/bireysel temaslar sonucu da sıklıkla meydana gelir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Travmatik Dişeti Hastalıkları",
+      "question": "Kırk yaşında bir hastanın endodontik tedavisi sırasında, seanslar arasında kök kanalına yerleştirilen bir medikamanda sızıntı olmuş ve marjinal gingival dokuda şiddetli bir inflamasyon ve lokal doku nekrozu gözlenmiştir. Bu klinik duruma neden olan ve diş hekimliği uygulamalarında spesifik kimyasal yanık sebebi olarak bilinen ajan aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Kalsiyum hidroksit",
+        "B": "Gutta perka",
+        "C": "Çinko oksit öjenol",
+        "D": "Paraformaldehit",
+        "E": "MTA (Mineral Trioksit Agregat)"
+      },
+      "correctAnswer": "D",
+      "explanation": "Endodontik tedavilerde mumyalayıcı/devitalizan olarak kullanılabilen paraformaldehit içerikli patlar, dişi çevreleyen dokulara sızdığında toksik etkileri nedeniyle gingival bağ dokusunda şiddetli inflamasyon ve nekroza (kimyasal yaralanma) yol açarlar."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Travmatik Dişeti Hastalıkları",
+      "question": "Termal yaralanmalara bağlı gelişen mukozal lezyonların klinik doğrulamasında anamnez büyük önem taşır çünkü lezyonlar vezikülobüllöz hastalıkları taklit edebilir. Sıcak gıda veya içecek tüketimine bağlı gelişen bu tip termal yaralanmalar ağız boşluğunda en sık hangi bölgelerde izlenir?",
+      "options": {
+        "A": "Dil dorsumu ve ağız tabanı",
+        "B": "Bukkal mukoza ve dişeti marjini",
+        "C": "Alveoler mukoza ve retromolar trigon",
+        "D": "Sert damak posteriörü ve uvula",
+        "E": "Palatinal ve labial mukoza"
+      },
+      "correctAnswer": "E",
+      "explanation": "Ağız mukozasında karşılaşılan termal yanıklar (sıcak yiyecek, mum veya koter yanığı) en sık sert damağın anterior/orta palatinal bölgesi ile yiyeceğin/içeceğin ilk temas ettiği labial (dudak içi) mukozada yerleşir. Koagüle, ağrılı ve soyulmuş bir doku yüzeyi karakteristiktir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Oral liken planus hastalarından alınan biyopsilerin histopatolojik incelemesinde, epitel ve bağ dokusunun birleşiminde izlenen spesifik eozinofilik yapıların (Civatte cisimcikleri) biyolojik kökeni aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Apoptoz geçiren keratinositler",
+        "B": "Fagositoz yapan makrofajlar",
+        "C": "İnfiltre olan T-lenfositler",
+        "D": "Yıkıma uğramış melanositler",
+        "E": "Aşırı üretilmiş kollajen lifleri"
+      },
+      "correctAnswer": "A",
+      "explanation": "Liken planusun karakteristik histolojik bulgusu olan Civatte cisimcikleri, T-hücre aracılı sitotoksik saldırı nedeniyle bazal tabakada hidropik dejenerasyona uğrayarak apoptoz geçiren keratinositlerin kalıntılarıdır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Ağız mukozasından alınan bir biyopsinin mikroskobik incelemesinde; epitel içi büller, yapısal bağlantılarını kaybetmiş serbest epitel hücreleri ve bazal membranda tek sıralı 'mezar taşı' dizilimi gösteren hücreler saptanmıştır. Bu tabloya neden olan primer patofizyolojik olay aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Hemidesmozomların Tip 4 kollajenden ayrılması",
+        "B": "Bazal tabakada yoğun hidropik dejenerasyon",
+        "C": "Akantolizis ile desmozom yıkımı",
+        "D": "Subepitelyal bölgede nötrofil mikroabseleri",
+        "E": "Lökositoklastik vaskülit ve iskemik nekroz"
+      },
+      "correctAnswer": "C",
+      "explanation": "Tarif edilen 'mezar taşı' dizilimi ve Tzanck hücreleri Pemfigus vulgarisin klasik histopatolojisidir. Patofizyolojisinde, otoantikorların desmoglein proteinlerini hedef alarak desmozomları yıkması ve keratinositler arası bağların kopması (akantolizis) yatar."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Reaktif, akut ve vezikülobüllöz karakterde bir hastalık olan Eritema multiformenin etiyolojisinde birçok farklı faktör rol oynamaktadır. Aşağıdakilerden hangisi bu hastalığın patogenezini tetikleyen ajan veya durumlardan biri **değildir**?",
+      "options": {
+        "A": "Herpes Simpleks Virüs (HSV)",
+        "B": "Beta bloker ilaçlar",
+        "C": "Sülfonamid grubu antibiyotikler",
+        "D": "Non-steroid antiinflamatuar ilaçlar (NSAİ)",
+        "E": "COVID-19 enfeksiyonu"
+      },
+      "correctAnswer": "B",
+      "explanation": "Eritema multiformeyi tetikleyen ana faktörler HSV, COVID-19, sülfonamidler, penisilinler, NSAİ'ler ve antikonvülsanlardır. Beta blokerler bu sendromun spesifik tetikleyicilerinden biri olarak tanımlanmaz."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Sistemik lupus eritematozus (SLE) hastalarının mukozal veya kutanöz dokularından alınan biyopsilerin direkt immünofloresan incelenmesinde 'Lupus bant testi' pozitif olarak değerlendirilmektedir. Bu testi pozitif yapan spesifik immünopatolojik bulgu aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Bağ dokusunda lineer T-hücre aktivasyonu",
+        "B": "Stratum spinosumda IgA birikimi",
+        "C": "Rete peglerin uç kısımlarında fibrin kümeleri",
+        "D": "Bazal membranda IgG, C3 ve IgM birikimi",
+        "E": "Perivasküler alanda yoğun mast hücresi infiltrasyonu"
+      },
+      "correctAnswer": "D",
+      "explanation": "Lupus bant testi, lezyon olan veya olmayan deri ve mukozaların immünofloresan incelemesinde bazal membran bölgesinde granüler bant tarzında IgG, C3 ve IgM moleküllerinin birikiminin gösterilmesidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Oral liken planus vakalarında hastanın lezyonlarının karakterine göre medikal yaklaşım değişir. Özellikle atrofik ve ülseratif tipte olan, şiddetli ağrı şikayeti bulunan ve epitelde kalınlaşma izlenen vakalarda, kortikosteroid tedavisine direnç gösteren sekonder tablonun ana etkeni aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Streptococcus viridans",
+        "B": "Treponema pallidum",
+        "C": "Herpes Simpleks Virüs",
+        "D": "Porphyromonas gingivalis",
+        "E": "Candida albicans"
+      },
+      "correctAnswer": "E",
+      "explanation": "OLP olgularının (özellikle hiperkeratozlu, atrofik ve eroziv tiplerin) %37'sinde lezyonların zeminine Candida albicans (mantar) enfeksiyonu eklenir. Steroid tedavisi immüniteyi baskıladığından mantar çoğalmasını artırabilir, bu nedenle yanıt vermeyen ağrılı vakalarda antifungal tedavi kombinasyonu hayati öneme sahiptir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Travmatik Dişeti Hastalıkları",
+      "question": "Sert diş fırçası kullanımı veya kuvvetli horizontal fırçalamaya bağlı gelişen fiziksel dişeti travmalarını, nekrotizan gingivitis gibi mikrobiyal doku kayıplarından ayıran en karakteristik klinik muayene bulgusu aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "İnterdental papil tepelerinin hasar görmemiş olması",
+        "B": "Yalancı cep formasyonunun gelişmesi",
+        "C": "Dokuda grimsi membran izlenmesi",
+        "D": "Yoğun spontan kanama mevcudiyeti",
+        "E": "Aşırı pürülan eksüda akışı"
+      },
+      "correctAnswer": "A",
+      "explanation": "Fırça travmasında yaralanma dişeti kenarının birkaç milimetre altında gerçekleşir ve hastanın oral hijyeni genelde çok iyidir; diş kolesinde abrazyon izlenir ancak papil tepeleri korunur. Nekrotizan gingivitiste ise yıkım spesifik olarak interdental papilden başlar ve papil nekrotik, krater formundadır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Pemfigus vulgaris hastalığında Tzanck hücrelerinin oluşumuna neden olan epitel içi ayrılma, epitelin hangi spesifik histolojik katmanında gerçekleşmektedir?",
+      "options": {
+        "A": "Stratum granulosum",
+        "B": "Stratum lucidum",
+        "C": "Stratum spinosum",
+        "D": "Stratum corneum",
+        "E": "Stratum basale"
+      },
+      "correctAnswer": "C",
+      "explanation": "Pemfigus vulgariste hedef alınan desmoglein 3 proteini, skuamöz epitelin stratum spinosum tabakasında yoğun olarak bulunur. Ayrılma bu tabakada gerçekleşir, altta kalan bazal tabaka hücreleri 'mezar taşı' görünümüyle bağ dokusuna yapışık kalır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Eritema multiformenin şiddetli varyantları olarak bilinen Stevens Johnson sendromu ve toksik epidermal nekroz (TEN) tablolarının gelişiminde, tetikleyici ana etiyolojik faktör aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Termal yanıklar",
+        "B": "Sistemik ilaç kullanımları",
+        "C": "Viral ko-enfeksiyonlar",
+        "D": "Otoimmün kollajen doku yıkımı",
+        "E": "Ağır metal intoksikasyonları"
+      },
+      "correctAnswer": "B",
+      "explanation": "Stevens Johnson sendromu ve toksik epidermal nekroz (TEN), genellikle penisilin, sülfonamid veya NSAİ gibi sistemik spesifik ilaçlara karşı oluşan şiddetli sitotoksik (T hücre aracılı) immün yanıt sonucu ortaya çıkan masif mukokutanöz epitel nekrozlarıdır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Travmatik Dişeti Hastalıkları",
+      "question": "Dişeti dokusunda meydana gelen fiziksel yaralanmalar sonucu ortaya çıkabilen yüzeyel deskuamasyon ve ülseratif doku lezyonlarının, spesifik periodontal hastalıklarla ayırıcı tanısının yapılması şarttır. Bu bağlamda fırça travmalarına bağlı oluşan lezyonlar klinik özellikleri gereği en sık hangi dişeti hastalığı ile karıştırılarak ayırıcı tanı gerektirir?",
+      "options": {
+        "A": "Hamilelik gingivitisi",
+        "B": "Plazma hücreli gingivitis",
+        "C": "Herediter gingival fibromatozis",
+        "D": "Nekrotizan gingivitis",
+        "E": "Deskuamatif gingivitis"
+      },
+      "correctAnswer": "D",
+      "explanation": "Sert fırçalamanın neden olduğu ülserasyonlar ve marjinal yırtılmalar, akut doku yıkımı ve nekroz görünümü verebildiğinden doğrudan nekrotizan gingivitis (NUG/NUP) ile ayırıcı tanıya girer. Papil tepelerinin sağlam olması travmayı gösteren en büyük kanıttır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Sistemik Durumlara Bağlı Dişeti Hastalıkları",
+      "question": "Stomatitis medikamentoza teşhisi konmuş bir hastada, etken olan sistemik ilacın hasta sağlığı açısından kesilmesi veya değiştirilmesi mümkün olmadığında, oral mukozadaki ağrılı lezyonları baskılamak için uygulanması önerilen lokal medikal ajan aşağıdakilerin hangisinde doğru verilmiştir?",
+      "options": {
+        "A": "Topikal klorheksidin glukonat",
+        "B": "Sistemik antifungal",
+        "C": "Topikal asiklovir",
+        "D": "Sistemik geniş spektrumlu antibiyotik",
+        "E": "Topikal kortikosteroid veya takrolimus"
+      },
+      "correctAnswer": "E",
+      "explanation": "İlaca bağlı hipersensitivitelerde asıl tedavi etkenin eliminasyonudur. Ancak hastanın genel durumu ilacın kesilmesine izin vermiyorsa, bölgedeki aşırı bağışıklık reaksiyonunu lokal olarak baskılayabilen topikal kortikosteroidler veya takrolimus (immünosüpresan) pomadlar reçete edilir."
+    }
+  ]
+}

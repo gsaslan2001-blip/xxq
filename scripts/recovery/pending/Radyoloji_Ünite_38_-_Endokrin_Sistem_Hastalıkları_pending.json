@@ -1,0 +1,426 @@
+{
+  "lesson": "Radyoloji",
+  "unit": "Ünite 38 - Endokrin Sistem Hastalıkları",
+  "questions": [
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Hipofiz bezi (pitüiter bez) orta kranial fossanın altında sfenoid kemikte sella turcica'nın içinde yer alır. Bu bezin anatomik komşulukları ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Anteriorda sfenoid sinüs ile sınırlıdır.",
+        "B": "Süperiorda dorsum sella ile komşudur.",
+        "C": "Posteriorda dorsum sella ile sınırlıdır.",
+        "D": "Süperiorda diafragma sella ile sınırlıdır.",
+        "E": "Beyin tabanında bir kemik girintisi içinde bulunur."
+      },
+      "correctAnswer": "B",
+      "explanation": "Hipofiz bezinin süperior sınırı diafragma sella tarafından oluşturulurken, posterior sınırı dorsum sella'dır. Seçenekteki süperior komşuluğun dorsum sella olarak verilmesi anatomik oryantasyon hatasıdır. Bu lokalizasyon, pitüiter tümörlerin genişleme paternini ve kiazmatik bası semptomlarını anlamak için kritiktir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Büyüme hormonu (GH) sekresyonunu transkripsiyonel veya salınım düzeyinde regüle eden birçok endokrin ve metabolik faktör bulunmaktadır. Aşağıdakilerden hangisi GH sekresyonunu baskılayan faktörlerden biri **değildir**?",
+      "options": {
+        "A": "Somatostatin artışı",
+        "B": "Dolaşımdaki serbest yağ asitlerinin artışı",
+        "C": "Hiperglisemi gelişimi",
+        "D": "Dopaminerjik agonist uygulanması",
+        "E": "Seratonerjik antagonistlerin kullanımı"
+      },
+      "correctAnswer": "D",
+      "explanation": "Dopaminerjik agonistler, hipoglisemi, glukagon ve vazopressin ile birlikte GH geni transkripsiyonunu tetikleyerek sekresyonu artırırlar. Seratonerjik antagonistler, hiperglisemi ve serbest yağ asitleri ise GH sekresyonunu doğrudan baskılayan faktörlerdir. Bu mekanizma, akromegali tanısındaki glikoz-GH supresyon testinin fizyolojik temelini oluşturur."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "52 yaşında erkek hasta, diş hekimi kliniğine çene kemiklerinde asimetrik büyüme ve diş aralıklarında açılma şikayetiyle başvuruyor. Anamnezinde nazolabial fold boyunca hiperpigmentasyon, aşırı terleme ve karpal tünel sendromu öyküsü alınıyor. Bu hastada planlanacak stresli dental bir işlem öncesinde solunum fonksiyonunu deprese eden derin bilinç sedasyonunun kontrendike olmasının **en birincil** nedeni aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Mevcut olan sekonder adrenal yetmezlik riski",
+        "B": "Hipertansiyon ve renal hipertrofinin anesteziyi zorlaştırması",
+        "C": "Tirotoksik kriz presipitasyon riskinin yüksek olması",
+        "D": "Kardiyak glikozid toksisitesine yatkınlık bulunması",
+        "E": "Dil ve epiglottisin genişlemesine bağlı üst hava yolu obstrüksiyonu riski"
+      },
+      "correctAnswer": "E",
+      "explanation": "Akromegalik hastalarda yumuşak doku aşırı büyümesi, makroglossi (büyük dil) ve epiglottis genişlemesine yol açarak havayolunu ciddi şekilde daraltır. Derin sedasyon uygulandığında havayolu koruyucu refleksleri zayıflar ve bu anatomik darlık hızla obstrüksiyona dönüşür. Renal veya kardiyak komplikasyonlar cerrahi stres açısından risklidir ancak sedasyonun doğrudan kontrendikasyonu mekanik havayolu riskidir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Akromegali hastasında alt çenede gömülü bir yabancı cismin lokalizasyonunun belirlenmesi amacıyla radyografik obje-film mesafesi tekniği uygulanmaktadır. İmaj reseptörüne en uzak konumda bulunan bir obje radyografide nasıl izlenir?",
+      "options": {
+        "A": "Bulanık ve magnifiye olarak",
+        "B": "Net ve gerçek boyutlarından küçük olarak",
+        "C": "Çok net ve anatomik sınırları belirgin olarak",
+        "D": "Bulanık ve gerçek boyutlarından küçük olarak",
+        "E": "Radyolüsent bir halo ile çevrili net bir kitle olarak"
+      },
+      "correctAnswer": "A",
+      "explanation": "Radyografik projeksiyon prensiplerine göre, imaj reseptörüne uzak olan objeler ışınların diverjansı nedeniyle daha bulanık ve magnifiye (büyümüş) olarak izlenirler. İmaj reseptörüne yakın objeler ise anatomik gerçeğe daha yakın boyutta ve çok daha net görüntü verir. Bu durum, akromegalik genişlemiş çenelerde lokalizasyon saptarken kritik bir varyasyondur."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Çocukluk çağında büyüme hormonu üretimi ve sekresyonundaki yetersizlik cücelik (dwarfizm) tablosuna yol açar. Bu yaş grubunda hipopitüitarizmin **en yaygın** etyolojik nedeni aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "İdiyopatik boş sella sendromu",
+        "B": "Hipofizer iskemik enfarktüs",
+        "C": "Kraniofarinjioma",
+        "D": "Otoimmün hipofizit",
+        "E": "Bazofilik pitüiter adenom"
+      },
+      "correctAnswer": "C",
+      "explanation": "Çocukluk çağında hipopitüitarizmin ve sekonder büyüme hormonu eksikliğinin en sık karşılaşılan nedeni kraniofarinjiomadır. Yetişkinlerde travma, iskemi (Sheehan sendromu) veya boş sella sendromu daha ön plandayken, pediyatrik grupta bu spesifik neoplazm sella tursika bölgesine bası yaparak yetmezlik oluşturur. Bazofilik adenom ise Cushing hastalığının temel nedenidir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Hipopitüitarizmi (cücelik) olan pediatrik bir hastanın oral ve dental değerlendirmesinde aşağıdaki bulgulardan hangisinin görülmesi **beklenmez**?",
+      "options": {
+        "A": "Diş erüpsiyonunda gecikme",
+        "B": "Sement depozisyonunda artış (Hipersementoz)",
+        "C": "Gingivo-oklüzal boyutta küçük kronlar",
+        "D": "Tükrük bezlerinde hipofonksiyon",
+        "E": "Dental arkın küçüklüğüne bağlı çapraşıklık"
+      },
+      "correctAnswer": "B",
+      "explanation": "Hipersementoz, akromegali gibi hipersekretuar durumların radyografik bir bulgusudur, hipopitüitarizmde görülmez. Hipopitüitarizmi olan bireylerde organ gelişimi geri kaldığı için dişler küçük boyutlu, kökler kısa ve erüpsiyon gecikmiş olup tükrük bezi hipofonksiyonu saptanır."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Genellikle 30 yaşından sonra görülen, birbirinden bağımsız fonksiyon gösteren multipl otonom nodüllerle karakterize Toksik Multinodüler Guatr hastalığında, vakaların yaklaşık %8'inde gelişebilen **en ciddi** komplikasyon aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Trakeamalazi",
+        "B": "Bilateral vokal kord paralizisi",
+        "C": "Akut süpüratif tiroidit",
+        "D": "Tiroid karsinomu",
+        "E": "İdiyopatik hipoparatiroidi"
+      },
+      "correctAnswer": "D",
+      "explanation": "Toksik multinodüler guatrın bilinen üç majör komplikasyonu trakeaya bası, sekonder tirotoksikoz ve vakaların %8'inde görülen tiroid karsinomudur. Trakeaya bası mekanik bir komplikasyon olsa da, malignite potansiyeli en ciddi medikal risk faktörüdür ve cerrahi planlamasını doğrudan değiştirir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Hipertiroidizm tanısı ile medikal takipte olan bir hastaya diş hekimi kliniğinde sedasyon yapılması planlanmaktadır. Bu hastada kardiyak aktivitenin aşırı artmasını provoke etme riskinden dolayı aşağıdaki ajanlardan hangisinin kullanımından kesinlikle **kaçınılmalıdır**?",
+      "options": {
+        "A": "Benzodiazepinler",
+        "B": "Barbitüratlar",
+        "C": "Antikolinerjik ilaçlar",
+        "D": "Narkotik analjezikler",
+        "E": "Vazokonstrüktör içermeyen amid lokal anestezikler"
+      },
+      "correctAnswer": "C",
+      "explanation": "Hipertiroidili hastalar zaten tirotoksik taşikardiye ve miyokardiyal irritabiliteye yatkındır; antikolinerjik ajanlar vagal tonusu bloke ederek kalp atım hızını tehlikeli seviyelere yükseltirler. Benzodiazepinler ve barbitüratlar ise santral sinir sistemini suprese ettikleri için bu hasta grubunda daha emniyetli sedatiflerdir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Dilin foramen sekum bölgesinde 1.5 cm çapında, asemptomatik, kırmızımsı bir kitle saptanan hastada ektopik lingual tiroid şüphesi bulunmaktadır. Bu lezyondan erken dönemde biyopsi alınmasının medikal açıdan **en sakıncalı** yönü aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Malign dejenerasyonu hızlandırabilmesi",
+        "B": "Yoğun vasküler yapısı nedeniyle durdurulamayan hemoraji riski",
+        "C": "Dil fonksiyonlarını kalıcı olarak bozması",
+        "D": "Tiroglossal kanal kistine dönüşümünü başlatması",
+        "E": "Hastadaki tek aktif tiroid dokusunun harabiyetine neden olarak kalıcı hipotiroidi yaratması"
+      },
+      "correctAnswer": "E",
+      "explanation": "Ektopik tiroid dokusu saptanan hastaların %50'sinden fazlasında, boyunda normal lokalizasyonda fonksiyon gören başka bir tiroid bezi bulunmaz ve lingual kitle hastanın tek aktif tiroid dokusudur. Fonksiyon testleri (scintiscan vb.) ile başka tiroid dokusu olduğu doğrulanmadan biyopsi/eksizyon yapılması iyatrojenik kretinizm/miksödeme yol açar."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "34 yaşında kadın hasta diş çekimi sırasında aniden huzursuzluk, bulantı, kusma ve abdominal ağrı geliştirmesinin ardından taşikardi ve terleme tablosuna girmiştir. Anamnezinde kontrolsüz Graves hastalığı öyküsü olan bu hastada, kardiyovasküler etkileri acilen tersine çevirmek için uygulanması gereken farmakolojik kombinasyon aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Propranolol + Yüksek doz propiltiourasil",
+        "B": "İntravenöz hidrokortizon + Epinefrin",
+        "C": "Kalsiyum glukonat + Dihidroksikolekalsiferol",
+        "D": "Levotiroksin + Geniş spektrumlu antibiyotik",
+        "E": "Deksametazon + Benzodiazepin"
+      },
+      "correctAnswer": "A",
+      "explanation": "Stres altında ortaya çıkan bu klinik tablo 'tirotoksik kriz' (tiroid fırtınası) bulgularıdır. Tedavide dolaşımdaki tiroid hormonlarının kardiyak beta-reseptörler üzerindeki etkisini bloke etmek için propranolol (beta bloker) ve yeni hormon sentezini durdurmak için yüksek doz propiltiourasil birlikte kullanılmalı ve hasta hastaneye sevk edilmelidir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Mental tembellik, yavaş yürüme, soğuk intoleransı ve amenore şikayetleri olan bir hastanın ayırıcı tanısında hipotiroidizm ile anoreksia nevroza hastalıkları arasında kalınmıştır. Aşağıdaki klinik muayene bulgularından hangisi tanıyı hipotiroidizm lehine kuvvetlendirir?",
+      "options": {
+        "A": "Ciddi bradikardi saptanması",
+        "B": "Sürekli hipotermi hali",
+        "C": "Gode bırakmayan yaygın vücut ödemi",
+        "D": "Menstrüel döngünün bozulması",
+        "E": "Bazal metabolizma hızının düşmesi"
+      },
+      "correctAnswer": "C",
+      "explanation": "Anoreksia nevroza ve hipotiroidizm tablolarının her ikisinde de bradikardi, hipotermi, mental yavaşlama, soğuk intoleransı ve amenore görülür. Ancak hipotiroidizmin ayırt edici özelliği, cilt altı dokularda mukopolisakkarit birikimine bağlı gelişen 'miksödem' (ödem oluşumuna eğilim) tablosudur."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Hashimoto tiroiditine bağlı uzun süreli medikal kontrolsüz hipotiroidisi bulunan 60 yaşındaki bir hastada, konjestif kalp yetmezliği ve hipotermi ile karakterize miksödem koması tablosunu tetikleme potansiyeli **en yüksek** olan dış faktör aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Vazokonstrüktör içeren lokal anestezi yapılması",
+        "B": "Soğuk havalarda dental randevu planlanması",
+        "C": "Kardiyak glikozid türevi ilaçların kullanımı",
+        "D": "Oral glikoz tolerans testinin uygulanması",
+        "E": "Diş fırçalama sırasında oluşan minör travma"
+      },
+      "correctAnswer": "B",
+      "explanation": "Hipotiroidili hastalar zaten soğuk intoleransına ve hipotermiye ciddi eğilim gösterirler. Stresli dental tedavilerin aşırı soğuk hava koşulları sırasında yapılması, hastanın termoregülasyon sistemini çökertip miksödem komasını (hipoventilasyon, bilinç kaybı) doğrudan presipite edebilir. Enfeksiyon ve santral sinir sistemi depresanları diğer bilinen presipitanlardır."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Kalsitonin, paratiroid hormon (PTH) ile zıt fizyolojik etkilere sahip olup plazma kalsiyum seviyesini düşürür. Kalsitoninin hücresel düzeyde bu etkiyi sağlarken kullandığı spesifik mekanizma aşağıdakilerden hangisinde doğru olarak verilmiştir?",
+      "options": {
+        "A": "İntestinal sistemde D vitamini reseptörlerini bloke etmek",
+        "B": "Osteoblastların matriks sentezini geri dönüşümsüz inhibe etmek",
+        "C": "Böbrek distal tübüllerinden kalsiyum reabsorbsiyonunu uyarmak",
+        "D": "Progenitör hücrelerden osteoklast formasyonunu engellemek",
+        "E": "Osteosit apoptozunu indükleyerek kemik döngüsünü durdurmak"
+      },
+      "correctAnswer": "D",
+      "explanation": "Kalsitonin kalsiyum seviyesini düşürmek için üç koldan çalışır: Osteoklastik aktiviteyi doğrudan engeller, osteoblastik aktiviteyi stimüle eder ve en kök düzeyde progenitör hücrelerden yeni osteoklast oluşumunu (farklılaşmasını) bloke eder. Bu sayede kemikten kana kalsiyum çıkışı durdurulmuş olur."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Primer hiperparatiroidizmi olan bir hastada plazma kalsiyum seviyelerinin (>11 mg/100 ml) regüle edilmeden bırakılması durumunda, hastanın kullanmakta olduğu aşağıdaki ilaç gruplarından hangisinin toksik potansiyeli tehlikeli boyutta artış gösterir?",
+      "options": {
+        "A": "Kardiyak glikozidler (Digoxin)",
+        "B": "Beta-adrenerjik blokerler",
+        "C": "Loop diüretikler",
+        "D": "Antitiroid ilaçlar",
+        "E": "Sentetik kortikosteroidler"
+      },
+      "correctAnswer": "A",
+      "explanation": "Hiperkalsemi, dijital grubu kardiyak glikozidlerin (digoxin, digitoxin) miyokard üzerindeki etkisini potansiyelize ederek dijital intoksikasyonuna (ölümcül aritmiler) zemin hazırlar. Primer hiperparatiroidizm cerrahisi sonrası kalsiyum seviyeleri dengelenene kadar bu ilaçlar aşırı dikkatle kullanılmalıdır."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Çenelerde generalize lamina dura kaybı, azalmış kortikal kemik formasyonu ve multiple litik kemik lezyonları saptanan bir hastada sekonder hiperparatiroidizm teşhisi konulmuştur. Bu tablonun gelişimini başlatan **en olası** primer patolojik odak ve mekanizma aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Karaciğerin aşırı D vitamini yıkımına bağlı osteomalazi",
+        "B": "Tiroid bezinde kalsitonin üreten medüller karsinom gelişimi",
+        "C": "Hipofiz adenomuna bağlı kalsiyotropik hormon salınımı",
+        "D": "Kemik iliğinde kalsiyumu tüketen otonom osteoklast aktivasyonu",
+        "E": "Hasarlı böbreklerin kalsiyumu absorbe edememesine bağlı PTH artışı"
+      },
+      "correctAnswer": "E",
+      "explanation": "Sekonder hiperparatiroidizmin en yaygın etyolojisi kronik böbrek yetmezliğidir. Böbrek hasarı nedeniyle renal tübüllerden kalsiyum reabsorbe edilemez (hipokalsemi) ve fosfor atılamaz (hiperfosfatemi). Düşen plazma kalsiyumunu dengelemek için paratiroid bezler kompanse edici olarak aşırı PTH üretir, bu da kemiklerde yıkıma yol açar."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Miksödem hastalığının tipik fasiyal belirtisi olan ve hastaya donuk bir ifade veren 'Queen Anne işareti' vücudun hangi anatomik yapısındaki karakteristik değişikliği tanımlar?",
+      "options": {
+        "A": "Nazolabial fold boyunca izlenen hiperpigmentasyon",
+        "B": "Kaşların lateral üçte birinin kaybı",
+        "C": "Dudak köşelerinde gelişen mukokutanöz kandida",
+        "D": "Göz kapağının geriye doğru retraksiyonu ve sabit bakış",
+        "E": "Burun sırtının çökmesiyle oluşan düz burun profili"
+      },
+      "correctAnswer": "B",
+      "explanation": "Miksödemde görülen spesifik bir klinik bulgu olan 'Queen Anne işareti', kaşların özellikle lateral (dış) üçte birlik kısmının dökülerek kaybolmasıdır. Göz kapağı retraksiyonu Graves hastalığında, nazolabial pigmentasyon akromegalide görülür."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Kısa boy, yuvarlak yüz ifadesi ve mental retardasyon kliniğine sahip olan ancak farklı patofizyolojik mekanizmalara dayanan Psödohipoparatiroidizm ile Psödopsödohipoparatiroidizm sendromlarının birbirinden ayrımında kullanılan **en temel** laboratuvar parametresi aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Serum potasyum düzeyi",
+        "B": "Serum alkalen fosfataz seviyesi",
+        "C": "Serum kalsiyum seviyesi",
+        "D": "Serum klorid konsantrasyonu",
+        "E": "Dolaşımdaki TSH düzeyi"
+      },
+      "correctAnswer": "C",
+      "explanation": "Her iki sendrom da genetik defekt nedeniyle aynı fenotipik (somatik) görünüme sahiptir. Ancak psödohipoparatiroidizmde kalsiyum düşük, fosfor yüksektir. Psödopsödohipoparatiroidizm ise klinik görünüm aynı olmasına rağmen serum kalsiyum seviyelerinin normal saptanması ile ayırt edilir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Multipl Endokrin Neoplazi Tip IIb (MEN IIb) sendromuna sahip bir hastanın oral mukozasında saptanan multipl nöromalar (özellikle dil ve bukkal mukozada pembe papüller) prognostik bir öneme sahiptir. Bu oral belirtilerin klinik ehemmiyeti aşağıdakilerden hangisi ile açıklanır?",
+      "options": {
+        "A": "Tiroid medüller karsinomu gelişiminden 10 yıl kadar önce ortaya çıkmaları",
+        "B": "Şiddetli bir akut adrenal yetmezlik krizinin habercisi olmaları",
+        "C": "Pankreatik tümörlerin malignite kazandığına dair primer işaret olmaları",
+        "D": "Paratiroid adenomuna bağlı hiperkalseminin oral dokulara çöktüğünü göstermeleri",
+        "E": "Lokal anestezi sırasında kardiyak arrest gelişebileceğine işaret etmeleri"
+      },
+      "correctAnswer": "A",
+      "explanation": "MEN IIb hastalarında görülen mukozal nöromalar, ölümcül seyredebilen tiroidin medüller karsinomu gelişmeden yaklaşık 10 yıl önce ortaya çıkar. Diş hekiminin rutin oral muayenede bu nöromaları tespit edip hastayı tıp hekimine yönlendirmesi hayat kurtarıcı bir erken tanı sağlar."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Multipl Endokrin Neoplazi Tip IIa (MEN IIa) teşhisiyle takip edilen bir hastaya restoratif dental işlemler yapılacaktır. Hastanın hastalık bileşenleri göz önüne alındığında dental operasyon sırasında aşağıdaki ajanlardan hangisinin kullanımı **kontrendikedir**?",
+      "options": {
+        "A": "Ester yapılı lokal anestezikler",
+        "B": "Vazokonstrüktör içermeyen mepivakain",
+        "C": "Yüksek doz topikal kortikosteroidler",
+        "D": "Katekolamin içeren retraksiyon ipi",
+        "E": "Antifungal medikasyonlar"
+      },
+      "correctAnswer": "D",
+      "explanation": "MEN IIa sendromu; hiperparatiroidizm, tiroid medüller karsinomu ve feokromasitoma üçlüsünden oluşur. Feokromasitoması olan hastalarda endojen katekolamin deşarjı hipertansiyon atakları yaratır. Bu nedenle epinefrin/katekolamin içeren lokal anestezikler ve kanama durdurucu retraksiyon iplerinin kullanımı dışarıdan sempatik yükleme yapacağından kesinlikle kontrendikedir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Primer adrenal yetmezliği (Addison Hastalığı) olan bireylerde mukozalarda melanoplakiye benzeyen, diffüz koyu hiperpigmente çizgiler saptanır. Bu artmış pigmentasyonun moleküler mekanizması aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Artmış dolaşan kortizolün bazal lamineyi boyaması",
+        "B": "Eksik olan mineralokortikoidlerin melanin yıkımını inhibe etmesi",
+        "C": "Hipofizden MSH salgılanmasını bloke eden negatif geri bildirimin artması",
+        "D": "Adrenal medulladan sentezlenen dopaminin melanine polimerize olması",
+        "E": "Artan ACTH'ın yapısal olarak Melanosit Stimüle Edici Hormon (MSH) gibi davranması"
+      },
+      "correctAnswer": "E",
+      "explanation": "Addison hastalığında böbrek üstü bezinden kortizol üretilemediği için negatif feedback kalkar ve hipofiz devasa miktarda ACTH üretir. ACTH molekülü yapısal olarak MSH (melanosit stimüle edici hormon) ile homolog parçalara sahiptir; yüksek düzeydeki ACTH deride ve mukozada MSH reseptörlerini uyararak melanositleri aktive eder ve fokal/diffüz pigmentasyon yaratır."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Romatoid artrit tedavisi için 1 yıldır günlük 15 mg oral prednizon kullanan hastaya çoklu diş çekimi ve kemik grefti içeren stresli bir cerrahi prosedür uygulanacaktır. Akut adrenal krizi önlemek amacıyla medikal konsültasyon ile planlanacak en uygun farmakolojik strateji aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Prednizon dozu cerrahi sabahı tamamen kesilmeli ve 1 hafta sonra başlanmalıdır.",
+        "B": "Cerrahi sabahı doz yaklaşık 60 mg'a yükseltilmeli ve sonrasında kademeli azaltılmalıdır.",
+        "C": "Prednizon yerine eşdeğer dozda mineralokortikoid (Fludkortizon) verilmelidir.",
+        "D": "Günlük 15 mg'lık doza dokunulmamalı, cerrahi sonrası epinefrin yapılmalıdır.",
+        "E": "Steroid intramusküler enjeksiyon formuna çevrilerek kana hızlı geçişi sağlanmalıdır."
+      },
+      "correctAnswer": "B",
+      "explanation": "Uzun süredir (geçmiş 12 ayda 2 haftadan fazla) kortikosteroid kullanan hastalarda adrenal bezler atrofiye gider ve cerrahi stres altında doğal kortizol üretemezler. Akut stresi karşılamak için günlük bazal doz (ör. 10-20 mg), stres miktarına göre majör prosedürlerde 60 mg gibi yüksek seviyelere çıkarılmalı, ardından yavaş yavaş azaltılarak idame dozuna dönülmelidir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Diş çekimi sonrasında aniden konfüzyon, yoğun abdominal ağrı ve şiddetli hipotansiyon gelişen sekonder adrenal yetmezlikli bir hastada, hayat kurtarıcı tedavide steroid uygulanımında intramüsküler (IM) yoldan **kaçınılmasının** farmakolojik nedeni aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "IM kortikosteroidlerin kas nekrozunu tetiklemesi",
+        "B": "Zaten var olan iskeletsel kas zayıflığının enjeksiyonu zorlaştırması",
+        "C": "Hipotansif şok tablosunda periferal dokulardan absorpsiyonun öngörülemez olması",
+        "D": "Birlikte verilmesi gereken epinefrinin IM yoldan emilimini bloke etmesi",
+        "E": "Tromboembolizm riskini akut olarak artırması"
+      },
+      "correctAnswer": "C",
+      "explanation": "Akut adrenal kriz geliştiğinde hasta ağır bir kardiyovasküler kollapsa ve hipotansiyona girer. Dolaşım bozulduğu için kas içine (IM) yapılan bir ilacın emilip kana karışması çok yavaş ve tamamen öngörülemezdir. Bu yüzden hayat kurtarıcı hidrokortizon mutlak suretle intravenöz (IV) yoldan infüzyonla verilmelidir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Kapsamlı bir hipopitüitarizm (panhipopitüitarizm) olgusunda hedef organların fonksiyon dışı kalması çoklu semptomlara yol açar. Bu tabloda izlenen 'soğuk intoleransı ve mental yavaşlık' semptom ikilisi hangi spesifik hipofizer hormonun yetersizliği sonucu ortaya çıkar?",
+      "options": {
+        "A": "TSH",
+        "B": "ACTH",
+        "C": "Prolaktin",
+        "D": "Somatotropin (GH)",
+        "E": "Gonadotropinler"
+      },
+      "correctAnswer": "A",
+      "explanation": "Panhipopitüitarizmde TSH (tiroid stimüle edici hormon) eksikliği sekonder hipotiroidizme yol açar ve bunun sonucunda soğuk intoleransı, mental yavaşlık ve koma eğilimi doğar. ACTH eksikliği hipotansiyon ve zayıflık; gonadotropin eksikliği ise seksüel gelişim geriliği ve amenore ile klinik verir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Dermatolojik bir hastalık nedeniyle son 1 yıldır düzenli olarak sadece 'topikal (krem formu)' kortikosteroid kullanan 30 yaşındaki erkek hastaya cerrahi gömülü diş çekimi yapılacaktır. Bu hastanın endokrin sistem riski ve steroid replasman ihtiyacı için aşağıdakilerden hangisi doğrudur?",
+      "options": {
+        "A": "Topikal yolla emilen yüksek doz nedeniyle operasyon günü doz 60 mg prednizona eşdeğer şekilde artırılmalıdır.",
+        "B": "Sekonder adrenal yetmezlik riski yüksek olduğundan mutlaka intravenöz hidrokortizon bulundurulmalıdır.",
+        "C": "Hastanın mineralokortikoid mekanizması çökmüş olacağından fludkortizon başlanmalıdır.",
+        "D": "Adrenal supresyon açısından hemen hemen hiçbir risk taşımazlar, ilave steroid dozuna gerek yoktur.",
+        "E": "Sadece işlem sonrası hipotansiyon gelişirse topikal uygulamanın sıklığı artırılmalıdır."
+      },
+      "correctAnswer": "D",
+      "explanation": "Geçmiş 12 ay boyunca 2 haftadan uzun süre eşdeğer günlük sistemik (oral/IV vs) steroid alanlar adrenal supresyon açısından büyük risk altındadır ve stres dozu gerektirir. Ancak topikal (cilt yüzeyi) steroid kullanan hastaların sistemik absorbsiyonu ihmal edilebilir düzeydedir; bu nedenle adrenal bezlerde glandular atrofi beklenmez ve cerrahi öncesi ilave doza gerek duyulmaz."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Primer adrenal yetmezlik (Addison hastalığı) ile pitüiter hastalık kökenli sekonder adrenal yetmezliğin ayırt edilmesinde klinisyene en büyük yardımı sağlayan laboratuvar bulgusu aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Düşük diurnal plazma kortizol seviyeleri",
+        "B": "Yükselmiş kan üre azotu (BUN)",
+        "C": "Plazma ACTH seviyesinin durumu (Yüksek veya Düşük oluşu)",
+        "D": "Cosyntropin (sentetik ACTH) testine kortizolün aşırı yüksek yanıt vermesi",
+        "E": "Düşük kan glikoz seviyelerinin izlenmesi (Hipoglisemi)"
+      },
+      "correctAnswer": "C",
+      "explanation": "Her iki yetmezlik tipinde de plazma kortizol seviyesi, kan glukozu ve sodyum düşüktür. Primer adrenal yetmezlikte sorun böbrek üstü bezindedir, hipofiz sağlamdır ve bunu kompanse etmek için kanda aşırı ACTH bulunur. Sekonder yetmezlikte ise sorun hipofizdedir, bu nedenle kanda ACTH seviyesi düşüktür. Bu ayrım hormon replasman stratejisini (örn. mineralokortikoid ihtiyacı) doğrudan etkiler."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Feokromasitoma hastalarında katekolamin (epinefrin/norepinefrin) deşarjı epizodik veya sürekli olabilir. Aşağıdakilerden hangisi bu hastalarda hipertansiyon, taşikardi ve terleme ataklarını provoke eden faktörler arasında **en az** olasıdır?",
+      "options": {
+        "A": "Postür değişiklikleri",
+        "B": "Rutin oral florid uygulaması",
+        "C": "Adrenal tümör bölgesinin fiziksel palpasyonu",
+        "D": "Abdominal bölgeye kompresyon yapılması",
+        "E": "Yoğun emosyonel stres yaşanması"
+      },
+      "correctAnswer": "B",
+      "explanation": "Feokromasitoma atakları sıklıkla tümör bölgesine mekanik baskı (palpasyon, dar giysiler, abdominal kompresyon), ani postür değişiklikleri ve katekolamin deşarjını fizyolojik olarak artıran emosyonel stres durumlarıyla provake olur. Topikal dental ajanların uygulanması adrenal medullayı mekanik veya sistemik strese sokan bir durum değildir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Cushing sendromu (hiperadrenokortisizm) bulguları ile Addison hastalığı (hipoadrenokortisizm) bulguları karşılaştırıldığında, yalnızca Cushing sendromuna özgü olarak dental planlamayı değiştiren **en kritik** iskeletsel/sistemik komplikasyon kombinasyonu aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Mukozal hiperpigmentasyon ve mukokutanöz kandida gelişimi",
+        "B": "Hiperkalsemi ve pulpa taşı oluşumu",
+        "C": "Çenelerde generalize lamina dura kaybı ve brown tümör",
+        "D": "Hipotansiyon ve elektrolit dengesizliği (hipernatremi)",
+        "E": "Osteoporozis eğilimi ve yara iyileşmesinde belirgin gecikme"
+      },
+      "correctAnswer": "E",
+      "explanation": "Cushing sendromunda kortizolün aşırı fazlalığı osteoblast aktivitesini baskılayıp osteoporozise yol açar ve antienflamatuar etkinin abartılı hali yara iyileşmesini şiddetle bozar. Addison hastalığında osteoporoz veya yara iyileşmesinde bozulma primer bir bulgu değilken, mukozal melanoplaki ve hipotansiyon görülür. Hiperkalsemi ve brown tümör ise paratiroid hastalıklarının özelliğidir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Akromegali hastaları tedavi edilmeden kendi seyrine bırakıldığında morbidite ve mortalite oranları son derece yüksektir. Bu hastalarda ölüme neden olan en yaygın etyolojik faktör aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Kardiyak yetmezlik",
+        "B": "Akut laringospazm",
+        "C": "Diabetik ketoasidoz koması",
+        "D": "Hipofizer apopleksiye bağlı serebral kanama",
+        "E": "Trakea basısına bağlı asfiksi"
+      },
+      "correctAnswer": "A",
+      "explanation": "Büyüme hormonunun hedeflerinden biri de iç organlardır ve kontrolsüz akromegali kardiyomegaliye (kardiyomiyopati) yol açar. Diabetik yatkınlık veya havayolu sorunları görülse de, bu hastaların büyük çoğunluğunda mortalitenin asıl majör nedeni iskemik veya hipertrofik kardiyak yetmezliktir."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Adrenal bez fonksiyon bozukluklarının ayırıcı tanısında kullanılan 'Cosyntropin (sentetik ACTH)' testinde dışarıdan kortizol sekresyonunu uyarması beklenen bu molekül uygulandığında hastanın plazma kortizol seviyesinde hiçbir artış (düşük yanıt) gözlenememektedir. Bu tablo aşağıdakilerden hangisini işaret eder?",
+      "options": {
+        "A": "Hastada hipofiz ACTH salgılayan bir adenom (Cushing) bulunmaktadır.",
+        "B": "Sekonder adrenal yetmezlik tablosu kesinleşmiştir.",
+        "C": "Adrenal medulladan ektopik kortizol sentezlenmektedir.",
+        "D": "Bez fiziksel olarak atrofik veya haraptır (Primer adrenal yetmezlik).",
+        "E": "Hasta testten hemen önce yüksek doz ekzojen kortikosteroid almıştır."
+      },
+      "correctAnswer": "D",
+      "explanation": "Cosyntropin dışarıdan verilen ACTH'tır. Eğer adrenal korteks fiziksel olarak sağlamsa, ACTH'ı alınca kortizol fırlatmalıdır (Sekonder yetmezlikte korteks çalışır, sadece komut gelmemektedir, dışarıdan verilince yanıt alınır). Ancak primer yetmezlikte (Addison) bezin kendisi otoimmün veya infektif nedenle haraptır, ACTH'a yanıt verecek doku kalmadığından kortizol seviyesi artmaz."
+    },
+    {
+      "lesson": "Diş Hekimliğinde Tıbbi Hastalıklar",
+      "unit": "Endokrin Sistem Hastalıkları",
+      "question": "Tragusun anteriorundan fasial sinire hafifçe vurulduğunda fasial kaslarda ve dudaklarda tetanik spazm gözlenen (Chvostek bulgusu pozitif) bir hastanın bu durumu puberteden önce başladığı bilinmektedir. Bu hastanın dental muayenesinde aşağıdaki bulgulardan hangisi teşhisi destekleyen güçlü bir belirtidir?",
+      "options": {
+        "A": "Dişlerde belirgin makrodonti ve aralıklı dizilim",
+        "B": "Primer süt dişlerinin çok erken yaşta eksfoliasyonu",
+        "C": "Mine hipoplazisi ve kısa, künt diş kökleri",
+        "D": "Santral dev hücreli granülomaya benzer litik lezyonlar",
+        "E": "Pulpada diffüz taş oluşumları ve iskeletsel kemik rarefaksiyonu"
+      },
+      "correctAnswer": "C",
+      "explanation": "Chvostek bulgusu, hipokalseminin ve dolayısıyla hipoparatiroidizmin klasik bulgusudur. Hipoparatiroidizm puberteden (diş gelişimi tamamlanmadan) önce başladığında; sistemik kalsiyum eksikliğinden dolayı diş gelişimini zarara uğratarak kısa künt kökler, mine hipoplazisi ve gömülü dişlere yol açar. Diğer şıklarda sayılan kahverengi tümör ve kök rezorpsiyonları hiperparatiroidizm; makrodonti ise gigantizm belirtileridir."
+    }
+  ]
+}

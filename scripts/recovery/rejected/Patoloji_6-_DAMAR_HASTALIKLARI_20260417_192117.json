@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "6- DAMAR HASTALIKLARI",
+  "rejected_at": "2026-04-17T19:21:17.570359",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Damar Hastalıkları",
+        "question": "Ailesinde sık burun kanaması öyküsü bulunan 28 yaşında hastanın oral muayenesinde dudak ve damak mukozasında kalıcı dilate damar yastıkları saptanmıştır. Genetik taramasında otozomal dominant TGF-β mutasyonu tespit edilen bu sendromun tanısı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Sturge-Weber sendromu",
+          "B": "Basiller anjiyomatoz",
+          "C": "Herediter hemorajik telenjektazi (Osler-Weber-Rendu)",
+          "D": "Nevüs flammeus",
+          "E": "Kaposi sarkomu"
+        },
+        "correctAnswer": "C",
+        "explanation": "Genetik temeli OD (otozomal dominant) olan ve TGF-β yolağı defektiyle ortaya çıkan, mukoza ve deride yaygın küçük kalıcı damar dilatasyonları (telenjektaziler) yaratan hastalık Herediter hemorajik telenjektazidir (Osler-Weber-Rendu hastalığı). Diş hekimliğinde dudaklarda görülen kanamalı lezyonlar ile sık epistaksis en majör klinik başvuru nedenleridir. Sturge-Weber ensefalotrigeminal porto şarabı lekesi ile karakterizedir."
+      },
+      "reason": "uzunluk_biasi:correct=52ch_avg_other=17ch"
+    }
+  ]
+}

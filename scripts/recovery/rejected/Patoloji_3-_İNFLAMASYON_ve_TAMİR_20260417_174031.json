@@ -1,0 +1,41 @@
+{
+  "lesson": "Patoloji",
+  "unit": "3- İNFLAMASYON ve TAMİR",
+  "rejected_at": "2026-04-17T17:40:31.564830",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "İnflamasyon ve Doku Tamiri",
+        "question": "Lökositlerin inflamasyon alanına göçünde görev alan kemotaktik moleküller ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Kemotaktik moleküller lökositlere G-protein kenetli reseptörler üzerinden bağlanır.",
+          "B": "Prostaglandin I2 (PGI2) nötrofiller için güçlü bir kemoatraktandır.",
+          "C": "Lökotrien B4 nötrofillerin endotele agregasyonunu ve adezyonunu uyarır.",
+          "D": "İnterlökin-8 (CXC grubu) spesifik olarak nötrofiller üzerinde kemotaktik etkilidir.",
+          "E": "C5a araşidonik asitin lipooksijenaz yolağını aktive ederek mediyatör üretimini tetikler."
+        },
+        "correctAnswer": "B",
+        "explanation": "Prostaglandin I2 (Prostasiklin) güçlü bir vazodilatör olup platelet agregasyonunu inhibe eder, ancak lökositler için kemotaktik etkisi yoktur. Nötrofiller için inflamasyon alanına göçü başlatan temel prostaglandin kemoatraktanı PGD2'dir."
+      },
+      "reason": "kisa_stem:14kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "İnflamasyon ve Doku Tamiri",
+        "question": "Astım gibi aşırı duyarlılık reaksiyonlarının vazgeçilmez mediyatörleri olan lökotrienler ile ilgili aşağıdakilerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Hücre membranından koparılan araşidonik asitin lipooksijenaz enzim yolağı ile üretilirler.",
+          "B": "Lökotrien B4 (LTB4) nötrofilleri aktive eden en güçlü kemoatraktan lipidlerden biridir.",
+          "C": "Yavaş reaktan maddeler (SRS-A) olarak bilinen LTC4, LTD4 ve LTE4 sisteinil rezidüsü içerir.",
+          "D": "LTC4 ve LTD4 güçlü bronkodilatasyon yaparak akciğer hava yollarını enfeksiyonlarda açık tutar.",
+          "E": "Sisteinil lökotrienlerin lokal damar geçirgenliğini artırıcı etkileri histaminden daha güçlüdür."
+        },
+        "correctAnswer": "D",
+        "explanation": "LTC4, LTD4 ve LTE4 (sisteinil lökotrienler) bronkodilatasyon yapmaz, aksine akciğerdeki düz kaslarda çok şiddetli bronkospazm oluştururlar. Bu bronkokonstrüktör etki nedeniyle astım tedavisinde lökotrien reseptör antagonistleri (zafirlukast vb.) kullanılır."
+      },
+      "reason": "kisa_stem:14kelime"
+    }
+  ]
+}

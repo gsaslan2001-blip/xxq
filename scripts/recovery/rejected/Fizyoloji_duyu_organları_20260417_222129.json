@@ -1,0 +1,58 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "duyu organları",
+  "rejected_at": "2026-04-17T22:21:29.107272",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Duyu Organları ve Sinir Sistemi",
+        "question": "Aşağıdakilerden hangisi retinada ışığın algılanması sürecinde (fototransdüksiyon kaskadı) meydana gelen fizyolojik olaylardan biri **değildir**?",
+        "options": {
+          "A": "11-cis-retinalin ışık enerjisiyle all-trans-retinal formuna izomerize olması",
+          "B": "Metarodopsin II kompleksinin heterotrimerik bir G proteini olan transdusini aktive etmesi",
+          "C": "Fosfodiesteraz enziminin aktive olarak intraselüler cGMP seviyesini hızla düşürmesi",
+          "D": "Sodyum kanallarının açılarak hücrede güçlü bir depolarizasyon dalgası oluşturması",
+          "E": "Reseptör hücre zarının hiperpolarize olarak nörotransmitter salınımını azaltması"
+        },
+        "correctAnswer": "D",
+        "explanation": "Işık uyarısı fotoreseptörlerde sodyum kanallarının açılmasına değil, aksine cGMP miktarının düşmesi sonucu cGMP-bağımlı Na+ kanallarının kapanmasına neden olur. İç segmentteki Na-K pompası sodyumu atmaya devam ettiği için hücre hiperpolarize (-70 mV) olur ve karanlıkta sürekli salınan inhibitör glutamat salınımı kesilir. Bu benzersiz sinyal transdüksiyonunda nöronun ışığa yanıtı uyarılma değil, susturulma şeklindedir."
+      },
+      "reason": "kisa_stem:14kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Duyu Organları ve Sinir Sistemi",
+        "question": "Aşağıdaki duyu sistemlerinden hangisinin reseptör düzeyindeki uyarılma mekanizması karşısında **yanlış** verilmiştir?",
+        "options": {
+          "A": "Tuzlu tat duyusu - Apikal membrandan ENaC (epiteryal sodyum kanalları) aracılığıyla sodyum iyonu girişi",
+          "B": "Ekşi tat duyusu - Hidrojen iyonlarının spesifik reseptörlere bağlanarak potasyum kanallarını aktive etmesi",
+          "C": "Tatlı duyusu - T1R2/T1R3 reseptörleri aracılığıyla hücre içi IP3 artışı sağlanması",
+          "D": "Acı duyusu - T2R reseptörlerinin G-proteini (gustducin) üzerinden potasyum kanallarını bloke etmesi",
+          "E": "Umami duyusu - Genellikle monosodyum glutamatın metabotropik mGluR4 reseptörlerini aktive etmesi"
+        },
+        "correctAnswer": "B",
+        "explanation": "Ekşi tat uyaranlarını oluşturan Hidrojen (H+) iyonları, hücre içine ENaC ve HCN kanalları üzerinden girerek hücre membranındaki potasyum sızıntı kanallarını aktive etmez, aksine bloke ederler. Potasyumun dışarı çıkışının engellenmesi hücre içinde pozitif yük birikimine neden olur ve uyarıyı ileten depolarizasyon şoku bu blokaj mekanizması sayesinde üretilir."
+      },
+      "reason": "kisa_stem:11kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Duyu Organları ve Sinir Sistemi",
+        "question": "Beyin omurilik sıvısının (BOS) kimyasal analizi solunum sistemi merkezi regülasyonu açısından kritik veriler sağlar. Aşağıdaki maddelerden hangisinin BOS içindeki serbest konsantrasyonu, kandan beyne kolay geçişi sayesinde medüller kemoreseptörleri hızla uyararak plazma seviyesinden dahi yüksek konsantrasyona ulaşabilir?",
+        "options": {
+          "A": "Bikarbonat",
+          "B": "Sodyum",
+          "C": "Aminoasit",
+          "D": "Glikoz",
+          "E": "Karbon dioksit (pCO2)"
+        },
+        "correctAnswer": "E",
+        "explanation": "BOS bileşimi incelendiğinde; magnezyum, kreatinin, klorür ve parsiyel karbondioksit (pCO2) basıncı kan plazmasından fizyolojik olarak daha yüksektir. Karbondioksitin BOS'ta kolayca birikmesi ve yüksek konsantrasyonda bulunması, BOS'un nispeten zayıf tamponlama kapasitesi ile birleştiğinde solunum merkezinin pH değişikliklerine (H+ artışına) yıldırım hızında tepki vermesini sağlayan fizyolojik zorunluluktur."
+      },
+      "reason": "uzunluk_biasi:correct=21ch_avg_other=8ch"
+    }
+  ]
+}

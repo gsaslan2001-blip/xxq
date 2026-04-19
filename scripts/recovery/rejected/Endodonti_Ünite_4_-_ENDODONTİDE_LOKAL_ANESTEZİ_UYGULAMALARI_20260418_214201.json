@@ -1,0 +1,24 @@
+{
+  "lesson": "Endodonti",
+  "unit": "Ünite 4 - ENDODONTİDE LOKAL ANESTEZİ UYGULAMALARI",
+  "rejected_at": "2026-04-18T21:42:01.266887",
+  "items": [
+    {
+      "question": {
+        "lesson": "Endodonti",
+        "unit": "Lokal Anestezi Uygulamaları",
+        "question": "32 yaşında kadın hasta, sol alt çenede rubber dam takılması sırasında ağrı hissediyor. Hastaya konvansiyonel inferior alveolar sinir bloğu uygulanmış olmasına rağmen ikinci premolar diş çevresindeki bukkal mukoz membranın yeterince uyuşmadığı tespit ediliyor. Destekleyici lokal anestezi için mental foramen hedeflenecekse, enjeksiyon noktası anatomik olarak en olası hangi bölgedir?",
+        "options": {
+          "A": "Sol alt kanin apikali",
+          "B": "Sol alt birinci molar furkasyonu",
+          "C": "Sol alt lateral ve kanin arası",
+          "D": "Sol alt birinci ve ikinci premolar arası",
+          "E": "Sol alt ikinci molar distali"
+        },
+        "correctAnswer": "D",
+        "explanation": "İnferior alveolar blok bazen çapraz innervasyon veya varyasyonlar nedeniyle ikinci premolar bölgedeki bukkal mukoz membranın anestezisinde eksik kalabilir ve destekleyici enjeksiyona ihtiyaç duyulur. Bu bölgenin kutanöz ve mukozal innervasyonu, birinci ve ikinci premolar dişler arasından çıkan mental sinir tarafından sağlanmaktadır. Diğer şıklarda belirtilen alanlar mental foramenin doğal anatomik lokalizasyonuna uzaktır."
+      },
+      "reason": "bilgi_sizintisi:overlap_0.67"
+    }
+  ]
+}

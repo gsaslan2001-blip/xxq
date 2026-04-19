@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "Ülseröz_Hastalıklar",
+  "rejected_at": "2026-04-17T19:42:20.663359",
+  "items": [
+    {
+      "question": {
+        "lesson": "Oral Mikrobiyoloji",
+        "unit": "Çocukluk Çağı Viral Enfeksiyonları",
+        "question": "Kızamık enfeksiyonunun mukozal ve hücresel kinetiği değerlendirildiğinde aşağıda verilen ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Deri döküntüleri (raş) henüz başlamadan önce oral kavitede spesifik benekli enantemler belirir.",
+          "B": "Etken patojen epitelyotropik karakteriyle solunum yolu epitelinden giriş yapar.",
+          "C": "Histopatolojide hücresel bağışıklık sonucu makrofaj kökenli Langhans tipi dev hücreler görülür.",
+          "D": "En erken patognomonik tanı kriteri Stensen kanalı etrafındaki bukkal maküllerdir.",
+          "E": "Hastalığın pedodontik komplikasyonu olarak daimi diş kuronlarında bantlar halinde mine hipoplazisi izlenebilir."
+        },
+        "correctAnswer": "C",
+        "explanation": "Kızamığın histopatolojik karekteristiği olan Whartin-Finkeldey dev hücreleri hücresel bağışıklıkla (makrofaj birleşimiyle) değil, virüsün direkt konak epitel hücre membranlarını kaynaştırması (füzyon) sonucu gelişir. Makrofaj kökenli Langhans dev hücreleri sifiliz veya tüberküloz gibi granülomatöz hastalıklarda görülür."
+      },
+      "reason": "kisa_stem:12kelime"
+    }
+  ]
+}

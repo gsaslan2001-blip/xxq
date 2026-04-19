@@ -1,0 +1,24 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "1.ünite",
+  "rejected_at": "2026-04-17T21:49:42.778454",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Hücre Fizyolojisi",
+        "question": "Steroid yapılı hormonların hücre sitoplazmasındaki spesifik reseptörlerine bağlanmadan önceki dinlenme durumunda, reseptörün DNA'ya bağlanacak olan aktif domain kısmını örterek onu inaktif halde tutan koruyucu protein molekülü aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Kalmodülin",
+          "B": "SMAD",
+          "C": "Klathrin",
+          "D": "Ribozom",
+          "E": "Isı şok proteini-90 (Hsp-90)"
+        },
+        "correctAnswer": "E",
+        "explanation": "Steroid hormonlar (kortizol, aldosteron vb.) için sitoplazmik reseptörlerin DNA bağlayıcı domaini, hormon ortada yokken Isı şok proteini 90 (Hsp-90) tarafından kapatılır. Hormon hücre içine difüze olup reseptöre bağlandığında Hsp-90 yapıdan ayrılır, reseptör kompleksi çekirdeğe girerek spesifik DNA dizisine (hormon cevap elemanı) bağlanır."
+      },
+      "reason": "uzunluk_biasi:correct=28ch_avg_other=7ch"
+    }
+  ]
+}

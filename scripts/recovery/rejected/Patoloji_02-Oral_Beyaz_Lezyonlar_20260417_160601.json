@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "02-Oral Beyaz Lezyonlar",
+  "rejected_at": "2026-04-17T16:06:01.485418",
+  "items": [
+    {
+      "question": {
+        "lesson": "Oral Patoloji",
+        "unit": "Oral Beyaz Lezyonlar ve Gelişimsel Anomaliler",
+        "question": "On bir yaşındaki erkek hasta, yanak içi bölgesinde her iki tarafta da bulunan, ağrısız, kalın ve süngerimsi beyaz plaklar şikayetiyle başvuruyor. Anamnezden bu durumun puberte öncesinde belirdiği ve babasında da benzer lezyonlar olduğu öğreniliyor. Bu hastadaki lezyonun patogenezinde aşağıdaki genlerden hangisinde mutasyon saptanması en olasıdır?",
+        "options": {
+          "A": "ATP2A2",
+          "B": "Keratin 4 ve/veya Keratin 13",
+          "C": "FGFR2",
+          "D": "TCOF1",
+          "E": "DSPP"
+        },
+        "correctAnswer": "B",
+        "explanation": "Beyaz sünger nevüs (Cannon Hastalığı), keratin 4 ve/veya keratin 13 genlerindeki mutasyonlar sonucu gelişen, otozomal dominant geçişli herediter bir durumdur. ATP2A2 geni mutasyonu foliküler keratozise (Darier hastalığı) neden olurken, hücresel düzeyde desmozomal defektler oluşturur. Beyaz sünger nevüste puberte öncesi başlangıç ve bilateral tutulum tanı koydurucu temel klinik parametrelerdir."
+      },
+      "reason": "uzunluk_biasi:correct=28ch_avg_other=5ch"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "DENEME2",
+  "rejected_at": "2026-04-18T16:42:34.633098",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kalp ve Dolaşım Sistemi",
+        "question": "Kalp dokusunun elektrofizyolojik süreçleri ve EKG karşılıkları ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "T dalgası, ventrikül hücrelerinin repolarizasyon evresini gösterir.",
+          "B": "ST segmentinin J noktasından itibaren izoelektrik hatta bulunması beklenir.",
+          "C": "P dalgasının ilk yarısı sağ, ikinci yarısı sol atriyumun depolarizasyonunu yansıtır.",
+          "D": "Kalp kasında transmural (tam katman) iskemik hasar varlığında EKG'de belirgin ST depresyonu izlenir.",
+          "E": "QRS kompleksi, ventriküllerin depolarizasyonu ve eş zamanlı kasılmasının başlangıcını temsil eder."
+        },
+        "correctAnswer": "D",
+        "explanation": "Kalp kasında transmural (tam kat) miyokardiyal hasar veya hiperakut miyokard iskemisi tablosunda EKG'de görülen bulgu ST segment elevasyonudur. ST depresyonu ise duvarın tamamını etkilemeyen, sadece subendokardiyal bölgede sınırlı kalan iskemik zedelenmeleri gösterir. Bu fark, acil koroner sendromların tanı ve tedavi stratejisini belirleyen temel mekanik ayrışmadır."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kalp ve Dolaşım Fizyolojisi",
+        "question": "Sinoatrial nod hücresinde aksiyon potansiyelinin gerçekleşmesi sırasında izlenen evrelerle ilgili aşağıdakilerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Faz 3 evresinde voltaj bağımlı potasyum kanalları açılır",
+          "B": "Repolarizasyon sırasında hücre dışına potasyum çıkar",
+          "C": "Hücre -60 mV dinlenim potansiyeline döner dönmez tekrar sodyum sızar",
+          "D": "Repolarizasyon Faz 3 evresi tamamlandığında spontan olarak Faz 4 başlar",
+          "E": "Faz 3 repolarizasyonunda L-tipi kalsiyum kanallarından hücreye masif kalsiyum girişi izlenir"
+        },
+        "correctAnswer": "E",
+        "explanation": "SA nodda Faz 3 repolarizasyon evresi, voltaj bağımlı K+ kanallarından dışarı potasyum çıkışıyla sağlanır ve bu sırada kalsiyum girişi durmuştur. L-tipi kalsiyum kanallarından kalsiyum girişi Faz 0 depolarizasyon evresini oluşturan asıl iyonik akımdır. Aksiyon potansiyeli Faz 4 prepotansiyel sızıntı akımları ile süreklilik kazanır."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kalp ve Dolaşım Sistemi",
+        "question": "Bipolar ekstremite derivasyonlarından olan DII ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Kalbin normal elektriksel aksına en paralel olan derivasyonlardan biridir.",
+          "B": "Negatif elektrot hastanın sağ kolunda yer alır.",
+          "C": "P dalgasının en belirgin ve pozitif izlendiği derivasyondur.",
+          "D": "Sağ kol ile sol kol arasındaki potansiyel farkı kaydeder.",
+          "E": "Pozitif elektrot hastanın sol bacağında yer alır."
+        },
+        "correctAnswer": "D",
+        "explanation": "DII derivasyonu, potansiyel farkını sağ kol (-) ve sol bacak (+) arasında ölçen dikey-eğik (yaklaşık +60 derece) eksenli bir derivasyondur. Kalbin normal depolarizasyon vektörü de bu yönde olduğu için dalgalar DII'de en yüksek amplitüdde izlenir. Sağ kol ile sol kol arasındaki yatay potansiyel farkı ölçen derivasyon DI'dir."
+      },
+      "reason": "kisa_stem:11kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kalp ve Dolaşım Sistemi",
+        "question": "Unipolar ekstremite derivasyonlarının genel mekanizması ve lokalizasyonları ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "aVR derivasyonu, sol ventrikül lateral duvar iskemisini göstermede en duyarlı derivasyondur.",
+          "B": "Normal bir EKG'de aVR derivasyonunda P, QRS ve T dalgaları tipik olarak negatif izlenir.",
+          "C": "aVL derivasyonunda pozitif okuyucu elektrot hastanın sol koluna yerleştirilir.",
+          "D": "aVF derivasyonu kalbin inferior (diyafragmatik) yüzey elektriksel aktivitesini yansıtır.",
+          "E": "Unipolar derivasyonlarda kardiyak potansiyel tek bir pozitif elektrot üzerinden kaydedilir."
+        },
+        "correctAnswer": "A",
+        "explanation": "aVR derivasyonu, pozitif elektrodun sağ kolda bulunduğu ve miyokardiyal depolarizasyon dalgası kendisinden anatomik olarak uzaklaştığı için P, QRS ve T dalgalarının fizyolojik olarak negatif izlendiği derivasyondur. Sol ventrikül lateral duvar iskemisi aVR ile değil; yüksek lateralde aVL, düşük lateralde ise V5 ve V6 ile en iyi değerlendirilir. Diğer unipolar derivasyonların tanımları doğrudur."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kardiyovasküler Sistem",
+        "question": "Aşağıdakilerden hangisi hipopotasemi tablosunda beklenen kardiyak elektrofizyolojik ve EKG bulgularından biri **değildir**?",
+        "options": {
+          "A": "T dalgasında sivrileşme",
+          "B": "PR aralığında uzama",
+          "C": "U dalgasının belirginleşmesi",
+          "D": "T dalgasının yassılaşması",
+          "E": "İstirahat membran potansiyelinin -110 mV'a inmesi"
+        },
+        "correctAnswer": "A",
+        "explanation": "Hipopotasemide repolarizasyona dönüş daha uzun sürdüğü ve zorlaştığı için T dalgası yassılaşır veya negatifleşir, U dalgası belirginleşir. T dalgasının sivrileşmesi hipopotasemide değil, hiperkaleminin erken döneminde repolarizasyonun kolaylaşması sonucunda görülür. PR uzaması ise SA noddan çıkan uyarının ventriküllere geçişinin zorlaşmasına bağlıdır."
+      },
+      "reason": "kisa_stem:12kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kardiyovasküler Sistem",
+        "question": "Doku lokal kan akımının otoregülasyonunu sağlayan prekapiller sfinkterler ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+        "options": {
+          "A": "Düz kas hücrelerinin dışardan gelen sinirsel bir inervasyonu yoktur.",
+          "B": "Adenozin artışı sfinkterde dilatasyon yapar.",
+          "C": "Lokal CO2 artışı sfinkterde gevşemeye yol açar.",
+          "D": "Ekstraselüler laktat birikimi sfinkterleri kasarak akımı durdurur.",
+          "E": "Kontrolü esas olarak dokunun metabolik ihtiyacı belirler."
+        },
+        "correctAnswer": "D",
+        "explanation": "Prekapiller sfinkterlerin otonom inervasyonu yoktur ve çapları lokal faktörlerle kontrol edilir. Ortamda CO2, hidrojen iyonu, laktat, adenozin ve potasyum artışı dokunun oksijensiz kaldığını veya çok çalıştığını gösterir ve bu maddelerin hepsi damarı gevşeterek (dilatasyon) dokuya kan girişini artırır. Laktat sfinkteri kasmaz, aksine gevşetir."
+      },
+      "reason": "kisa_stem:14kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kardiyovasküler Sistem",
+        "question": "Plazma elektrolit konsantrasyonu değişikliklerinin EKG üzerindeki yansımaları ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+        "options": {
+          "A": "Hiperkalsemi tablosunda kalsiyum rigoru ve ST segmentinde uzama görülür.",
+          "B": "İleri hiperpotasemide QRS kompleksi genişler ve P dalgası düzleşir.",
+          "C": "Hipokalsemide kalsiyumun hücreye girişi yavaşladığı için QT süresi uzar.",
+          "D": "Hipopotasemide U dalgası belirginleşir ve T dalgası yassılaşır.",
+          "E": "Hipopotasemide PR aralığında patolojik uzama görülebilir."
+        },
+        "correctAnswer": "A",
+        "explanation": "Hiperkalsemide kalsiyumun hücreye aşırı ve hızlı girmesi aksiyon potansiyelinin plato (faz 2) evresini kısaltır. Plato evresinin kısalması EKG'de ST segmenti ve QT aralığının KISALMASI olarak izlenir, uzaması olarak değil. Kalsiyum rigoru ise doğru bir ifadedir ancak ST segmentinin uzadığı bilgisi yanlıştır."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kardiyovasküler Sistem",
+        "question": "Aşağıdaki nöropeptid veya hormonlardan hangisi arteriyollerde gevşemeye neden olan vazodilatatör faktörlerden biri **değildir**?",
+        "options": {
+          "A": "Kalsitonin geniyle ilişkili peptid (CGRP)",
+          "B": "Substance P",
+          "C": "Kininler",
+          "D": "Nöropeptid Y",
+          "E": "Prostasiklin"
+        },
+        "correctAnswer": "D",
+        "explanation": "Nöropeptid Y, sempatik sinir uçlarından salınan ve arteriyollerde güçlü vazokonstriksiyon (kasılma) yapan bir maddedir. CGRP, Substance P, kininler ve prostasiklin ise damar endotelini veya düz kasını etkileyerek arteriyollerin genişlemesini (gevşeme) sağlarlar. Özellikle CGRP ve Substance P güçlü vazodilatatör nöropeptidlerdir."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kardiyovasküler Sistem",
+        "question": "35 yaşında erkek hasta, trafik kazası sonrası acil servise getiriliyor. Muayenede masif iç kanama tespit ediliyor ve arteriyel kan basıncı 50/30 mmHg olarak ölçülüyor. Bu hastada perifere olan kan akımını minimuma indirerek hayati organları korumaya çalışan ve sempatik deşarjı maksimal seviyeye çıkaran primer yanıt hangisidir?",
+        "options": {
+          "A": "Bainbridge refleksi",
+          "B": "Merkezi Sinir Sistemi (MSS) iskemik cevabı",
+          "C": "Cushing triadı",
+          "D": "Baroreseptör refleks",
+          "E": "Hacim refleksi"
+        },
+        "correctAnswer": "B",
+        "explanation": "Ortalama Arter Basıncı (OAB) 60 mmHg'nın altına düştüğünde, beyin sapındaki vazomotor merkezin kanlanması bozulur. Bu derin iskemi, vazomotor merkezi doğrudan uyararak çok şiddetli bir sempatik deşarj başlatır. MSS iskemik cevabı adı verilen bu refleks, periferik damarları maksimum kasarak kanı santral organlarda tutmayı hedefler."
+      },
+      "reason": "uzunluk_biasi:correct=42ch_avg_other=17ch"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kardiyovasküler Sistem",
+        "question": "Renin-Anjiyotensin-Aldosteron sistemi fizyolojisi dikkate alındığında, aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Hipovolemi böbrek perfüzyon basıncını düşürerek renin salınımını uyarır",
+          "B": "Maküla densa hücreleri distal tübüldeki düşük sodyum konsantrasyonunu algılar",
+          "C": "Renin enzimi, karaciğer kaynaklı anjiyotensinojeni anjiyotensin I'e dönüştürür",
+          "D": "ACE enzimi vücutta en yoğun olarak böbrek afferent arteriyol endotelinde üretilir",
+          "E": "Anjiyotensin II, adrenal korteksten aldosteron salınımını artırarak sodyum emilimini tetikler"
+        },
+        "correctAnswer": "D",
+        "explanation": "Angiotensin Converting Enzyme (ACE), dolaşımdaki Anjiyotensin I'i Anjiyotensin II'ye çeviren enzimdir ve en yoğun olarak pulmoner (akciğer) kapiller endotel hücrelerinde üretilir. Böbrek afferent arteriyolünde üretilen enzim renindir. Diğer seçeneklerdeki RAA sistemi fizyolojisi bilgileri doğrudur."
+      },
+      "reason": "kisa_stem:9kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kardiyovasküler Sistem",
+        "question": "Kan basıncını düzenleyen nörohormonal mekanizmalarla ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Anjiyotensin II, subfornikal organı uyararak susama hissini tetikler.",
+          "B": "ANP, böbrek distal tübülünde Na-K ATPaz pompasını inhibe ederek sodyum atılımını artırır.",
+          "C": "Hipovolemi durumunda ventrikül endokardı gerilerek BNP salgılar ve sıvı tutulumunu uyarır.",
+          "D": "Vazopressin, damar düz kaslarındaki V1 reseptörleri aracılığıyla vazokonstriksiyon yapar.",
+          "E": "Renin, plazmadaki anjiyotensinojeni inaktif bir peptid olan anjiyotensin I'e dönüştürür."
+        },
+        "correctAnswer": "C",
+        "explanation": "Hipovolemi gibi kan basıncının düştüğü durumlarda kalpten BNP değil, böbreklerden renin ve takiben anjiyotensin II salınımı artar. BNP (ve ANP), tam tersine hipervolemi ve kalp duvarında aşırı gerilme (örneğin kalp yetmezliği) durumlarında salgılanarak sodyum ve su atılımını uyarır. Damar düz kaslarındaki V1 reseptörlerinin vazokonstriksiyon yapması veya subfornikal organ uyarımı kan basıncını destekleyen doğru fizyolojik mekanizmalardır."
+      },
+      "reason": "kisa_stem:10kelime"
+    }
+  ]
+}

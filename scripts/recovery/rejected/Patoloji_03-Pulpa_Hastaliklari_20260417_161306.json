@@ -1,0 +1,41 @@
+{
+  "lesson": "Patoloji",
+  "unit": "03-Pulpa Hastaliklari",
+  "rejected_at": "2026-04-17T16:13:06.560056",
+  "items": [
+    {
+      "question": {
+        "lesson": "Ağız Diş ve Çene Patolojisi",
+        "unit": "Oral Mukoza ve Pulpa Lezyonları",
+        "question": "Pulpa dokusunun yapısal ve fizyopatolojik özellikleri ile ilgili aşağıdakilerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "İnflamasyon gelişen durumlarda dokunun dışa doğru genişleyerek şişkinlik yapması beklenmez.",
+          "B": "Kan akımı kesildiğinde doku canlılığını korumak için kollateral damar ağı oluşturabilir.",
+          "C": "Pulpal inflamasyonun varlığını ve şiddetini belirlemede ağrı ile hassasiyet kritik göstergelerdir.",
+          "D": "Pulpal inflamasyona sebep olan faktörler arasında en sık karşılaşılan etken dental çürüklerdir.",
+          "E": "Anatomik kısıtlılıkları nedeniyle histopatolojik inceleme için biyopsi alınmasına elverişli bir doku değildir."
+        },
+        "correctAnswer": "B",
+        "explanation": "Pulpa dokusu mine ve dentin gibi sert dokularla çevrili olduğu için kan akımı herhangi bir nedenle kesildiğinde yeni bir kollateral damar ağı oluşturamaz. Doku esnemez sert duvarlarla çevrili olduğundan, inflamasyon durumunda klinik şişkinlik gözlenmez ancak bu basınç artışı hastaya şiddetli ağrı olarak yansır. Anatomik dar alan ve kısıtlı kanlanma özellikleri, pulpa dokusundan tanısal biyopsi alınmasını da oldukça elverişsiz hale getirir."
+      },
+      "reason": "kisa_stem:11kelime"
+    },
+    {
+      "question": {
+        "lesson": "Ağız Diş ve Çene Patolojisi",
+        "unit": "Oral Mukoza ve Pulpa Lezyonları",
+        "question": "Akut pulpitin klinik ve histopatolojik özellikleri ile ilgili aşağıdakilerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Erken dönemde seröz karakterde başlarken, ilerleyen safhalarda süpüratif bir form alır.",
+          "B": "Lezyon bölgesindeki stromada yoğun mononükleer inflamatuar hücre infiltrasyonu izlenir.",
+          "C": "Hastalık tablosunun ilerlediği geç evrelerde dişin elektriksel stimuluslara verdiği yanıt azalır.",
+          "D": "Hücresel infiltrasyonun çok şiddetli olduğu bölgelerde doku erimesi ile pulpal abse gelişebilir.",
+          "E": "Hasarın henüz sınırlı kaldığı erken dönemde odontoblastlar dentin üretimi yapmaya devam eder."
+        },
+        "correctAnswer": "B",
+        "explanation": "Akut pulpitin histopatolojik tablosunda lezyon bölgesine hakim olan enflamatuar hücre grubu mononükleer hücreler değil, yoğun nötrofillerdir. Lezyon alanında lenfosit, makrofaj ve plazma hücresi gibi mononükleer hücre infiltrasyonu, akut inflamasyonun düzelmediği ve sürecin kronik pulpitis aşamasına geçtiği durumlarda izlenir. Pulpal abse gelişimi de, akut vakalarda nötrofillerin dokuyu eritmesine bağlı gelişen likefaksiyon nekrozunun karakteristik bir sonucudur."
+      },
+      "reason": "kisa_stem:11kelime"
+    }
+  ]
+}

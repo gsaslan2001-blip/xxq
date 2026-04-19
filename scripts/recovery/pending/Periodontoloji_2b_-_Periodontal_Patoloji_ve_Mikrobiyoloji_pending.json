@@ -1,0 +1,272 @@
+{
+  "lesson": "Periodontoloji",
+  "unit": "2.b - Periodontal Patoloji ve Mikrobiyoloji",
+  "questions": [
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Otuz iki yaşındaki kadın hasta, alt çene anterior bölgede diş taşı birikimi ve fırçalama sırasında kanama şikayetiyle başvurmuştur. Muayenede dişeti sınırının üzerinde yoğun supragingival plak varlığı gözlenmiştir. Bu hastadan alınan supragingival plak örneğinin mikrobiyolojik analizinde sayısal olarak **en baskın** olması beklenen bakteri grubu aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Gram pozitif koklar",
+        "B": "Gram negatif spiroketler",
+        "C": "Asakkarolitik anaeroblar",
+        "D": "Gram negatif hareketli çomaklar",
+        "E": "Gram pozitif filamentöz formlar"
+      },
+      "correctAnswer": "A",
+      "explanation": "Supragingival plakta bakteriler üst üste yığılmış katmanlar şeklinde birikir ve bu alanda sayısal olarak en baskın grup Gram pozitif koklardır. Subgingival plağa inildikçe oksijen basıncının düşmesi ve dişeti oluğu sıvısı (DOS) kaynaklı besinlerin varlığı ile anaerobların ve spiroketlerin oranı artar, Gram pozitif kokların yerini bu türler alır. Bu nedenle serbest dişeti sınırının üzerindeki erken plak birikimlerinde aerobik/fakültatif karakterdeki Gram pozitif kok florası hakimiyet kurar."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Diş biyofilminin oluşum aşamalarından olan ikinci evrede; tek hücrelerin üremesi, ekstrasellüler polisakkarid yapımı ve mikrokoloni oluşumu gerçekleşir. Bu evrede, genetik olarak birbirine tamamen eş olan hücrelerin kendi aralarında fiziksel etkileşim kurarak kümelenmesine ne ad verilir?",
+      "options": {
+        "A": "Koagregasyon",
+        "B": "Otoaggregasyon",
+        "C": "Aglütinasyon",
+        "D": "Amfibiyoz",
+        "E": "Quorum sensing"
+      },
+      "correctAnswer": "B",
+      "explanation": "Genetik olarak birbirine eş (aynı) bakteri hücrelerinin birbirleriyle kurduğu fiziksel hücre-hücre etkileşimine otoaggregasyon denir. Koagregasyon ise genetik olarak farklı bakteri türlerinin özel moleküller aracılığıyla birbirine tutunmasıdır. Konak antikorlarıyla gerçekleşen immünolojik kümelenme ise aglütinasyon olarak tanımlanır, biyofilm başlangıcındaki bakteri-bakteri eşleşmesinden mekanizma olarak farklıdır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Diş plağı biyofilminin organizasyonu sırasında, merkezde filamentöz bir bakterinin yer aldığı ve buna diğer farklı bakteri türlerinin tutunarak oluşturduğu 'mısır koçanı' ve 'test tüp fırçası' benzeri yapılar, plak oluşumunun hangi karakteristik evresinde izlenir?",
+      "options": {
+        "A": "Birinci evre - Pelikıla ilk yapışma",
+        "B": "Birinci evre - Planktonik hücrelerin çökelmesi",
+        "C": "İkinci evre - İkincil ardıllık evresi",
+        "D": "Üçüncü evre - Kırmızı kompleks dominansı",
+        "E": "Dördüncü evre - Epitelyal hücre invazyonu"
+      },
+      "correctAnswer": "C",
+      "explanation": "Mısır koçanı ve test tüp fırçası oluşumları, farklı tür bakteriler arasındaki ilginç fiziksel etkileşimlerin (koagregasyon) sonucudur ve diş biyofilminin ikinci evresinin sonlarında (ikincil ardıllık) gerçekleşir. Bu aşamada mikroçevre aerop/kapnofilden fakültatif anaeroba dönüşür ve Fusobacterium türleri ile çapraz bağlanmalar başlar. Birinci evre sadece Gram (+) kokların pelikıla tekil yapışmasını ifade eder."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Aşağıdakilerden hangisi Socransky'nin tanımladığı, cep epiteline komşu olmayan 'yapışık olmayan zonda' yer alan ve periodontal yıkım progresyonuna geçiş florası kabul edilen turuncu bakteri birlikteliğinin üyelerinden biri **değildir**?",
+      "options": {
+        "A": "Prevotella intermedia",
+        "B": "Parvimonas micra",
+        "C": "Fusobacterium nucleatum",
+        "D": "Actinomyces viscosus",
+        "E": "Campylobacter rectus"
+      },
+      "correctAnswer": "D",
+      "explanation": "Actinomyces viscosus, dişeti sağlığı ile doğrudan ilişkili olan ve yapışık zonda yer alan mavi bakteri birlikteliğinin bir üyesidir. Prevotella intermedia, Parvimonas micra, Fusobacterium nucleatum ve Campylobacter rectus ise yapışık olmayan zonda yerleşen, periodontal hastalık florasına (kırmızı komplekse) geçişte rol oynayan turuncu kompleks üyeleridir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Socransky'nin subgingival mikroflorayı sınıflandırmak için tanımladığı mikrobiyal kompleksler modelinde, Actinomyces odontolyticus ile birlikte 'mor' bakteri birlikteliğini oluşturan asakkarolitik bakteri aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Capnocytophaga sputigena",
+        "B": "Eikenella corrodens",
+        "C": "Tannerella forsythia",
+        "D": "Streptococcus gordonii",
+        "E": "Veillonella parvula"
+      },
+      "correctAnswer": "E",
+      "explanation": "Mor bakteri birlikteliği, temel olarak Actinomyces odontolyticus ve Veillonella parvula'dan oluşur ve yapışık zonda yer alır. Capnocytophaga ve Eikenella türleri yeşil birliktelikte, Tannerella forsythia patojenik kırmızı birliktelikte, Streptococcus türleri ise sarı birliktelikte sınıflandırılır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Ağız bakterilerinin birbirleriyle kurduğu iletişim mekanizmaları ile ilgili olarak aşağıda verilen ifadelerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Koagregasyon, konak antikorlarının yönlendirmesiyle hücrelerin çökelmesini sağlayan bir aglütinasyon reaksiyonudur.",
+        "B": "Quorum sensing, sentezlenen kimyasal sinyaller aracılığıyla bakterilerin hücre yoğunluğuna bağlı iletişim kurmasıdır.",
+        "C": "Otoaggregasyon, genetik olarak birbirine eş hücrelerin aralarında gerçekleştirdiği hücre-hücre etkileşimidir.",
+        "D": "Erken kolonize olan mikroorganizmalar kendi aralarında koagregasyon yapabilirken, genellikle geç kolonize olanlarla yapmazlar.",
+        "E": "Bakterilerin fiziksel iletişim yollarından biri olan koagregasyon, özel adezin ve ligand molekülleri aracılığıyla işler."
+      },
+      "correctAnswer": "A",
+      "explanation": "Koagregasyon bir immünolojik aglütinasyon reaksiyonu değildir; genetik olarak farklı bakterilerin kendi ürettikleri özel yüzey molekülleri aracılığıyla birbirlerine fiziksel olarak yapışması olayıdır. Konak antikorlarıyla oluşan aglütinasyondan temel olarak ayrılır ve diş plağının 3 boyutlu büyümesinde anahtar fiziksel mekanizmadır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Yirmi beş yaşındaki hastanın subgingival plak örneğinin analizinde, Porphyromonas gingivalis'in ortamda bulunmasına rağmen plak biyofilm iskeletine tutunamadığı ve planktonik formda kaldığı tespit edilmiştir. Bu defektif kolonizasyon sürecinde, erken kolonizörler ile geç kolonizörler arasında 'köprü bakterisi' olarak iş gören hangi mikroorganizmanın plaktaki eksikliği **en olasıdır**?",
+      "options": {
+        "A": "Streptococcus sanguinis",
+        "B": "Fusobacterium nucleatum",
+        "C": "Treponema denticola",
+        "D": "Parvimonas micra",
+        "E": "Aggregatibacter actinomycetemcomitans"
+      },
+      "correctAnswer": "B",
+      "explanation": "Fusobacterium nucleatum, hem erken kolonize olan streptokoklar ile hem de geç kolonize olan zorunlu anaeroblarla koagregasyon yapabilen yegane 'köprü bakterisi'dir. P. gingivalis gibi geç kolonizör anaeroblar, F. nucleatum ortamda yoksa dişe veya erken kolonizörlere tutunamazlar ve planktonik fazda kalarak elimine olurlar."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Biyofilm içindeki bakteriler arasında gözlenen 'quorum sensing' sinyal sistemi ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Bakterilerin sentezlediği kimyasal sinyal molekülleri üzerinden yürüyen bir haberleşme yoludur.",
+        "B": "Ortamdaki bakteri popülasyon yoğunluğu ile doğrudan ilişkilidir.",
+        "C": "Farklı türlerin koagregasyonunu başlatan primer immünolojik aglütinasyon köprüsüdür.",
+        "D": "Biyofilm hücrelerinin ortamdaki değişikliklere adapte olarak ortak hareket etmesini sağlar.",
+        "E": "Sinyallerin algılanması ve hedeflenen gen ekspresyonu için spesifik bir çoğunluğa (quorum) ulaşılması şarttır."
+      },
+      "correctAnswer": "C",
+      "explanation": "Quorum sensing fiziksel veya immünolojik bir tutunma/aglütinasyon köprüsü değildir; mikroorganizmaların kimyasal sinyal molekülleri salgılayarak sayısal yoğunluklarını (quorum) algıladıkları ve buna göre patojenite veya direnç genlerini eksprese ettikleri kimyasal bir iletişim yoludur. Koagregasyon ise tamamen fiziksel tutunma ile ilgilidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Kırk beş yaşındaki kronik periodontitis hastasına amoksisilin reçete edilmiş, ancak subgingival mikrobiyotadaki patojenler ilaca direnç göstermiştir. Yapılan in vitro testlerde, bakterilerin tekil (planktonik) formda amoksisiline duyarlı olduğu, ancak biyofilm içinde dirençli hale geldikleri saptanmıştır. Bu tabloya neden olan **en olası** biyofilm spesifik direnç mekanizması aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Planktonik hücrelerin efluks pompası sayısında spontan mutasyonla artış olması",
+        "B": "Quorum sensing sinyallerinin tamamen inhibe edilerek metabolizmanın hızlandırılması",
+        "C": "Klorheksidinin genç biyofilm hücrelerine nüfuz edememesi",
+        "D": "Biyofilm matriksi içinde yer alan ekstrasellüler beta-laktamaz enzimlerinin varlığı",
+        "E": "Matriks içi negatif iyonik yüklerin amoksisilin molekülünü iterek repulsiyon yapması"
+      },
+      "correctAnswer": "D",
+      "explanation": "Biyofilm bakterileri antimikrobiyallere 1000 kat daha dirençlidir. Subgingival floradaki bazı bakteriler tarafından üretilip biyofilm matriksine salgılanan ekstrasellüler enzimler (örneğin beta-laktamaz), amoksisilin gibi antibiyotikleri matriksten geçerken enzimatik olarak parçalar ve inaktive eder. Tekil formda duyarlı olan bir bakterinin sadece biyofilm içindeyken ilaca direnç göstermesi, matriksin bu farmakolojik bariyer etkisinin sonucudur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "On sekiz yaşındaki kadın hasta, birinci büyük azı ve kesici dişlerinde simetrik ve ileri derecede alveol kemik kaybı ile başvurmuştur. Lokalize agresif periodontitis (LAP) ön tanısı konulan hastanın defekt bölgelerinden alınan mikrobiyolojik kültürde Aggregatibacter actinomycetemcomitans'ın lökotoksin üreten varyantları saptanmıştır. Bu klinik tabloda izolasyonu **en sık** bildirilen A. actinomycetemcomitans serotipi aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Serotip a",
+        "B": "Serotip c",
+        "C": "Serotip d",
+        "D": "Serotip e",
+        "E": "Serotip b"
+      },
+      "correctAnswer": "E",
+      "explanation": "Aggregatibacter actinomycetemcomitans (Aa) fakültatif anaerop ve kapnofil bir bakteridir ve Lokalize Agresif Periodontitis (LAP) etkeni olarak kabul edilir. Patojenezde en büyük rol oynayan lökotoksini üretir. Toplam beş serotipi (a-e) tanımlanmış olmakla birlikte, hastalıklı dokulardan ve lezyonlardan klinik olarak en çok saptanan ve doku yıkımıyla en sık ilişkilendirilen tipi Serotip b'dir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Altmış beş yaşındaki immünsüpresif bir erkek hastada, trigeminal sinirin mandibular dalı trasesini izleyen şiddetli nevraljiform ağrı ve veziküler mukozal lezyonlar saptanmış, radyolojik incelemede eş zamanlı olarak çene kemiğinde osteomiyelit bulguları rapor edilmiştir. Bu oral ve maksillofasiyal patolojiye yol açan **en olası** viral etken aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Varicella-zoster virüs",
+        "B": "Coxsackievirus",
+        "C": "Human papillomavirus",
+        "D": "Human herpes virüs-6",
+        "E": "Epstein-Barr virüs"
+      },
+      "correctAnswer": "A",
+      "explanation": "Varicella-zoster virüs (VZV), latent formundan reaktive olduğunda (Zona Zoster) sinir trasesi boyunca veziküller, şiddetli nöropatik ağrı (Hunt sendromu vb.) ile seyreder. Oral kavitede rekürrent oral aftöz stomatit benzeri tablolara ilaveten, vasküler oklüzyon ve trofik değişiklikler neticesinde ağır çene kemiği osteomiyelitin veya osteonekrozuna yol açabilen spesifik herpes virüs tipidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Periodontal ceplerdeki aktif viral enfeksiyonların lokal konak savunmasını bozduğu ve periodontal patojenlerin (özellikle P. gingivalis ve A. actinomycetemcomitans) çoğalmasını artırdığı saptanmıştır. Bu bağlamda, periodonsiyumdaki lokal T lenfositlerini ve monosit/makrofaj serisi hücrelerini doğrudan enfekte ederek immün yanıtı modifiye eden virüs aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Human papillomavirus tip 16",
+        "B": "Human herpes virüs-8",
+        "C": "Human cytomegalovirüs",
+        "D": "Picornavirus",
+        "E": "Coxsackievirus"
+      },
+      "correctAnswer": "C",
+      "explanation": "Human cytomegalovirüs (hCMV) periodontal dokulardaki savunma mekanizmasını doğrudan hedef alır. Periodonsiyuma göç eden monositleri, makrofajları ve T lenfositlerini enfekte eder. EBV-1 ise periodontal B lenfositlerini hedefler. hCMV'nin makrofajlarda oluşturduğu bu disfonksiyon, lokal savunmayı düşürerek anaerob periodontal patojenlerin doku invazyonunu katlanarak artırır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Otuz beş yaşındaki HIV pozitif erkek hastanın muayenesinde dilin lateral kenarlarında, spatül ile kazınarak kaldırılamayan, dikey kıvrımlı beyaz lezyonlar (oral tüylü lökoplaki) izlenmiştir. Anamnezinde çocukluk çağında Burkitt lenfoma geçirdiği bilgisi mevcuttur. Hastanın mevcut oral patolojisine ve sistemik geçmişine neden olan viral etken aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Human cytomegalovirüs",
+        "B": "Varicella-zoster virüs",
+        "C": "Human herpes virüs-8",
+        "D": "Epstein-Barr virüs",
+        "E": "Human papillomavirus"
+      },
+      "correctAnswer": "D",
+      "explanation": "Epstein-Barr virüsü (EBV), B lenfositleri üzerinden lenfoproliferatif hastalıklar olan Burkitt lenfoma ve Hodgkin lenfoma gelişiminde rol oynar. İmmünsüpresif bireylerde ve özellikle HIV pozitiflerde, epitel hücrelerini enfekte ederek dil lateralinde keratinize, kazınamayan beyaz lezyonlar şeklinde tanımlanan 'Oral tüylü lökoplaki' tablosunu oluşturur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Human cytomegalovirüs (hCMV) enfeksiyonunun immünsüpresif ve immünkompetan hastalardaki klinik seyri ile ilgili olarak aşağıdaki ifadelerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Siklosporin ve steroid kullanan transplantasyon hastalarında lenfoproliferatif hastalıklarla ilişkilendirilir.",
+        "B": "İleri evre HIV hastalarında ciddi sonuçlar doğuran hemorajik retinal nekroza neden olabilir.",
+        "C": "Oral kavitede pemfigus vulgaris ve eritema multiforme patogenezlerinde tetikleyici olarak bulunabilir.",
+        "D": "Aktif enfeksiyonu sırasında peridonsiyumdaki patojenik Porphyromonas gingivalis sayısında sekonder bir artış görülür.",
+        "E": "Çocukluk çağında döküntüler ve uvulopalatoglossal mukozada oluşan ülserlerle seyreden Roseola infantum'un primer etkenidir."
+      },
+      "correctAnswer": "E",
+      "explanation": "Roseola infantum (6. hastalık) tablosu ve ona eşlik eden uvulopalatoglossal ülserler Human cytomegalovirüs (hCMV) enfeksiyonu sonucu değil, spesifik olarak Human herpes virüs-6 (HHV-6) enfeksiyonu neticesinde gelişmektedir. hCMV ise T hücreleri ve makrofajları enfekte ederek immünsüpresiflerde (HIV) ülserlere, siklosporin ile lenfoproliferasyona ve retinal nekrozlara sebep olur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Altı aylık infant, üç gün süren yüksek ateşin düşmesinin hemen ardından gövdede başlayan makülopapüler döküntüler şikayetiyle polikliniğe getirilmiştir. Hastanın ağız içi muayenesinde uvulopalatoglossal bölgede yerleşik spesifik oral ülserler (Nagayama lekeleri) saptanmıştır. Altıncı hastalık olarak da bilinen bu Roseola infantum tablosunun etkeni aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Human herpes virüs-6",
+        "B": "Coxsackievirus",
+        "C": "Epstein-Barr virüs",
+        "D": "Herpes simplex virüs-1",
+        "E": "Human herpes virüs-8"
+      },
+      "correctAnswer": "A",
+      "explanation": "Roseola infantum (Ekzantema subitum / 6. hastalık), özellikle infant döneminde ani ateş ve döküntüyle seyreden ve etiyolojisinden ağırlıklı olarak Human herpes virüs-6'nın (HHV-6) sorumlu olduğu bir hastalıktır. Orofaringeal muayenede görülen karakteristik uvulopalatoglossal ülserler HHV-6'nın oral bulgusudur. HHV-8 Kaposi sarkomu yaparken, Coxsackie herpanjina etkenidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "AIDS tanısı ile takip edilen 42 yaşındaki hastanın sert damak mukozasında birden fazla, sınırları tam seçilemeyen, mor-kırmızı renkli nodüler vasküler lezyonlar saptanmış ve eksizyonel biyopsi sonrası 'Kaposi sarkomu' tanısı kesinleşmiştir. İmmünsüpresif bireylerde bu agresif endotelyal kökenli tümörün etiyolojisinden sorumlu olan spesifik virüs aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Varicella-zoster virüs",
+        "B": "Human herpes virüs-8",
+        "C": "Human cytomegalovirüs",
+        "D": "Epstein-Barr virüs",
+        "E": "Human papillomavirus tip 16"
+      },
+      "correctAnswer": "B",
+      "explanation": "Kaposi sarkomu, bağışıklık sistemi baskılanmış kişilerde, özellikle HIV/AIDS hastalarında sıklıkla görülen vasküler proliferatif bir neoplazmdır. Bu transformasyona neden olan onkojenik virüs Human herpes virüs-8'dir (HHV-8). HPV skuamöz karsinomla, EBV ise lenfomalarla ilişkilidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Sekiz yaşındaki çocuk hastanın rutin intraoral muayenesinde; dudak, yanak ve dil mukozasında asemptomatik, çok sayıda yassı tabanlı, pembe renkli yumuşak nodüler kabarıklıklar izlenmiş ve Fokal epitelyal hiperplazi (Heck hastalığı) teşhisi konulmuştur. Bu spesifik benign oral lezyonların patogenezinden aşağıdaki virüs ailelerinden hangisi sorumludur?",
+      "options": {
+        "A": "Picornavirus",
+        "B": "Retrovirüs",
+        "C": "Papillomavirus",
+        "D": "Herpesvirüs",
+        "E": "Enterovirus"
+      },
+      "correctAnswer": "C",
+      "explanation": "Fokal epitelyal hiperplazi (Heck hastalığı), ağız mukozasında lokalize, çok sayıda siğil benzeri yumuşak nodüllerle karakterize spesifik bir doku büyümesidir. Hastalık doğrudan Human Papillomavirus (HPV) ailesine ait suşların (özellikle 13 ve 32) enfeksiyonu neticesinde gelişmektedir. Enteroviruslar veya herpesvirüsler bu spesifik hiperplazi tablosunu oluşturmazlar."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Dilde izlenen uzun süreli oral lökoplaki lezyonunun malign transformasyona uğrayarak oral skuamöz hücreli karsinoma (OSCC) dönüştüğü saptanan bir hastanın doku örneklerinde moleküler analiz yapılmıştır. Hücresel p53 supresör proteinini inaktive ederek bu karsinomun gelişiminde kritik rol oynayan yüksek riskli virüs (özellikle tip 16 ve 18) aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Human cytomegalovirüs",
+        "B": "Herpes simplex virüs-2",
+        "C": "Epstein-Barr virüs",
+        "D": "Papillomavirus",
+        "E": "Human herpes virüs-6"
+      },
+      "correctAnswer": "D",
+      "explanation": "Human Papillomavirus (HPV), özellikle yüksek onkojenik riske sahip 16 ve 18 numaralı tipleri ile oral kavitede skuamöz hücreli karsinom (OSCC) ve verriköz karsinom gelişiminden sorumludur. EBV lenfoid tümörler (Burkitt) ve epitel kökenli nazofarengeal karsinom yaparken, HPV doğrudan oral skuamöz epiteli onkogeneze sürükleyen ajanlardan biridir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Patoloji ve Mikrobiyoloji",
+      "question": "Beş yaşındaki kız çocuğu yüksek ateş, yutkunma zorluğu ve şiddetli boğaz ağrısı şikayetiyle getirilmiştir. Hastanın intraoral muayenesinde yumuşak damak ve tonsil plalarında patlayan veziküller (herpanjina) görülmüş; eş zamanlı olarak el ayası ve ayak tabanında da benzer döküntüler (el-ayak-ağız hastalığı) saptanmıştır. Bu spesifik vezikülobüllöz klinik tabloya yol açan virüs grubu aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Human herpes virüs-7",
+        "B": "Human papillomavirus",
+        "C": "Herpes simplex virüs-1",
+        "D": "Varicella-zoster virüs",
+        "E": "Coxsackievirus"
+      },
+      "correctAnswer": "E",
+      "explanation": "Herpanjina ve El-ayak-ağız hastalığı, etkenleri Picornaviridae ailesine mensup Enterovirüs grubundan olan Coxsackievirus ve Echovirus'lerdir. Özellikle yaz ve erken sonbahar aylarında çocuklarda damak, el ve ayakları tutan spesifik lezyon dağılımı ile Herpes simplex virüs enfeksiyonlarından (HSV-1) klinik olarak ayırt edilir."
+    }
+  ]
+}

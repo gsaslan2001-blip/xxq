@@ -1,0 +1,24 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "DENEME",
+  "rejected_at": "2026-04-18T13:07:32.668472",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kalp ve Dolaşım Fizyolojisi",
+        "question": "Kalp kasının fizyolojik kasılma dinamikleri dikkate alındığında, aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Aksiyon potansiyeli süresi 250-300 milisaniyedir.",
+          "B": "Hücreler interkale diskler ve gap junctionlar ile sinsityal kasılır.",
+          "C": "Gelen ardışık yüksek frekanslı uyarılar kalp kasında tetani oluşturur.",
+          "D": "T tübül ve terminal sisterna diad yapısını oluşturur.",
+          "E": "Kalsiyumun sarkoplazmik retikuluma alınması SERCA pompası ile sağlanır."
+        },
+        "correctAnswer": "C",
+        "explanation": "Kalp kasında miyokardiyal hücrelerin uyarılması ile oluşan mutlak refrakter dönem, kasılma cevabı ile eş zamanlı gerçekleşir ve bu durum kasın yeniden uyarılmadan önce gevşemesini zorunlu kılarak tetani oluşumunu engeller. İskelet kasında refrakter periyot çok kısa olduğu için tetani oluşabilirken, kalp kasında uzun plato fazı (L tipi Ca++ kanalları sayesinde) buna izin vermez. Bu mekanizma, kalbin pompa fonksiyonunu sürdürebilmesi için hayati önem taşır."
+      },
+      "reason": "kisa_stem:11kelime"
+    }
+  ]
+}

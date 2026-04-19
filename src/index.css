@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #000000;
+    --foreground: #f5f5f5;
+    --card-bg: #0a0a0a;
+    --card-border: rgba(255,255,255,0.04);
+    --accent: #5e6ad2;
+    --accent-soft: rgba(94,106,210,0.1);
+    --radius: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+  }
+
+  .light {
+    --background: #ffffff;
+    --foreground: #111111;
+    --card-bg: #ffffff;
+    --card-border: rgba(0,0,0,0.05);
+    --accent: #434ce6;
+    --accent-soft: rgba(67,76,230,0.08);
+  }
+
+  *,
+  *::before,
+  *::after {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: -0.015em;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* ── Custom Scrollbar — Apple/Linear Stealth ───────── */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.1);
+  border-radius: 99px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.2);
+}
+.light .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.1);
+}
+.light .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.2);
+}
+
+/* ── Selection ────────────────────────────────────────── */
+::selection {
+  background: rgba(94,106,210,0.3);
+  color: #fff;
+}
+.light ::selection {
+  background: rgba(67,76,230,0.2);
+  color: #000;
+}

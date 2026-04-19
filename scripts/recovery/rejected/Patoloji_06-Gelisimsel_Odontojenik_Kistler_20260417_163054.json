@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "06-Gelisimsel Odontojenik Kistler",
+  "rejected_at": "2026-04-17T16:30:54.334394",
+  "items": [
+    {
+      "question": {
+        "lesson": "Ağız, Diş ve Çene Patolojisi",
+        "unit": "Gelişimsel Kistler ve Odontojenik Tümörler",
+        "question": "Mandibula angulusunda sıklıkla ekspansif büyüme gösteren konvansiyonel (solid/multikistik) Ameloblastoma varyantı için aşağıdakilerden hangisi **söylenemez**?",
+        "options": {
+          "A": "Lokal invazyon özellikleri göstermesine rağmen lenf nodu veya uzak organ metastazı yapması beklenen bir bulgu değildir.",
+          "B": "Tümör dokusunun genetik analizinde BRAF gen mutasyonu sık izlenmektedir.",
+          "C": "Radyolojik olarak kortikal sınırları genişleten ve multiloküler bal peteği ya da sabun köpüğü kemik yıkımı yapan alanlar izlenir.",
+          "D": "Tümör epitel adalarının bazal tabakasında hiperkromatik, palizatlaşma gösteren ve polaritesi tersine dönmüş hücreler vardır.",
+          "E": "Cerrahi yaklaşımda konservatif küretaj ve enükleasyon yeterlidir; rezidü doku sekelsiz olarak kendiliğinden iyileşme gösterir."
+        },
+        "correctAnswer": "E",
+        "explanation": "Konvansiyonel ameloblastoma benign patoloji taşımasına rağmen borderline malign seyreden klinik lokal agresivitesi nedeniyle basit küretaj ile KESİNLİKLE tedavi edilmez; nüks garantiye yakındır. Hastalıklı kemiğin etrafındaki 2 cm'lik güvenli kemik cerrahi sınırı (marjin) ile birlikte blok rezeksiyonu zorunludur. Ters polariteli hücreler ve BRAF mutasyonu hücresel karakteristiğidir."
+      },
+      "reason": "kisa_stem:14kelime"
+    }
+  ]
+}

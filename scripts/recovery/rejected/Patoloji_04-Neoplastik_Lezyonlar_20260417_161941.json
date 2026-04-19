@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "04-Neoplastik Lezyonlar",
+  "rejected_at": "2026-04-17T16:19:41.956401",
+  "items": [
+    {
+      "question": {
+        "lesson": "Oral Patoloji",
+        "unit": "Oral Bölgenin Neoplastik ve Premalign Lezyonları",
+        "question": "Oral submüköz fibrozis lezyonunun fizyopatolojisi ve prognozu değerlendirildiğinde, aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Tütün ve alkaloid yapılı betel çiğneyen bireylerde görülür.",
+          "B": "Klinik olarak premalign potansiyel taşıyan bir lezyondur.",
+          "C": "Zararlı etken ortadan kaldırıldığında dokudaki fibrozis tablosu geri dönüşümlüdür.",
+          "D": "İleri evrelerde ağız kuruluğu ve dilde hareket kısıtlılığı gelişir.",
+          "E": "Zaman içinde ilerleyen kronik ve sklerotik seyirli bir tablodur."
+        },
+        "correctAnswer": "C",
+        "explanation": "Oral submüköz fibrozisin mekanizmasındaki en kritik nokta, tetiklenen konnektif doku hiperplazisinin ve fibrozis zincirinin geri dönüşümsüz (irreversibl) olmasıdır. Betel çiğneme alışkanlığı bırakılsa dahi oluşan kollajen çapraz bağları yıkılamaz ve trismus kalıcı hale gelir. Bu özelliğiyle diğer bazı mukozal reaktif durumlardan kesin olarak ayrılır."
+      },
+      "reason": "kisa_stem:12kelime"
+    }
+  ]
+}

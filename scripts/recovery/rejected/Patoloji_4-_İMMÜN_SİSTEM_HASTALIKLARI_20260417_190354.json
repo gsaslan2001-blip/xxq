@@ -1,0 +1,58 @@
+{
+  "lesson": "Patoloji",
+  "unit": "4- İMMÜN SİSTEM HASTALIKLARI",
+  "rejected_at": "2026-04-17T19:03:54.488972",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "İmmün Sistem Hastalıkları",
+        "question": "Primer immün yetmezlikler arasında toplumda en sık karşılaşılan kompleman eksikliği aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "C2 eksikliği",
+          "B": "C3 eksikliği",
+          "C": "C5 eksikliği",
+          "D": "C1q eksikliği",
+          "E": "Faktör H eksikliği"
+        },
+        "correctAnswer": "A",
+        "explanation": "Toplumda en sık görülen kompleman defekti C2 eksikliğidir ancak alternatif kompleman yolağı çoğu enfeksiyonu kompanse edebildiği için hastalar genellikle asemptomatiktir. C3 eksikliği (B şıkkı) daha nadirdir ve hem klasik hem alternatif yolağın kesişim noktasında olduğu için ağır piyojenik bakteri enfeksiyonları ile seyreder. Erken kompleman bileşenlerinin (C1q, C2, C4) eksikliği immün kompleks temizliğini bozduğu için SLE benzeri tablolara zemin hazırlar."
+      },
+      "reason": "kisa_stem:12kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "İmmün Sistem Hastalıkları",
+        "question": "Kompleman sistemi eksiklikleri ve buna bağlı gelişen klinik tabloların eşleştirilmesinden hangisi **yanlıştır**?",
+        "options": {
+          "A": "C1q, C2, C4 eksikliği - SLE benzeri otoimmün hastalıklar",
+          "B": "CD55 (DAF) eksikliği - Paroksismal noktürnal hemoglobinüri",
+          "C": "C1 esteraz inhibitör eksikliği - Travma sonrası gelişen laringeal ödem",
+          "D": "C5-C9 kompleks eksikliği - Artmış kapsüllü streptokok enfeksiyonları",
+          "E": "Faktör H eksikliği - Maküler dejenerasyon ve atipik HÜS"
+        },
+        "correctAnswer": "D",
+        "explanation": "C5-C9 eksikliği (Membran Atak Kompleksi defekti) spesifik olarak Neisseria (meningokok/gonokok) enfeksiyonlarına duyarlılığı artırır; streptokok veya piyojenik bakterilere değil. Streptokoklar ve piyojenik bakterilere duyarlılık opsonizasyon kusuru yaratan C3 eksikliğinde belirgindir. Erken yolak defektleri (C1,C2,C4) immün kompleks klirensini bozduğu için SLE benzeri sendromlar yaratır."
+      },
+      "reason": "kisa_stem:12kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "İmmün Sistem Hastalıkları",
+        "question": "Wiskott-Aldrich sendromunun patogenezi ve klinik bulguları hakkında aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Hastalık otozomal resesif geçiş gösterir ve kız çocuklarında sık izlenir.",
+          "B": "Timus bezi doğumda normaldir ancak yaş ilerledikçe T lenfositlerde kayıp gelişir.",
+          "C": "Hastalar özellikle pnömokok gibi kapsüllü piyojenik bakterilere karşı etkili antikor üretemez.",
+          "D": "Serum düzeylerinde İgM antikoru tipik olarak azalmış bulunur.",
+          "E": "İlerleyen yaşlarda malign lenfoma gelişme riski belirgin şekilde artmıştır."
+        },
+        "correctAnswer": "A",
+        "explanation": "Wiskott-Aldrich sendromu otozomal resesif değil, X'e bağlı kalıtım gösteren bir hastalıktır ve dolayısıyla hemen sadece erkek çocuklarında görülür. Timusun başlangıçta normal olup zamanla tükenmesi (B şıkkı) ve polisakkarid antijenlere karşı İgM yanıtının oluşamaması (C ve D şıkları) hastalığın klasik seyridir. Hücre iskeleti defekti, bağışıklık sistemi hücrelerinin lenf düğümlerine göçünü bozarak hücresel tükenmeye ve kanser (lenfoma) riskinin artmasına yol açar."
+      },
+      "reason": "kisa_stem:11kelime"
+    }
+  ]
+}

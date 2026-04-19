@@ -1,0 +1,426 @@
+{
+  "lesson": "Periodontoloji",
+  "unit": "6.c - Cerrahi Teknikler 2",
+  "questions": [
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Kırk beş yaşında erkek hasta kliniğe sağ üst arka bölgede sızlama şikayetiyle başvurmuştur. Klinik ve radyografik muayenede üst sağ birinci büyük azı dişinin sadece distobukkal kökü çevresinde rejeneratif yöntemlerle tedavi edilemeyecek düzeyde ileri kemik kaybı tespit edilmiş, diğer köklerin sağlıklı kemik desteğine sahip olduğu görülmüştür. Kuron yapısı korunarak sadece ilgili hastalıklı kökün dişten uzaklaştırılması işlemine ne ad verilir?",
+      "options": {
+        "A": "Kök amputasyonu",
+        "B": "Hemiseksiyon",
+        "C": "Biküspidizasyon",
+        "D": "Tünel operasyonu",
+        "E": "Kök rezeksiyonu"
+      },
+      "correctAnswer": "A",
+      "explanation": "Çok köklü dişlerde kemik yıkımının lokalize olduğu durumlarda sadece sorunlu tek bir kökün alınması işlemine kök amputasyonu denir. Hemiseksiyon ise alt büyük azılarda uygulanan ve sadece kökün değil, dişin ilgili kök tarafındaki yarısının (kuron ile birlikte) dikey olarak kesilerek çıkarıldığı bir işlemdir. Olguda kuron yapısı korunarak kök uzaklaştırıldığı için işlem amputasyondur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Elli yaşında kadın hasta kliniğe alt sol bölgesindeki dişinde mobilite şikayetiyle başvurmuştur. Muayenede alt sol birinci büyük azı dişinin mezyal kökünde ileri derecede periodontal yıkım saptanmış, distal kökün ise periodontal olarak tamamen sağlıklı olduğu görülmüştür. Diş furkasyon bölgesinden dikey olarak ikiye ayrılarak mezyal kök kuronun mezyal yarısıyla birlikte çekilmiş, kalan distal kök üzerindeki kurona ise küçük azı formu verilmiştir. Bu hastaya uygulanan cerrahi prosedür aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Kök amputasyonu",
+        "B": "Hemiseksiyon",
+        "C": "Biküspidizasyon",
+        "D": "Kök rezeksiyonu",
+        "E": "Tünel açma"
+      },
+      "correctAnswer": "B",
+      "explanation": "Periodontal doku yıkımının tek bir kökte yoğunlaştığı alt büyük azı dişlerinde, dişin dikey yönde ikiye ayrılarak sorunlu kökün kuronun yarısıyla birlikte çıkarılması işlemine hemiseksiyon denir. Kök amputasyonunda kuron bütünlüğü bozulmazken, hemiseksiyonda hem kuron hem kök dikey düzlemde çıkarılır. Biküspidizasyonda ise iki kök de korunur, sadece diş iki küçük azıya bölünür."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Kırk iki yaşında erkek hasta periodontal idame randevusunda alt sağ birinci büyük azı dişinde plak birikimi problemi yaşamaktadır. Muayenede her iki kökteki kemik seviyesinin iyi olduğu ancak furkasyon bölgesinde lokalize Sınıf III doku yıkımı bulunduğu ve köklerin birbirinden yeterince ayrık olduğu izlenmiştir. Diş vestibülo-lingual yönde ortadan ikiye kesilmiş, furka bölgesi temizlenmiş ancak hiçbir kök çekilmeyerek her iki kökün üzerine ayrı birer küçük azı kuronu oluşturulmuştur. Bu tedavi yaklaşımı aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Hemiseksiyon",
+        "B": "Kök amputasyonu",
+        "C": "Biküspidizasyon",
+        "D": "Tünel operasyonu",
+        "E": "Odontoplasti"
+      },
+      "correctAnswer": "C",
+      "explanation": "Periodontal yıkımın yalnızca furkasyonda olduğu ve köklerin yeterince ayrık olduğu alt molarlarda dişin ortadan kesilip kök çekimi yapılmaksızın iki premolar formuna dönüştürülmesine biküspidizasyon denir. Tünel operasyonunda kuron bütünlüğü korunarak sadece furkasyon açığa çıkarılırken, biküspidizasyonda kuron dikey olarak bölünmektedir. Hemiseksiyonda ise köklerden biri mutlaka çekilir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Periodontal plastik cerrahi; anatomik, gelişimsel veya travmatik nedenlerle oluşan mukogingival deformiteleri düzeltmeyi amaçlar. Buna göre aşağıdakilerden hangisi 1996 World Workshop raporunda belirlenen mukogingival cerrahinin uygulandığı alanlardan biri **değildir**?",
+      "options": {
+        "A": "Açık kök yüzeylerini kapatmak",
+        "B": "Kuron boyunu uzatmak",
+        "C": "Sürmemiş dişlerin cerrahi olarak açığa çıkarılması",
+        "D": "Apikal bölgedeki enfeksiyöz lezyonların küretajı",
+        "E": "Papil rekonstrüksiyonu"
+      },
+      "correctAnswer": "D",
+      "explanation": "Apikal bölgedeki enfeksiyöz lezyonların küretajı periapikal veya endodontik cerrahinin bir parçasıdır ve plastik/mukogingival cerrahi kapsamına girmez. World Workshop raporuna göre açık köklerin kapatılması, kron boyu uzatma, papil rekonstrüksiyonu ve sürmemiş dişlerin açığa çıkarılması estetik ve fonksiyonel hedefleri olan periodontal plastik cerrahi alanlarıdır. "
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Otuz beş yaşında kadın hasta diş fırçalarken alt ön bölgede dişetinin hareket ettiğinden şikayet etmektedir. Muayenede hekim, hareketli alveolar mukozayı bir periodontal sond yardımı ile keratinize dişetine doğru hareket ettirerek yapışık dişeti sınırını mekanik bir engelle karşılaşana kadar izlemiş ve yapışık dişeti varlığını ölçmüştür. Bu teşhis yöntemi aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Tansiyon testi",
+        "B": "Schillerin iyot solüsyonu",
+        "C": "Klinik sondlama",
+        "D": "Frekans analizi",
+        "E": "Roll tekniği"
+      },
+      "correctAnswer": "E",
+      "explanation": "Bir periodontal sond kullanılarak hareketli mukozanın keratinize dişetine doğru mekanik olarak itilmesi ve yapışık dokunun direncine dayanarak sınırın saptanmasına Roll tekniği denir. Tansiyon testinde sond kullanılmaz, dudak ve yanaklar parmakla çekilerek marjinal gerilim gözlenir. Schillerin iyot solüsyonunda ise glikojen boyanma farkı kullanılarak kimyasal bir teşhis yapılır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Aşağıdaki mukogingival cerrahi tekniklerinden hangisi hem periodontal cebi elimine etmek hem de yapışık dişeti genişliğini artırmak amacıyla, flebin vestibüler forniksi ve frenulumu daha aşağı taşıyacak şekilde konumlandırılması esasına dayanır?",
+      "options": {
+        "A": "Koronale pozisyone flep",
+        "B": "Apikale pozisyone flep",
+        "C": "Laterale pozisyone flep",
+        "D": "Double papilla flep",
+        "E": "Semilunar flep"
+      },
+      "correctAnswer": "B",
+      "explanation": "Apikale pozisyone flep, periodontal cebin yumuşak doku duvarının apikale doğru kaydırılmasıyla cebi elimine ederken aynı zamanda keratinize dişetini apikalde konumlandırarak yapışık dişeti miktarını fonksiyonel olarak korur/artırır. Koronale ve laterale kaydırılan flepler cebi elimine etme amacı gütmez, daha çok açık kök yüzeylerini kapatmayı hedefler. Apikale kaydırma işlemi vestibül derinliğini apikale taşır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Yapışık dişeti genişliğini artırmak amacıyla uygulanan ve hareketli mukoza bölgesinde periostun pencere şeklinde sıyrılarak alveol kemiğinin kasıtlı olarak açıkta bırakıldığı cerrahi işlem aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Edlan-Mejchar operasyonu",
+        "B": "Pouch tekniği",
+        "C": "Fenestrasyon operasyonu",
+        "D": "Serbest bağ dokusu grefti",
+        "E": "Tünel tekniği"
+      },
+      "correctAnswer": "C",
+      "explanation": "Periostun pencere şeklinde sıyrılarak kemiğin açıkta bırakıldığı (periosteal fenestrasyon) yönteme fenestrasyon operasyonu denir. Kemik üzerinde sekonder iyileşme hedeflenir ancak minimal kemik rezorpsiyonu riski ve öngörülemeyen sonuçları nedeniyle SDG kadar güvenilir değildir. Edlan-Mejchar tekniğinde ise kemik değil, vestibül derinliği artırılmak üzere hareketli mukoza modifiye edilir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Hareketli alveoler mukozanın periosta adapte edilerek yapışık bir mukoza zonu elde edildiği, ikinci bir yara bölgesi oluşturmayan ve renk uyumu sorunu yaşatmayan, ancak kazanılan yapışık dişetinin keratinize özellik taşımaması sebebiyle serbest dişeti greftinden ayrılan operasyon tekniği aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Semilunar flep",
+        "B": "Yönlendirilmiş doku rejenerasyonu",
+        "C": "Apikale pozisyone flep",
+        "D": "Edlan-Mejchar operasyonu",
+        "E": "Strip tekniği"
+      },
+      "correctAnswer": "D",
+      "explanation": "Edlan-Mejchar tekniğinde hareketli mukoza apikale kaydırılıp yapıştırılır, bu sayede vestibül derinleşir ve yapışık doku oluşur ancak epiteli alveolar mukozadan geldiği için keratinize değildir. Serbest dişeti grefti bağ dokusunun taşıdığı genetik bilgiyle daima keratinize doku üretirken, Edlan-Mejchar estetik avantajına rağmen keratinize olmayan bir yapışık zon sunar."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Yapışık dişeti genişliğini artırmaya yönelik teknikler uygulama bölgesine göre 'çekilmenin apikali' ve 'çekilmenin koronali' olarak sınıflandırılmaktadır. Aşağıdakilerden hangisi doğrudan açık kök yüzeyini örtmek amacıyla **uygulanmaz**?",
+      "options": {
+        "A": "Saplı (pedicle) greftler",
+        "B": "Semilunar flep",
+        "C": "Koronale pozisyone flep",
+        "D": "Pouch ve tünel tekniği",
+        "E": "Fenestrasyon operasyonu"
+      },
+      "correctAnswer": "E",
+      "explanation": "Fenestrasyon operasyonu, dişeti çekilmesinin apikal bölgesinde uygulanan ve sadece yapışık dişeti genişliğini artırmayı hedefleyen (kök yüzeyini örtmeyen) bir işlemdir. Saplı greftler, semilunar flep ve pouch/tünel teknikleri ise çekilmenin koronal bölgesinde işlem yaparak açıkta kalan kök yüzeyini doğrudan kapatmayı hedefler."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Açığa çıkmış kök yüzeylerinin örtülmesinde kullanılan pediküllü fleplerden biri olan laterale pozisyone (sliding) flep uygulaması için aşağıdakilerden hangisi kesin bir kontrendikasyondur?",
+      "options": {
+        "A": "Verici komşu bölgedeki dişetinin çok ince ve yapışık dişeti boyunun yetersiz olması",
+        "B": "Açık kök yüzeyinde sığ çürük lezyonlarının bulunması",
+        "C": "Gülme hattının yüksek olması",
+        "D": "Lokalize dar dişeti çekilmelerinin olması",
+        "E": "Hastanın tek aşamalı bir cerrahi prosedür talep etmesi"
+      },
+      "correctAnswer": "A",
+      "explanation": "Laterale pozisyone flepte komşu dişeti yatay olarak kök üzerine kaydırılır. Eğer komşu verici sahada yapışık dişeti dar veya ince ise (dehiscence riski), bu dokunun kaydırılması verici dişte sekonder bir çekilmeye neden olur ve bu durum kesin kontrendikedir. Lokalize dar çekilmeler bu yöntemin bizzat endikasyonudur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Yirmi sekiz yaşında kadın hasta lokalize bir dişeti çekilmesi şikayetiyle başvurmuştur. Hekim, dişeti çekilmesinin komşuluğundaki diş dokusu desteklerini korumak amacıyla radiküler kemik yerine kemiğin daha kalın olduğu interdental bölgelerden faydalanmak istemiş ve çekilmenin hem mezyal hem de distalindeki papiller bölgeyi açık kök yüzeyinin üzerine kaydırmıştır. İki avasküler flebin kök üzerinde birleşme riskini taşıyan bu teknik aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Laterala pozisyone flep",
+        "B": "Semilunar flep",
+        "C": "Double papilla grefti",
+        "D": "Tünel tekniği",
+        "E": "Akordeon tekniği"
+      },
+      "correctAnswer": "C",
+      "explanation": "Çekilmenin sağında ve solunda yer alan iki papilin kesilerek ortadaki açık kök yüzeyinin üzerinde birleştirildiği yöntem double papilla greftidir. İnterdental kemik kalın olduğu için verici sahada kemik kaybı riski laterale kaydırılan flebe göre azdır, ancak iki ayrı flep kenarının kanlanması zayıf (avasküler) bir kök yüzeyinde birleşmek zorunda olması yara iyileşmesi açısından dezavantajdır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Otuz iki yaşında erkek hasta, üst santral dişinde 2 mm'lik ince bir dişeti çekilmesi şikayetiyle başvurmuştur. Muayenede hastanın dişeti biyotipinin kalın olduğu saptanmıştır. Hekim, çekilmenin apikaline doğru yarım ay şeklinde bir insizyon yapmış ve sulkuler serbestleştirme ile dokuyu koronale çekerek papilleri hiç kesmeden kök yüzeyini örtmüştür. Apikalde kalan boşluk sekonder iyileşmeye bırakılmıştır. Uygulanan cerrahi teknik aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Subepitelyal bağ dokusu grefti",
+        "B": "Pouch ve tünel tekniği",
+        "C": "Yönlendirilmiş doku rejenerasyonu",
+        "D": "Semilunar insizyonla yapılan koronale pozisyone flep",
+        "E": "Double papilla flep"
+      },
+      "correctAnswer": "D",
+      "explanation": "Üst çenede, kalın biyotipte ve 3 mm'den daha az sığ çekilmelerde tercih edilen, mukogingival hatta yakın yarım ay şeklinde insizyon yapılarak papillerin kesilmediği ve dokunun koronale kaydırıldığı yöntem semilunar fleptir. Pouch tekniğinde de papil korunur ancak tünel açılarak greft materyali yerleştirilir, semilunar teknikte ise apikaldeki yarım ay boşluk sekonder iyileşmeye bırakılır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Dişeti çekilmesi tedavisinde kök yüzeyini örten işlemlerin temel sorunlarından biri yeni oluşan ataşmanın sıklıkla uzun birleşim epiteli niteliğinde olmasıdır. Eğer hem çekilme hem de artmış bir periodontal cep varlığı söz konusuysa, uzun birleşim epiteli yerine fibröz ataçman elde etmek amacıyla flep altına bariyer membran uygulanan teknik aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Serbest dişeti grefti",
+        "B": "Laterala pozisyone flep",
+        "C": "Akordeon tekniği",
+        "D": "Fenestrasyon operasyonu",
+        "E": "Yönlendirilmiş doku rejenerasyonu"
+      },
+      "correctAnswer": "E",
+      "explanation": "Yönlendirilmiş Doku Rejenerasyonunda (YDR) kilit mekanizma, bariyer bir membran kullanılarak epitelin kök yüzeyine apikal yönde göçünün engellenmesi ve bu sayede periodonsiyum hücrelerinin kök yüzeyini kolonize ederek yeni sement ve fibröz ataçman oluşturmasına fırsat tanınmasıdır. Diğer saf flep operasyonları hücresel bariyer kurmadıkları için sıklıkla uzun birleşim epiteli ile iyileşirler."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Yirmi beş yaşında kadın hasta maksiller anterior bölgesindeki sığ dişeti çekilmeleri sebebiyle estetik kaygı taşımaktadır. İşlem sırasında komşu dişlerin papilleri hiçbir şekilde kesilmemiş, dişeti dokusu altından künt bir diseksiyonla boşluk yaratılarak bağ dokusu grefti materyali bu boşluktan geçirilerek yerleştirilmiştir. Hem marjinal kalınlaşma sağlayan hem de estetik başarı oranı yüksek olan bu teknik aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Pouch (Kese) ve tünel tekniği",
+        "B": "Double papilla flep",
+        "C": "Semilunar flep",
+        "D": "Apikale pozisyone flep",
+        "E": "Strip tekniği"
+      },
+      "correctAnswer": "A",
+      "explanation": "Pouch (kese) ve tünel tekniğinde dikey veya horizontal papil kesileri yapılmaz; sulkus içinden doku esnetilerek bir zarf/tünel oluşturulur ve bağ dokusu grefti bu tünelin içine yerleştirilir. Papil insizyonu olmadığı için skar oluşumu riski sıfıra yakındır ve üst çene anterior bölgede estetik sonuçları mükemmeldir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Bağ dokusu grefti uygulamalarında palatinal mukoza verici alan olarak kullanıldığında hastalarda postoperatif rahatsızlık ve ikinci bir yara yeri oluşumu gözlenmektedir. Donör saha morbiditesini tamamen ortadan kaldıran ve miktar sınırlaması bulunmayan alternatif greft materyali aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Siyanoakrilat doku yapıştırıcısı",
+        "B": "Aselüler dermal matriks (Alloderm)",
+        "C": "Mine matriks türevleri (Emdogain)",
+        "D": "Demineralize dondurulmuş kemik allogrefti",
+        "E": "Otojen kortikokansellöz blok greft"
+      },
+      "correctAnswer": "B",
+      "explanation": "Aselüler dermal matriks (Alloderm), insan kaynaklı donör dokunun hücresizleştirilmesiyle elde edilen ve palatinal bağ dokusu greftine alternatif olarak kullanılan bir bağ dokusu iskeletidir. Sadece bir alıcı yara bölgesi oluşturması ve palatinal bölgeden doku alma ihtiyacını ortadan kaldırması en büyük avantajıdır. Emdogain bir matriks proteini olup doku mühendisliğinde kullanılır, greft materyali gibi bir hacim iskeleti oluşturmaz."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Geniş defekt alanlarında verici sahadan elde edilen serbest dişeti greftinin mezyo-distal boyutunun yetersiz kaldığı durumlarda, greftin apikal ve koronal kısımlarına karşılıklı (birbiri içine geçecek şekilde) insizyonlar yapılarak dokunun yatay planda uzamasını sağlayan modifikasyon tekniği aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Pouch tekniği",
+        "B": "Roll tekniği",
+        "C": "Strip tekniği",
+        "D": "Akordeon tekniği",
+        "E": "Semilunar teknik"
+      },
+      "correctAnswer": "D",
+      "explanation": "Akordeon tekniğinde, palatinalden elde edilen serbest greftin alt ve üst kenarlarına birbirini takip eden tam kat olmayan veya çapraz insizyonlar yapılarak doku bir ağ gibi gerilip mezyo-distal boyutu artırılır. Strip tekniğinde ise doku ince uzun şeritler (strip) halinde ayrı ayrı elde edilir. Akordeon tekniği greft dokusunu fiziksel olarak yayma prensibine dayanır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Mandibular ön bölgedeki geniş yapışık dişeti eksikliğini gidermek isteyen bir hekim, tek bir büyük parça serbest dişeti grefti almak yerine, verici sahadan 3-5 mm genişliğinde şeritler halinde çok sayıda parça alarak bunları alıcı yatağa aralıklarla yerleştirmiştir. Uygulanan bu cerrahi yaklaşım aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Double papilla tekniği",
+        "B": "Laterale pozisyone flep",
+        "C": "Edlan-Mejchar operasyonu",
+        "D": "Akordeon tekniği",
+        "E": "Strip tekniği"
+      },
+      "correctAnswer": "E",
+      "explanation": "Strip tekniğinde damaktan alınan greft materyali 3-5 mm genişliğinde şeritler (strip) halinde kesilerek alıcı sahada yatay olarak dizilir, aralarda kalan sekonder iyileşme dokusu şeritlerin taşıdığı genetik bilgiyle keratinize olmaya teşvik edilir. Akordeon tekniğinde tek parça greft kesiklerle esnetilirken, strip tekniğinde doku birbirinden bağımsız ince şeritlere ayrılmıştır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Serbest dişeti grefti uygulamasının ardından iyileşme sürecinde greft yüzeyindeki epitel hücresel beslenemediği için önce nekroze olur ve dökülür. Daha sonra komşu dokulardan prolifere olan yeni epitel ile greft yüzeyi örtülür ve keratinizasyon süreci başlar. Klinik ve histolojik olarak bu keratinizasyon süreci operasyondan sonra ortalama ne zaman tamamen tamamlanmış olur?",
+      "options": {
+        "A": "4. hafta",
+        "B": "10. gün",
+        "C": "2. ay",
+        "D": "6. ay",
+        "E": "7. gün"
+      },
+      "correctAnswer": "A",
+      "explanation": "SDG sonrası greftin revaskülarizasyonu (yeniden damarlanması) 10. günde tamamlanırken, dökülen epitelin yerine gelen yeni epitel tabakasının olgunlaşıp keratinizasyonunu klinik olarak tam anlamıyla tamamlaması 4. haftayı (yaklaşık 28 gün) bulur. 7. günde henüz rete pegler yeni oluşmaktadır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Aşırı hipertrofik bir vestibüler frenulum, serbest dişeti kenarında traksiyon (gerilim) yaratmakta ve orta hat diastemasına neden olmaktadır. Hekim, frenulumu tutan bir hemostatın altından ve üstünden insizyonlar yaparak dokuyu tamamen eksize etmiş, ardından alttaki fibröz dokuyu yatay bir insizyonla doğrudan alveol kemiğinden ve periosttan ayırarak ortamdan uzaklaştırmıştır. Bu prosedür aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Frenotomi",
+        "B": "Frenektomi",
+        "C": "Vestibüloplasti",
+        "D": "Apikale pozisyone flep",
+        "E": "Gingivektomi"
+      },
+      "correctAnswer": "B",
+      "explanation": "Frenulumun altındaki kemik ataçmanıyla birlikte bağ dokusu yapısının radikal olarak bütünüyle çıkarılması işlemine frenektomi denir. Frenotomi ise sadece bağın kesilerek gevşetilmesi ve marjinden uzağa kaydırılması işlemidir, kemikteki kök bağlantısı frenotomide tamamen çıkarılmaz. Ciddi diastema vakalarında ataçmanın tamamen kesildiği frenektomi tercih edilir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Sığ bir vestibül derinliğine sahip bölgede frenulumun konumu, dişeti marjinine istenmeyen bir stres yüklemektedir. Cerrah, frenulumu bütünüyle kemikten söküp çıkarmak yerine, sadece yatay bir insizyon yaparak bağ yapısını gevşetmiş ve frenulum eklentisini dişeti marjininden apikale doğru kaydırarak dikmiştir. Altta yatan periostal bağlantının korunarak sadece frenulumun yer değiştirmesini sağlayan bu teknik aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Fenestrasyon",
+        "B": "Frenektomi",
+        "C": "Frenotomi",
+        "D": "Gingivoplasti",
+        "E": "Edlan-Mejchar"
+      },
+      "correctAnswer": "C",
+      "explanation": "Frenotomi, frenulumun doku bütünü eksize edilmeksizin sadece insizyon yapılarak marjinden uzaklaştırıldığı/gevşetildiği minimal cerrahi prosedürdür. Kemiğe (periosta) sıkıca yapışık olan derin fibröz tabakaların temizlenmemesi onu frenektomiden ayıran en kritik farktır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Periodontal cerrahide kök yüzeyinde yeni sement ve bağ dokusu ataçmanı oluşumunu tetiklemek için biyolojik medyatörler sıklıkla tercih edilmektedir. Doku mühendisliği başlığı altında klinik kullanıma sunulan ve domuz diş germinden elde edilen 'Emdogain' ticari isimli preparatın içeriği temel olarak aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Kalsiyum sülfat bariyeri",
+        "B": "Yönlendirilmiş doku membranı",
+        "C": "Aselüler dermal matriks",
+        "D": "Demineralize kemik matriksi",
+        "E": "Mine matriks türevleri"
+      },
+      "correctAnswer": "E",
+      "explanation": "Emdogain, embriyolojik diş gelişimi sırasında sement oluşumunu indükleyen biyolojik proteinlerden (amelogenin vb.) oluşan mine matriks türevleridir (Enamel Matrix Derivatives - EMD). Bariyer bir membran veya allojenik bir doku iskeleti (Alloderm gibi) değil, kök yüzeyine sürülerek osteojenik ve sementojenik hücreleri bölgeye çeken bir büyüme faktörü/doku mühendisliği materyelidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "İmplant cerrahisinde çeşitli tasarımlar (makrodizayn) kullanılmaktadır. Hastanın kemik yüzeyinden alınan direkt ölçüye göre döküm yapılarak elde edilen, alveol kemiğinin içine değil tamamen üzerine (periostun altına) eyer tarzında oturan ve osseointegrasyon prensibiyle çalışmayan klasik implant tipi aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Subperiosteal implantlar",
+        "B": "Transmandibular implantlar",
+        "C": "Endosseoz implantlar",
+        "D": "Blade (bıçak) implantlar",
+        "E": "Kök formlu implantlar"
+      },
+      "correctAnswer": "A",
+      "explanation": "Subperiosteal implantlar, aşırı rezorbe kretlerde kemik içi (endosseoz) yerleştirme için yeterli hacim olmadığında, doğrudan alveol kreti yüzeyi üzerine (periost altına) iskelet kafes şeklinde oturtulan ve osseointegre olmayan sistemlerdir. Endosseoz implantlar modern kemik içi implantlardır. Transmandibular implantlar ise çene altından vidalanarak kemiği boydan boya geçer."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "İmplantoloji tarihçesinde yeri olan, mandibular anterior bölgedeki aşırı atrofi durumlarında çene kemiğinin bazal sınırından (çene altından) insizyon yapılarak kemiği dikey yönde tamamen geçen uzun pinler halinde uygulanan implant tasarımı aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Subperiosteal implant",
+        "B": "Transmandibular implant",
+        "C": "Silindirik implant",
+        "D": "Konik vida implant",
+        "E": "Disk formlu implant"
+      },
+      "correctAnswer": "B",
+      "explanation": "Transmandibular implantlar alt çene anterior bölgede mental foramenler arasına ekstraoral (submental) yaklaşımla yerleştirilen ve kemiği tam kat geçen sistemlerdir. Osseointegrasyon prensibi zayıftır ve yoğun cerrahi morbiditeleri sebebiyle günümüzde terk edilmiştir. Subperiosteal kemik üzerine otururken, transmandibular kemiği tam kat delerek geçer."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Titanyum veya alaşımlarından üretilen, fonksiyonel kuvvetleri karşılayabilmek için kemik ile mikroskobik düzeyde direkt yapısal bağ kurması (osseointegrasyon) beklenen ve günümüzde diş hekimliğinde standart olarak tercih edilen 'kök veya vida formlu' implantların genel makrodizayn sınıfı aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Transosseoz implantlar",
+        "B": "Subperiosteal implantlar",
+        "C": "Endosseoz implantlar",
+        "D": "Transmandibular implantlar",
+        "E": "Peri-implant ağlar"
+      },
+      "correctAnswer": "C",
+      "explanation": "Kemiğin içerisine (endo) hazırlanan yuvaya yerleştirilen ve başarısı osseointegrasyona dayanan modern dental implantlar endosseoz implantlar olarak adlandırılır. Günümüzdeki blade, vida, silindirik veya konik tasarımların tümü endosseoz sınıfı altındadır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "İmplant tedavisinin klinik değerlendirmesinde 'başarı' (success) ve 'sağkalım' (survival) kavramları birbirinden farklıdır. Hastanın ağzında fonksiyon gören bir implantın osseoentegre durumda kalması ve düşmemesi ancak etrafında mevcut olan 3 mm'lik periodontal cep derinliği ve kanama gibi biyolojik problemlerin klinik endekse katılmaması durumu aşağıdaki kavramlardan hangisiyle ifade edilir?",
+      "options": {
+        "A": "İmplant başarısı",
+        "B": "Primer stabilite",
+        "C": "Sekonder stabilite",
+        "D": "İmplant sağkalımı",
+        "E": "Biyointegrasyon"
+      },
+      "correctAnswer": "D",
+      "explanation": "İmplantın fiziksel olarak ağızda kalması ve düşmemesi durumu 'sağkalım' (survival) olarak tanımlanır. Sağkalım durumunda peri-implantitis veya mukozitis gibi yan sorunlar göz ardı edilebilir. 'İmplant başarısı' (success) ise implantın ağızda kalmasının yanı sıra kemik kaybının olmaması, sağlıklı yumuşak doku ve fonksiyonellik gibi tüm klinik-radyolojik kriterlerin optimal seviyede olmasını şart koşar."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Serbest dişeti grefti operasyonlarının iyileşme sürecinde belirli bir miktar doku büzülmesi (shrinkage) görülmesi kaçınılmazdır. Hekimin operasyon bölgesini hazırlarken grefti koyduğu doku yatağı büzülme oranını doğrudan etkiler. Buna göre açıkta bırakılmış çıplak kemik üzerine yerleştirilen bir greft ile korunan periost zarı üzerine yerleştirilen bir greftin sırasıyla beklenen ortalama büzülme oranları aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "% 25 - % 50",
+        "B": "% 50 - % 25",
+        "C": "% 10 - % 10",
+        "D": "% 75 - % 25",
+        "E": "% 50 - % 75"
+      },
+      "correctAnswer": "A",
+      "explanation": "Kemik dokusu sert ve stabil bir yatak olduğu için doğrudan kemik üzerine yerleştirilen greftlerde büzülme oranı nispeten daha az olup ortalama %25 civarındadır. Ancak periost gibi hareket kabiliyeti ve damarsal esnekliği olan bir yumuşak doku yatağının üzerine yerleştirildiğinde büzülme oranı artarak %50'lere ulaşır. Klinik pratikte primer vaskülarizasyon için periost yatağı korunur ancak büzülmenin fazla olacağı hesaba katılarak greft daima %50 daha büyük (oversized) tasarlanır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Altmış beş yaşında erkek hasta alt ön bölgeye implant planlaması için başvurmuştur. Çekilen radyografide ve cerrahi operasyon sırasında ilgili bölgedeki alveoler kemiğin içinde trabeküler (süngersi) yapının neredeyse hiç kalmadığı, kemiğin tümüyle homojen ve çok yoğun bir kortikal yapıdan oluştuğu gözlenmiştir. Lekholm ve Zarb sınıflamasına göre kanlanmanın en az olduğu ve osteotomi sırasında termal nekroz riskinin en yüksek olduğu bu kemik tipi aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "D4 kemik",
+        "B": "D1 kemik",
+        "C": "D2 kemik",
+        "D": "D3 kemik",
+        "E": "Tip 1 kemik"
+      },
+      "correctAnswer": "B",
+      "explanation": "Tamamına yakını yoğun kortikal kemikten oluşan, medüller (trabeküler) boşlukların ve haliyle kanlanmanın çok kısıtlı olduğu kemik tipi D1 kemiktir. Genellikle atrofik anterior mandibulada görülür. Primer stabilite çok yüksektir ancak zayıf kanlanma ve frezleme sırasındaki yüksek ısı (sürtünme) oluşumu nedeniyle osseointegrasyonun başarısız olma riski taşır. D4 kemik ise tam tersine tamamen süngersi, korteksi olmayan yumuşak posterior maksilla kemiğidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Kırk yaşında kadın hasta alt dudak bölgesinde sürekli plak birikimi ve kanama şikayetiyle başvurmuştur. Hekim muayene sırasında hastanın alt dudağını ve yanağını yatay (lateral) olarak parmaklarıyla germiş ve bu germe hareketi sonucunda ilgili dişin serbest dişeti kenarının dişten uzaklaşarak açıldığını (iskemi ile birlikte hareketlilik) tespit etmiştir. Klinikte uygulanan bu diagnostik manevra aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Frekans analizi",
+        "B": "Roll tekniği",
+        "C": "Tansiyon testi",
+        "D": "Sondla kanama indeksi",
+        "E": "Mobilite muayenesi"
+      },
+      "correctAnswer": "C",
+      "explanation": "Dudak ve yanakların manipüle edilerek kas ve frenulum eklentilerinin serbest dişeti marjini üzerindeki traksiyon (çekme) kuvvetinin izlendiği test 'Tansiyon testi'dir. Eğer marjin dişten uzaklaşıyorsa bu bölgedeki yapışık dişeti bandının fonksiyonel olarak yetersiz olduğu ve mukogingival deformite riski taşıdığı anlaşılır. Roll tekniği parmakla germek yerine sondla mukoza itilerek yapılır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "İmplant planlamasında radyografik yöntemler hekimlere alveolar anatomi hakkında bilgi verir. Cerrahi güvenliği etkileyen 'öngörülemeyen büyütme (magnifikasyon)' problemi barındırmayan, kemiğin 3 boyutlu analizine olanak tanıyan ve medikal çok kesitli bilgisayarlı tomografiye (MSCT) kıyasla hastayı çok daha düşük radyasyon dozuna maruz bırakan görüntüleme yöntemi aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Lateral sefalometrik radyografi",
+        "B": "Waters grafisi",
+        "C": "Panoramik radyografi",
+        "D": "Konik ışınlı bilgisayarlı tomografi (CBCT)",
+        "E": "Periapikal radyografi"
+      },
+      "correctAnswer": "D",
+      "explanation": "Konik Işınlı Bilgisayarlı Tomografi (CBCT), medikal tomografilere (MSCT) kıyasla çok daha düşük bir radyasyon dozuyla diş hekimliğine spesifik 3D görüntüleme sağlar ve panoramik/periapikal filmlerin en büyük dezavantajı olan distorsiyon/büyütme oranını sıfıra indirir. Panoramik radyografide dikey ve yatay boyutlarda eşit olmayan, öngörülemeyen büyütme mevcuttur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal ve İmplant Cerrahisi",
+      "question": "Travmatik bir diş kaybı vakasında, endodontik veya periodontal ciddi bir enfeksiyonu bulunmayan bir hastanın kırık kökü çekilmiştir. Cerrah, hastanın mevcut kemik morfolojisini optimum seviyede kullanmak ve genel tedavi süresini kısaltmak amacıyla diş çekimiyle aynı seansta sökülen alveol soketine doğrudan implant yerleştirmiştir. Bu implantasyon zamanlama protokolü aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Tip 4 (Geç yerleştirme)",
+        "B": "Tip 3 (Erken yerleştirme - kemik dolgusu)",
+        "C": "Tip 2 (Erken yerleştirme - yumuşak doku kapanması)",
+        "D": "İki aşamalı (Submerged) cerrahi",
+        "E": "Tip 1 (İmmediat implantasyon)"
+      },
+      "correctAnswer": "E",
+      "explanation": "Diş çekimi ile aynı cerrahi seansın bir parçası olarak yapılan hemen implantasyona literatürde Tip 1 (İmmediat) yerleştirme adı verilir. Tip 2 yerleştirmede soketin sadece yumuşak doku ile kapanması için 4-8 hafta beklenirken, Tip 3'te kemik dolgusu için 12-16 hafta beklenir. Tamamen iyileşmiş kretlere yapılan rutin uygulama ise Tip 4'tür."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "sinir 2",
+  "rejected_at": "2026-04-17T22:02:14.116163",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Sinir Sistemi Fizyolojisi",
+        "question": "Merkezi sinir sisteminde glisin nörotransmitteri ve reseptör kompleksine ilişkin aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Reseptörü, klor iyon iletimini sağlayan ligand kapılı bir iyon kanalıdır.",
+          "B": "Strikinin maddesi, glisin reseptörünü uyararak spinal kordda hiperpolarizasyona yol açar.",
+          "C": "Beyinde glutamat ile birlikte NMDA reseptörüne bağlanarak eksitatör etkiye aracılık eder.",
+          "D": "Primer olarak medulla spinalis ve beyin sapında yaygın inhibitör etki gösterir.",
+          "E": "Postsinaptik glisin reseptörlerinin kümeleşmesi intraselüler gefrin proteini tarafından sağlanır."
+        },
+        "correctAnswer": "B",
+        "explanation": "Strikinin zehri, glisin reseptörünü uyarmaz; aksine klor kanalını bloke ederek glisinin inhibitör etkisini ortadan kaldırır ve tetanik kasılmalara neden olur. Glisin hem omurilikte kendi inhibitör klor kanalı üzerinden çalışır hem de beyinde NMDA reseptörü için zorunlu bir ko-agonist olarak eksitatör görev alır. Gefrin proteini ise reseptörün yapısal lokalizasyonu için spesifik bir hücresel belirteçtir."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Sinir Sistemi Fizyolojisi",
+        "question": "Deri yaralanmalarında ağrı duyusu medulla spinalise taşınırken, afferent C liflerinin periferik kollaterallerinden geriye doğru (antidromik) salınarak lokal vazodilatasyona, plazma ekstravazasyonuna ve ödeme (akson refleksi) yol açan medyatör peptid aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Glutamat",
+          "B": "GABA",
+          "C": "Bradikinin",
+          "D": "Serotonin",
+          "E": "P maddesi (Substance P)"
+        },
+        "correctAnswer": "E",
+        "explanation": "Ağrıyı taşıyan C tipi lifler, sadece omuriliğe uyarı götürmekle kalmaz, aynı zamanda akson refleksi ile geriye doğru P maddesi (Substance P) ve CGRP salgılayarak yaralanma bölgesinde 'nörojenik inflamasyon' (kızarıklık ve şişlik) oluştururlar. Bradikinin doku hasarıyla lokal üretilen bir aljezik olup nöron ucundan salgılanmaz; glutamat ise omurilikteki ilk sinapsta (A-delta liflerinden) santral iletim için salınır."
+      },
+      "reason": "uzunluk_biasi:correct=23ch_avg_other=8ch"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Sinir Sistemi Fizyolojisi",
+        "question": "Bakteriyel enfeksiyonlara yanıt olarak salgılanan IL-1, IL-6 ve TNF-alfa gibi sitokinlerin, kan-beyin bariyerinin olmadığı OVLT (Organum Vasculosum of the Lamina Terminalis) bölgesi üzerinden hipotalamik preoptik alana etki ederek 'vücut termostatını' yükseltmesinde, nöral sinyali ileten temel aracı molekül aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Histamin",
+          "B": "Lökotrien B4",
+          "C": "Prostaglandin E2 (PGE2)",
+          "D": "Substance P",
+          "E": "GABA"
+        },
+        "correctAnswer": "C",
+        "explanation": "Sistemik inflamasyonda dolaşımdaki pirojen sitokinler kan-beyin bariyerini geçemez; bu nedenle OVLT üzerinden endotel hücrelerini uyararak araşidonik asit yolağından Prostaglandin E2 (PGE2) sentezletirler. Sentezlenen PGE2 difüzyonla preoptik hipotalamusa ulaşarak termostat noktasını (set-point) yukarı çeker ve ateş oluşur. Antipiretik ilaçlar (Asetaminofen, NSAİİ) bu aşamada PGE2 sentezini baskılar."
+      },
+      "reason": "uzunluk_biasi:correct=23ch_avg_other=9ch"
+    }
+  ]
+}

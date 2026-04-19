@@ -1,0 +1,58 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "sinir 2",
+  "rejected_at": "2026-04-17T21:59:26.229699",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Santral Sinir Sistemi Nörogliası",
+        "question": "Santral sinir sistemini oluşturan embriyolojik yapılar incelendiğinde, aşağıdaki nöroglia hücrelerinden hangisinin kökeni ektodermal **değildir**?",
+        "options": {
+          "A": "Astrosit",
+          "B": "Mikroglia",
+          "C": "Oligodendrosit",
+          "D": "Ependim hücresi",
+          "E": "Tanisit"
+        },
+        "correctAnswer": "B",
+        "explanation": "Mikroglialar beyin makrofajlarıdır ve diğer tüm glial hücrelerden farklı olarak ektodermden değil mezodermden gelişirler. Astrositler, oligodendrositler ve ependim hücreleri nöral tüp ektoderminden farklılaşır. Bu embriyolojik fark, mikrogliaların kemik iliği kökenli monosit benzeri immün fonksiyonlarını açıklar."
+      },
+      "reason": "kisa_stem:14kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Hipotalamus ve Ateş",
+        "question": "Enfeksiyöz durumlarda makrofajlardan salınan IL-1, IL-6 ve TNF-alfa gibi endojen pirojenik sitokinlerin, kan-beyin bariyerini by-pass ederek hipotalamusta ateşin set-point ayarını yükseltmek için doğrudan etkiledikleri spesifik sirkümventriküler organ aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Area postrema",
+          "B": "Koroid pleksus",
+          "C": "Organum vasculosum of the lamina terminalis (OVLT)",
+          "D": "Subfornikal organ",
+          "E": "Subkomissural organ"
+        },
+        "correctAnswer": "C",
+        "explanation": "Sistemik dolaşımdaki dev makromoleküllü sitokinler kan-beyin bariyerini geçemezler. Ateşi tetiklemek için, kan-beyin bariyerinin bulunmadığı özel bir yapı olan OVLT (Organum vasculosum of the lamina terminalis) bölgesine etki ederler. Bu etki OVLT'de PGE2 sentezine yol açar, o da hipotalamik preoptik alanda vücut ısısı set-pointini yukarı çeker."
+      },
+      "reason": "uzunluk_biasi:correct=50ch_avg_other=16ch"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Hipotalamus Çekirdekleri",
+        "question": "Hipotalamusun yapısal çekirdekleri ve bu çekirdeklerin fizyolojik görevleriyle ilgili aşağıdaki eşleştirmelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Suprakiazmatik Nükleus – Diürnal ritmin (sirkadiyen ritim) kontrolü",
+          "B": "Ventromedial Nükleus – Susama ve acıkma (beslenme) merkezinin ana odağı olması",
+          "C": "Paraventriküler Nükleus – Oksitosin sentezi ve salgılanması",
+          "D": "Periventriküler Çekirdek – Korku ve panik reaksiyonlarının oluşturulması",
+          "E": "Supraoptik Nükleus – Antidiüretik hormon (ADH) sentezlenmesi"
+        },
+        "correctAnswer": "B",
+        "explanation": "Hipotalamusun ventromedial çekirdeği doyma (satiety) merkezidir. Lezyonunda doyumsuzluk ve obezite görülür. Susama ve acıkma merkezinin ana odağı ventromedial değil, lateral hipotalamik alandır (Lateral = Let's eat). Suprakiazmatik, paraventriküler ve supraoptik eşleştirmeleri fizyolojik açıdan tamamen doğrudur."
+      },
+      "reason": "kisa_stem:13kelime"
+    }
+  ]
+}

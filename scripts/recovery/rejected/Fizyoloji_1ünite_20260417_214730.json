@@ -1,0 +1,41 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "1.ünite",
+  "rejected_at": "2026-04-17T21:47:30.844555",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Hücre Fizyolojisi",
+        "question": "Hücre zarının yapısında aşağıdaki lipid türlerinden hangisi kesinlikle **bulunmaz**?",
+        "options": {
+          "A": "Fosfatidilkolin",
+          "B": "Glikolipid",
+          "C": "Kolesterol",
+          "D": "Lesitin",
+          "E": "Trigliserid"
+        },
+        "correctAnswer": "E",
+        "explanation": "Trigliseridler, yağ asitlerinin hücresel depo şekli oldukları için plazma membranının yapısal komponentlerine katılmazlar. En güçlü distraktör olan kolesterol membranda bulunurken, kolesterol esterleri tıpkı trigliseridler gibi zar yapısında bulunmaz. Hücre zarı esas olarak fosfolipid, kolesterol ve az miktarda glikolipidden oluşur."
+      },
+      "reason": "kisa_stem:9kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Hücre Membranında Sinyal İletimi",
+        "question": "Gq proteini aracılığıyla aktive olan fosfolipaz C, membran fosfolipidlerini parçalayarak hücre içi kalsiyum salınımını tetikleyen IP3 molekülünü üretir. Aşağıdaki hormonlardan hangisi fizyolojik etkilerini IP3/DAG sinyal yolu üzerinden **gerçekleştirmez**?",
+        "options": {
+          "A": "ADH (V2 reseptörü)",
+          "B": "Oksitosin",
+          "C": "TRH",
+          "D": "GnRH",
+          "E": "GHRH"
+        },
+        "correctAnswer": "A",
+        "explanation": "ADH'nın damar büzücü etki gösteren V1 reseptörü IP3/DAG sistemini kullanırken, böbrek toplama kanallarında akuaporinleri yerleştiren V2 reseptörü Gs proteini üzerinden cAMP yolağını kullanır. Oksitosin, TRH, GnRH ve GHRH hormonları ise kalsiyumu artırmak için IP3/DAG kaskadını klasik biçimde tetiklerler."
+      },
+      "reason": "uzunluk_biasi:correct=18ch_avg_other=5ch"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "DENEME",
+  "rejected_at": "2026-04-18T13:17:39.035118",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kardiyovasküler Sistem",
+        "question": "Arteriyol düz kaslarında vazodilatasyon ve vazokonstriksiyonu kontrol eden lokal ve dolaşımsal faktörler dengesi kan akımını düzenler. Aşağıdaki maddelerden hangisi arteriyol çapında daralmaya (vazokonstriksiyon) neden olan dolaşımdaki faktörlerden biri **değildir**?",
+        "options": {
+          "A": "Endotelin-1",
+          "B": "Nöropeptid Y",
+          "C": "Anjiyotensin II",
+          "D": "Kalsitonin geniyle ilişkili peptid (CGRP)",
+          "E": "Urotensin-II"
+        },
+        "correctAnswer": "D",
+        "explanation": "Kalsitonin geniyle ilişkili peptid (CGRP), arteriyollerde vazodilatasyona neden olan ve damar çapını genişleterek direnci düşüren güçlü bir moleküldür. Nöropeptid Y ve Urotensin-II ise sempatik sistem ve lokal dolaşım üzerinden arteriyol düz kasını kasarak daralmaya neden olan dolaşım hormonlarıdır. CGRP'nin aksine vazokonstriktör ajanlar kan basıncını doğrudan artırma eğilimindedir."
+      },
+      "reason": "uzunluk_biasi:correct=41ch_avg_other=12ch"
+    }
+  ]
+}

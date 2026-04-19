@@ -1,0 +1,41 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "DENEME",
+  "rejected_at": "2026-04-18T13:16:14.871047",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kalp ve Dolaşım Fizyolojisi",
+        "question": "Aşağıdaki histolojik yapılardan hangisi kalp kası hücrelerinin eksitasyon-kontraksiyon kenetlenmesi mimarisinde normal şartlarda **bulunmaz**?",
+        "options": {
+          "A": "T tübülü",
+          "B": "Triad",
+          "C": "Diad",
+          "D": "Terminal sisterna",
+          "E": "Sarkoplazmik retikulum"
+        },
+        "correctAnswer": "B",
+        "explanation": "İskelet kasında iki terminal sisterna ve bir T tübülünden oluşan triad yapısı bulunurken, kalp kasında triad bulunmaz; yerine bir terminal sisterna ve bir T tübülünden oluşan diad yapısı vardır. Sarkoplazmik retikulum ve T tübülü her iki kas tipinde de mevcuttur ancak organizasyonları farklıdır. Kalp kasındaki diad yapısı ryanodin reseptörleri aracılığıyla kalsiyum tetiklemeli kalsiyum salınımına hizmet eder."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kalp ve Dolaşım Fizyolojisi",
+        "question": "EKG'de ventrikül depolarizasyonunun sonu ile repolarizasyonunun başlangıcı arasındaki süreyi temsil eden ve normalde izoelektrik hatta (J noktası) bulunması gereken ST segmenti, miyokardiyal aksiyon potansiyelinde hangi faza karşılık gelmektedir?",
+        "options": {
+          "A": "Faz 0",
+          "B": "Faz 1",
+          "C": "Faz 4",
+          "D": "Faz 2 (Plato)",
+          "E": "Faz 3"
+        },
+        "correctAnswer": "D",
+        "explanation": "ST segmenti, miyokard hücresi aksiyon potansiyelinde hücre içine L-tipi kalsiyum girişinin potasyum çıkışını dengelediği Faz 2'ye (Plato fazı) karşılık gelir. Faz 3 repolarizasyon evresi olup T dalgasını oluştururken, plato fazı hücrenin tümüyle depolarize kalıp elektriksel sessizlik yaşadığı ST segmentini çizer. J noktası ise platonun tam başladığı anı işaretler."
+      },
+      "reason": "uzunluk_biasi:correct=13ch_avg_other=5ch"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "lesson": "Patoloji",
+  "unit": "1- HÜCRESEL ADAPTASYONLAR HÜCRE HASARI ve ÖLÜMÜ",
+  "rejected_at": "2026-04-17T17:21:50.443046",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Hücre Hasarı ve Ölümü",
+        "question": "Aşağıdakilerden hangisi programlı hücre ölümü olan apoptozun fizyolojik mekanizmalarından biri **değildir**?",
+        "options": {
+          "A": "Timusta otoreaktif T lenfositlerin seleksiyonla yok edilmesi",
+          "B": "Hatalı katlanmış proteinlerin endoplazmik retikulumda aşırı birikmesi",
+          "C": "Emzirme dönemi sonrası meme dokusunda görülen involüsyon",
+          "D": "Menstrüel siklusta endometrial hücrelerin dökülmesi",
+          "E": "Embriyogenez sırasında interdigital hücrelerin ortadan kaldırılması"
+        },
+        "correctAnswer": "B",
+        "explanation": "Hatalı katlanmış proteinlerin aşırı birikimi (ER stresi), apoptozun fizyolojik değil patolojik örneklerinden biridir. Emzirme sonrası meme involüsyonu ve menstrüel siklus döngüsü hormon bağımlı fizyolojik doku yıkımına örnektir. Organizmada homeostaziyi sağlamak adına gelişen T hücre seleksiyonu ve embriyolojik şekillenme süreçleri fizyolojik apoptoz sınırlarında değerlendirilir."
+      },
+      "reason": "kisa_stem:11kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Hücre Hasarı ve Ölümü",
+        "question": "Apoptoza giden bir hücrenin elektron mikroskobik incelemesinde izlenen en karakteristik morfolojik bulgu aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Mitokondrilerde yüksek genlikli şişme",
+          "B": "Plazma membranında şiddetli rüptür",
+          "C": "Çekirdek periferinde kromatin kondensasyonu",
+          "D": "Lizozomal enzimlerin sitoplazmaya sızması",
+          "E": "Komşu dokuda nötrofil infiltrasyonu"
+        },
+        "correctAnswer": "C",
+        "explanation": "Apoptozun en karakteristik elektron mikroskobik morfolojik bulgusu, nükleer kromatinin çekirdek zarı periferinde birikerek yoğunlaşmasıdır (kromatin kondensasyonu). Mitokondriyal şişme ve plazma membran rüptürü apoptozda değil nekroz sürecinde görülen, membran bütünlüğünün bozulduğu durumlardır. Apoptoz süreci sessiz ilerler ve çevrede inflamatuvar bir yanıta (nötrofil infiltrasyonu) neden olmaz."
+      },
+      "reason": "kisa_stem:14kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Hücre Hasarı ve Ölümü",
+        "question": "Apoptoz sinyal iletiminde yer alan FLIP proteini ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Ekstrinsik apoptoz yolağının hücresel inhibitörlerinden biridir",
+          "B": "Pro-kaspaz-8 molekülüne bağlanarak aktivasyonu engeller",
+          "C": "Mitokondriyal yolağın (intrinsik) başlamasını doğrudan bloke eder",
+          "D": "FADD molekülü ile pro-kaspaz-8 arasındaki iletişimi bozar",
+          "E": "Ölüm reseptörü sinyali üzerinden gelişen infazı durdurur"
+        },
+        "correctAnswer": "C",
+        "explanation": "FLIP, yapısal olarak pro-kaspaz-8'e benzeyen ancak proteaz aktivitesi olmayan bir proteindir ve pro-kaspaz-8 ile rekabete girerek FADD'ye bağlanır; böylece yalnızca ekstrinsik (ölüm reseptörü) apoptoz yolağını inhibe eder. İntrinsik (mitokondriyal) yolağı doğrudan bloke etmek FLIP'in değil, BCL-2 ve BCL-XL gibi anti-apoptotik moleküllerin (sitokrom c çıkışını kilitleyen moleküllerin) görevidir. FLIP, virüsler ve bazı normal hücreler tarafından apoptozdan kaçmak için üretilir."
+      },
+      "reason": "kisa_stem:13kelime"
+    }
+  ]
+}

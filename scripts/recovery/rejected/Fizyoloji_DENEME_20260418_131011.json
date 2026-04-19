@@ -1,0 +1,24 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "DENEME",
+  "rejected_at": "2026-04-18T13:10:11.037218",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kardiyovasküler Sistem",
+        "question": "Renin-Anjiyotensin sistemi proteinleri ve hücresel kaynaklarıyla ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Renin hormonu böbrekte jukstaglomerüler hücrelerden salgılanır.",
+          "B": "Anjiyotensinojen proteini esas olarak akciğer kapiller endotel hücrelerinde üretilir.",
+          "C": "Anjiyotensin Dönüştürücü Enzim (ACE) akciğer damar endotelinde yoğun olarak bulunur.",
+          "D": "Anjiyotensin II, anjiyotensin I'in ACE tarafından dönüştürülmesiyle aktifleşen formdur.",
+          "E": "Aldosteron, adrenal korteksten Anjiyotensin II veya III uyarısıyla salınır."
+        },
+        "correctAnswer": "B",
+        "explanation": "Anjiyotensinojen (renin substratı), karaciğerde sentezlenerek dolaşıma katılan bir globulindir. Renin tarafından anjiyotensin I'e çevrilir. Akciğer kapiller endotel hücrelerinde üretilen molekül Anjiyotensinojen değil, Anjiyotensin Dönüştürücü Enzimdir (ACE). Bu anatomik ayrım, kardiyovasküler farmakolojide RAAS basamaklarının hedeflenmesinde kritiktir."
+      },
+      "reason": "kisa_stem:11kelime"
+    }
+  ]
+}

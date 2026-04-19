@@ -1,0 +1,75 @@
+{
+  "lesson": "Patoloji",
+  "unit": "5- NEOPLAZİ",
+  "rejected_at": "2026-04-17T19:07:02.351809",
+  "items": [
+    {
+      "question": {
+        "lesson": "Genel Patoloji",
+        "unit": "Neoplazi",
+        "question": "Aşağıdaki '-oma' son eki alan neoplazilerden hangisi klinik ve biyolojik davranış olarak benign (iyi huylu) karakterde **değildir**?",
+        "options": {
+          "A": "Osteom",
+          "B": "Kondrom",
+          "C": "Leyomyom",
+          "D": "Hemanjiyoperisitoma",
+          "E": "Papillom"
+        },
+        "correctAnswer": "D",
+        "explanation": "Genel kural olarak '-oma' eki alan tümörler benign karakterlidir, ancak hemanjiyoperisitoma, lenfoma, mezotelyoma ve melanom gibi tümörler bu kuralın istisnası olup malign karakterdedir. Osteom, kondrom, leyomyom ve papillom isimlendirme kuralına uyan klasik benign neoplazilerdir. Nomenklatürdeki bu istisnai kelimeler biyolojik davranış tahmini için kritik öneme sahiptir."
+      },
+      "reason": "uzunluk_biasi:correct=19ch_avg_other=7ch"
+    },
+    {
+      "question": {
+        "lesson": "Genel Patoloji",
+        "unit": "Neoplazi",
+        "question": "Elli yaşındaki kadın hastada mide duvarında infiltratif büyüyen ve stroma reaksiyonu minimum olan bir malignite saptanıyor. Patoloji raporunda c-KIT ligandı reseptöründe nokta mutasyon olduğu belirtiliyor. Bu hastadaki neoplazinin moleküler hedefine bağlı tanısı aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Mide adenokarsinomu",
+          "B": "Karsinoid tümör",
+          "C": "Gastrointestinal stromal tümör (GİST)",
+          "D": "Lenfoma",
+          "E": "Leiomyosarkom"
+        },
+        "correctAnswer": "C",
+        "explanation": "Gastrointestinal stromal tümörlerin (GİST) patogenezinde kök hücre faktörü (KIT ligandı) reseptörü olan c-KIT genindeki nokta mutasyonu temel rol oynar. Mide adenokarsinomunda FGF3 amplifikasyonu, lenfomalarda MYC translokasyonları, leiomyosarkomlarda ise yumuşak doku sarkomu moleküler yolları aktiftir. c-KIT mutasyonunun varlığı, tümörün tirozin kinaz inhibitörlerine (imatinib) yanıt vereceğinin kesin göstergesidir."
+      },
+      "reason": "uzunluk_biasi:correct=37ch_avg_other=14ch"
+    },
+    {
+      "question": {
+        "lesson": "Genel Patoloji",
+        "unit": "Neoplazi",
+        "question": "Malign tümörlerin yayılım özellikleriyle ilgili olarak aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Over kanserleri sıklıkla peritoneal yüzeylere ekim yoluyla yayılır.",
+          "B": "Kanserler venleri arterlere göre daha kolay penetre ederler.",
+          "C": "Lenfatik drenajı alan ilk lenf nodu sentinel lenf nodu olarak adlandırılır.",
+          "D": "Prostat kanserleri Batson'un paravertebral pleksusu üzerinden vertebralara emboli atar.",
+          "E": "Skip metastaz, hücrelerin daima proksimalden distale sırayla tüm lenf nodlarını tutmasıdır."
+        },
+        "correctAnswer": "E",
+        "explanation": "Skip metastaz, tümör hücrelerinin lenfatik akımda ardışık sırayı takip etmeyerek proksimaldeki bazı lenf nodlarını 'atlayıp' (zikzak çizerek) daha uzak lenf nodlarına yayılmasıdır; yani sırayla tutulum kuralını bozar. Arterlerin kalın müsküler duvarı venlere göre penetrasyonu zorlaştırır, bu nedenle tümörler venöz yapılara daha rahat invaze olurlar. Over tümörlerinde asit ve peritoneal ekim (karsinomatozis) tipik tablodur."
+      },
+      "reason": "kisa_stem:10kelime"
+    },
+    {
+      "question": {
+        "lesson": "Genel Patoloji",
+        "unit": "Neoplazi",
+        "question": "Embriyonik artıklardaki veya gonaddaki totipotansiyel hücrelerden gelişen teratomlar ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+        "options": {
+          "A": "İçerdiği dokular ne kadar matür ise tümörün malignleşme riski o kadar artar.",
+          "B": "İmmatür doku miktarı arttıkça malignite riskiyle doğru orantılı olarak artış görülür.",
+          "C": "Sadece tek bir ektodermal germ yaprağı farklılaşmasıyla oluşur.",
+          "D": "Makroskopik olarak daima skirröz yapı gösterirler.",
+          "E": "Teratokarsinomlar her zaman iyi diferansiye benign hücreler içerir."
+        },
+        "correctAnswer": "B",
+        "explanation": "Teratomlarda malignite potansiyelini belirleyen temel faktör, tümör içindeki embriyonel (immatür) doku miktarıdır; doku ne kadar immatürse malignite riski o kadar yüksektir. Matür kistik teratomlar (dermoid kistler) tipik olarak benigndir. Teratomlar tanımı gereği totipotansiyel hücrelerden oluştukları için ektoderm, endoderm ve mezodermin tümünden yapıları bir arada barındırabilirler."
+      },
+      "reason": "kisa_stem:14kelime"
+    }
+  ]
+}

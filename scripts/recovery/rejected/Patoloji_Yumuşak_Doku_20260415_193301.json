@@ -1,0 +1,75 @@
+{
+  "lesson": "Patoloji",
+  "unit": "Yumuşak Doku",
+  "rejected_at": "2026-04-15T19:33:01.782103",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Hematopoietik Sistem ve Lenfoid Neoplaziler",
+        "question": "Eozinofilik granülom ile ilgili aşağıdaki patogenetik mekanizma veya hücresel özelliklerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Kemik medüller kavitesine yerleşerek unifokal litik kitle oluşturur.",
+          "B": "Hastalığın temelinde immatür dendritik hücrelerin monoklonal proliferasyonu yatar.",
+          "C": "Korteks zayıflamasına bağlı lokalize patolojik kırık riskini artırır.",
+          "D": "Mikroskobik incelemede kitle içindeki en kalabalık hücre grubu neoplastik Langerhans hücreleridir.",
+          "E": "Lezyon bölgesinde kemokinler aracılığıyla yoğun reaktif inflamatuvar zemin yaratılır."
+        },
+        "correctAnswer": "D",
+        "explanation": "Eozinofilik granülomda neoplastik Langerhans hücreleri ortama salgıladıkları kemokinlerle devasa bir reaktif inflamatuvar hücre yığılmasına neden olurlar. Biyopside sayıca en dominant (baskın) hücre neoplastik Langerhans hücreleri değil, bu ortama çekilen non-neoplastik reaktif eozinofillerdir. LHH klonları tek başına dokuyu kaplamak yerine, Hodgkin lenfomadaki gibi reaktif bir hücresel zemin kurarak destrüksiyon mekanizmasını tetikler."
+      },
+      "reason": "kisa_stem:12kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Hematopoietik Sistem ve Lenfoid Neoplaziler",
+        "question": "Hodgkin lenfomanın klinik seyri ve metastatik yayılım paterniyle ilgili aşağıdaki ifadelerden hangisi **doğru değildir**?",
+        "options": {
+          "A": "Çoğunlukla boyun, mediasten veya para-aortik gibi aksiyel lenf nodlarında başlar.",
+          "B": "Yayılım sırasında lenfatik drenaj yolunu atlamadan ardışık bir seyir izler.",
+          "C": "Tümör dokusunun büyük kısmını non-neoplastik reaktif inflamatuvar hücreler oluşturur.",
+          "D": "Nodüler lenfosit baskın tip hariç, tümör hücreleri klasik olarak B-hücre belirteçlerini kaybeder.",
+          "E": "Erken dönemde Waldeyer halkası ve mezenterik lenf nodu tutulumu yapma eğilimindedir."
+        },
+        "correctAnswer": "E",
+        "explanation": "Hodgkin lenfoma anatomik komşuluk ilişkisini gözeterek yavaş ve düzenli bir yayılım izler; Waldeyer halkasını ve mezenterik nodları istisnai durumlar hariç tamamen es geçer. Waldeyer halkasını ve mezenterik nodları tutma, ekstranodal alanlara atlayarak sıçrama davranışı Non-Hodgkin Lenfomalara (NHL) ait karakteristik bir özelliktir. Bu komşuluk vs atlayarak yayılım dikotomisi iki lösemi/lenfoma grubunu klinik olarak ayırmanın temel yoludur."
+      },
+      "reason": "kisa_stem:14kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Hematopoietik Sistem ve Lenfoid Neoplaziler",
+        "question": "Akut Miyeloid Lösemi'nin (AML) laboratuvar kriterleri ve klinik özellikleriyle ilgili aşağıdakilerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Hastaların büyük çoğunluğu 60 yaş üzerindedir.",
+          "B": "Kemik iliğinin normal hematopoietik kök hücreleri invaze edildiği için nötropeni ve trombositopeni gelişir.",
+          "C": "Tanı konulabilmesi için kemik iliğinde en az %30 oranında miyeloid blast saptanması zorunludur.",
+          "D": "İmmatür miyeloblastların yumuşak dokuda lokalize bir kitle oluşturduğu duruma kloroma adı verilir.",
+          "E": "Dolaşım sisteminden göç eden lösemi hücreleri nadiren de olsa lösemi kutis adı verilen deri lezyonları yapabilir."
+        },
+        "correctAnswer": "C",
+        "explanation": "Akut Miyeloid Lösemi tanısı için kemik iliğindeki immatür miyeloblast eşiği %30 değil, en az %20 olmalıdır. En az %30 barajı Multipl Miyelom tanısında plazma hücreleri için kullanılan tamamen farklı bir diagnostik parametredir. AML'de hücresel kaskadın duraklamasıyla normal hücrelerin üretiminin düşmesi, hastayı anemi ve kanama bulgularıyla kliniğe getiren ana kök nedendir."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Hematopoietik Sistem ve Lenfoid Neoplaziler",
+        "question": "Hodgkin lenfoma alt tipleri ile Epstein-Barr Virüs (EBV) ilişkisi konusunda aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Mikst selüler formda EBV pozitiflik oranı yaklaşık %70 civarındadır.",
+          "B": "Lenfositten fakir alt tip, sıklıkla EBV pozitifliği barındırır ve agresif seyreder.",
+          "C": "En sık görülen alt tip olan nodüler skleroz, düzenli olarak EBV ile güçlü bir birliktelik gösterir.",
+          "D": "Nodüler lenfosit baskın formun patogenezinde EBV'nin bilinen bir etkisi yoktur.",
+          "E": "Hodgkin varyantları içinde endemik Burkitt formunun %100'lük EBV korelasyonuna en çok yaklaşan tip mikst selülerdir."
+        },
+        "correctAnswer": "C",
+        "explanation": "Hodgkin lenfomanın en sık görülen alt tipi olan Nodüler Skleroz'un patogenezi klasik olarak Epstein-Barr Virüs (EBV) ile ilişkisiz (negatif) kabul edilir. Buna mukabil Mikst Selüler (%70) ve Lenfositten Fakir form EBV ile oldukça güçlü şekilde ilişkilidir. Onkojenik virüs ile neoplazi eşleştirmelerinde EBV, Hodgkin alt tiplerini prognoz/etyoloji bazında sınıflamak için bir ayraç olarak kullanılır."
+      },
+      "reason": "kisa_stem:14kelime"
+    }
+  ]
+}

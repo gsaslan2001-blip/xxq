@@ -1,0 +1,426 @@
+{
+  "lesson": "Periodontoloji",
+  "unit": "4.a - Periodontal Epidemiyoloji",
+  "questions": [
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Hastalıkların Teşhisi ve Risk Değerlendirmesi",
+      "question": "Subgingival bölgelerdeki lokal inflamatuar değişiklikleri saptamak amacıyla spesifik olarak periodontal cep içi sıcaklığını ölçen ileri teşhis yöntemi aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "PerioTest",
+        "B": "OraTest",
+        "C": "PerioTemp",
+        "D": "Halimeter",
+        "E": "PerioScan"
+      },
+      "correctAnswer": "C",
+      "explanation": "PerioTemp, subgingival bölgedeki sıcaklık artışını ölçerek lokal inflamasyon ve doku metabolizmasındaki değişiklikleri saptayan spesifik bir ileri tanı cihazıdır. PerioTest mobilite ve osseointegrasyon değerlendirmesinde kullanılırken, Halimeter oral malodor teşhisinde sülfür gazlarını ölçer. İsim benzerliği taşıyan cihazlar arasındaki fonksiyonel farklar tanı protokollerinde kritik öneme sahiptir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Hastalıkların Teşhisi ve Risk Değerlendirmesi",
+      "question": "Oral malodor teşhisinde uçucu sülfür bileşiklerini (VSC) kantitatif olarak ölçerek halitozis değerlendirmesi yapan cihaz aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "PerioTemp",
+        "B": "Halimeter",
+        "C": "PerioTest",
+        "D": "BANA Test",
+        "E": "Flow Sitometri"
+      },
+      "correctAnswer": "B",
+      "explanation": "Halimeter (Interscan), nefes yoluyla atılan hidrojen sülfür ve metil merkaptan gibi uçucu sülfür bileşiklerini ölçerek halitozis teşhisinde objektif veri sağlayan standart cihazdır. BANA test subgingival bakterilerin tripsin benzeri enzim aktivitesini ölçerken, Flow Sitometri sıvı süspansiyonundaki hücreleri flüoresan işaretleyicilerle analiz eder. Cihazın spesifik hedefi gaz ölçümüdür."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Hastalıkların Teşhisi ve Risk Değerlendirmesi",
+      "question": "Doğal dişlerde mobilitenin derecesini ve dental implantlarda osseointegrasyonun kalitesini objektif olarak değerlendirmek için kullanılan mekanik direnç ölçüm aygıtı aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "PerioTest",
+        "B": "PerioTemp",
+        "C": "CADIA",
+        "D": "OraTest",
+        "E": "Halimeter"
+      },
+      "correctAnswer": "A",
+      "explanation": "PerioTest, dişe veya implanta saniyede dört kez küçük bir çubukla vurarak dokunun gösterdiği mekanik sönümleme (damping) direncini elektronik olarak ölçer ve mobiliteyi standartlaştırır. CADIA dijital radyografilerde kemik yoğunluğu analizinde kullanılırken, OraTest mikrobiyal seviyeyi belirler. PerioTest'in hem doğal diş hem de implantta kullanılması temel ayırıcı özelliğidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Hastalıkların Teşhisi ve Risk Değerlendirmesi",
+      "question": "Bireyin hastalığa yakalanma olasılığını tahmin etmek için yürütülen spesifik epidemiyolojik ve klinik işlemlere ne ad verilir?",
+      "options": {
+        "A": "Risk faktörü",
+        "B": "Prognostik tayin",
+        "C": "Risk göstergesi",
+        "D": "Risk işareti",
+        "E": "Risk tayini"
+      },
+      "correctAnswer": "E",
+      "explanation": "Risk tayini (risk assessment), bireyin gelecekte hastalığa yakalanma ihtimalini saptamak için risk faktörlerinin, belirleyicilerinin ve işaretlerinin bir arada analiz edildiği sürecin adıdır. Risk faktörü bu süreçte incelenen nedensel değişkenlerden biriyken, prognostik tayin zaten var olan bir hastalığın gelecekteki seyrini kestirmeye yönelik farklı bir işlemdir. Kavramların epidemiyolojik tanımları birbirinin yerine kullanılamaz."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Hastalıkların Teşhisi ve Risk Değerlendirmesi",
+      "question": "Artan hastalık riski ile klinik olarak güçlü bir şekilde ilişkili olmalarına rağmen, hastalığa biyolojik olarak doğrudan neden olmayan (nedensel olmayan) faktörlere epidemiyolojik olarak ne ad verilir?",
+      "options": {
+        "A": "Risk faktörü",
+        "B": "Bireysel risk belirleyicisi",
+        "C": "Risk göstergesi",
+        "D": "Risk işareti (Marker)",
+        "E": "Prognostik faktör"
+      },
+      "correctAnswer": "D",
+      "explanation": "Risk işaretleri (markerlar), örneğin geçirilmiş periodontal hastalık hikayesi veya kanama bulgusu gibi, hastalığın doğrudan etyolojik nedeni olmayan ancak riskin yüksekliğini gösteren prediktif araçlardır. Risk faktörleri (sigara, diyabet) patogenezde doğrudan nedensel rol oynarken, risk işaretleri sadece klinik öngörü sağlar. Bu temel fark risk analizi sınıflandırmasının omurgasını oluşturur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Hastalıkların Teşhisi ve Risk Değerlendirmesi",
+      "question": "Uzun dönem epidemiyolojik ve klinik çalışmalarla kronik periodontitisin gelişiminde etyolojik ajan olarak rol oynadığı kesin olarak kanıtlanmış bir risk faktörü olan bakteri aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Streptococcus intermedius",
+        "B": "Fusobacterium nucleatum",
+        "C": "Tanerella forsythia",
+        "D": "Peptostreptococcus micros",
+        "E": "Eubacterium nodatum"
+      },
+      "correctAnswer": "C",
+      "explanation": "A. actinomycetemcomitans, P. gingivalis ve T. forsythia, periodontitis için nedensel olduğu açıkça kanıtlanmış ve risk faktörü olarak sınıflandırılan üç ana spesifik patojendir. Diğer şıklardaki bakteriler (C. rectus, F. nucleatum vb.) hastalıkla ilişkili olmakla birlikte, epidemiyolojik olarak klasik risk faktörü üçlüsünün dışında değerlendirilen destekleyici ajanlardır. Kesin nedensel kanıt mekanizması T. forsythia için netleştirilmiştir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Hastalıkların Teşhisi ve Risk Değerlendirmesi",
+      "question": "Yaş faktörünün periodontal hastalık oluşumundaki rolü değerlendirildiğinde epidemiyolojik olarak aşağıdaki mekanizmalardan hangisi geçerlidir?",
+      "options": {
+        "A": "Yaşlanma süreci tek başına hücresel immüniteyi baskılayarak hastalığı başlatır.",
+        "B": "İleri yaşlardaki ataşman kaybı, nedensel faktörlere maruz kalma süresinin uzamasına bağlı kümülatif bir etkidir.",
+        "C": "Yaş ilerledikçe P. gingivalis miktarındaki fizyolojik artış hastalığa duyarlılığı artırır.",
+        "D": "Genç hastalarda tespit edilen ataşman kayıpları daima yaşlılara göre daha iyi huyludur.",
+        "E": "Yaş bir risk faktörü değil, risk göstergesi (indikatör) sınıfındadır."
+      },
+      "correctAnswer": "B",
+      "explanation": "Periodontal hastalık yaşlanmanın kaçınılmaz bir fizyolojik sonucu değildir; yaşlı bireylerde görülen daha şiddetli ataşman kayıpları, hastanın yaşamı boyunca plak ve diğer risk faktörlerine uzun süre maruz kalmasının (kümülatif etki) bir sonucudur. Yaşlanmanın tek başına duyarlılığı artırdığı hipotezi reddedilmiştir. Bu nedenle yaş, nedensel bir risk faktörü değil, bir risk belirleyicisi (determinan) olarak kabul edilir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Hastalıkların Teşhisi ve Risk Değerlendirmesi",
+      "question": "Sosyoekonomik durumun periodontal hastalıklara etkisi değerlendirildiğinde aşağıdaki ifadelerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Gingivitis ve kötü ağız hijyeni insidansı düşük sosyoekonomik gruplarda daha sıktır.",
+        "B": "Düşük sosyoekonomik düzey, yetersiz dental bilinç ve seyrek kontrol sıklığı ile koreledir.",
+        "C": "Düşük sosyoekonomik durum, bireyin değiştirilemeyen risk belirleyicileri sınıfında yer alır.",
+        "D": "Eğitim seviyesinin düşüklüğü periodontal sağlığı negatif yönde etkileyen bir değişkendir.",
+        "E": "Sigara içme ve plak indeksi gibi faktörler uyumlandırılsa bile sosyoekonomik durum hastalığı etkileyemez."
+      },
+      "correctAnswer": "E",
+      "explanation": "Epidemiyolojik çalışmalar, sigara içme veya kötü ağız hijyeni gibi diğer majör risk faktörleri standardize edildiğinde (uyumlandırıldığında) dahi düşük sosyoekonomik düzeyin tek başına artan periodontitis riskine neden olduğunu göstermektedir. Sosyoekonomik durum sadece diğer faktörlere zemin hazırlayan pasif bir arka plan değil, bağımsız bir risk belirleyicisidir. Bu durum beslenme, kronik stres ve genel immün durumu kapsayan geniş bir ağın sonucudur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Hastalıkların Teşhisi ve Risk Değerlendirmesi",
+      "question": "Otuz beş yaşındaki kadın hastanın anamnezinden geçmişte şiddetli kronik periodontitis nedeniyle tedavi gördüğü anlaşılmıştır. Güncel radyografik incelemede kemik kaybının stabil olmadığı görülmüştür. Bu hastada gelecekteki yeni ataşman kayıpları riskini öngörmede kullanılan en güçlü risk işareti (marker) aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Geçirilmiş periodontal hastalık hikayesi",
+        "B": "Sondalamada kanama indeksinin %20 olması",
+        "C": "Ağız solunumu alışkanlığı",
+        "D": "Subgingival restorasyon kenarları",
+        "E": "Tükürük akış hızında azalma"
+      },
+      "correctAnswer": "A",
+      "explanation": "Bir hastada daha önceden var olan periodontal hastalık hikayesi, o hastanın gelecekteki hastalık aktivitesi ve ataşman kaybı riski için tanımlanmış en iyi ve en güçlü klinik risk işaretidir (marker). En şiddetli ataşman kayıpları bulunan hastalar, konağın biyolojik yatkınlığı nedeniyle gelecekte de en büyük risk altındaki gruptur. Sondalamada kanama da bir risk işaretidir ancak geçmiş hastalık hikayesi genel öngörüde en geniş kapsama sahip belirleyicidir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Bir hastalığın gelecekteki seyri, yıkım hızı ve uygulanan tedaviye vereceği muhtemel cevap hakkında patogenez ve mevcut risk faktörleri verilerine dayanarak önceden tahmin yürütme işlemine ne ad verilir?",
+      "options": {
+        "A": "Risk değerlendirmesi",
+        "B": "Klinik diagnoz",
+        "C": "Prognostik faktör analizi",
+        "D": "Prognoz tayini",
+        "E": "İnsidans ölçümü"
+      },
+      "correctAnswer": "D",
+      "explanation": "Prognoz, hastalığın sonucunun veya tedaviye vereceği yanıtın gidişatının tahmin edilmesidir ve bu tahmin hastanın risk faktörleri ile hastalık patogenezi ışığında yapılır. Risk değerlendirmesi gelecekte hastalığa yakalanma ihtimalini ölçerken, prognoz halihazırda teşhis edilmiş bir hastalığın akıbetini belirler. Tedavi planlamasının ilk ve en kritik stratejik basamağıdır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Mükemmel (Good) periodontal prognoz kriterleri düşünüldüğünde, bu sınıflamadaki bir dişte aşağıdaki bulgulardan hangisinin yer alması **beklenmez**?",
+      "options": {
+        "A": "Hastanın ağız hijyeni uyumunun tam olması",
+        "B": "Lokasyon açısından erişilebilen Sınıf I furkasyon tutulumu",
+        "C": "Periodontal destek doku miktarının fonksiyonel olarak yeterli olması",
+        "D": "Prognozu sekteye uğratacak sistemik bir hastalığın bulunmaması",
+        "E": "Diş eti enflamasyonunun geri döndürülebilir düzeyde olması"
+      },
+      "correctAnswer": "B",
+      "explanation": "Sınıf I furkasyon tutulumunun varlığı, ataşman kaybının başladığını ve anatomik bir riskin devreye girdiğini gösterdiğinden dişi Mükemmel (Good) kategoriden çıkarıp İyi (Fair) prognoz kategorisine indirger. Mükemmel prognozda furkasyon tutulumu ve kalıcı anatomik defekt bulunmaz, sadece diş etine sınırlı eklentiler veya tamamen sağlıklı destek doku söz konusudur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Kırk beş yaşındaki erkek hastanın muayenesinde, 46 numaralı dişte %60 oranında ataşman kaybı, klinik kronun kök boyunu aştığı elverişsiz bir kron/kök oranı ve lokasyon açısından alet erişiminin oldukça zor olduğu Sınıf II furkasyon tutulumu tespit edilmiştir. Standart sınıflandırmaya göre bu dişin periodontal prognozu aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Mükemmel (Good)",
+        "B": "İyi (Fair)",
+        "C": "Kötü (Poor)",
+        "D": "Umutsuz (Hopeless)",
+        "E": "Şüpheli (Questionable)"
+      },
+      "correctAnswer": "E",
+      "explanation": "Şüpheli (Questionable) prognozun temel klinik kriterleri; ataşman kaybının %50'den fazla olması, elverişsiz kron/kök oranı ve özellikle erişimi zor Sınıf II veya Sınıf III furkasyon tutulumunun varlığıdır. Kötü (Poor) prognozda da %50 ataşman kaybı ve Sınıf II furkasyon olabilir ancak oradaki temel ayrım Sınıf II defekte erişimin kolay (fakat tam temizlenmesi mümkün) olmasıdır. Erişim zorluğu direkt olarak durumu Şüpheli veya Umutsuz basamağına yaklaştırır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Dişlerin periodontal prognozunu belirlerken dikkat edilmesi gereken spesifik faktörler lokal, sistemik ve protetik olmak üzere gruplandırılır. Buna göre aşağıdakilerden hangisi protetik ve restoratif faktörler grubunda **yer almaz**?",
+      "options": {
+        "A": "Abutment diş seçimi",
+        "B": "Hazırlanacak protez türü",
+        "C": "Köklerin birbirine yakınlığı",
+        "D": "Taşkın restorasyon marjinleri",
+        "E": "Subgingival olarak konumlandırılmış kron kenarları"
+      },
+      "correctAnswer": "C",
+      "explanation": "Kök yakınlığı (root proximity), servikal mine çıkıntıları ve kök konkaviteleri gibi anatomik-gelişimsel kök anomalilerinden olup \"lokal faktörler\" sınıfında değerlendirilir. Abutment seçimi, protez tipi ve subgingival restorasyon kenarları iatrojenik/protetik planlamaya dahil olan restoratif prognostik faktörlerdir. Sistematik risk değerlendirmesinde bu faktörlerin kaynağı tedavi stratejisini değiştirir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Periodontal yıkımın şiddeti ile uygulanacak tedavinin prognozu arasındaki ilişki değerlendirildiğinde aşağıdakilerden hangisi rejeneratif işlemlerin klinik başarı şansını ve prognozu en olumlu yönde etkiler?",
+      "options": {
+        "A": "Kemik içi ceplerde çevreleyen kemik duvarı sayısının fazla olması",
+        "B": "Dişin mezialinde geniş ve sığ bir horizontal kemik defekti bulunması",
+        "C": "Kemik defektinin tepesinin tabanından daha dar olması",
+        "D": "Sınıf III düzeyine ulaşmış tam geçişli furkasyon defekti",
+        "E": "Periodontal aralığın apikal bölgede tamamen genişlemiş olması"
+      },
+      "correctAnswer": "A",
+      "explanation": "Kemik içi (infrabony) vertikal defektlerde, defekti çevreleyen sağlam kemik duvarı sayısı arttıkça (örn. 3 duvarlı defekt) greft materyalinin stabilizasyonu ve bölgenin revaskülarizasyon potansiyeli artar, bu da rejeneratif tedavinin başarı şansını ve dişin prognozunu direkt olarak yükseltir. Horizontal kemik kayıplarında rejenerasyon tekniği uygulanamaz, prognoz sadece kalan kemik yüksekliğine ve doku idamesine bağlıdır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Elli yaşındaki kadın hastanın anterior dişlerinde şiddetli horizontal alveoler kemik kaybı saptanmıştır. Radyografik incelemede alveoler kret seviyesinin apikale göç etmesi nedeniyle klinik kron boylarının destekleyici kök boylarını aştığı görülmektedir. Bu vakada dişlerin okluzal kuvvetlere karşı direncini kırarak prognozu doğrudan olumsuz etkileyen birincil biyomekanik faktör aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Servikal mine çıkıntısı",
+        "B": "Köklerde vertikal rezorpsiyon",
+        "C": "Gelişimsel palatinal oluk",
+        "D": "Kron/kök oranının aleyhte bozulması",
+        "E": "Anterior açık kapanış (open-bite)"
+      },
+      "correctAnswer": "D",
+      "explanation": "Alveoler kemik kaybı sonucu destekleyici doku içinde kalan kök yüzey alanının azalması ve klinik kronun uzaması kron/kök oranının kron aleyhine bozulmasına neden olur. Bu biyomekanik dezavantaj, dişe gelen lateral okluzal kuvvetlerin kök etrafında oluşturduğu kaldıraç etkisini (moment kolunu) büyüterek travma şiddetini artırır ve prognozu ciddi şekilde kötüleştirir. Defekt anatomik değil yapısal-biyomekaniktir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Furkasyon tutulumunun periodontal prognoz üzerindeki etkisi düşünüldüğünde aşağıdaki ifadelerden hangisi yanlıştır?",
+      "options": {
+        "A": "Furkasyon tutulumunun sınıfı arttıkça dişin idame edilme şansı azalır.",
+        "B": "Sınıf I tutulumu olan bir dişte rejeneratif tekniklerle başarı sağlama ihtimali vardır.",
+        "C": "Mandibular molarlarda furkasyona erişim genellikle maksiller molarlara göre daha öngörülebilirdir.",
+        "D": "Dördüncü derece (açığa çıkmış) furkasyon tutulumu olan dişlerin anatomik prognozu en kötüdür.",
+        "E": "Sınıf III furkasyon defektleri daima umutsuz (hopeless) prognoza sahip olup derhal çekimi gerektirir."
+      },
+      "correctAnswer": "E",
+      "explanation": "Sınıf III furkasyon tutulumu olan dişler otomatik olarak umutsuz prognoza sahip değildir; genellikle \"Şüpheli (Questionable)\" kategoride değerlendirilirler. Kök rezeksiyonu, hemiseksiyon veya tünel preparasyonu gibi ileri periodontal ve protetik yaklaşımlarla bu dişler uzun yıllar ağızda fonksiyon görebilir. Furkasyonun tamamen açığa çıkması (Sınıf IV) prognozu çok kötüleştirse de, hastanın kooperasyonu ve kemik yapısına göre değerlendirme bireysel yapılır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Dişlerin prognozunu etkileyen lokal faktörlerden okluzal travma ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Okluzal travma varlığı inflamasyonla birleştiğinde kemik yıkımının hızını artırır.",
+        "B": "Okluzal travma tek başına bakteriyel plak olmaksızın periodontal cep oluşumunu başlatabilir.",
+        "C": "Travmatik kuvvetler periodontal ligament aralığında genişlemeye ve mobilitede artışa yol açar.",
+        "D": "Başarılı bir periodontal tedavi sonrası devam eden okluzal travma rejenerasyonu sekteye uğratabilir.",
+        "E": "Sekonder okluzal travma, fizyolojik okluzal kuvvetlerin zayıflamış periodonsiyumda hasar yaratmasıdır."
+      },
+      "correctAnswer": "B",
+      "explanation": "Okluzal travma, etyolojisinde mikrobiyal dental plak olmayan, tamamen mekanik bir yaralanmadır ve tek başına hiçbir zaman apikal epitel göçüne veya periodontal cep oluşumuna (gerçek ataşman kaybına) neden olamaz. Ancak mevcut bir iltihabi durum (periodontitis) varlığında yıkımın yönünü ve şiddetini değiştirerek prognozu olumsuz etkiler. Bu temel biyolojik prensip travma-inflamasyon ilişkisinin özüdür."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Otuz yaşındaki erkek hastanın 16 numaralı dişine bir yıl önce derin subgingival marjinli kuron restorasyonu yapılmıştır. Güncel muayenesinde tüm ağız plak indeksi düşük olmasına rağmen, sadece bu bölgede şiddetli lokalize kemik kaybı, hiperplazi ve sondalamada kanama izlenmektedir. Bu lokalize yıkımın birincil nedeni olan restoratif faktör periodonsiyumu hangi mekanizmayla etkiler?",
+      "options": {
+        "A": "Bakteriyel plak retansiyonunu artırıp biyolojik genişliği ihlal ederek",
+        "B": "Kök yüzeyinde demineralizasyon yaratarak",
+        "C": "Bölgesel kan akımını kesip iskemik nekroz oluşturarak",
+        "D": "Furkasyon tavanında yapısal zayıflık yaratarak",
+        "E": "Sementojenik aktiviteyi tamamen durdurarak"
+      },
+      "correctAnswer": "A",
+      "explanation": "Subgingival olarak konumlandırılmış, taşkın veya uyumsuz restorasyon kenarları, mikrobiyal plak birikimi için mükemmel bir retansiyon alanı oluşturarak lokal flora patojenitesini artırır. Ayrıca diş eti sulkusu veya birleşim epitelinin sınırlarını aşarak biyolojik genişliği (supracrestal doku ataşmanını) ihlal eder. Bu durum konağın fizyolojik kemik mesafesini yeniden kurmak için osteoklastik aktivite başlatmasına (lokalize kemik kaybı) ve enflamasyona yol açar."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Altmış yaşındaki diyabetik kadın hasta şiddetli diş eti kanaması ve ön dişlerinde sallanma şikayetiyle başvurmuştur. Muayenede 24 numaralı dişte okluzal travma ve periodontal apse bulgusu olmaksızın, vertikal yönde de çökme hareketi gösteren 3. derece mobilite izlenmiştir. Standardize klinik kriterlere göre bu diş için en olası periodontal prognoz aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Mükemmel",
+        "B": "İyi",
+        "C": "Kötü",
+        "D": "Umutsuz",
+        "E": "Şüpheli"
+      },
+      "correctAnswer": "D",
+      "explanation": "Periodontal ligamentte mobiliteyi geçici olarak artıran akut inflamasyon (apse vb.) veya okluzal travma yokluğunda ortaya çıkan ve dişin apiko-koronal yönde (vertikal) de hareket etmesini kapsayan 3. derece mobilite, destek kemiğin hemen tamamen kaybedildiğini gösterir. Bu dişte sağlık ve fonksiyonu devam ettirmeye yetecek ataşman kalmadığı için prognoz kesin olarak 'Umutsuz (Hopeless)' kabul edilir ve çekim endikasyonu doğar."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Hastalıkların Teşhisi ve Risk Değerlendirmesi",
+      "question": "Anatomik plak retansiyon alanları oluşturarak periodontal hastalığın gelişimine zemin hazırlayan ve prognozu kötüleştiren servikal mine çıkıntıları, en sık hangi diş grubunda ve spesifik olarak hangi yüzeyde görülür?",
+      "options": {
+        "A": "Maksiller birinci molarların mezial yüzeyinde",
+        "B": "Mandibular birinci premolarların lingual yüzeyinde",
+        "C": "Maksiller ikinci molarların bukkal yüzeyinde",
+        "D": "Mandibular santral kesicilerin lingual yüzeyinde",
+        "E": "Maksiller kaninlerin distal yüzeyinde"
+      },
+      "correctAnswer": "C",
+      "explanation": "Servikal mine çıkıntıları (cervical enamel projections), bağ dokusu ataşmanını engelleyip uzun birleşim epiteli oluşumuna ve ardından furkasyon cebine zemin hazırlayan gelişimsel anomalilerdir. En sık mandibular molarlarda ve maksiller arktaki dişler arasında spesifik olarak maksiller ikinci molarların bukkal furkasyon yüzeylerinde izlenirler. Bu bölgeler profilaktik değerlendirmede kritik öneme sahiptir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Hastalıkların Teşhisi ve Risk Değerlendirmesi",
+      "question": "Alet adaptasyonunu ve hastanın interproksimal temizliğini zorlaştırarak periodontal tedavinin prognozunu olumsuz etkileyen gelişimsel kök konkaviteleri en sık ve belirgin olarak hangi dişin hangi kökünde izlenir?",
+      "options": {
+        "A": "Mandibular birinci molar - Distal kök",
+        "B": "Maksiller birinci molar - Meziobukkal kök",
+        "C": "Maksiller birinci premolar - Palatinal kök",
+        "D": "Mandibular ikinci premolar - Tek kök gövdesi",
+        "E": "Maksiller ikinci molar - Distobukkal kök"
+      },
+      "correctAnswer": "B",
+      "explanation": "Kök konkaviteleri (longitudinal oluklar), küretlerin ve ultrasonik aletlerin kök yüzeyine tam temasını engelleyerek artık kalkulus bırakılma riskini en üst düzeye çıkaran anatomik faktörlerdir. Bu konkaviteler en sık ve en derin olarak maksiller birinci molarların meziobukkal (MB) köklerinin mezial yüzeylerinde bulunur. Tedavi sırasındaki başarısızlıkların majör anatomik nedenlerinden biridir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Çok köklü dişlerde veya komşu dişler arasında köklerin birbirine aşırı yakın olması (root proximity) periodontal prognozu hangi temel biyolojik ve anatomik mekanizma üzerinden olumsuz etkiler?",
+      "options": {
+        "A": "Dişlerde fizyolojik erüpsiyon hızını artırarak",
+        "B": "Apikal bölgede aşırı sement birikimini (hipersementoz) indükleyerek",
+        "C": "Kök yüzeyinde multiple mine incisi oluşumunu tetikleyerek",
+        "D": "İnterproksimal alveolar kemik hacmini azaltıp plak temizliğini engelleyerek",
+        "E": "Periodontal ligament fibrillerinin esnekliğini kalıcı olarak yok ederek"
+      },
+      "correctAnswer": "D",
+      "explanation": "Köklerin birbirine aşırı yakın olduğu (root proximity) durumlarda, iki kök arasındaki interdental septal kemik hacmi çok incedir veya hiç yoktur (sadece bağ dokusu bulunur). Bu dar aralık hastanın arayüz temizliği yapmasını imkansız hale getirir ve inflamasyon başladığında kemik çok ince olduğu için anında vertikal veya horizontal kayba uğrar. Bu nedenle kök yakınlığı olan bölgelerde prognoz her zaman anatomik olarak dezavantajlıdır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Endodontik olarak tedavi edilmiş (devital) dişlerin periodontal tedavisi ve prognozu ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+      "options": {
+        "A": "Devital dişlerin sement tabakasına periodontal cerrahi sonrası yeni bağ dokusu ataşmanı gerçekleşebilir.",
+        "B": "Devital dişlerin periodontal cerrahiye verdikleri iyileşme yanıtı vital dişlerden istatistiksel olarak farklı değildir.",
+        "C": "Başarılı bir kök kanal tedavisi görmüş diş, protetik planlamada periodontal olarak destek amaçlı kullanılabilir.",
+        "D": "Dişin vitalitesini yitirmiş olması, periodonsiyumun rejeneratif potansiyelini ortadan kaldırmaz.",
+        "E": "Devital dişler, pulpal kan akımı durduğu için periodontal ligamentteki akut inflamasyona yanıt veremez ve anında ankiloz gelişir."
+      },
+      "correctAnswer": "E",
+      "explanation": "Bir dişin endodontik olarak devital olması, dişi çevreleyen sement, periodontal ligament ve alveoler kemiğin biyolojik özelliklerini veya kan desteğini (vaskülarizasyonunu) değiştirmez. Çünkü periodonsiyum kan desteğini pulpadan değil, alveoler kemik ve diş eti damarlarından alır. Devital dişler periodontal tedaviye tam ve mükemmel yanıt verebilir, yüzeylerine yeni sement ve ataşman oluşumu tıpkı vital dişler gibi gerçekleşir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Klinik muayene ve radyografik değerlendirmede tespit edilen idiopatik kök rezorpsiyonları, periodontal tedavinin prognozunu birincil olarak hangi patofizyolojik durum üzerinden olumsuz yönde etkiler?",
+      "options": {
+        "A": "Dişin kök hacmini ve alveoler kemikteki stabilitesini geri dönüşsüz olarak azaltarak",
+        "B": "Pulpal dokuda retrograd bir nekroz başlatıp sekonder apse oluşturarak",
+        "C": "Kök yüzeyinde hipersementoz oluşturarak dişi ankiloze ederek",
+        "D": "Kök yüzeyini pürüzlendirip spesifik Actinobacillus türlerinin adezyonunu zorlaştırarak",
+        "E": "Dişin meziodistal yöndeki fizyolojik göç kapasitesini artırarak"
+      },
+      "correctAnswer": "A",
+      "explanation": "Kök rezorpsiyonu, dişin alveol kemiği içine gömülü olan kök hacmini (yüzey alanını) küçülten yıkıcı bir süreçtir. Kök yüzey alanı azaldığında dişin mekanik stabilitesi bozulur ve okluzal kuvvetlere karşı dayanıklılığı düşer. Bu durum periodontal hastalıkla birleştiğinde mobilite çok hızlı artar ve tedaviye (özellikle idame fazına) alınan mekanik cevap yetersiz kalır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Hastalıkların Teşhisi ve Risk Değerlendirmesi",
+      "question": "Bir hastanın ailesinde görülen şiddetli erken diş kaybı hikayesi (genetik yatkınlık), ileri yaş ve cinsiyet gibi değiştirilemeyen özellikleri, periodontal hastalık risk sınıflamasında hangi özel kategori altında değerlendirilir?",
+      "options": {
+        "A": "Değiştirilebilir risk faktörleri",
+        "B": "Risk işaretleri (Markers)",
+        "C": "Bireysel risk belirleyicileri (Determinanlar)",
+        "D": "Prognostik göstergeler",
+        "E": "Sistemik modifiye edici ajanlar"
+      },
+      "correctAnswer": "C",
+      "explanation": "Bireysel risk belirleyicileri (Risk determinanları) terimi, bireyin doğası gereği sahip olduğu ve klinik müdahale ile değiştirilmesi mümkün olmayan (yaş, cinsiyet, genetik yapı, ırk) değişkenleri tanımlamak için kullanılır. Sigara veya spesifik bakteri plağı gibi değişkenler müdahale edilebilir risk faktörleri iken, determinanlar konağın hastalığa yapısal yatkınlık tabanını oluşturur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Kırk yaşındaki kadın hastanın muayenesinde 36 numaralı dişte kemik kaybına bağlı %25 ataşman kaybı tespit edilmiştir. İlgili dişin furkasyon bölgesinde Sınıf I düzeyinde tutulum mevcut olup, bölgeye standart el aletleriyle lokasyon ve derinlik açısından erişim tamamen mümkündür. Bu klinik tabloya göre dişin prognozu aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Mükemmel",
+        "B": "Şüpheli",
+        "C": "Kötü",
+        "D": "İyi",
+        "E": "Umutsuz"
+      },
+      "correctAnswer": "D",
+      "explanation": "Mevcut klinik senaryoda %25 gibi erken-orta seviye ataşman kaybı ve derinliği alet adaptasyonunu engellemeyen Sınıf I furkasyon tutulumu, standart prognostik sınıflamada dişin \"İyi (Fair)\" prognoza sahip olduğunu gösterir. Diş mükemmel prognozdan çıkmıştır çünkü defekt başlamıştır, ancak köklü bir kemik kaybı veya erişilemeyen bir Sınıf II furkasyonu olmadığı için henüz Kötü (Poor) veya Şüpheli (Questionable) kategorisine inmemiştir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Elli beş yaşındaki erkek hastanın panoramik ve periapikal radyografik muayenesinde 16 numaralı dişte %50 oranında ataşman kaybı saptanmıştır. Klinik sondalamada Sınıf II furkasyon tutulumu izlenmiş, ancak bu bölgeye spesifik küretlerle erişimin ve temizliğin tamamen mümkün olduğu belirlenmiştir. Bu dişin periodontal prognozu aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "İyi",
+        "B": "Kötü",
+        "C": "Şüpheli",
+        "D": "Mükemmel",
+        "E": "Umutsuz"
+      },
+      "correctAnswer": "B",
+      "explanation": "Ataşman kaybının %50 civarında olması ve kron/kök oranının elverişsizleşmeye başlaması dişin prognozunu Kötü (Poor) sınıfına sokar. Sınıf II furkasyon varlığı Kötü ve Şüpheli (Questionable) prognoz arasında ayırıcıdır; erişimin KISMEN KOLAY VE MÜMKÜN olması dişi Kötü prognozda tutarken, erişimin İMKANSIZA YAKIN VEYA ZOR olması durumu Şüpheli prognoza düşürür. Vakada erişim mümkün olduğu için Kötü prognoz tanısı konur."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Hastalıkların Teşhisi ve Risk Değerlendirmesi",
+      "question": "Aşağıdaki klinik, sistemik ve biyolojik faktörlerden hangileri periodontal hastalıklar için nedenselliği tam olarak kanıtlanmış \"Risk Faktörü\" kategorisinde yer alır?\nI. Kontrolsüz Diyabet\nII. Sigara içiciliği\nIII. Sondalamada kanama varlığı\nIV. HIV/AIDS hastalığı",
+      "options": {
+        "A": "I ve III",
+        "B": "II ve IV",
+        "C": "I, II ve III",
+        "D": "III ve IV",
+        "E": "I ve II"
+      },
+      "correctAnswer": "E",
+      "explanation": "Epidemiyolojik çalışmalarda nedenselliği şüpheye yer bırakmayacak şekilde kanıtlanmış üç majör Risk Faktörü: Patojenik spesifik bakteriler, Sigara ve Diyabet'tir. Sondalamada kanama (BOP) hastalığın bir sonucunu yansıtan Risk İşareti (Marker) iken, HIV/AIDS varlığı hastalığa yatkınlığı artırdığı varsayılan ancak halen tartışmalı olan bir Risk Göstergesidir (İndikatör). Doğru gruplama sadece I ve II'yi içerir."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Yirmi sekiz yaşındaki erkek hasta, şiddetli psikolojik iş stresi yaşadığını ve son aylarda sabahları uyandığında çenelerinde yaygın kas ağrısı olduğunu ifade etmektedir. Klinik muayenede dişlerde atrizyon fasetleri saptanmış, horizontal ve apiko-koronal yönlerde hafif artmış mobilite izlenmiştir. Ancak hiçbir dişte sondalanabilir patolojik derin cep izlenmemiştir. Bu hastadaki artmış dişi mobilitesini açıklayan fizyopatolojik mekanizma aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Şiddetli stresin direkt immünosupresyon yaparak apikal bağ dokusunu eritmesi",
+        "B": "Primer mikrobiyal inflamasyonun periodontal ligamente lokal yayılımı",
+        "C": "Artmış horizontal okluzal kuvvetlere bağlı olarak alveol kemiğinde gelişen elastik deformasyon",
+        "D": "Pulpal kökenli enfeksiyonun apikal sementte kistik genişleme yaratması",
+        "E": "Tükürük kortizol miktarının artarak minede kimyasal abrazyon başlatması"
+      },
+      "correctAnswer": "C",
+      "explanation": "Strese bağlı gelişen bruksizm (sıkma/gıcırdatma), dişe fizyolojik sınırları aşan ağır okluzal (horizontal) kuvvetler binmesine neden olur. Bu durum okluzal travma mekanizmasını tetikler. Plak ve iltihap (cep) yokluğunda bu mekanik kuvvetler, alveol kemiğinde sekonder mobilite adını verdiğimiz elastik deformasyona ve periodontal ligament aralığında huni tarzı genişlemeye neden olarak dişte sallanma yaratır."
+    },
+    {
+      "lesson": "Periodontoloji",
+      "unit": "Periodontal Prognoz",
+      "question": "Yirmi iki yaşındaki kadın hastanın oral hijyeni genel olarak iyi düzeyde olmasına rağmen, sadece 12 ve 22 numaralı dişlerin palatinal yüzeylerinde derin, dar lokalize periodontal cepler saptanmıştır. Panoramik radyografisinde yaygın bir periodontal yıkım izlenmemektedir. Bu spesifik izole ataşman kaybına zemin hazırlayan ve ilgili dişlerin prognozunu olumsuz etkileyen en olası lokal anatomik varyasyon aşağıdakilerden hangisidir?",
+      "options": {
+        "A": "Gelişimsel palatinal oluk (Developmental groove)",
+        "B": "Servikal mine çıkıntısı (Cervical enamel projection)",
+        "C": "Meziobukkal kök konkavitesi",
+        "D": "Mine incisi (Enamel pearl)",
+        "E": "Kök sement yırtığı"
+      },
+      "correctAnswer": "A",
+      "explanation": "Maksiller lateral kesici dişlerin (12 ve 22 numaralar) palatinal yüzeylerinde embriyolojik dönemde sıkça şekillenen 'gelişimsel palatinal oluklar', mine-sement birleşimini aşıp kök yüzeyine doğru ilerleyen anatomik tünellerdir. Bu oluklar fırça kıllarının ve hatta küretlerin ulaşamayacağı mikrobiyal plak retansiyon alanları yaratarak, hastanın genel hijyeni iyi olsa bile o dişe özgü şiddetli lokalize kemik kaybı ve cep oluşumuna (kötü prognoza) yol açarlar."
+    }
+  ]
+}

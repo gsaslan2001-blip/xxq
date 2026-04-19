@@ -1,0 +1,126 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "sinir 1",
+  "rejected_at": "2026-04-17T21:56:11.695274",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Sinir Sistemi ve Membran Potansiyelleri",
+        "question": "Lokal anestezi uygulamalarında kullanılan lidokainin sinir iletimini bloke etme mekanizması aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Sinaptik vezikül ekzositozunu engellemesi",
+          "B": "Postsinaptik klor kanallarını açarak hiperpolarizasyon yapması",
+          "C": "Voltaj kapılı kalsiyum kanallarını bloke etmesi",
+          "D": "Voltaj bağımlı sodyum kanallarını bloke ederek depolarizasyonu önlemesi",
+          "E": "Na+-K+ ATPaz pompasının aktivitesini durdurması"
+        },
+        "correctAnswer": "D",
+        "explanation": "Lidokain ve tetradotoksin (TTX) gibi ajanlar, voltaj bağımlı sodyum kanallarına içeriden veya dışarıdan bağlanarak sodyum iyonunun hücreye girişini engeller. Sodyum giremediğinde eşik değer aşılamaz ve depolarizasyon (aksiyon potansiyeli) oluşamaz. Kalsiyum kanallarının veya Na/K pompasının bu süreçte birincil blokaj hedefi olması söz konusu değildir."
+      },
+      "reason": "kisa_stem:12kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Sinir Sistemi ve Membran Potansiyelleri",
+        "question": "Elektriksel sinapslar ile kimyasal sinapsları karşılaştıran aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Elektriksel sinapslarda ekstraselüler alan dardır ve sitoplazmik uzantılar bulunur.",
+          "B": "Kimyasal sinapslarda iletim tek yönlüyken, elektriksel sinapslarda genellikle iki yönlüdür.",
+          "C": "Kimyasal sinapsların iletişim hızı, gap junction (neksus) içeren elektriksel sinapslardan daha yüksektir.",
+          "D": "Elektriksel sinapslarda sinaptik gecikme (delay) pratikte görülmez.",
+          "E": "Kimyasal sinapslar aracı faktör olarak nörotransmitter kullanırken, elektriksel sinapslar doğrudan iyon akımı kullanır."
+        },
+        "correctAnswer": "C",
+        "explanation": "Elektriksel sinapslarda hücreler gap junction'lar (konneksonlar) ile doğrudan birbirine bağlı olduğu için iyon akımı kesintisiz ve anında gerçekleşir, bu nedenle iletişim çok hızlıdır. Kimyasal sinapslarda ise kalsiyum girişi, vezikül füzyonu ve transmitter difüzyonu gerektiği için en az 0.5 ms süren bir sinaptik gecikme vardır. Kimyasal sinapslar elektriksel olanlara göre daha yavaştır."
+      },
+      "reason": "kisa_stem:10kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kimyasal Sinapslar",
+        "question": "Tetanoz toksininin santral sinir sisteminde spastik paralizi oluşturmasına neden olan hücresel mekanizma aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Motor uç plakta asetilkolin reseptörlerini kalıcı olarak aktive etmesi",
+          "B": "Retrograd taşınarak omurilikteki inhibitör ara nöronlardan GABA ve glisin salınımını bloke etmesi",
+          "C": "Presinaptik kalsiyum kanallarını açık tutarak sürekli eksitatör transmiter salınımına neden olması",
+          "D": "Postsinaptik membranda klor kanallarının açılmasını hızlandırması",
+          "E": "Motor nöron gövdesinde ATP sentezini durdurarak kasılma-gevşeme döngüsünü bozması"
+        },
+        "correctAnswer": "B",
+        "explanation": "Tetanoz toksini motor nöron aksonlarından retrograd yolla omuriliğe taşınır ve burada Renshaw hücreleri gibi inhibitör ara nöronlara girer. Bu nöronlarda sinaptobrevin proteinini parçalayarak GABA ve glisin salınımını engeller. İnhibisyon ortadan kalktığı için motor nöronlar aşırı uyarılır ve tetanik (spastik) kasılmalar ortaya çıkar."
+      },
+      "reason": "kisa_stem:14kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Otonom Sinir Sistemi",
+        "question": "Asetilkolin molekülünün hedef dokulardaki bağlandığı reseptörler ve bloke edici ajanları eşleştirmelerinden hangisi doğrudur?",
+        "options": {
+          "A": "Otonom gangliyon (Nn) - Kürar ile bloke olur",
+          "B": "Kalp kası (M2) - Heksametonyum ile bloke olur",
+          "C": "Çizgili kas motor son plak (Nm) - Atropin ile bloke olur",
+          "D": "Adrenal medulla (Nn) - Trimetofan ile bloke olur",
+          "E": "Tükrük bezi (M3) - Pirenzepin ile selektif bloke olur"
+        },
+        "correctAnswer": "D",
+        "explanation": "Adrenal medulla hücresi özelleşmiş bir gangliyondur ve üzerindeki nöronal tip nikotinik (Nn) reseptörler, heksametonyum veya trimetofan gibi gangliyon blokerleriyle inhibe olur. Çizgili kastaki Nm kürar ile bloke olur. Kalp (M2) ve bezlerdeki (M3) muskarinik reseptörler atropin ile bloke olurken, pirenzepin spesifik olarak M1 reseptörlerini bloke eder."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Otonom Sinir Sistemi",
+        "question": "Adrenerjik sinapslarda salınan katekolaminlerin inaktivasyon süreçleri ile ilgili aşağıdakilerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Norepinefrinin büyük bir kısmı postsinaptik membrandan presinaptik terminale geri alınarak (reuptake) sonlandırılır.",
+          "B": "COMT enzimi katekolaminleri nöron dışında (özellikle karaciğer ve böbrekte) metilasyona uğratarak parçalar.",
+          "C": "MAO enzimi, ekstraselüler alandaki (sinaptik boşluktaki) katekolamin yıkımından primer sorumlu enzimdir.",
+          "D": "Katekolaminlerin parçalanması sonucu ortaya çıkan başlıca son ürün vanilmandelik asittir (VMA).",
+          "E": "Geri alınan (reuptake) norepinefrinin bir kısmı MAO tarafından sitoplazmada yıkılırken bir kısmı veziküllere tekrar depolanır."
+        },
+        "correctAnswer": "C",
+        "explanation": "Mono Amin Oksidaz (MAO) enzimi sinaptik boşlukta değil, nöron terminalinin içinde (mitokondri membranında) bulunur ve sitoplazmadaki vezikül dışı serbest katekolaminleri yıkar. Nöron dışında ve ekstraselüler boşlukta katekolamin inaktivasyonundan sorumlu primer enzim Katekol-O-Metil Transferaz (COMT)'tır."
+      },
+      "reason": "kisa_stem:11kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Otonom Sinir Sistemi",
+        "question": "Termoregülasyon kapsamında vücut sıcaklığı yükseldiğinde terlemenin artmasını sağlayan efferent nöral mekanizma aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Parasempatik kolinerjik liflerin nikotinik reseptörleri uyarması",
+          "B": "Sempatik postgangliyonik liflerin asetilkolin salgılayarak muskarinik reseptörleri uyarması",
+          "C": "Sempatik postgangliyonik liflerin norepinefrin salgılayarak beta-3 reseptörleri uyarması",
+          "D": "Adrenal medulladan kana salınan epinefrinin ter bezlerindeki alfa-1 reseptörlerini uyarması",
+          "E": "Somatik sinirlerin ter bezlerini doğrudan uyarması"
+        },
+        "correctAnswer": "B",
+        "explanation": "Ter bezleri anatomik olarak sempatik sinir sistemi tarafından innerve edilmesine rağmen, fizyolojik ve farmakolojik olarak istisnai bir durum gösterirler. Ekrin ter bezlerini innerve eden sempatik postgangliyonik lifler norepinefrin değil, asetilkolin (ACh) salgılar ve bezler üzerindeki muskarinik reseptörleri uyararak terlemeyi başlatır."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Otonom Sinir Sistemi",
+        "question": "Göze gelen otonomik innervasyonun etkileriyle ilgili olarak aşağıda verilen fonksiyon-yapı eşleştirmelerinden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Parasempatik stimülasyon - Siliyer kas kasılması - Yakın görme akomodasyonu",
+          "B": "Parasempatik stimülasyon - İrisin sirküler (sfinkter pupilla) kasının kasılması - Miyozis",
+          "C": "Sempatik stimülasyon - İrisin radial kasının kasılması - Midriyazis",
+          "D": "Sempatik stimülasyon - Siliyer kas kasılması - İridokorneal açının daralması",
+          "E": "Parasempatik stimülasyon - İridokorneal açının genişlemesi - Göz içi basıncının azalması"
+        },
+        "correctAnswer": "D",
+        "explanation": "Siliyer kasa sempatik lifler gitmez/anlamlı bir etki göstermez. Siliyer kası kasararak akomodasyonu ve iridokorneal açının genişlemesini (göz içi sıvısının drene olmasını) sağlayan etki parasempatik sistem kontrolündedir. Sempatik sistem radial kası (alfa-1) kasarak sadece göz bebeğini büyütür (midriyazis)."
+      },
+      "reason": "kisa_stem:13kelime"
+    }
+  ]
+}

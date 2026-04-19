@@ -1,0 +1,41 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "böbrek fizyolojisi",
+  "rejected_at": "2026-04-17T22:05:27.499917",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Böbrek Fizyolojisi",
+        "question": "Proksimal tübülde gerçekleşen fosfat reabsorbsiyonu ve bunun hormonal regülasyonuyla ilgili aşağıdaki mekanizmalardan hangisi **yanlıştır**?",
+        "options": {
+          "A": "Filtre olan fosfatın %85'i proksimal tübülden geri emilir.",
+          "B": "Reabsorbsiyon işlemi sodyum-fosfat kotransportuyla gerçekleşir.",
+          "C": "Paratiroid hormon (PTH) proksimal tübülde adenilat siklazı aktive eder.",
+          "D": "Hücre içi artan cAMP, fosfat atılımının artmasına neden olur.",
+          "E": "PTH etkisiyle proksimal tübülde fosfat reabsorbsiyonu hızlandırılarak kana verilir."
+        },
+        "correctAnswer": "E",
+        "explanation": "Paratiroid hormon (PTH) proksimal tübülde fosfat reabsorbsiyonunu hızlandırmaz, aksine adenilat siklaz-cAMP yolağı üzerinden güçlü bir şekilde inhibe eder. Bu inhibisyon sayesinde filtre edilen fosfat idrarla atılır (fosfatüri). Diğer tüm şıklar proksimal fosfat fizyolojisinin doğru adımlarıdır."
+      },
+      "reason": "kisa_stem:14kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Böbrek Fizyolojisi",
+        "question": "Kortikal ve jukstamedüller nefronların yapısal ve fonksiyonel farklılıkları değerlendirildiğinde, aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Kortikal nefronların Malpighi cisimcikleri korteksin dış kısımlarına yerleşmiştir.",
+          "B": "İnsan böbreğindeki nefronların yaklaşık %85'ini kortikal nefronlar oluşturur.",
+          "C": "Vasa rekta adı verilen özelleşmiş kapiller ağ kortikal nefronların tübüllerini çevreler.",
+          "D": "Jukstamedüller nefronların Henle kulpu medullanın derinliklerine kadar uzanır.",
+          "E": "İdrarın konsantre edilmesinde jukstamedüller nefronlar kritik bir öneme sahiptir."
+        },
+        "correctAnswer": "C",
+        "explanation": "Vasa rekta, efferent arteriyolün devamı olarak sadece jukstamedüller nefronların uzun Henle kulplarını çevreleyen özelleşmiş kapiller ağdır ve zıt akım mekanizmasıyla idrar konsantrasyonunu sağlar. Kortikal nefronların tübüllerinin etrafı ise peritübüler kapiller ağ ile çevrilidir. Diğer yüzdesel ve yapısal ifadeler tamamen doğrudur."
+      },
+      "reason": "kisa_stem:13kelime"
+    }
+  ]
+}

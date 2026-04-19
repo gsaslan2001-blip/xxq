@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "4- İMMÜN SİSTEM HASTALIKLARI",
+  "rejected_at": "2026-04-17T19:00:51.696130",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "İmmün Sistem Hastalıkları",
+        "question": "Amiloidoz patogenezi ve biriken protein tipleri ile ilgili olarak aşağıda verilen eşleştirmelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Primer amiloidoz — SAA (Serum amiloid ilişkili) proteini birikimi",
+          "B": "Alzheimer hastalığı — Aβ (APP kaynaklı) peptidi birikimi",
+          "C": "Ailesel Akdeniz Ateşi (FMF) — AA proteini birikimi",
+          "D": "Medüller tiroid karsinomu — Kalsitonin (A Cal) prekürsör birikimi",
+          "E": "Sistemik senil amiloidoz — Transtiretin (ATTR) birikimi"
+        },
+        "correctAnswer": "A",
+        "explanation": "Primer amiloidozda (immünosit diskrazileriyle, örneğin multipl miyelom ile ilişkili tip) biriken protein SAA değil, AL (amiloid hafif zincir, genellikle lambda tipi) proteinidir. SAA, romatoid artrit veya kronik inflamasyonlar sonucu ortaya çıkan Sekonder (reaktif sistemik) amiloidozda karaciğerden sentezlenen akut faz reaktanıdır."
+      },
+      "reason": "kisa_stem:14kelime"
+    }
+  ]
+}

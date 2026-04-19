@@ -1,0 +1,41 @@
+{
+  "lesson": "Fizyoloji",
+  "unit": "dolaşım",
+  "rejected_at": "2026-04-17T22:14:22.361361",
+  "items": [
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kalp ve Dolaşım Sistemi",
+        "question": "Kalbin otonom ileti sistemine ait hız parametreleri göz önüne alındığında, aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "SA nodun ileti hızı yaklaşık 0.05 m/sn'dir.",
+          "B": "AV nod, uyarıları bekleterek atriyum ve ventrikül kasılmalarını senkronize eder.",
+          "C": "His demetinde iletim hızı saniyede 1 metre civarındadır.",
+          "D": "Purkinje lifleri kalpteki en hızlı iletim sistemine sahiptir.",
+          "E": "Atriyal kas hücrelerindeki ileti hızı SA noddan daha yavaştır."
+        },
+        "correctAnswer": "E",
+        "explanation": "Atriyal kas hücresi ileti hızı yaklaşık 1 m/sn'dir ve uyarı üreten sinoatriyal noddan (0.05 m/sn) belirgin derecede hızlıdır. Kalpte iletinin en yavaş olduğu iki bölge SA nod ve AV noddur. AV noddaki bu yavaş ileti, ventriküllerin sistol öncesi tam dolabilmesi için gerekli fizyolojik gecikmeyi sağlar."
+      },
+      "reason": "kisa_stem:14kelime"
+    },
+    {
+      "question": {
+        "lesson": "Fizyoloji",
+        "unit": "Kalp ve Dolaşım Sistemi",
+        "question": "Miyokard hücrelerinin fonksiyonel ve metabolik dinamikleri incelendiğinde aşağıdaki özelliklerden hangisi **doğru değildir**?",
+        "options": {
+          "A": "Hücreler arası iletişim gap junction (oluklu bağlar) ile sağlanır.",
+          "B": "Sarkoplazmik retikulum kaynaklı kalsiyum kasılma kuvvetini doğrudan belirler.",
+          "C": "Aksiyon potansiyelindeki uzun plato evresi kalbin tetanize olmasını (kramp) engeller.",
+          "D": "Kasılan miyokardın birincil enerji kaynağı anaerobik glikoz yıkımıdır.",
+          "E": "Aksiyon potansiyelinin süresi iskelet kasından çok daha uzundur (250-300 msn)."
+        },
+        "correctAnswer": "D",
+        "explanation": "Kalp kası yüksek oksijen tüketen, bol mitokondri içeren ve aerobik metabolizmaya bağımlı bir dokudur. Enerji gereksiniminin asıl büyük kısmını glikozdan DEĞİL, serbest yağ asitlerinin beta oksidasyonundan karşılar. Glikoz ve laktat ikincil ve daha az oranda kullanılan enerji kaynaklarıdır."
+      },
+      "reason": "kisa_stem:12kelime"
+    }
+  ]
+}

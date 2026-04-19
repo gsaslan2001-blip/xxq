@@ -1,0 +1,41 @@
+{
+  "lesson": "Periodontoloji",
+  "unit": "6.c - Cerrahi Teknikler 2",
+  "rejected_at": "2026-04-19T02:52:05.168285",
+  "items": [
+    {
+      "question": {
+        "lesson": "Periodontoloji",
+        "unit": "Furkasyon Defektleri ve Tedavileri",
+        "question": "Elli iki yaşında kadın hasta maksiller sol birinci büyük azı dişindeki mobilite nedeniyle başvuruyor. Klinik sondlamada nabers sondu furkanın mezyalinden girip distalinden çıkmaktadır, ancak ataçman kaybı furkasyon bölgesini klinik olarak görünür hale getirmemiştir. Bu hastadaki Glickman ve Tarnow-Fletcher vertikal sınıflaması sırasıyla aşağıdakilerden hangisinde doğru mantıkla değerlendirilebilir?",
+        "options": {
+          "A": "Glickman II / Horizontal geçiş var",
+          "B": "Glickman IV / Radyolusent görünüm",
+          "C": "Glickman I / Vertikal kemik kaybı yok",
+          "D": "Glickman II / Sond kısmen giriyor",
+          "E": "Glickman III / Klinik olarak furkasyon tutulumu görülmez"
+        },
+        "correctAnswer": "E",
+        "explanation": "Sondun furkanın bir tarafından girip diğerinden çıktığı (tam geçiş) ancak dişeti çekilmesinin furkasyonu klinik olarak açığa çıkarmadığı durumlar Glickman III. Derece olarak sınıflandırılır. Glickman IV distraktörü klinik olarak çıplak gözle görünürlük gerektirdiği için yanlıştır. İnterradiküler bölgedeki çatının tamamen yıkılması mekanizmanın temelidir."
+      },
+      "reason": "bilgi_sizintisi:overlap_0.80"
+    },
+    {
+      "question": {
+        "lesson": "Periodontoloji",
+        "unit": "Furkasyon Defektleri ve Tedavileri",
+        "question": "Tarnow ve Fletcher'ın vertikal yön sınıflamasına göre, furkasyon çatısından itibaren 4-6 mm vertikal kemik kaybı izlenen bir lezyon hangi alt sınıf ile tanımlanır?",
+        "options": {
+          "A": "Alt sınıf A",
+          "B": "III. Derece",
+          "C": "Alt sınıf B",
+          "D": "Alt sınıf C",
+          "E": "II. Derece"
+        },
+        "correctAnswer": "C",
+        "explanation": "Tarnow ve Fletcher sınıflamasında vertikal kemik kaybı 1-3 mm ise Alt sınıf A, 4-6 mm ise Alt sınıf B, 7 mm ve üstü ise Alt sınıf C olarak gruplandırılır. III. Derece distraktörü horizontal ölçüm yapan Glickman veya Lindhe indekslerine ait olduğu için yanlıştır. Bu sınıflama horizontal defektlerin derinliğini belirtmek için tamamlayıcı olarak kullanılır."
+      },
+      "reason": "bilgi_sizintisi:overlap_0.67"
+    }
+  ]
+}

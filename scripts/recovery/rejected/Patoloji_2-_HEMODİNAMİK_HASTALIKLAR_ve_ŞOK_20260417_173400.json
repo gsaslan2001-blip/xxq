@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "2- HEMODİNAMİK HASTALIKLAR ve ŞOK",
+  "rejected_at": "2026-04-17T17:34:00.262708",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Hemodinamik Hastalıklar ve Şok",
+        "question": "Hiperkoagülabilite patolojileri ve etki mekanizmaları eşleştirmelerinden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Faktör V Leiden - Aktif protein C rezistansı",
+          "B": "Protrombin gen mutasyonu - Artmış protrombin seviyeleri",
+          "C": "Antitrombin III eksikliği - Primer genetik risk faktörü",
+          "D": "Homosisteinemi - Sadece venöz trombozlara neden olması",
+          "E": "Nefrotik sendrom - Sekonder zayıf risk faktörü"
+        },
+        "correctAnswer": "D",
+        "explanation": "Sistationin β-sentetaz eksikliği sonucu gelişen homosisteinemi, yüksek homosistein seviyelerinin doğrudan endotel hücrelerine toksik etki yapması ve antitrombotik mekanizmaları bozmasıyla karakterizedir. Bu nedenle sadece venöz değil, hem arteryel hem de venöz trombozlara yol açar."
+      },
+      "reason": "kisa_stem:8kelime"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "lesson": "Patoloji",
+  "unit": "2- HEMODİNAMİK HASTALIKLAR ve ŞOK",
+  "rejected_at": "2026-04-17T17:28:41.306689",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Hemodinamik Hastalıklar ve Pıhtılaşma",
+        "question": "Pıhtı rezorpsiyon sürecinde görev alan fibrinolitik sistemin temel elemanları aşağıdakilerden hangisinde birlikte verilmiştir?",
+        "options": {
+          "A": "PGI2 ve Nitrik Oksit",
+          "B": "Trombin ve Faktör 13",
+          "C": "Glikoprotein Ib ve vWF",
+          "D": "Doku plazminojen aktivatörü (t-PA) ve Plazmin",
+          "E": "Trombomodülin ve Protein C"
+        },
+        "correctAnswer": "D",
+        "explanation": "Fibrinolitik sistem, endotel kaynaklı doku plazminojen aktivatörü (t-PA) aracılığıyla plazminojeni aktif enzim olan plazmine çevirir ve plazmin de polimerize fibrini parçalar. Distraktör olan trombomodülin/Protein C kompleksi pıhtılaşma hızını frenleyen antikoagülan sistemi temsil ederken fibrinolitik yıkım yapmaz. t-PA ve plazmin pıhtı kütlesinin son temizleyicileridir."
+      },
+      "reason": "kisa_stem:13kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Hemodinamik Hastalıklar ve Pıhtılaşma",
+        "question": "Klinik muayenede cilt altı ve mukozal kanama tiplerinin sınıflandırılmasına ilişkin aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Hematom, kanamanın kitle oluşturarak hacimsel alan kaplamasıdır.",
+          "B": "Peteşiler 1-2 mm çapındadır ve sıklıkla primer hemostaz veya trombosit defektlerinde görülür.",
+          "C": "Purpura 1-2 mm çapındaki çoklu primer mikrovasküler kanamalardır.",
+          "D": "Ekimoz, santimetre boyutlarıyla (1-2 cm) ifade edilen ve travma ile oluşan kanamalardır.",
+          "E": "Trombositopeni durumunda klinik tablo en sık peteşiyal kanamalar ile açığa çıkar."
+        },
+        "correctAnswer": "C",
+        "explanation": "Purpura klinik olarak 1-2 mm değil, 3 mm'den büyük (>=3 mm) kanamalardır ve travma, vaskülit gibi durumlara sekonder olarak gelişir. Peteşi (1-2 mm), purpura (>=3 mm) ve ekimoz (1-2 cm) boyut ve mekanizma bazlı sınıflandırılır. Güçlü distraktör olan peteşi tanımı doğruyken, purpuranın boyutunun küçültülerek peteşi sınırına çekilmesi kavram yanılgısını yakalar."
+      },
+      "reason": "kisa_stem:14kelime"
+    }
+  ]
+}

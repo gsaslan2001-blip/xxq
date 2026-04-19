@@ -1,0 +1,58 @@
+{
+  "lesson": "Patoloji",
+  "unit": "6- DAMAR HASTALIKLARI",
+  "rejected_at": "2026-04-17T19:24:08.468736",
+  "items": [
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Damar Hastalıkları",
+        "question": "Ateroskleroz gelişiminin başlatıcı olayı (ilk aşaması) aşağıdakilerden hangisidir?",
+        "options": {
+          "A": "Endotelyal hücre hasarı ve disfonksiyon",
+          "B": "Düz kas hücrelerinin intimaya göçü",
+          "C": "Makrofajların okside LDL'yi yutarak köpüksü hücreye dönüşümü",
+          "D": "Ekstraselüler matriks ve kollajen sentezi",
+          "E": "T hücrelerinin sitokin (IFN-y) salgılaması"
+        },
+        "correctAnswer": "A",
+        "explanation": "Ateroskleroz patogenezinin köşe taşı ve süreci başlatan ilk mikroskobik olay, hemodinamik stres veya hiperlipidemiye bağlı endotelyal hasar ve disfonksiyondur. Makrofajların köpüksü hücrelere dönüşmesi ve düz kas hücre proliferasyonu endotel hasarını takip eden sekonder inflamatuvar adımlardır. Endotel bütünlüğünün bozulması, lipidlerin ve monositlerin intima tabakasına geçişine izin vererek plak oluşumunu tetikler."
+      },
+      "reason": "kisa_stem:8kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Damar Hastalıkları",
+        "question": "Psödoanevrizma (yalancı anevrizma) ile ilgili aşağıdaki patofizyolojik tanımlamalardan hangisi doğrudur?",
+        "options": {
+          "A": "Arterin intima, media ve adventisya tabakalarının tümünü içeren simetrik dilatasyondur",
+          "B": "Damar duvarı defektinden çıkarak intravasküler boşlukla bağlantılı ekstra vasküler hematomdur",
+          "C": "İntimal yırtık sonucu kanın media tabakası içine sızarak damar duvarını ayırmasıdır",
+          "D": "Konjenital media zayıflığına sekonder gelişen küçük sakküler balonlaşmalardır",
+          "E": "Aterosklerotik plağın ülsere olması sonucu lümende türbülans oluşumudur"
+        },
+        "correctAnswer": "B",
+        "explanation": "Yalancı anevrizma (psödoanevrizma), damar duvarındaki bir defektten sızan kanın etraftaki dokular tarafından sınırlandırılarak lümenle ilişkili pulsatil bir ekstra vasküler hematom oluşturmasıdır. Üç damar tabakasını birden içeren genişlemeler gerçek anevrizma olarak tanımlanır. Kanın intima yırtığından media tabakasına girip ilerlemesi ise diseksiyon mekanizmasıdır."
+      },
+      "reason": "kisa_stem:10kelime"
+    },
+    {
+      "question": {
+        "lesson": "Patoloji",
+        "unit": "Damar Hastalıkları",
+        "question": "Damar tümörleri arasında yer alan Kavernöz Hemanjiyom ile ilgili aşağıdaki ifadelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Kapiller hemanjiyoma göre daha infiltratif bir büyüme karakterindedir",
+          "B": "Büyük ve dilate vasküler kanallardan meydana gelir",
+          "C": "Derin yapıları içerme eğilimindedir ve rezeksiyonu zordur",
+          "D": "Tümör içinde intravasküler tromboz ve distrofik kalsifikasyon sık görülür",
+          "E": "Belirgin bir bağ doku kapsülü vardır ve zamanla spontan regrese olur"
+        },
+        "correctAnswer": "E",
+        "explanation": "Kavernöz hemanjiyomlar kapsülsüzdür, derin dokulara infiltratiftir ve kapiller hemanjiyomların aksine spontan olarak regrese olmazlar (gerilemezler). Belirgin bağ doku kapsülü olan ve sıklıkla regrese olabilen lezyon yüzeysel yerleşimli Kapiller hemanjiyomdur. Kavernöz lezyonların geniş vasküler kanalları içinde kan stazına bağlı tromboz ve kalsifikasyon gelişimi tipiktir."
+      },
+      "reason": "kisa_stem:13kelime"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "lesson": "Patoloji",
+  "unit": "06-Gelisimsel Odontojenik Kistler",
+  "rejected_at": "2026-04-17T16:33:28.031650",
+  "items": [
+    {
+      "question": {
+        "lesson": "Ağız, Diş ve Çene Patolojisi",
+        "unit": "Gelişimsel Odontojenik Kistler",
+        "question": "Yenidoğan döneminde ağız mukozasında izlenen kistik lezyonlar ile ilgili aşağıdaki eşleştirmelerden hangisi **yanlıştır**?",
+        "options": {
+          "A": "Epstein incileri - Orta hatta yerleşen palatal inklüzyon kistleridir",
+          "B": "Bohn nodülü - Damak tükürük bezleri epitelinden gelişen odontojenik kisttir",
+          "C": "Yenidoğan gingival kisti - Serre artıklarından gelişen alveolar kisttir",
+          "D": "Epstein incileri - Skuamöz epitel ile döşelidir ve kendiliğinden iyileşir",
+          "E": "Yenidoğan gingival kisti - Kısa sürede ağız içine açılarak kaybolur"
+        },
+        "correctAnswer": "B",
+        "explanation": "Bohn nodülleri, sert ve yumuşak damak sınırında gelişen keratin dolu kistler olmakla birlikte odontojenik kökenli değildirler; damak minör tükürük bezleri epitelinden gelişirler. Epstein incileri orta hat epitel kalıntılarından, yenidoğan gingival kistleri ise dental lamina (Serre) artıklarından köken alır. Odontojenik ayrımı, bu lezyonların patogenezini ayırt etmede temel klinik markerdır."
+      },
+      "reason": "kisa_stem:13kelime"
+    }
+  ]
+}
