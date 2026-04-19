@@ -6,13 +6,13 @@ import { useAuth } from './hooks/useAuth';
 import { useRealtimeStats } from './hooks/useRealtimeStats';
 import { AuthModal } from './components/AuthModal';
 import type { Question } from './data';
-import { getWeakQuestionIds, getUnitProgress, syncStatsUp, loadStreak, getRecentActivity, getDueForReviewIds, migrateAllStatsToFSRSIfNeeded, loadAllStats, getDeviceId } from './lib/stats';
+import { getWeakQuestionIds, getUnitProgress, syncStatsUp, loadStreak, getRecentActivity, getDueForReviewIds, migrateAllStatsToFSRSIfNeeded, loadAllStats, getDeviceId, resetAllStats } from './lib/stats';
 import ErrorAnalyticsView from './components/ErrorAnalyticsView';
 import SimulationResultView from './components/SimulationResultView';
 import type { AnswerDetail as SimAnswerDetail } from './components/SimulationResultView';
 import DailyPlanView from './components/DailyPlanView';
 import { SourceBooksView } from './components/SourceBooksView';
-import { buildSmartQueue, getForecastNextDays, buildUnitQueue, buildExamPool } from './lib/adaptive';
+import { buildSmartQueue, getForecastNextDays, buildUnitQueue, buildExamPool, buildSimulationPool } from './lib/adaptive';
 import {
   CheckCircle2, XCircle, ArrowRight, ArrowLeft, RotateCcw, BookOpen,
   ChevronRight, ChevronLeft, RefreshCw, LayoutGrid,
@@ -236,6 +236,28 @@ export default function App() {
     } catch {
       setSyncStatus('error');
       setTimeout(() => setSyncStatus('idle'), 3000);
+    }
+  };
+
+  const handleSimulationClick = async () => {
+    if (questions.length === 0) {
+      try {
+        await loadQuestions();
+      } catch (e) {
+        alert('Sorular yüklenemedi: ' + errMsg(e));
+        return;
+      }
+    }
+    setAppState('simulation-setup');
+  };
+
+  const handleResetStats = async () => {
+    if (!confirm('Tüm istatistikler (FSRS, doğruluk, streak, aktivite) kalıcı olarak silinecek. Emin misiniz?')) return;
+    try {
+      await resetAllStats();
+      alert('Tüm istatistikler sıfırlandı.');
+    } catch (e) {
+      alert('Sıfırlama hatası: ' + errMsg(e));
     }
   };
 
@@ -612,7 +634,7 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
               onDueClick={handleDueReviewClick}
               onSyncStats={handleSyncStats}
               syncStatus={syncStatus}
-              onSimulationClick={() => setAppState('simulation-setup')}
+              onSimulationClick={handleSimulationClick}
               onDailyPlanClick={() => setAppState('daily-plan')}
               onSmartStudyClick={() => {
                 const queue = buildSmartQueue(questions, loadAllStats(), { limit: 40 });
@@ -712,7 +734,7 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
 
       {editingQuestion && <EditModal question={editingQuestion} onSave={handleSaveEdit} onClose={() => setEditingQuestion(null)} theme={theme} />}
       {reportingQuestion && <ReportModal questionId={reportingQuestion.id} onSave={handleSaveReport} onClose={() => setReportingQuestion(null)} theme={theme} />}
-      {showSettings && <SettingsModal settings={settings} setSettings={setSettings} onClose={() => setShowSettings(false)} theme={theme} onExport={handleExport} onImport={() => { setAppState('import'); setShowSettings(false); }} onDeleteAll={handleDeleteAll} onSourceBooks={() => { setAppState('source-books'); setShowSettings(false); }} questionCount={questions.length} />}
+      {showSettings && <SettingsModal settings={settings} setSettings={setSettings} onClose={() => setShowSettings(false)} theme={theme} onExport={handleExport} onImport={() => { setAppState('import'); setShowSettings(false); }} onDeleteAll={handleDeleteAll} onSourceBooks={() => { setAppState('source-books'); setShowSettings(false); }} questionCount={questions.length} onResetStats={handleResetStats} />}
       {showAuth && <AuthModal user={user} onClose={() => setShowAuth(false)} onSignOut={signOut} />}
     </div>
   );
@@ -1063,8 +1085,9 @@ function SimulationSetup({ questions, onStart, onCancel, theme }: {
   const perQuestion = questions.length > 0 ? Math.round(totalSeconds / questionCount) : 0;
 
   const handleStart = () => {
-    const shuffled = fisherYates(questions).slice(0, questionCount);
-    onStart(shuffled, totalSeconds);
+    const stats = loadAllStats();
+    const pool = buildSimulationPool(questions, stats, questionCount);
+    onStart(pool, totalSeconds);
   };
 
   return (
@@ -1445,7 +1468,7 @@ function ImportView({ onDone, theme }: { onDone: () => void; theme: Theme }) {
   );
 }
 
-function SettingsModal({ settings, setSettings, onClose, theme, onExport, onImport, onDeleteAll, onSourceBooks, questionCount }: { settings: UserSettings; setSettings: React.Dispatch<React.SetStateAction<UserSettings>>; onClose: () => void; theme: Theme; onExport: () => void; onImport: () => void; onDeleteAll: () => void; onSourceBooks: () => void; questionCount: number }) {
+function SettingsModal({ settings, setSettings, onClose, theme, onExport, onImport, onDeleteAll, onSourceBooks, questionCount, onResetStats }: { settings: UserSettings; setSettings: React.Dispatch<React.SetStateAction<UserSettings>>; onClose: () => void; theme: Theme; onExport: () => void; onImport: () => void; onDeleteAll: () => void; onSourceBooks: () => void; questionCount: number; onResetStats: () => void }) {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-xl anim-fade-in">
       {/* AUDIT-02: max-h + overflow-y-auto — küçük ekranlarda modal içeriği scroll edilebilir */}
@@ -1485,6 +1508,7 @@ function SettingsModal({ settings, setSettings, onClose, theme, onExport, onImpo
             </div>
             <button onClick={onSourceBooks} className="btn btn-md w-full mb-2 bg-indigo-500/8 text-indigo-400 border border-indigo-500/15 hover:bg-indigo-500/15"><BookOpen size={14} />AI KAYNAK KİTAPLAR</button>
             <button onClick={onDeleteAll} className="btn btn-danger btn-md w-full"><Trash2 size={14} />TÜMÜNÜ SİL ({questionCount})</button>
+            <button onClick={onResetStats} className="btn btn-danger btn-md w-full mt-2"><RotateCcw size={14} />İSTATİSTİKLERİ SIFIRLA</button>
           </div>
         </div>
       </div>

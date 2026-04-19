@@ -5,7 +5,7 @@
  * + Daily Study Streak
  */
 
-import { pushStatsToCloud, pullAllDeviceStats } from './supabase';
+import { pushStatsToCloud, pullAllDeviceStats, clearDeviceStats } from './supabase';
 import { initCard, reviewCard, migrateSM2Card, nextReviewDate, difficultyLabel, type FSRSCard, type FSRSGrade } from './fsrs';
 import { todayStr, addDays } from './dateUtils';
 
@@ -549,3 +549,13 @@ class SyncManagerImpl {
 }
 
 export const SyncManager = new SyncManagerImpl();
+
+/** Tüm istatistikleri tamamen sıfırlar: localStorage + cloud + FSRS migration flag. */
+export async function resetAllStats(): Promise<void> {
+  localStorage.removeItem(STATS_KEY);
+  localStorage.removeItem(STATS_SM2_BACKUP_KEY);
+  localStorage.removeItem(MIGRATION_FLAG_KEY);
+  localStorage.removeItem(STREAK_KEY);
+  localStorage.removeItem(ACTIVITY_KEY);
+  await clearDeviceStats(getDeviceId());
+}

@@ -449,6 +449,16 @@ export async function pullAllDeviceStats(): Promise<Record<string, CloudStat>> {
   return merged;
 }
 
+/** Cihaza ait tüm istatistikleri cloud'dan siler (reset için). */
+export async function clearDeviceStats(deviceId: string, userId?: string): Promise<void> {
+  if (userId) {
+    const { error } = await supabase.from('question_stats').delete().eq('user_id', userId);
+    if (error) throw error;
+  }
+  const { error } = await supabase.from('question_stats').delete().eq('device_id', deviceId);
+  if (error) throw error;
+}
+
 // ─── REFERENCE SOURCES (AI Kaynak Kitaplar) ────────────────────────────────
 
 export type ReferenceSource = {

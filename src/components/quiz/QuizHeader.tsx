@@ -15,6 +15,8 @@ export type QuizHeaderProps = {
   question: Question;
   questions: Question[];
   answers: AnswerDetail[];
+  questionLesson?: string;
+  questionUnit?: string;
   onFinishEarly: (answers: AnswerDetail[]) => void;
   onExportPDF?: (qs: Question[], label: string) => void;
   onEditQuestion: (q: Question) => void;
@@ -26,9 +28,11 @@ export type QuizHeaderProps = {
 export const QuizHeader = memo(function QuizHeader({
   currentIndex, total, isAnswered, mode, unit,
   timedSeconds, remainingSeconds, difficulty, question, questions, answers,
+  questionLesson, questionUnit,
   onFinishEarly, onExportPDF, onEditQuestion, onReportQuestion, onDeleteQuestion,
 }: QuizHeaderProps) {
   return (
+    <>
     <div className="flex items-center justify-between mb-2 shrink-0">
       <div className="flex items-center gap-2">
         <div className="px-2.5 h-7 bg-white/[0.04] rounded-lg border border-white/[0.06] flex items-center gap-1.5">
@@ -78,5 +82,13 @@ export const QuizHeader = memo(function QuizHeader({
         <button onClick={() => onDeleteQuestion(question.id)} className="p-1.5 hover:bg-red-500/15 text-red-400 rounded-lg opacity-25 hover:opacity-100 transition-all"><Trash2 size={13} /></button>
       </div>
     </div>
+    {mode === 'exam' && questionLesson && questionUnit && (
+      <div className="flex items-center gap-2 mb-2 shrink-0">
+        <span className="text-[10px] font-bold uppercase tracking-widest text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded-md">{questionLesson}</span>
+        <span className="text-[10px] text-white/40">›</span>
+        <span className="text-[10px] font-medium text-white/50 truncate max-w-[300px]">{questionUnit}</span>
+      </div>
+    )}
+    </>
   );
 });

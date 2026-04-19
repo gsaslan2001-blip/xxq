@@ -160,6 +160,8 @@ export function QuizView({
         question={question}
         questions={questions}
         answers={answers}
+        questionLesson={question.lesson}
+        questionUnit={question.unit}
         onFinishEarly={handleFinishEarlyAdapter}
         onExportPDF={onExportPDF}
         onEditQuestion={onEditQuestion}

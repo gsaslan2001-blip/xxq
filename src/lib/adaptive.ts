@@ -310,6 +310,50 @@ export function buildUnitQueue(
 }
 
 /**
+ * DUS Simülasyon soru havuzu:
+ *   - Her dersten eşit sayıda soru: Math.floor(amount / lessonCount) + remainder dağıtımı
+ *   - Her derste: unseen 2× ağırlık + Fisher-Yates + dedupe
+ *   - Görülmemiş ve çok yanlış yapılan sorular önceliklidir
+ *   - Son global Fisher-Yates shuffle
+ */
+export function buildSimulationPool(
+  allQuestions: Question[],
+  stats: StatsMap,
+  amount: number,
+): Question[] {
+  const lessonMap = new Map<string, Question[]>();
+  for (const q of allQuestions) {
+    if (!lessonMap.has(q.lesson)) lessonMap.set(q.lesson, []);
+    lessonMap.get(q.lesson)!.push(q);
+  }
+
+  const lessons = Array.from(lessonMap.keys());
+  if (lessons.length === 0) return [];
+
+  const perLesson = Math.floor(amount / lessons.length);
+  let remainder = amount - perLesson * lessons.length;
+  const selected: Question[] = [];
+
+  for (const [, qs] of lessonMap) {
+    const unseen = qs.filter(q => !stats[q.id] || stats[q.id].attempts === 0);
+    const seen = qs.filter(q => stats[q.id] && stats[q.id].attempts > 0);
+    const seenSorted = [...seen].sort((a, b) => {
+      const aRate = stats[a.id] ? stats[a.id].corrects / Math.max(1, stats[a.id].attempts) : 1;
+      const bRate = stats[b.id] ? stats[b.id].corrects / Math.max(1, stats[b.id].attempts) : 1;
+      return aRate - bRate;
+    });
+    const weighted = fisherYates([...unseen, ...unseen, ...seenSorted]);
+    const seenIds = new Set<string>();
+    const pool = weighted.filter(q => { if (seenIds.has(q.id)) return false; seenIds.add(q.id); return true; });
+    const take = perLesson + (remainder > 0 ? 1 : 0);
+    if (remainder > 0) remainder--;
+    selected.push(...pool.slice(0, Math.min(take, pool.length)));
+  }
+
+  return fisherYates(selected);
+}
+
+/**
  * Çoklu ünite sınav havuzu:
  *   - Her ünitede: unseen 2× ağırlık + fisherYates + dedupe → weighted pool
  *   - Üniteler arası interleave (round-robin pop)
