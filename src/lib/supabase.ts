@@ -62,8 +62,7 @@ export async function fetchQuestionMetadata(): Promise<QuestionMetadata[]> {
     const { data, error } = await supabase
       .from('questions')
       .select(METADATA_COLS)
-      .or('quality_flag.is.null,quality_flag.not.in.(kavramsal_kopya,auto_deleted)')
-      .order('id', { ascending: true }) // Stabilize sorting
+      .order('id', { ascending: true })
       .range(from, from + 1000 - 1);
     
     if (error) throw error;
@@ -93,7 +92,6 @@ export async function fetchQuestionsByUnit(lesson: string, unit: string): Promis
       .from('questions')
       .select(SELECT_COLS)
       .match({ lesson, unit })
-      .or('quality_flag.is.null,quality_flag.not.in.(kavramsal_kopya,auto_deleted)')
       .order('id', { ascending: true })
       .range(from, from + limit - 1);
     if (error) throw error;
@@ -115,7 +113,7 @@ export async function fetchQuestions(flaggedOnly = false): Promise<QuestionRow[]
 
     const { data, error } = flaggedOnly
       ? await q.eq('quality_flag', 'kavramsal_kopya')
-      : await q.or('quality_flag.is.null,quality_flag.not.in.(kavramsal_kopya,auto_deleted)');
+      : await q;
 
     if (error) throw new Error(error.message);
     if (!data || data.length === 0) return [];
