@@ -1,0 +1,19 @@
+"""
+DUS Bankası — Konfigürasyon Taslağı (EXAMPLE)
+Lütfen bu dosyayı 'config.py' olarak kopyalayın ve kendi anahtarlarınızı girin.
+"""
+import os
+
+# ─── Supabase ───
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://your-project.supabase.co")
+SUPABASE_KEY = os.environ.get("SUPABASE_KEY", "your-anon-key")
+
+# ─── NotebookLM ve Gemini ───
+NOTEBOOK_ID = os.environ.get("NOTEBOOK_ID", "your-notebook-id")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "your-gemini-key")
+LIB_PATH = r"C:\path\to\notebooklm-py-main\src"
+
+# ─── OpenAI (Embedding) ───
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "your-openai-key")
+
+# ... Diğer ayarlar config.py dosyasından kopyalanabilir.

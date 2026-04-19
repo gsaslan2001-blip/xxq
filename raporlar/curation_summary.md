@@ -1,26 +1,20 @@
 # Kürasyon Özeti — Periodontoloji
 
-- Toplam Şüpheli Çift: 3
-- İkisi de Korunan: 0
-- Elenen: 3
+- Toplam Şüpheli Çift: 2
+- İkisi de Korunan: 1
+- Elenen: 1
 
 ---
 
-🔴 **ELE** (s1_win(-33 vs -33))
-- [KORUNAN]: Nekrotizan Ülseratif Gingivitis (NUG) lezyonlarında mikroorganizmalar canlı doku
-- [ÇÖP]: Nekrotizan Ülseratif Gingivitis (NUG) lezyonunun karakteristik histopatolojisi i
+🔴 **ELE** (s1_win(-35 vs -35))
+- [KORUNAN]: Elli yaşında kadın hasta kliniğe alt sol bölgesindeki dişinde mobilite şikayetiy
+- [ÇÖP]: 52 yaşındaki kadın hastanın alt sol birinci büyük azı dişinin mezyal kökünde api
 
 ---
 
-🔴 **ELE** (s1_win(-43 vs -48))
-- [KORUNAN]: Akut seyirli ve doku nekrozuyla karakterize nekrotizan ülseratif gingivitisin (N
-- [ÇÖP]: Nekrotizan Ülseratif Gingivitis (NUG) etyolojisinde primer rol oynayan sabit bak
-
----
-
-🔴 **ELE** (s2_win(-23 vs -33))
-- [KORUNAN]: Yirmi dokuz yaşındaki erkek hastanın alt keserler bölgesinde sondalama olmaksızı
-- [ÇÖP]: Otuz beş yaşındaki erkek hastanın mandibular anterior bölgesinde kırmızılık, öde
+🟢 **KORU** (stem_jaccard(0.07)<0.08)
+- S1: Kalsiyum kanal blokörlerine bağlı dişeti büyümesi gelişen bir hastada, ilacın fa
+- S2: 62 yaşında erkek hasta, nifedipin kullanımı nedeniyle ön dişleri tamamen kapatan
 
 ---
 
