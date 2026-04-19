@@ -1,15 +1,14 @@
-import { GoogleGenAI } from '@google/genai';
+import OpenAI from 'openai';
 import { createClient } from '@supabase/supabase-js';
 import * as dotenv from 'dotenv';
 import * as fs from 'fs';
 import * as path from 'path';
 
-// Load env vars
 dotenv.config({ path: '.env.local' });
 
-const apiKey = process.env.GEMINI_API_KEY;
+const apiKey = process.env.OPENAI_API_KEY;
 if (!apiKey) {
-    console.error("HATA: GEMINI_API_KEY .env.local dosyasında bulunamadı.");
+    console.error("HATA: OPENAI_API_KEY .env.local dosyasında bulunamadı.");
     process.exit(1);
 }
 
@@ -21,34 +20,31 @@ if (!supabaseUrl || !supabaseKey) {
 }
 const supabase = createClient(supabaseUrl, supabaseKey);
 
-// AUDIT: G3 — Model string env var'dan oku, hardcode kaldırıldı
-const MODEL_NAME = process.env.GEMINI_MODEL ?? 'gemini-2.5-pro-preview-05-06';
+const MODEL_NAME = process.env.OPENAI_MODEL ?? 'gpt-4o';
+const EMBED_MODEL = 'text-embedding-3-small';
 
-// Parse args
 const pdfPath = process.argv[2];
 const lessonParamRaw = process.argv[3];
 const unitParamRaw = process.argv[4];
 
 if (!pdfPath || !lessonParamRaw || !unitParamRaw) {
-    console.error("Kullanım: npx tsx scripts/ai-import.ts <pdf-yolu> <ders-adı> <ünite-adı>");
+    console.error("Kullanım: npx tsx scripts/_archive/ai-import.ts <pdf-yolu> <ders-adı> <ünite-adı>");
     process.exit(1);
 }
 
-// AUDIT: K3 — Prompt injection guard güçlendirildi
 function sanitizePromptArg(raw: string | undefined | null, fieldName: string): string {
     if (raw === undefined || raw === null) {
         console.error(`HATA: ${fieldName} argümanı eksik.`);
         process.exit(1);
     }
-    // Unicode homograph saldırılarını normalize et
     const normalized = raw.normalize('NFKC');
     const sanitized = normalized
         .replace(/[`"\\]/g, '')
         .replace(/\$\{/g, '')
         .replace(/[\r\n\t]+/g, ' ')
-        .replace(/[<>]/g, '')          // HTML injection önle
+        .replace(/[<>]/g, '')
         .trim()
-        .slice(0, 80);                  // Ünite adları 80 karakterden uzun olmaz
+        .slice(0, 80);
     if (!sanitized) {
         console.error(`HATA: ${fieldName} temizleme sonrası boş kaldı.`);
         process.exit(1);
@@ -65,7 +61,6 @@ if (!fs.existsSync(pdfPath)) {
     process.exit(1);
 }
 
-// AUDIT: K3 — Template literal yerine replace pattern kullan (prompt injection riski azaltılır)
 const MASTER_PROMPT_TEMPLATE = `# ROL
 Sen bir DUS (Diş Uzmanlık Sınavı) soru yazarısın. ÖSYM sınav komisyonunda 15 yıl görev yapmış, ölçme-değerlendirme doktoralı, klinik diş hekimliği formasyonlu bir uzmansın. Soru yazarken şu zihniyeti benimsiyorsun: "Ezber değil mekanizma, tanım değil klinik korelasyon, tekil bilgi değil entegrasyon."
 
@@ -181,69 +176,66 @@ HER SORU İÇİN lesson DEĞERİ: "__LESSON__" VE unit DEĞERİ: "__UNIT__" OLAR
 \`\`\`
 `;
 
-// AUDIT: K3 — placeholder'ları güvenli replace ile doldur
 function buildMasterPrompt(lesson: string, unit: string): string {
     return MASTER_PROMPT_TEMPLATE
         .replace(/__LESSON__/g, lesson)
         .replace(/__UNIT__/g, unit);
 }
 
+function extractJson(text: string): string {
+    const fenced = text.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
+    if (fenced?.[1]?.trim().startsWith('[')) return fenced[1].trim();
+    const firstBracket = text.indexOf('[');
+    const lastBracket = text.lastIndexOf(']');
+    if (firstBracket !== -1 && lastBracket > firstBracket) {
+        return text.slice(firstBracket, lastBracket + 1).trim();
+    }
+    return text.trim();
+}
+
 async function main() {
-    let tempPath = "";
+    const openai = new OpenAI({ apiKey });
+    let uploadedFileId = '';
+
     try {
-        const ai = new GoogleGenAI({ apiKey: apiKey });
-
-        if (!fs.existsSync(pdfPath)) {
-            console.error(`HATA: Dosya bulunamadı -> ${pdfPath}`);
-            process.exit(1);
-        }
-
-        tempPath = path.join(process.cwd(), `temp_upload_${Date.now()}.pdf`);
-        fs.copyFileSync(pdfPath, tempPath);
-
-        console.log("PDF Gemini'ye yükleniyor...");
-        const file = await ai.files.upload({ file: tempPath, mimeType: 'application/pdf' });
-        console.log(`PDF başarıyla yüklendi: ${file.name}`);
-
-        console.log("Model analiz ve soru üretimini tek aşamada gerçekleştiriyor (Master Prompt)...");
-        // AUDIT: G3 — model env var'dan gelir
-        console.log(`Model: ${MODEL_NAME}`);
-
-        // AUDIT: G3 — başlangıçta model validasyonu (list erişimi olmayabilir, sessiz geç)
-        try {
-            const modelList = await ai.models.list();
-            const modelBase = MODEL_NAME.split('-preview')[0];
-            const valid = modelList.models?.some((m: { name?: string }) => m.name?.includes(modelBase));
-            if (!valid) console.warn(`UYARI: Model '${MODEL_NAME}' listede bulunamadı. Devam ediliyor.`);
-        } catch { /* list erişimi kısıtlı olabilir */ }
-
-        const chat = ai.chats.create({
-            model: MODEL_NAME,
-            config: {
-                temperature: 0.1,
-                maxOutputTokens: 32768,
-            }
+        console.log("PDF OpenAI'ye yükleniyor...");
+        const uploadedFile = await openai.files.create({
+            file: fs.createReadStream(pdfPath),
+            purpose: 'user_data',
         });
+        uploadedFileId = uploadedFile.id;
+        console.log(`PDF başarıyla yüklendi: ${uploadedFileId}`);
+
+        console.log(`Model: ${MODEL_NAME} — analiz ve soru üretimi başlıyor...`);
+        const MASTER_PROMPT = buildMasterPrompt(lessonParam, unitParam);
 
         const RETRIABLE_STATUSES = [429, 500, 502, 503, 504];
-        const sendMessageWithRetry = async (msg: any, stage: string) => {
+
+        const callWithRetry = async (): Promise<string> => {
             let retries = 10;
             let waitTime = 20000;
             while (retries > 0) {
                 try {
-                    return await chat.sendMessage({ message: msg });
+                    const response = await (openai as any).responses.create({
+                        model: MODEL_NAME,
+                        input: [{
+                            role: 'user',
+                            content: [
+                                { type: 'input_file', file_id: uploadedFileId },
+                                { type: 'input_text', text: MASTER_PROMPT },
+                            ],
+                        }],
+                        max_output_tokens: 32768,
+                    });
+                    return response.output_text ?? '';
                 } catch (err: any) {
-                    const status: number | undefined = err.status ?? err.code;
-                    const msgStr: string = err.message || '';
-                    const matchedStatus = RETRIABLE_STATUSES.find(
-                        (s) => status === s || msgStr.includes(String(s))
-                    );
-                    if (matchedStatus) {
-                        // Retry-After header (saniye) varsa ona uy
-                        const retryAfterRaw = err.headers?.['retry-after'] ?? err.retryAfter;
-                        const retryAfterMs = retryAfterRaw ? Number(retryAfterRaw) * 1000 : null;
+                    const status: number | undefined = err.status;
+                    if (status !== undefined && RETRIABLE_STATUSES.includes(status)) {
+                        const retryAfterMs = err.headers?.['retry-after']
+                            ? Number(err.headers['retry-after']) * 1000
+                            : null;
                         const actualWait = retryAfterMs && retryAfterMs > 0 ? retryAfterMs : waitTime;
-                        console.log(`${stage}: Geçici hata (${matchedStatus}), ${actualWait/1000}s sonra tekrar... (Kalan: ${retries-1})`);
+                        console.log(`Geçici hata (${status}), ${actualWait / 1000}s sonra tekrar... (Kalan: ${retries - 1})`);
                         await new Promise(resolve => setTimeout(resolve, actualWait));
                         waitTime = Math.min(waitTime + 10000, 120000);
                         retries--;
@@ -252,35 +244,13 @@ async function main() {
                     }
                 }
             }
-            throw new Error(`${stage} başarısız oldu: Gemini API sürekli hata veriyor.`);
+            throw new Error('Üretim başarısız oldu: OpenAI API sürekli hata veriyor.');
         };
 
-        const MASTER_PROMPT = buildMasterPrompt(lessonParam, unitParam);
-        const response = await sendMessageWithRetry([
-            { fileData: { fileUri: file.uri, mimeType: file.mimeType } },
-            MASTER_PROMPT
-        ], "Üretim Aşaması");
-
+        const textResult = await callWithRetry();
         console.log("Yanıt alındı, JSON ayrıştırılıyor...");
-        const textResult: string = response.text ?? '';
 
-        // JSON Extract logic — non-greedy, çoklu strateji
-        function extractJson(text: string): string {
-            // 1) ```json ... ``` code bloğu (non-greedy)
-            const fenced = text.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
-            if (fenced && fenced[1] && fenced[1].trim().startsWith('[')) {
-                return fenced[1].trim();
-            }
-            // 2) İlk '[' ile son ']' arası (JSON array)
-            const firstBracket = text.indexOf('[');
-            const lastBracket = text.lastIndexOf(']');
-            if (firstBracket !== -1 && lastBracket > firstBracket) {
-                return text.slice(firstBracket, lastBracket + 1).trim();
-            }
-            return text.trim();
-        }
-
-        let questions: any;
+        let questions: any[];
         try {
             questions = JSON.parse(extractJson(textResult));
         } catch (parseErr) {
@@ -288,47 +258,61 @@ async function main() {
             throw parseErr;
         }
         if (!Array.isArray(questions)) throw new Error("Gelen cevap dizi formatında (Array) değil!");
+        console.log(`Toplam ${questions.length} soru ayrıştırıldı.`);
 
-        console.log(`Toplam ${questions.length} soru ayrıştırıldı. Supabase kaydı başlıyor...`);
+        // Inline embedding üretimi — 1536-dim, Supabase schema ile uyumlu
+        console.log(`Embedding'ler üretiliyor (${EMBED_MODEL})...`);
+        const semanticTexts = questions.map((q: any) =>
+            `${q.question ?? ''} ${q.explanation ?? ''}`.trim()
+        );
+        let embeddings: number[][] = [];
+        try {
+            const embResp = await openai.embeddings.create({
+                model: EMBED_MODEL,
+                input: semanticTexts,
+            });
+            embeddings = embResp.data.map(item => item.embedding);
+            console.log(`${embeddings.length} embedding üretildi (dim: ${embeddings[0]?.length ?? 0}).`);
+        } catch (e) {
+            console.warn(`⚠️ Embedding üretimi başarısız, sorular embeddingsiz eklenecek: ${e}`);
+        }
 
-        const rows = questions.map((q: any) => ({
-            lesson: q.lesson,
-            unit: q.unit,
-            question: q.question,
-            option_a: q.options.A,
-            option_b: q.options.B,
-            option_c: q.options.C,
-            option_d: q.options.D,
-            option_e: q.options.E,
-            correct_answer: q.correctAnswer,
-            explanation: q.explanation,
-        }));
+        const rows = questions.map((q: any, i: number) => {
+            const row: any = {
+                lesson: q.lesson,
+                unit: q.unit,
+                question: q.question,
+                option_a: q.options?.A ?? '',
+                option_b: q.options?.B ?? '',
+                option_c: q.options?.C ?? '',
+                option_d: q.options?.D ?? '',
+                option_e: q.options?.E ?? '',
+                correct_answer: q.correctAnswer,
+                explanation: q.explanation,
+            };
+            if (embeddings[i]) row.embedding = embeddings[i];
+            return row;
+        });
 
+        console.log(`Supabase kaydı başlıyor...`);
         const { data, error } = await supabase.from('questions').insert(rows).select('id');
         if (error) {
             console.error("Supabase'e kayıt sırasında hata oluştu:");
             console.error(error);
             process.exit(1);
         }
-
         console.log(`TEBRİKLER! ${data.length} adet yeni DUS sorusu başarıyla sisteme eklendi.`);
-
-        try {
-            await ai.files.delete({ name: file.name });
-            console.log("Ön bellek temizlendi.");
-        } catch (e) { }
 
     } catch (error) {
         console.error("BİR HATA OLUŞTU:", error);
-        // AUDIT: K5 — başarısız üretimde exit(1) kullan, batch-import bunu yakalar
-        if (tempPath && fs.existsSync(tempPath)) {
-            try { fs.unlinkSync(tempPath); } catch {}
-        }
         process.exit(1);
-    }
-    // AUDIT: K5 — sadece gerçek başarıda exit(0)
-    if (tempPath && fs.existsSync(tempPath)) {
-        try { fs.unlinkSync(tempPath); } catch {}
+    } finally {
+        if (uploadedFileId) {
+            try {
+                await openai.files.delete(uploadedFileId);
+                console.log("Yüklenen PDF dosyası OpenAI'den temizlendi.");
+            } catch {}
+        }
     }
     process.exit(0);
 }
