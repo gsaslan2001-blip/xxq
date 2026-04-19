@@ -62,7 +62,6 @@ export async function fetchQuestionMetadata(): Promise<QuestionMetadata[]> {
     const { data, error } = await supabase
       .from('questions')
       .select(METADATA_COLS)
-      .or('quality_flag.is.null,and(quality_flag.neq.kavramsal_kopya,quality_flag.neq.auto_deleted)')
       .order('id', { ascending: true })
       .range(from, from + 1000 - 1);
     
@@ -93,7 +92,6 @@ export async function fetchQuestionsByUnit(lesson: string, unit: string): Promis
       .from('questions')
       .select(SELECT_COLS)
       .match({ lesson, unit })
-      .or('quality_flag.is.null,and(quality_flag.neq.kavramsal_kopya,quality_flag.neq.auto_deleted)')
       .order('id', { ascending: true })
       .range(from, from + limit - 1);
     if (error) throw error;
@@ -105,6 +103,8 @@ export async function fetchQuestionsByUnit(lesson: string, unit: string): Promis
   return all;
 }
 
+const EXCLUDED_FLAGS = new Set(['kavramsal_kopya', 'auto_deleted']);
+
 export async function fetchQuestions(flaggedOnly = false): Promise<QuestionRow[]> {
   async function fetchPage(from: number): Promise<QuestionRow[]> {
     let q = supabase
@@ -113,7 +113,6 @@ export async function fetchQuestions(flaggedOnly = false): Promise<QuestionRow[]
       .order('id', { ascending: true })
       .range(from, from + PAGE_SIZE - 1);
 
-    // TEST: filtre yok — kaç soru geldiğini görmek için
     const { data, error } = flaggedOnly
       ? await q.eq('quality_flag', 'kavramsal_kopya')
       : await q;
@@ -121,11 +120,15 @@ export async function fetchQuestions(flaggedOnly = false): Promise<QuestionRow[]
     if (error) throw new Error(error.message);
     if (!data || data.length === 0) return [];
 
+    const rows = flaggedOnly
+      ? (data as QuestionRow[])
+      : (data as QuestionRow[]).filter(r => !EXCLUDED_FLAGS.has(r.quality_flag ?? ''));
+
     if (data.length === PAGE_SIZE) {
       const next = await fetchPage(from + PAGE_SIZE);
-      return [...(data as QuestionRow[]), ...next];
+      return [...rows, ...next];
     }
-    return data as QuestionRow[];
+    return rows;
   }
 
   return fetchPage(0);
