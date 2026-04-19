@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { importQuestions, deleteQuestionsInLesson, deleteQuestionsInUnit, deleteAllQuestions, renameLesson, renameUnit } from './lib/supabase';
+import { importQuestions, deleteQuestionsInLesson, deleteQuestionsInUnit, deleteAllQuestions, renameLesson, renameUnit, fetchQuestionsByUnit, rowToQuestion, type QuestionMetadata } from './lib/supabase';
 import { useQuestions } from './hooks/useQuestions';
 import { useResumableSession } from './hooks/useResumableSession';
 import { useAuth } from './hooks/useAuth';
@@ -60,6 +60,7 @@ export default function App() {
   // BUG-006: Ünite modunda shuffle edilmiş soru listesi (unseen önce)
   const [unitQuestions, setUnitQuestions] = useState<Question[]>([]);
   const [isFavoritesExam, setIsFavoritesExam] = useState(false);
+  const [examLoading, setExamLoading] = useState(false);
   const [quizStats, setQuizStats] = useState<QuizStatsType>({ correct: 0, incorrect: 0, blank: 0, total: 0, details: [] });
   const {
     questions,
@@ -240,7 +241,8 @@ export default function App() {
   };
 
   const handleSimulationClick = async () => {
-    if (questions.length === 0) {
+    // Her zaman tüm soruları yükle (lazy-loaded tek ünite yerine tam banka)
+    if (questions.length < metadata.length) {
       try {
         await loadQuestions();
       } catch (e) {
@@ -480,20 +482,30 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
     URL.revokeObjectURL(url);
   };
 
-  const handleStartExam = (amount: number) => {
-    // BUG-005: Fisher-Yates + weighted sampling (attempts===0 sorular 2× ağırlık)
-    // BUG-001: isFavoritesExam'da yalnızca is_favorite===true sorular havuza alınır
-    const shuffledFinal = buildExamPool(
-      questions,
-      examUnits,
-      loadAllStats(),
-      amount,
-      isFavoritesExam ? (q: Question) => !!q.is_favorite : undefined,
-    );
-    setExamQuestions(shuffledFinal);
-    setMode('exam');
-    setAppState('quiz');
-    clearResumableSession().catch(() => { });
+  const handleStartExam = async (amount: number) => {
+    setExamLoading(true);
+    try {
+      // Seçili üniteler için soru içeriklerini paralel çek (metadata-tabanlı seçimden sonra)
+      const unitRows = await Promise.all(
+        examUnits.map(({ lesson, unit }) => fetchQuestionsByUnit(lesson, unit))
+      );
+      const allQs = unitRows.flat().map(rowToQuestion);
+      const pool = buildExamPool(
+        allQs,
+        examUnits,
+        loadAllStats(),
+        amount,
+        isFavoritesExam ? (q: Question) => !!q.is_favorite : undefined,
+      );
+      setExamQuestions(pool);
+      setMode('exam');
+      setAppState('quiz');
+      clearResumableSession().catch(() => { });
+    } catch (e) {
+      alert('Sorular yüklenemedi: ' + errMsg(e));
+    } finally {
+      setExamLoading(false);
+    }
   };
 
   // BUG-006: Ünite modunda unitQuestions (shuffled+unseen-first), exam modunda examQuestions
@@ -586,7 +598,7 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
               <button onClick={() => loadQuestions()} className="btn btn-secondary btn-sm mt-2">Tekrar Dene</button>
             </div>
           ) : appState === 'analytics' ? (
-            <AnalyticsDashboard questions={questions} theme={theme} />
+            <AnalyticsDashboard questions={questions} metadata={metadata} theme={theme} />
           ) : appState === 'error-analysis' ? (
             <ErrorAnalyticsView questions={questions} stats={loadAllStats()} theme={theme} />
           ) : appState === 'simulation-setup' ? (
@@ -647,11 +659,11 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
           ) : appState === 'source-books' ? (
             <SourceBooksView questions={questions} onBack={() => setAppState('select-lesson')} theme={theme} />
           ) : appState === 'select-deneme' ? (
-            <DenemeSelection questions={questions} onNext={(units) => { setExamUnits(units); setIsFavoritesExam(false); setAppState('select-deneme-amount'); }} onCancel={() => setAppState('select-lesson')} isFavoritesMode={false} theme={theme} />
+            <DenemeSelection metadata={metadata} onNext={(units) => { setExamUnits(units); setIsFavoritesExam(false); setAppState('select-deneme-amount'); }} onCancel={() => setAppState('select-lesson')} isFavoritesMode={false} theme={theme} />
           ) : appState === 'select-favorites' ? (
-            <DenemeSelection questions={questions.filter(q => q.is_favorite)} onNext={(units) => { setExamUnits(units); setIsFavoritesExam(true); setAppState('select-deneme-amount'); }} onCancel={() => setAppState('select-lesson')} isFavoritesMode={true} theme={theme} />
+            <DenemeSelection metadata={metadata} onNext={(units) => { setExamUnits(units); setIsFavoritesExam(true); setAppState('select-deneme-amount'); }} onCancel={() => setAppState('select-lesson')} isFavoritesMode={true} theme={theme} />
           ) : appState === 'select-deneme-amount' ? (
-            <DenemeAmountSelection selectedUnits={examUnits} questions={isFavoritesExam ? questions.filter(q => q.is_favorite) : questions} onStart={handleStartExam} onCancel={() => setAppState('select-lesson')} theme={theme} />
+            <DenemeAmountSelection selectedUnits={examUnits} metadata={metadata} loading={examLoading} onStart={handleStartExam} onCancel={() => setAppState('select-deneme')} theme={theme} />
           ) : appState === 'select-unit' ? (
             <UnitSelection 
               lesson={selectedLesson} 
@@ -1009,52 +1021,104 @@ function UnitSelection({ lesson, units, metadata, onSelect, onDelete, onRename, 
 /* ═══════════════════════════════════════════════════════════
    DENEME & AMOUNT SELECTIONS
    ═══════════════════════════════════════════════════════════ */
-function DenemeSelection({ questions, onNext, onCancel, isFavoritesMode, theme }: { questions: Question[]; onNext: (units: { lesson: string; unit: string }[]) => void; onCancel: () => void; isFavoritesMode: boolean; theme: Theme }) {
+function DenemeSelection({ metadata, onNext, onCancel, isFavoritesMode, theme }: {
+  metadata: QuestionMetadata[];
+  onNext: (units: { lesson: string; unit: string }[]) => void;
+  onCancel: () => void;
+  isFavoritesMode: boolean;
+  theme: Theme;
+}) {
   const [selected, setSelected] = useState<Set<string>>(new Set());
-  const grouped = questions.reduce((acc, q) => {
-    if (!acc[q.lesson]) acc[q.lesson] = new Set();
+  const [search, setSearch] = useState('');
+
+  // metadata'dan ders → ünite ağacı (her zaman tam liste)
+  const grouped = metadata.reduce((acc, q) => {
+    if (!acc[q.lesson]) acc[q.lesson] = new Set<string>();
     acc[q.lesson].add(q.unit);
     return acc;
   }, {} as Record<string, Set<string>>);
+
+  const filteredLessons = Object.entries(grouped).filter(([lesson, unitsSet]) => {
+    if (!search) return true;
+    const s = search.toLowerCase();
+    return lesson.toLowerCase().includes(s) || Array.from(unitsSet).some(u => u.toLowerCase().includes(s));
+  });
+
   const toggleUnit = (l: string, u: string) => {
     const key = `${l}|-|${u}`;
-    const n = new Set(selected);
-    if (n.has(key)) n.delete(key); else n.add(key);
-    setSelected(n);
+    setSelected(prev => { const n = new Set(prev); if (n.has(key)) n.delete(key); else n.add(key); return n; });
   };
   const toggleLesson = (l: string, us: string[]) => {
-    const n = new Set(selected);
-    const all = us.every(u => n.has(`${l}|-|${u}`));
-    us.forEach(u => { if (all) n.delete(`${l}|-|${u}`); else n.add(`${l}|-|${u}`); });
-    setSelected(n);
+    setSelected(prev => {
+      const n = new Set(prev);
+      const all = us.every(u => n.has(`${l}|-|${u}`));
+      us.forEach(u => { if (all) n.delete(`${l}|-|${u}`); else n.add(`${l}|-|${u}`); });
+      return n;
+    });
   };
+  const selectAll = () => {
+    const all = new Set<string>();
+    filteredLessons.forEach(([lesson, unitsSet]) => Array.from(unitsSet).forEach(u => all.add(`${lesson}|-|${u}`)));
+    setSelected(all);
+  };
+  const clearAll = () => setSelected(new Set());
+
+  const totalSelected = Array.from(selected).reduce((sum, key) => {
+    const [lesson, unit] = key.split('|-|');
+    return sum + metadata.filter(q => q.lesson === lesson && q.unit === unit).length;
+  }, 0);
+
   return (
-    <div className="anim-slide-up w-full max-w-2xl mx-auto flex flex-col pb-4">
-      <div className="flex items-center justify-between mb-6">
+    <div className="anim-slide-up w-full max-w-2xl mx-auto flex flex-col pb-4" style={{ maxHeight: 'calc(100vh - 120px)' }}>
+      <div className="flex items-center justify-between mb-4 shrink-0">
         <div>
-          <h2 className="text-xl font-black">{isFavoritesMode ? "Favoriler" : "Deneme Seçimi"}</h2>
-          <p className={`${theme.subtext} text-xs mt-0.5`}>Üniteleri belirleyin</p>
+          <h2 className="text-xl font-black">{isFavoritesMode ? 'Favoriler — Ünite Seç' : 'Deneme — Ünite Seç'}</h2>
+          <p className={`${theme.subtext} text-xs mt-0.5`}>İstediğin ders ve üniteleri seç</p>
         </div>
         <button onClick={onCancel} className="btn btn-ghost btn-sm">İptal</button>
       </div>
-      <div className="flex-1 overflow-y-auto space-y-3 pr-2 custom-scrollbar">
-        {Object.entries(grouped).map(([lesson, unitsSet]) => {
-          const units = Array.from(unitsSet);
+
+      {/* Arama + Tümünü Seç/Temizle */}
+      <div className="flex items-center gap-2 mb-3 shrink-0">
+        <input
+          type="text" value={search} onChange={e => setSearch(e.target.value)}
+          placeholder="Ders veya ünite ara…"
+          className={`flex-1 ${theme.inputBg} border ${theme.border} rounded-xl px-3 py-2 text-sm input-ring placeholder:opacity-30`}
+        />
+        <button onClick={selectAll} className="btn btn-ghost btn-sm text-emerald-400 border border-emerald-500/20 shrink-0">Tümü</button>
+        <button onClick={clearAll} className="btn btn-ghost btn-sm text-red-400 border border-red-500/20 shrink-0">Temizle</button>
+      </div>
+
+      <div className="flex-1 overflow-y-auto space-y-2 pr-1 custom-scrollbar">
+        {filteredLessons.length === 0 && (
+          <p className={`${theme.subtext} text-sm text-center py-10`}>Sonuç bulunamadı.</p>
+        )}
+        {filteredLessons.map(([lesson, unitsSet]) => {
+          const units = Array.from(unitsSet).sort((a, b) => a.localeCompare(b, 'tr'));
           const allS = units.every(u => selected.has(`${lesson}|-|${u}`));
           const someS = units.some(u => selected.has(`${lesson}|-|${u}`));
+          const lessonCount = metadata.filter(q => q.lesson === lesson).length;
           return (
             <div key={lesson} className={`${theme.card} rounded-2xl overflow-hidden`}>
-              <div className="p-4 flex items-center gap-3 cursor-pointer hover:bg-white/[0.03] transition-all" onClick={() => toggleLesson(lesson, units)}>
-                <div className={`w-5 h-5 rounded-md flex items-center justify-center border-2 transition-all ${allS ? 'bg-indigo-500 border-indigo-500' : someS ? 'bg-indigo-500/50 border-indigo-500/50' : `${theme.border}`}`}>{(allS || someS) && <CheckCircle2 size={14} />}</div>
-                <span className="font-bold text-sm flex-1">{lesson}</span>
+              <div className="p-3.5 flex items-center gap-3 cursor-pointer hover:bg-white/[0.03] transition-all" onClick={() => toggleLesson(lesson, units)}>
+                <div className={`w-5 h-5 rounded-md flex items-center justify-center border-2 transition-all shrink-0 ${allS ? 'bg-indigo-500 border-indigo-500' : someS ? 'bg-indigo-500/50 border-indigo-500/50' : theme.border}`}>
+                  {(allS || someS) && <CheckCircle2 size={13} />}
+                </div>
+                <span className="font-bold text-sm flex-1 truncate">{lesson}</span>
+                <span className={`${theme.subtext} text-[10px] shrink-0`}>{lessonCount} soru</span>
               </div>
-              <div className={`border-t ${theme.divider} bg-black/10 p-1.5`}>
+              <div className={`border-t ${theme.divider} bg-black/10 px-1.5 pb-1.5`}>
                 {units.map(unit => {
                   const s = selected.has(`${lesson}|-|${unit}`);
+                  const unitCount = metadata.filter(q => q.lesson === lesson && q.unit === unit).length;
                   return (
-                    <div key={unit} className="p-2.5 pl-10 flex items-center gap-3 cursor-pointer hover:bg-white/[0.03] rounded-xl transition-all" onClick={() => toggleUnit(lesson, unit)}>
-                      <div className={`w-4 h-4 rounded flex items-center justify-center border-2 transition-all ${s ? 'bg-emerald-500 border-emerald-500' : `${theme.border}`}`}>{s && <CheckCircle2 size={12} className="text-black" strokeWidth={3} />}</div>
-                      <span className={`text-xs ${s ? '' : theme.subtext}`}>{unit}</span>
+                    <div key={unit} onClick={() => toggleUnit(lesson, unit)}
+                      className={`p-2.5 pl-9 flex items-center gap-3 cursor-pointer hover:bg-white/[0.03] rounded-xl transition-all ${s ? 'bg-emerald-500/5' : ''}`}>
+                      <div className={`w-4 h-4 rounded flex items-center justify-center border-2 transition-all shrink-0 ${s ? 'bg-emerald-500 border-emerald-500' : theme.border}`}>
+                        {s && <CheckCircle2 size={11} className="text-black" strokeWidth={3} />}
+                      </div>
+                      <span className={`text-xs flex-1 truncate ${s ? 'font-medium' : theme.subtext}`}>{unit}</span>
+                      <span className={`${theme.subtext} text-[10px] shrink-0`}>{unitCount}</span>
                     </div>
                   );
                 })}
@@ -1063,9 +1127,19 @@ function DenemeSelection({ questions, onNext, onCancel, isFavoritesMode, theme }
           );
         })}
       </div>
-      <button onClick={() => onNext(Array.from(selected).map(k => ({ lesson: k.split('|-|')[0], unit: k.split('|-|')[1] })))} disabled={selected.size === 0} className="btn btn-primary btn-lg w-full mt-4">
-        Devam Et ({selected.size}) <ArrowRight size={16} />
-      </button>
+
+      <div className="shrink-0 mt-4">
+        {selected.size > 0 && (
+          <p className={`${theme.subtext} text-xs text-center mb-2`}>{selected.size} ünite · {totalSelected} soru seçildi</p>
+        )}
+        <button
+          onClick={() => onNext(Array.from(selected).map(k => ({ lesson: k.split('|-|')[0], unit: k.split('|-|')[1] })))}
+          disabled={selected.size === 0}
+          className="btn btn-primary btn-lg w-full"
+        >
+          Soru Sayısına Geç ({selected.size} ünite) <ArrowRight size={16} />
+        </button>
+      </div>
     </div>
   );
 }
@@ -1140,23 +1214,38 @@ function SimulationSetup({ questions, onStart, onCancel, theme }: {
   );
 }
 
-function DenemeAmountSelection({ selectedUnits, questions, onStart, onCancel, theme }: { selectedUnits: { lesson: string; unit: string }[]; questions: Question[]; onStart: (a: number) => void; onCancel: () => void; theme: Theme }) {
-  const [amount, setAmount] = useState(1);
-  const max = questions.filter(q => selectedUnits.some(su => su.lesson === q.lesson && su.unit === q.unit)).length;
-  useEffect(() => setAmount(Math.min(20, max)), [max]);
+function DenemeAmountSelection({ selectedUnits, metadata, loading, onStart, onCancel, theme }: {
+  selectedUnits: { lesson: string; unit: string }[];
+  metadata: QuestionMetadata[];
+  loading: boolean;
+  onStart: (a: number) => void;
+  onCancel: () => void;
+  theme: Theme;
+}) {
+  const max = metadata.filter(q => selectedUnits.some(su => su.lesson === q.lesson && su.unit === q.unit)).length;
+  const [amount, setAmount] = useState(Math.min(20, max));
+  useEffect(() => setAmount(prev => Math.min(prev, max)), [max]);
+
+  const perUnit = selectedUnits.length > 0 ? Math.floor(amount / selectedUnits.length) : 0;
+
   return (
     <div className="anim-scale-in flex-1 flex flex-col items-center justify-center">
       <div className={`${theme.card} w-full max-w-lg p-8 sm:p-10 rounded-2xl ${theme.shadow} relative overflow-hidden`}>
         <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-indigo-500 to-emerald-400 opacity-60" />
-        <h2 className="text-2xl font-black mb-8 tracking-tight text-center">Soru Sayısı</h2>
+        <h2 className="text-2xl font-black mb-2 tracking-tight text-center">Soru Sayısı</h2>
+        <p className={`${theme.subtext} text-xs text-center mb-8`}>{selectedUnits.length} ünite · {max} soru havuzu</p>
         <div className="mb-8 text-center">
           <div className="text-6xl font-black mb-6">{amount}</div>
           <input type="range" min="1" max={max} value={amount} onChange={(e) => setAmount(Number(e.target.value))} />
           <div className={`flex justify-between text-xs font-medium ${theme.subtext} mt-3`}><span>1</span><span>{max}</span></div>
+          {selectedUnits.length > 1 && (
+            <p className={`${theme.subtext} text-[10px] mt-3`}>Ünite başına ≈ {perUnit} soru (random dağılım)</p>
+          )}
         </div>
         <div className="flex gap-3">
           <button onClick={onCancel} className="btn btn-secondary btn-lg flex-1">Geri</button>
-          <button onClick={() => onStart(amount)} className="btn btn-primary btn-lg flex-[2]">BAŞLAT</button>
+          <button onClick={() => onStart(amount)} disabled={loading || max === 0} className="btn btn-primary btn-lg flex-[2]">
+            {loading ? <><Loader2 size={16} className="animate-spin" /> Yükleniyor…</> : 'BAŞLAT'}</button>
         </div>
       </div>
     </div>
@@ -1167,18 +1256,19 @@ function DenemeAmountSelection({ selectedUnits, questions, onStart, onCancel, th
 /* ═══════════════════════════════════════════════════════════
    RESULT VIEW & ANALYTICS DASHBOARD
    ═══════════════════════════════════════════════════════════ */
-function AnalyticsDashboard({ questions, theme }: { questions: Question[]; theme: Theme }) {
+function AnalyticsDashboard({ questions, metadata, theme }: { questions: Question[]; metadata: QuestionMetadata[]; theme: Theme }) {
   const stats = loadStreak();
   const activity = getRecentActivity(14);
   const maxActivity = Math.max(...activity.map(a => a.count), 1);
 
-  const allUnitStats = Array.from(new Set(questions.map(q => q.lesson))).map(lesson => {
-    const lessonQs = questions.filter(q => q.lesson === lesson);
-    const lessonProgress = getUnitProgress(lessonQs.map(q => q.id));
+  // Kapsama için metadata kullan (her zaman tam soru sayısı)
+  const allUnitStats = Array.from(new Set(metadata.map(q => q.lesson))).map(lesson => {
+    const lessonMeta = metadata.filter(q => q.lesson === lesson);
+    const lessonProgress = getUnitProgress(lessonMeta.map(q => q.id));
     return { lesson, ...lessonProgress };
   }).sort((a, b) => (b.totalCorrects / Math.max(1, b.totalAttempts)) - (a.totalCorrects / Math.max(1, a.totalAttempts)));
 
-  const totalPossible = questions.length;
+  const totalPossible = metadata.length;
   const totalSolved = allUnitStats.reduce((a, b) => a + b.solved, 0);
   const totalAttempts = allUnitStats.reduce((a, b) => a + b.totalAttempts, 0);
   const totalCorrects = allUnitStats.reduce((a, b) => a + b.totalCorrects, 0);
