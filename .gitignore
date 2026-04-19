@@ -34,3 +34,9 @@ scratch/
 scripts/logs/
 raporlar/*.json
 !raporlar/curation_summary.md
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
