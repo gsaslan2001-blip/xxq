@@ -1,12 +1,12 @@
 import { useState, useEffect, useCallback } from 'react';
-import { importQuestions, deleteQuestionsInLesson, deleteQuestionsInUnit, renameLesson, renameUnit, loadTodaysDailyExam, markDailyExamCompleted, type DailyExamRow } from './lib/supabase';
+import { importQuestions, deleteQuestionsInLesson, deleteQuestionsInUnit, renameLesson, renameUnit, loadTodaysDailyExam, markDailyExamCompleted, saveExamAnswers, type DailyExamRow } from './lib/supabase';
 import { useQuestions } from './hooks/useQuestions';
 import { useResumableSession } from './hooks/useResumableSession';
 import { useAuth } from './hooks/useAuth';
 import { useRealtimeStats } from './hooks/useRealtimeStats';
 import { AuthModal } from './components/AuthModal';
 import type { Question } from './data';
-import { getWeakQuestionIds, getUnitProgress, syncStatsUp, loadStreak, getRecentActivity, getDueForReviewIds, migrateAllStatsToFSRSIfNeeded, loadAllStats, getDeviceId, resetAllStats } from './lib/stats';
+import { getWeakQuestionIds, getUnitProgress, syncStatsUp, syncStatsDown, loadStreak, getRecentActivity, getDueForReviewIds, migrateAllStatsToFSRSIfNeeded, loadAllStats, getDeviceId, resetAllStats, setSyncUserId, mergeWrongChoices } from './lib/stats';
 import ErrorAnalyticsView from './components/ErrorAnalyticsView';
 import SimulationResultView from './components/SimulationResultView';
 import type { AnswerDetail as SimAnswerDetail } from './components/SimulationResultView';
@@ -126,6 +126,7 @@ export default function App() {
   const [editingQuestion, setEditingQuestion] = useState<Question | null>(null);
   const [reportingQuestion, setReportingQuestion] = useState<Question | null>(null);
   const [syncStatus, setSyncStatus] = useState<'idle' | 'syncing' | 'done' | 'error'>('idle');
+  const [statsVersion, setStatsVersion] = useState(0); // Sync sonrası UI refresh için
   const [showSettings, setShowSettings] = useState(false);
   const [showAuth, setShowAuth] = useState(false);
   const [todaysDailyExam, setTodaysDailyExam] = useState<DailyExamRow | null | 'loading'>('loading');
@@ -151,14 +152,36 @@ export default function App() {
   }, []);
 
   const showPrompt = useCallback((message: string, defaultValue: string, onConfirm: (val: string) => void, title?: string) => {
-    setDialog({ type: 'prompt', message, defaultValue, title, onConfirm: (val) => { if(val) onConfirm(val); setDialog(null); }, onCancel: () => setDialog(null) });
+    setDialog({ type: 'prompt', message, defaultValue, title, onConfirm: (val) => { if (val && val.trim()) onConfirm(val.trim()); setDialog(null); }, onCancel: () => setDialog(null) });
   }, []);
 
   useRealtimeStats({
     userId: user?.id ?? null,
     deviceId: getDeviceId(),
-    onStatUpdate: useCallback((questionId: string) => {
-      console.log('[Realtime] Başka cihazdan stat güncellendi:', questionId);
+    onStatUpdate: useCallback((questionId: string, stat) => {
+      // Başka cihazdan gelen FSRS güncellemesini localStorage'a merge et
+      const stats = loadAllStats();
+      const local = stats[questionId];
+      const localLR = local?.lastReview ?? '';
+      const cloudLR = stat.lastReview ?? '';
+      if (!local || cloudLR > localLR) {
+        stats[questionId] = {
+          attempts: Math.max(stat.attempts, local?.attempts ?? 0),
+          corrects: Math.max(stat.corrects, local?.corrects ?? 0),
+          lastSeen: stat.lastSeen || local?.lastSeen || '',
+          stability: stat.stability ?? local?.stability,
+          difficulty: stat.difficulty ?? local?.difficulty,
+          lastReview: stat.lastReview ?? local?.lastReview ?? '',
+          scheduledDays: stat.scheduledDays ?? local?.scheduledDays ?? 1,
+          fsrsReps: stat.fsrsReps ?? local?.fsrsReps ?? 0,
+          easeFactor: local?.easeFactor ?? 2.5,
+          interval: local?.interval ?? 1,
+          repetitions: local?.repetitions ?? 0,
+          nextReview: local?.nextReview ?? todayStr(),
+          wrongChoices: mergeWrongChoices(local?.wrongChoices ?? [], stat.wrongChoices ?? []),
+        };
+        localStorage.setItem('dus_question_stats', JSON.stringify(stats));
+      }
     }, []),
   });
 
@@ -180,12 +203,24 @@ export default function App() {
     loadQuestions();
   }, [loadQuestions]);
 
+  // userId değişiminde sync sistemine bildir (tüm push/pull işlemleri user bazlı olur)
+  useEffect(() => {
+    setSyncUserId(user?.id ?? null);
+    // Giriş yapıldığında cloud'dan güncel veriyi çek (merge sonrası localStorage'ı tazele)
+    if (user) {
+      syncStatsDown()
+        .then(() => setStatsVersion(v => v + 1))
+        .catch(() => {});
+    }
+  }, [user]);
+
   useEffect(() => {
     if (!user) { setTodaysDailyExam(null); return; }
-    setTodaysDailyExam('loading');
+    let cancelled = false;
     loadTodaysDailyExam(user.id)
-      .then(exam => setTodaysDailyExam(exam))
-      .catch(() => setTodaysDailyExam(null));
+      .then(exam => { if (!cancelled) setTodaysDailyExam(exam); })
+      .catch(() => { if (!cancelled) setTodaysDailyExam(null); });
+    return () => { cancelled = true; };
   }, [user]);
 
   useEffect(() => {
@@ -304,12 +339,24 @@ export default function App() {
   const handleSyncStats = async () => {
     setSyncStatus('syncing');
     try {
-      await syncStatsUp();
+      const pushResult = await syncStatsUp();   // önce local'i cloud'a push et
+      if (pushResult.errors.length > 0) {
+        console.error('[Sync] Push hataları:', pushResult.errors);
+      }
+      await syncStatsDown(); // sonra cloud'dan pull edip merge yap
+      setStatsVersion(v => v + 1); // UI'ı tazele (loadAllStats vb. re-render)
       setSyncStatus('done');
       setTimeout(() => setSyncStatus('idle'), 2500);
-    } catch {
+      if (pushResult.errors.length > 0) {
+        showAlert(
+          `${pushResult.pushed}/${pushResult.total} kayıt sync edildi.\n${pushResult.errors.length} batch hatası oluştu.`,
+          'Kısmi Sync'
+        );
+      }
+    } catch (err) {
       setSyncStatus('error');
       setTimeout(() => setSyncStatus('idle'), 3000);
+      showAlert('Sync başarısız: ' + errMsg(err), 'Hata');
     }
   };
 
@@ -318,6 +365,10 @@ export default function App() {
   };
 
   const handleDailyExamStart = () => {
+    if (isSessionLoading) {
+      showAlert('Oturum bilgisi yükleniyor, lütfen bekleyin...', 'Bilgi');
+      return;
+    }
     if (!todaysDailyExam || todaysDailyExam === 'loading') return;
     const exam = todaysDailyExam as DailyExamRow;
 
@@ -378,13 +429,17 @@ export default function App() {
     setAppState('result');
     clearResumableSession().catch(() => { });
     if (isDailyExamSession && activeDailyExamId) {
+      // Faz 5: Deneme cevaplarını kalıcı olarak kaydet
+      if (user) {
+        saveExamAnswers(activeDailyExamId, user.id, answers).catch(() => {});
+      }
       markDailyExamCompleted(activeDailyExamId).catch(() => {});
       setTodaysDailyExam(null);
       setIsDailyExamSession(false);
       setActiveDailyExamId(undefined);
     }
   };
-  const handleReturnToHome = () => { setAppState('select-lesson'); setSelectedLesson(''); setSelectedUnit(''); setMode('quiz'); setUnitQuestions([]); };
+  const handleReturnToHome = () => { setIsDailyExamSession(false); setActiveDailyExamId(undefined); setAppState('select-lesson'); setSelectedLesson(''); setSelectedUnit(''); setMode('quiz'); setUnitQuestions([]); };
 
 
   const handleExportPDF = (selection: Question[], title: string) => {
@@ -534,6 +589,8 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
     switch (appState) {
       case 'quiz':
         setUnitQuestions([]);
+        setIsDailyExamSession(false);
+        setActiveDailyExamId(undefined);
         setAppState(mode === 'exam' ? 'select-lesson' : 'select-unit');
         break;
       case 'select-unit':
@@ -679,7 +736,7 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
         </div>
       </header>
 
-      <main className="flex-1 overflow-y-auto w-full max-w-[1400px] mx-auto px-4 sm:px-6">
+      <main key={statsVersion} className="flex-1 overflow-y-auto w-full max-w-[1400px] mx-auto px-4 sm:px-6">
         <div className="min-h-full py-5 flex flex-col">
           {appState === 'import' ? (
             <ImportView onDone={handleImportDone} theme={theme} />
@@ -828,7 +885,11 @@ ${chunks.map((chunk, ci) => renderQuestionPage(chunk, ci) + renderAnswerPage(chu
               } : undefined}
               timedSeconds={simTotalSeconds ?? undefined}
               onSimulationComplete={(details, usedSecs) => {
-                const total = simTotalSeconds ?? 9000;
+                if (simTotalSeconds == null) {
+                  console.error('Simülasyon süresi alınamadı');
+                  return;
+                }
+                const total = simTotalSeconds;
                 setSimTotalSeconds(null);
                 setSimResult({ details: details as SimAnswerDetail[], totalSeconds: total, usedSeconds: usedSecs });
                 setAppState('simulation-result');

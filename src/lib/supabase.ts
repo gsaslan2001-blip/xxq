@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
+import { todayStr } from './dateUtils';
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string;
@@ -253,7 +254,8 @@ export async function flagQuestion(id: string, reason: string): Promise<void> {
 
 /**
  * Aktif session'ı cloud'a kaydeder.
- * @param userId — Opsiyonel: giriş yapılmışsa user bazlı upsert.
+ * FIX: Her zaman device_id bazlı conflict kullan (PK bu).
+ * userId sadece metadata olarak set edilir, conflict target DEĞİLDİR.
  */
 export async function saveSessionToCloud(
   deviceId: string,
@@ -266,38 +268,51 @@ export async function saveSessionToCloud(
     session_data: sessionData,
     updated_at: new Date().toISOString(),
   };
-  const conflictTarget = userId ? 'user_id' : 'device_id';
   const { error } = await supabase
     .from('active_sessions')
-    .upsert(payload, { onConflict: conflictTarget });
+    .upsert(payload, { onConflict: 'device_id' });
   if (error) throw error;
 }
 
 /**
  * Aktif session'ı cloud'dan yükler.
- * @param userId — Opsiyonel: giriş yapılmışsa user bazlı; yoksa device bazlı.
+ * FIX: userId ile aramada birden fazla cihaz olabilir — maybeSingle yerine limit(1).
  */
 export async function loadSessionFromCloud(
   deviceId: string,
   userId?: string
 ): Promise<object | null> {
-  const query = supabase.from('active_sessions').select('session_data');
-  const { data, error } = userId
-    ? await query.eq('user_id', userId).maybeSingle()
-    : await query.eq('device_id', deviceId).maybeSingle();
-  if (error) throw error;
+  if (userId) {
+    // Önce user'a ait en güncel session'ı bul
+    const { data } = await supabase
+      .from('active_sessions')
+      .select('session_data')
+      .eq('user_id', userId)
+      .order('updated_at', { ascending: false })
+      .limit(1)
+      .maybeSingle();
+    if (data) return data.session_data;
+  }
+  // Fallback: device bazlı
+  const { data } = await supabase
+    .from('active_sessions')
+    .select('session_data')
+    .eq('device_id', deviceId)
+    .maybeSingle();
   return data?.session_data ?? null;
 }
 
 export async function deleteSessionFromCloud(deviceId: string, userId?: string): Promise<void> {
-  if (userId) {
-    await supabase.from('active_sessions').delete().eq('user_id', userId);
-  }
+  // Önce device bazlı sil (her zaman çalışır)
   const { error } = await supabase
     .from('active_sessions')
     .delete()
     .eq('device_id', deviceId);
   if (error) throw error;
+  // Aynı user'a ait diğer cihaz session'larını da temizle
+  if (userId) {
+    await supabase.from('active_sessions').delete().eq('user_id', userId);
+  }
 }
 
 // ─── STATS CLOUD SYNC ──────────────────────────────────────────────────────
@@ -337,32 +352,31 @@ export type CloudStat = {
 /**
  * Local stats'ı cloud'a push eder (upsert, 500'lük batch).
  * @param userId — Opsiyonel: giriş yapılmışsa kullanıcı UUID'si.
- *   Varsa conflict `user_id,question_id`; yoksa `device_id,question_id`.
+ *   Varsa conflict `device_id,question_id` üzerinden yapılır (mevcut kayıt güncellenir,
+ *   user_id alanı da set edilir). YOKSA aynı conflict ile anonim kayıt oluşur.
+ *   FIX: Eski `user_id,question_id` conflict target'ı `(device_id, question_id)` unique
+ *   constraint'i ile çakışıyordu. Artık her zaman device_id bazlı upsert yapılır,
+ *   user_id da set edilerek kullanıcı bazlı sorgulanabilir hale gelir.
+ */
+export type PushStatsResult = {
+  pushed: number;
+  total: number;
+  errors: string[];
+};
+
+/**
+ * Local stats'ı cloud'a push eder (upsert, 500'lük batch).
+ * Hata durumunda dahi kısmi başarıyı raporlar — throw etmez.
  */
 export async function pushStatsToCloud(
   deviceId: string,
   stats: Record<string, CloudStat>,
   userId?: string
-): Promise<void> {
-  // Olası Foreign Key hatalarını önlemek için sistemdeki geçerli soru id'lerini çek (sadece silinmeyenler)
-  const validIds = new Set<string>();
-  let from = 0;
-  const limit = 1000;
-  while (true) {
-    const { data, error } = await supabase.from('questions').select('id').range(from, from + limit - 1);
-    if (error) throw error;
-    if (data && data.length > 0) {
-      data.forEach(r => validIds.add(r.id));
-      if (data.length < limit) break;
-      from += limit;
-    } else break;
-  }
-
-  // user_id varsa user bazlı, yoksa device bazlı conflict resolution
-  const conflictTarget = userId ? 'user_id,question_id' : 'device_id,question_id';
+): Promise<PushStatsResult> {
+  // Constraint ismi kullan — PostgREST composite sütun listesini tanımayabiliyor
+  const conflictTarget = 'question_stats_device_id_question_id_key';
 
   const rows: StatRow[] = Object.entries(stats)
-    .filter(([qId]) => validIds.has(qId))
     .map(([qId, s]) => ({
       device_id: deviceId,
       user_id: userId ?? null,
@@ -377,8 +391,12 @@ export async function pushStatsToCloud(
       scheduled_days: s.scheduledDays ?? null,
       fsrs_reps: s.fsrsReps ?? null,
     }));
-  if (rows.length === 0) return;
-  const failedBatches: number[] = [];
+  if (rows.length === 0) return { pushed: 0, total: 0, errors: [] };
+
+  const errors: string[] = [];
+  let pushed = 0;
+  const batchCount = Math.ceil(rows.length / 500);
+
   for (let i = 0; i < rows.length; i += 500) {
     const batchIndex = Math.floor(i / 500);
     const batch = rows.slice(i, i + 500);
@@ -387,17 +405,20 @@ export async function pushStatsToCloud(
         .from('question_stats')
         .upsert(batch, { onConflict: conflictTarget });
       if (error) {
-        console.warn(`[pushStatsToCloud] Batch ${batchIndex} hatası:`, error.message);
-        failedBatches.push(batchIndex);
+        const msg = `Batch ${batchIndex + 1}/${batchCount}: ${error.message} (code: ${error.code})`;
+        console.error(`[pushStatsToCloud] ${msg}`);
+        errors.push(msg);
+      } else {
+        pushed += batch.length;
       }
     } catch (err) {
-      console.warn(`[pushStatsToCloud] Batch ${batchIndex} exception:`, err);
-      failedBatches.push(batchIndex);
+      const msg = `Batch ${batchIndex + 1}/${batchCount}: ${err instanceof Error ? err.message : String(err)}`;
+      console.error(`[pushStatsToCloud] ${msg}`);
+      errors.push(msg);
     }
   }
-  if (failedBatches.length > 0) {
-    throw new Error(`${failedBatches.length} batch sync edilemedi (${failedBatches.join(', ')}). Kalan batch'ler yazıldı.`);
-  }
+
+  return { pushed, total: rows.length, errors };
 }
 
 const STAT_COLUMNS = 'question_id, attempts, corrects, last_seen, wrong_choices, stability, difficulty, last_review, scheduled_days, fsrs_reps';
@@ -449,17 +470,27 @@ export async function pullStatsFromCloud(
   return result;
 }
 
-/** TÜM cihazların cloud stats'ını çeker ve her soru için en yüksek attempts olanı döner */
-export async function pullAllDeviceStats(): Promise<Record<string, CloudStat>> {
+/** TÜM cihazların cloud stats'ını çeker ve her soru için en yüksek attempts olanı döner.
+ *  @param userId — Giriş yapılmışsa sadece o kullanıcının verisini çeker; yoksa tüm cihazları.
+ */
+export async function pullAllDeviceStats(userId?: string): Promise<Record<string, CloudStat>> {
   let allData: PulledStatRow[] = [];
   let from = 0;
   const limit = 1000;
   while (true) {
-    const { data, error } = await supabase
+    let query = supabase
       .from('question_stats')
       .select(STAT_COLUMNS)
       .order('attempts', { ascending: false })
+      .order('id', { ascending: true })
       .range(from, from + limit - 1);
+
+    // Giriş yapılmışsa sadece kullanıcının kendi verisini çek
+    if (userId) {
+      query = query.eq('user_id', userId);
+    }
+
+    const { data, error } = await query;
     if (error) throw error;
     if (data && data.length > 0) {
       allData = [...allData, ...(data as PulledStatRow[])];
@@ -470,7 +501,16 @@ export async function pullAllDeviceStats(): Promise<Record<string, CloudStat>> {
   const merged: Record<string, CloudStat> = {};
   for (const row of allData) {
     const existing = merged[row.question_id];
-    if (!existing || row.attempts > existing.attempts) {
+    if (!existing) {
+      merged[row.question_id] = rowToCloudStat(row);
+      continue;
+    }
+    // syncStatsDown ile tutarlı: last_review'e göre merge, tie-break attempts
+    const rowReview = row.last_review ?? null;
+    const existingReview = existing.lastReview ?? null;
+    if (rowReview && (!existingReview || rowReview > existingReview)) {
+      merged[row.question_id] = rowToCloudStat(row);
+    } else if (rowReview === existingReview && row.attempts > existing.attempts) {
       merged[row.question_id] = rowToCloudStat(row);
     }
   }
@@ -620,7 +660,7 @@ export type DailyExamRow = {
 
 /** Bugünün bekleyen daily exam'ini getirir (yoksa null). */
 export async function loadTodaysDailyExam(userId: string): Promise<DailyExamRow | null> {
-  const today = new Date().toISOString().split('T')[0];
+  const today = todayStr();
   const { data, error } = await supabase
     .from('daily_exams')
     .select('*')
@@ -642,7 +682,7 @@ export async function saveDailyExam(
   breakdown: Record<string, unknown>,
   examDate?: string,
 ): Promise<DailyExamRow> {
-  const date = examDate ?? new Date().toISOString().split('T')[0];
+  const date = examDate ?? todayStr();
   const { data, error } = await supabase
     .from('daily_exams')
     .insert({
@@ -668,6 +708,102 @@ export async function markDailyExamCompleted(examId: string): Promise<void> {
   if (error) throw error;
 }
 
+// ─── EXAM ANSWERS (Faz 5: Deneme Bazlı Soru Takibi) ─────────────────────────
+
+export type ExamAnswerRow = {
+  id: string;
+  exam_id: string;
+  question_id: string;
+  user_id: string;
+  selected_answer: string | null;
+  correct_answer: string;
+  is_correct: boolean;
+  time_spent: number | null;
+  question_order: number;
+  created_at: string;
+};
+
+/**
+ * Deneme tamamlandığında tüm cevapları exam_answers tablosuna kaydeder.
+ * Batch insert (500'lik chunk) ile çalışır.
+ */
+export async function saveExamAnswers(
+  examId: string,
+  userId: string,
+  answers: Array<{
+    question: { id: string; correctAnswer: string };
+    state: string;
+    selectedOptionKey?: string | null;
+    timeSpent?: number;
+  }>
+): Promise<void> {
+  const rows = answers.map((a, i) => ({
+    exam_id: examId,
+    question_id: a.question.id,
+    user_id: userId,
+    selected_answer: a.selectedOptionKey ?? null,
+    correct_answer: a.question.correctAnswer,
+    is_correct: a.state === 'correct',
+    time_spent: a.timeSpent ?? null,
+    question_order: i,
+  }));
+
+  for (let i = 0; i < rows.length; i += 500) {
+    const batch = rows.slice(i, i + 500);
+    const { error } = await supabase.from('exam_answers').insert(batch);
+    if (error) {
+      console.warn(`[saveExamAnswers] Batch ${Math.floor(i / 500)} hatası:`, error.message);
+    }
+  }
+}
+
+/**
+ * Bir denemedeki yanlış cevaplanan soruları getirir.
+ */
+export async function fetchExamWrongAnswers(
+  examId: string,
+  userId: string
+): Promise<(QuestionRow & { selected_answer: string | null })[]> {
+  const { data, error } = await supabase
+    .from('exam_answers')
+    .select(`
+      question_id,
+      selected_answer,
+      correct_answer,
+      is_correct,
+      time_spent,
+      question_order,
+      questions!inner(*)
+    `)
+    .eq('exam_id', examId)
+    .eq('user_id', userId)
+    .eq('is_correct', false)
+    .order('question_order', { ascending: true });
+
+  if (error) throw error;
+  return (data ?? []).map((r: Record<string, unknown>) => {
+    const q = r.questions as QuestionRow;
+    return { ...q, selected_answer: r.selected_answer as string | null };
+  });
+}
+
+/**
+ * Tarihe göre denemeleri getirir.
+ */
+export async function fetchExamsByDate(
+  userId: string,
+  date: string
+): Promise<DailyExamRow[]> {
+  const { data, error } = await supabase
+    .from('daily_exams')
+    .select('*')
+    .eq('user_id', userId)
+    .eq('exam_date', date)
+    .order('created_at', { ascending: false });
+
+  if (error) throw error;
+  return (data ?? []) as DailyExamRow[];
+}
 /** Kullanıcının toplam daily exam sayısını döner — bir sonraki day_number için. */
 export async function getNextDayNumber(userId: string): Promise<number> {
   const { count, error } = await supabase

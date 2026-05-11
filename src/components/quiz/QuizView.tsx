@@ -94,9 +94,7 @@ export function QuizView({
     }
     answersRef.current = newAnswers;
     setAnswers(newAnswers);
-    if (mode === 'exam') {
-      onSaveSession?.({ questions, answers: newAnswers, currentIndex: currentIndex + 1, mode: 'exam', dailyExamId });
-    }
+    onSaveSession?.({ questions, answers: newAnswers, currentIndex: currentIndex + 1, mode: mode ?? 'quiz', dailyExamId });
     if (currentIndex < questions.length - 1) {
       const ni = currentIndex + 1;
       setCurrentIndex(ni);
