@@ -1,0 +1,15 @@
+node_modules
+exports
+src_backup
+yeni
+raporlar
+scripts
+.claude
+.agent
+scratch
+brain
+Plans
+dist
+*.pyc
+__pycache__
+*.log
